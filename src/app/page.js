@@ -1404,12 +1404,41 @@ export default function Home() {
                 <div className="row cols-md">
                   <div className="sm-col-4">
                     <div className="footer-title alt-color text-upper">
-                      Address
+                      Partners
                     </div>
-                    <div className="footer-text">
-                      Sidestate NSW 4132,
-                      <br />
-                      Australia
+                    <div>
+                      <a href="https://t31k.com/">T31K</a>
+                    </div>
+                    <div>
+                      <a href="https://getharmonize.app/">Harmonize</a>
+                    </div>
+                    <div>
+                      <a href="https://calorieasy.app/">Calorieasy</a>
+                    </div>
+                    <div>
+                      <a href="https://taroternity.com/">Taroternity</a>
+                    </div>
+                    <div>
+                      <a href="https://listskit.com/">Lists Kit</a>
+                    </div>
+                    <div>
+                      <a href="https://hackapura.com/">Hackapura</a>
+                    </div>{" "}
+                    <div>
+                      <a href="https://hackalumpur.com/">Hackalumpur</a>
+                    </div>{" "}
+                    <div>
+                      <a href="https://clemanteemusic.com/">Clemantee Music</a>
+                    </div>
+                    <div>
+                      <a href="https://mirabelledecoupage.com/">
+                        Mirabelle Decoupage
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://earthinterior.sg/">
+                        Earth Interior Design
+                      </a>
                     </div>
                   </div>
                   <div className="sm-col-4">
