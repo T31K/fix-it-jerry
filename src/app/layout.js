@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
       </body>
       <Script src="/scripts/jquery-3.3.1.min.js" async />
       <Script src="/scripts/parallax.min.js" async />
-      <Script src="/scripts/jquery.flexslider-min.js" />
+      <Script src="/scripts/jquery.flexslider-min.js" async />
       <Script src="/scripts/owl.carousel.min.js" />
       <Script src="/scripts/shuffle.min.js" />
       <Script src="/scripts/jquery.waypoints.min.js" async />
