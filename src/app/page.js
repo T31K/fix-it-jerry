@@ -938,13 +938,13 @@ export default function Home() {
             </div>
             <div className="contact-btn">
               <a href="/contact" className="btn btns-white text-upper">
-                Contac
+                Contact
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section className="text-center content-section">
+      <section className="text-center content-section hidden">
         <div className="container">
           <div className="section-head text-center container-md">
             <h2
@@ -1027,7 +1027,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="map-section"
+        className="map-section hidden"
         data-inview-showup="showup-translate-right"
       >
         <div className="gmap" data-lat="-33.878897" data-lng="151.103737"></div>
