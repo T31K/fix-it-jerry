@@ -915,7 +915,7 @@ export default function Home() {
         <div className="container">
           <div className="contact-table only-xs-text-center">
             <div className="contact-icon xs-hidden">
-              <i className="fas fa-bicycle" aria-hidden="true"></i>
+              <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="contact-content">
               <div className="contact-title">Need a repair or upgrade?</div>
