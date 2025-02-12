@@ -11,7 +11,7 @@ initMap = false;
   "use strict";
 
   // Page loader
-  $("body").addClass("loader-loading");
+  // $("body").addClass("loader-loading");
   var showPage = function () {
     $("body").removeClass("loader-loading").off(".pageLoader");
     $(window).trigger("resize").trigger("scroll");

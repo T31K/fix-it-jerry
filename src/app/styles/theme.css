@@ -4549,7 +4549,7 @@ body.body .text-valid {
   z-index: 1;
   text-align: justify;
   overflow: hidden;
-  min-height: 220px;
+  min-height: 300px;
 }
 .simple-testimonial .tt-quote {
   position: absolute;

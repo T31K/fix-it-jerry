@@ -93,298 +93,43 @@ export default function Home() {
             <div className="menu">
               <ul className="menu-items">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="index.html">Services</a>
                   <span className="toggle-icon">
                     <i className="fas fa-chevron-down" aria-hidden="true"></i>
                   </span>
                   <ul>
                     <li>
-                      <a href="index.html">Home 1</a>
+                      <a href="/services/smartphone-repair">
+                        Smartphone Repair
+                      </a>
                     </li>
                     <li>
-                      <a href="homepage-2.html">Home 2</a>
+                      <a href="/services/tablet-repair">Tablet Repair</a>
                     </li>
                     <li>
-                      <a href="homepage-3.html">Home 3</a>
+                      <a href="/services/laptop-repair">Laptop Repair</a>
                     </li>
                     <li>
-                      <a href="homepage-4.html">Home 4</a>
+                      <a href="/services/computer-repair">Computer Repair</a>
                     </li>
                     <li>
-                      <a href="homepage-shop-1.html">Home shop 1</a>
-                    </li>
-                    <li>
-                      <a href="homepage-shop-2.html">Home shop 2</a>
-                    </li>
-                    <li>
-                      <a href="homepage-shop-3.html">Home shop 3</a>
-                    </li>
-                    <li>
-                      <a href="homepage-mobile-1.html">Home mobile 1</a>
-                    </li>
-                    <li>
-                      <a href="homepage-mobile-2.html">Home mobile 2</a>
-                    </li>
-                    <li>
-                      <a href="homepage-mobile-3.html">Home mobile 3</a>
+                      <a href="/services/nintendo-switch-repair">
+                        Nintendo Switch Repair
+                      </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span className="menu-item">Pages</span>
-                  <span className="toggle-icon">
-                    <i className="fas fa-chevron-down" aria-hidden="true"></i>
-                  </span>
-                  <ul>
-                    <li>
-                      <span className="menu-item">Content pages</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="about-us.html">About us</a>
-                        </li>
-                        <li>
-                          <a href="faq.html">FAQ</a>
-                        </li>
-                        <li>
-                          <a href="article.html">Article</a>
-                        </li>
-                        <li>
-                          <a href="service.html">Service</a>
-                        </li>
-                        <li>
-                          <a href="project.html">Project</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">User pages</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="sign-in.html">Sign in</a>
-                        </li>
-                        <li>
-                          <a href="sign-up.html">Sign up</a>
-                        </li>
-                        <li>
-                          <a href="forgot-password.html">Forgot password</a>
-                        </li>
-                        <li>
-                          <a href="dashboard.html">Dashboard</a>
-                        </li>
-                        <li>
-                          <a href="profile.html">Profile</a>
-                        </li>
-                        <li>
-                          <a href="orders.html">Orders</a>
-                        </li>
-                        <li>
-                          <a href="tickets.html">Tickets</a>
-                        </li>
-                        <li>
-                          <a href="new-ticket.html">New ticket</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Shop pages</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="shop-item.html">Shop item</a>
-                        </li>
-                        <li>
-                          <a href="cart.html">Cart</a>
-                        </li>
-                        <li>
-                          <a href="checkout.html">Checkout</a>
-                        </li>
-                        <li>
-                          <a href="order-confirmation.html">Confirmation</a>
-                        </li>
-                        <li>
-                          <a href="terms-and-conditions.html">
-                            Terms &amp; conditions
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Search pages</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="search.html">Search</a>
-                        </li>
-                        <li>
-                          <a href="advanced-search.html">Advanced search</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Page sidebar</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="page-no-sidebar.html">Page no sidebar</a>
-                        </li>
-                        <li>
-                          <a href="page-sidebar-left.html">Page sidebar left</a>
-                        </li>
-                        <li>
-                          <a href="page-sidebar-right.html">
-                            Page sidebar right
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Page header/footer</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="page-header-1.html">Header 1</a>
-                        </li>
-                        <li>
-                          <a href="page-header-2.html">Header 2</a>
-                        </li>
-                        <li>
-                          <a href="page-header-3.html">Header 3</a>
-                        </li>
-                        <li>
-                          <a href="page-header-4.html">Header 4</a>
-                        </li>
-                        <li>
-                          <a href="page-header-5.html">Header 5</a>
-                        </li>
-                        <li>
-                          <a href="page-footer-1.html">Footer 1</a>
-                        </li>
-                        <li>
-                          <a href="page-footer-2.html">Footer 2</a>
-                        </li>
-                        <li>
-                          <a href="page-footer-3.html">Footer 3</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Status pages</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="404.html">404</a>
-                        </li>
-                        <li>
-                          <a href="404-2.html">404 - 2</a>
-                        </li>
-                        <li>
-                          <a href="underconstruction.html">
-                            Under construction
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span className="menu-item">Elements</span>
-                      <span className="menu-sign-right">
-                        <i
-                          className="fas fa-chevron-right"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <ul>
-                        <li>
-                          <a href="typography.html">Typography</a>
-                        </li>
-                        <li>
-                          <a href="form-elements.html">Form elements</a>
-                        </li>
-                        <li>
-                          <a href="form-elements-required.html">
-                            Form elements required
-                          </a>
-                        </li>
-                        <li>
-                          <a href="form-elements-disabled.html">
-                            Form elements disabled
-                          </a>
-                        </li>
-                        <li>
-                          <a href="form-elements-error.html">
-                            Form elements error
-                          </a>
-                        </li>
-                        <li>
-                          <a href="form-elements-valid.html">
-                            Form elements valid
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <a href="projects.html">Reviews</a>
                 </li>
                 <li>
-                  <a href="shop-category.html">Shop</a>
+                  <a href="/price">Price</a>
                 </li>
                 <li>
-                  <a href="services.html">Services</a>
+                  <a href="/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                  <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                  <a href="contact-us.html">Contact Us</a>
-                  <span className="toggle-icon">
-                    <i className="fas fa-chevron-down" aria-hidden="true"></i>
-                  </span>
-                  <ul className="left">
-                    <li>
-                      <a href="contact-us.html">Contact us</a>
-                    </li>
-                    <li>
-                      <a href="contact-us-2.html">Contact us - 2</a>
-                    </li>
-                  </ul>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
 
@@ -411,7 +156,7 @@ export default function Home() {
                   Fast, Reliable Device <br />
                   Repairs Made Easy
                 </div>
-                <div className="banner-subtitle res-text-md w-2/5 mx-auto">
+                <div className="banner-subtitle res-text-md w-4/5 md:w-2/5 mx-auto">
                   Quick turnarounds with convenient pickup and return, clear and
                   honest diagnostics, and exceptional service at a value you can
                   trust. Experience hassle-free repairs every step of the way.
@@ -685,10 +430,10 @@ export default function Home() {
               className="section-title text-upper text-lg"
               data-inview-showup="showup-translate-right"
             >
-              Service process
+              How we work
             </h2>
             <p data-inview-showup="showup-translate-left">
-              easy and effective way to get your device repaired
+              Easy and hassle free way to get your device!
             </p>
           </div>
           <div
@@ -701,7 +446,7 @@ export default function Home() {
             <div className="step">
               <span className="step-number">2</span>send it to us
             </div>
-            <div className="step">
+            <div className="step text-blue-400">
               <span className="step-number active">3</span>fast fix
             </div>
             <div className="step">
@@ -731,8 +476,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-1.jpg"
-                      alt=""
+                      src="/images/service/smartphone-repair.jpg"
+                      alt="smartphone repair in kl"
                     />
                   </span>
                   <span className="hover">
@@ -746,11 +491,12 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Data backup &amp; recovery</a>
+                    <a href="/services/smartphone-repair">{`Smartphone repair`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Cracked screen? Battery draining too fast? We fix iPhones &
+                    Androids with high-quality parts and expert precision. Fast,
+                    affordable, and reliable smartphone repair services.
                   </div>
                   <a
                     href="service.html"
@@ -767,8 +513,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-2.jpg"
-                      alt=""
+                      src="/images/service/tablet-repair.jpg"
+                      alt="ipad/tablet repair in kl, malaysia"
                     />
                   </span>
                   <span className="hover">
@@ -782,11 +528,12 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Laptop &amp; Mac Upgrade</a>
+                    <a href="/services/tabler-repair">{`Tablet repair`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Broken screen or charging issues? Get your iPad or Android
+                    tablet fixed quickly with premium repairs. Touchscreen,
+                    battery, and software solutions at great prices!
                   </div>
                   <a
                     href="service.html"
@@ -803,8 +550,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-3.jpg"
-                      alt=""
+                      src="/images/service/computer-repair.jpg"
+                      alt="computer repair in kl"
                     />
                   </span>
                   <span className="hover">
@@ -818,11 +565,11 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Repair Smartphone</a>
+                    <a href="/services/tablet-repair">{`Computer repair`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Slow PC or hardware failure? We repair desktops & laptops
+                    with SSD upgrades, virus removal, and expert diagnostics.
                   </div>
                   <a
                     href="service.html"
@@ -839,8 +586,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-4.jpg"
-                      alt=""
+                      src="/images/service/laptop-repair.jpg"
+                      alt="laptop repair in kl"
                     />
                   </span>
                   <span className="hover">
@@ -854,11 +601,12 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Tablet Repair</a>
+                    <a href="/services/laptop-repair">{`Laptop repair`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Dead pixels? Keyboard unresponsive? From battery
+                    replacements to overheating fixes, we provide fast and
+                    affordable laptop repair services for Mac & Windows.
                   </div>
                   <a
                     href="service.html"
@@ -875,8 +623,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-5.jpg"
-                      alt=""
+                      src="/images/service/nintendo-switch-repair.jpg"
+                      alt="nintendo switch repair in kl"
                     />
                   </span>
                   <span className="hover">
@@ -890,11 +638,11 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Repair PC &amp; Laptop Hardware</a>
+                    <a href="/services/nintendo-switch-repair">{`Nintendo Switch repair`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Joy-Con drift? Console won’t turn on? We repair Nintendo
+                    Switch screens, batteries, and internal components.
                   </div>
                   <a
                     href="service.html"
@@ -911,8 +659,8 @@ export default function Home() {
                   <span className="image-wrap">
                     <img
                       className="image"
-                      src="/images/service/item-6.jpg"
-                      alt=""
+                      src="/images/service/hard-drive-upgrade.jpg"
+                      alt="hard drive upgrade service in kl"
                     />
                   </span>
                   <span className="hover">
@@ -926,11 +674,11 @@ export default function Home() {
                 </a>
                 <div className="item-content">
                   <div className="item-title text-upper">
-                    <a href="service.html">Network Solution</a>
+                    <a href="/services/hard-drive-upgrade">{`Hard Drive Upgrade`}</a>
                   </div>
                   <div className="item-text">
-                    We working hard to build a reputation of customer
-                    satisfaction through technical excellence and friendly staff
+                    Boost your speed with an SSD upgrade! We replace slow hard
+                    drives with high-performance SSDs for faster boot times.
                   </div>
                   <a
                     href="service.html"
@@ -1078,6 +826,100 @@ export default function Home() {
                 <div className="pexx-tt-user-title">Yuri Lye</div>
               </div>
             </div>
+            <div className="item">
+              <div className="simple-testimonial text-center">
+                <div className="tt-title !mb-2">Fast & Professional</div>
+                <div className="tt-rating flex justify-center items-center mb-1">
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div className="tt-content">
+                  Need a hero to fix your Apple devices? For fast, professional,
+                  and honest service, head to Jerry!
+                  <br />
+                  <br />
+                  Jerry fixed the faulty charging port of my son's iPad. He
+                  picked it up and sent it back within a day. The joy on my
+                  son's face is priceless! He also gave us valuable tips on
+                  device care.
+                  <br />
+                  <br />
+                  Will be back very soon to upgrade my MacBook! Thanks, Jerry!
+                </div>
+                <div className="pexx-tt-user-title">Cassie Chong</div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="simple-testimonial text-center">
+                <div className="tt-title !mb-2">
+                  Highly Recommended & Reasonable Price
+                </div>
+                <div className="tt-rating flex justify-center items-center mb-1">
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div className="tt-content">
+                  Highly recommended and very reasonably priced. Had a cracked
+                  iPhone XR (back panel) and it was replaced in just half a day,
+                  for half the cost that was quoted to me by another phone
+                  repair shop.
+                  <br />
+                  <br />
+                  Great aftersales service as well, with some handy tips on how
+                  to care for my phone better.
+                </div>
+                <div className="pexx-tt-user-title">Karen Lim</div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="simple-testimonial text-center">
+                <div className="tt-title !mb-2">
+                  Excellent Service & Hassle-Free
+                </div>
+                <div className="tt-rating flex justify-center items-center mb-1">
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div className="tt-content">
+                  Excellent service! Free pick-up and return within a day!
+                  Hassle-free 👍👍👍 My iPad Air gained a new life now after
+                  changing a charging port and new screen!
+                  <br />
+                  <br />
+                  Very reasonable price which you can’t find in other repair
+                  stores out there! Highly recommended 👍
+                </div>
+                <div className="pexx-tt-user-title">Pauline Yee</div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="simple-testimonial text-center">
+                <div className="tt-title !mb-2">
+                  Detailed & Excellent Service
+                </div>
+                <div className="tt-rating flex justify-center items-center mb-1">
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div className="tt-content">
+                  Thanks so much for fixing the Apple Watch as well as Samsung
+                  phones. Excellent service and so detailed!
+                </div>
+                <div className="pexx-tt-user-title">Su Ong</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1095,8 +937,8 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-btn">
-              <a href="contact-us.html" className="btn btns-white text-upper">
-                Contact Us
+              <a href="/contact" className="btn btns-white text-upper">
+                Contac
               </a>
             </div>
           </div>
