@@ -708,39 +708,31 @@ export default function Home() {
             className="row cols-md rows-xl"
             data-inview-showup="showup-translate-up"
           >
-            <div className="sm-col-3">
-              <div className="counter">
-                <div className="counter-title text-upper">Happy client</div>
-                <div className="counter-value" data-waypoint-counter="3720">
-                  3720
-                </div>
-              </div>
-            </div>
-            <div className="sm-col-3">
+            <div className="sm-col-4">
               <div className="counter">
                 <div className="counter-title text-upper">
-                  Finished projects
+                  Satisfied clients
                 </div>
-                <div className="counter-value" data-waypoint-counter="4170">
-                  4170
+                <div className="counter-value" data-waypoint-counter="232">
+                  200
                 </div>
               </div>
             </div>
-            <div className="sm-col-3">
+            <div className="sm-col-4">
+              <div className="counter">
+                <div className="counter-title text-upper">Phones fixed</div>
+                <div className="counter-value" data-waypoint-counter="194">
+                  194
+                </div>
+              </div>
+            </div>
+            <div className="sm-col-4">
               <div className="counter">
                 <div className="counter-title text-upper">
                   Computer serviced
                 </div>
-                <div className="counter-value" data-waypoint-counter="2730">
-                  2730
-                </div>
-              </div>
-            </div>
-            <div className="sm-col-3">
-              <div className="counter">
-                <div className="counter-title text-upper">Mobile serviced</div>
-                <div className="counter-value" data-waypoint-counter="1510">
-                  1510
+                <div className="counter-value" data-waypoint-counter="93">
+                  93
                 </div>
               </div>
             </div>
