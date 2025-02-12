@@ -23,8 +23,7 @@ export default function Home() {
           className="collapse"
           name="siteheader"
         />
-        {/*
-        <div className="infobar transparent bottom-separator xs-hidden">
+        {/* <div className="infobar transparent bottom-separator xs-hidden">
           <div className="container">
             <div className="cols-list pull-left cols-md">
               <div className="list-item">
@@ -387,17 +386,6 @@ export default function Home() {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#" data-show-block="search">
-                    <i className="fas fa-search" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="menu-item-stick-left">
-                  <a href="#" data-show-block="cart">
-                    <i className="fas fa-shopping-cart" aria-hidden="true"></i>
-                    <span className="item-label-sale item-label">3</span>
-                  </a>
-                </li>
               </ul>
 
               <div className="clearfix"></div>
@@ -420,43 +408,14 @@ export default function Home() {
               <div className="theme-back"></div>
               <div className="pos-center text-center col-12 text-white">
                 <div className="banner-title res-text-xxl">
-                  Fast & Quick Fix
+                  Fast, Reliable Device <br />
+                  Repairs Made Easy
                 </div>
-                <div className="banner-subtitle res-text-md">
-                  Just send valuable laptop, PC, MAC, Mobile,
+                <div className="banner-subtitle res-text-md w-2/5 mx-auto">
+                  Quick turnarounds with convenient pickup and return, clear and
+                  honest diagnostics, and exceptional service at a value you can
+                  trust. Experience hassle-free repairs every step of the way.
                   <br />
-                  {` Gaming Device or Smartphone and we'll take care of it.`}
-                </div>
-              </div>
-            </div>
-
-            <div className="slide">
-              <img
-                src="/images/service/motherboard-2.jpg"
-                alt=""
-                data-cover-image="true"
-                layout="fill"
-              />
-              <div className="theme-back"></div>
-              <div className="pos-center text-center col-12 text-white">
-                <div className="banner-title res-text-xxl">
-                  Any Kind of Upgrades
-                </div>
-              </div>
-            </div>
-
-            <div className="slide">
-              <img
-                src="/images/service/motherboard-3.jpg"
-                alt=""
-                data-cover-image="true"
-                layout="fill"
-              />
-              <div className="theme-back"></div>
-              <div className="pos-center text-center col-12 text-white">
-                <div className="banner-title res-text-xxl">Data Recovery</div>
-                <div className="banner-subtitle res-text-md">
-                  {`You Lose - We'll Find`}
                 </div>
               </div>
             </div>
@@ -495,15 +454,9 @@ export default function Home() {
                         />
                       </div>
 
-                      <div className="price-title">Laptop Repair</div>
-                      <div className="price-subtext">starting at...</div>
-                      <div className="price">$20.00</div>
-                      <a
-                        className="btn-md btns-bordered btn text-upper"
-                        href="#"
-                      >
-                        read more
-                      </a>
+                      <div className="price-title">
+                        Smartphone <br /> Repair
+                      </div>
                     </div>
                   </div>
                   <div className="sm-col-6">
@@ -516,20 +469,14 @@ export default function Home() {
                       <div className="price-image">
                         <img
                           className="image"
-                          src="/images/icons/computer-dark.png"
+                          src="/images/icons/notebook-dark.png"
                           alt=""
                         />
                       </div>
 
-                      <div className="price-title">Computer Repair</div>
-                      <div className="price-subtext">starting at...</div>
-                      <div className="price">$20.00</div>
-                      <a
-                        className="btn-md btns-bordered btn text-upper"
-                        href="#"
-                      >
-                        read more
-                      </a>
+                      <div className="price-title">
+                        Tablet <br /> Repair
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -546,20 +493,14 @@ export default function Home() {
                       <div className="price-image">
                         <img
                           className="image"
-                          src="images/icons/printer-dark.png"
+                          src="/images/icons/notebook-dark.png"
                           alt=""
                         />
                       </div>
 
-                      <div className="price-title">Printer Repair</div>
-                      <div className="price-subtext">starting at...</div>
-                      <div className="price">$110.00</div>
-                      <a
-                        className="btn-md btns-bordered btn text-upper"
-                        href="#"
-                      >
-                        read more
-                      </a>
+                      <div className="price-title">
+                        Laptop <br /> Repair
+                      </div>
                     </div>
                   </div>
                   <div className="sm-col-6">
@@ -572,20 +513,14 @@ export default function Home() {
                       <div className="price-image">
                         <img
                           className="image"
-                          src="images/icons/mobile-dark.png"
+                          src="/images/icons/notebook-dark.png"
                           alt=""
                         />
                       </div>
 
-                      <div className="price-title">Smartphone Repair</div>
-                      <div className="price-subtext">starting at...</div>
-                      <div className="price">$45.00</div>
-                      <a
-                        className="btn-md btns-bordered btn text-upper"
-                        href="#"
-                      >
-                        read more
-                      </a>
+                      <div className="price-title">
+                        Nintendo Switch <br /> Repair
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -603,10 +538,10 @@ export default function Home() {
               >
                 Why choose us
               </h2>
-
+              {/*
               <p data-inview-showup="showup-translate-left">
                 Some Of Our Features
-              </p>
+              </p> */}
             </div>
             <div className="row cols-md rows-lg text-center">
               <div className="md-col-6">
@@ -620,11 +555,11 @@ export default function Home() {
                         <i className="fas fa-rocket" aria-hidden="true"></i>
                       </div>
                       <div className="feature-title text-upper">
-                        We are fast
+                        Quick turnaround
                       </div>
                       <div className="feature-text">
-                        Qualified Workers Lorem Ipsum is simply dummy text of
-                        the printing
+                        Get your devices repaired fast without compromising
+                        quality.
                       </div>
                     </div>
                   </div>
@@ -640,11 +575,10 @@ export default function Home() {
                         ></i>
                       </div>
                       <div className="feature-title text-upper">
-                        No fix, no fee
+                        Convenient Service
                       </div>
                       <div className="feature-text">
-                        Repair on Demand Lorem Ipsum is simply dummy text of the
-                        printing
+                        Enjoy pickup and return options at your convenience
                       </div>
                     </div>
                   </div>
@@ -664,11 +598,11 @@ export default function Home() {
                         ></i>
                       </div>
                       <div className="feature-title text-upper">
-                        30 days warranty
+                        Trusted Expertise
                       </div>
                       <div className="feature-text">
-                        Guaranteed Service Lorem Ipsum is simply dummy text of
-                        the printing
+                        Rely on experienced professionals who prioritize your
+                        satisfaction.
                       </div>
                     </div>
                   </div>
@@ -681,11 +615,10 @@ export default function Home() {
                         <i className="fas fa-users" aria-hidden="true"></i>
                       </div>
                       <div className="feature-title text-upper">
-                        Expert staff
+                        Execeptional Value
                       </div>
                       <div className="feature-text">
-                        Available Anytime Lorem Ipsum is simply dummy text of
-                        the printing
+                        High-quality repairs at prices that deliver real value.
                       </div>
                     </div>
                   </div>
@@ -1068,17 +1001,18 @@ export default function Home() {
       </section>
       <section className="content-section">
         <div className="container">
-          <div className="section-head text-center container-md">
+          <div className="section-head text-center container-md mb-5">
             <h2
               className="section-title text-upper text-lg"
               data-inview-showup="showup-translate-right"
             >
               What people say
             </h2>
-            <p data-inview-showup="showup-translate-left">
+            {/* <p data-inview-showup="showup-translate-left">
               Real customers reviews
-            </p>
+            </p> */}
           </div>
+
           <div
             className="owl-carousel"
             data-inview-showup="showup-translate-up"
@@ -1086,8 +1020,8 @@ export default function Home() {
           >
             <div className="item">
               <div className="simple-testimonial text-center">
-                <div className="tt-title">Great customer support</div>
-                <div className="tt-rating">
+                <div className="tt-title !mb-2">Friend & knowledgable</div>
+                <div className="tt-rating flex justify-center items-center mb-1">
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
@@ -1095,25 +1029,21 @@ export default function Home() {
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Thanks John, I was really pleased with Profix’s service. Would
-                  definitely recommend you and have alredy given out some of
-                  your business cards that were left with me. All the best for
-                  future succes.
+                  Superb service! Friendly, great advises and fair price. Took
+                  less than 6 hours to solve my iPhone problem (including
+                  pick-up and delivering back to me); while the A-official
+                  service center can’t even get me an appointment to send the
+                  phone in for inspection in next 6 days.
                 </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/notebook-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Michale John</div>
-                <div className="pexx-tt-user-subtitle">
-                  Co-Founder, InfoLabs
-                </div>
+                <div className="pexx-tt-user-title">Steve Chan </div>
               </div>
             </div>
             <div className="item">
               <div className="simple-testimonial text-center">
-                <div className="tt-title">Flexible services</div>
-                <div className="tt-rating">
+                <div className="tt-title !mb-2">
+                  Excellent and Prompt Service
+                </div>
+                <div className="tt-rating flex justify-center items-center mb-1">
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
@@ -1121,22 +1051,18 @@ export default function Home() {
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Profix did great job with fixing my laptop for a good price. I
-                  recommend any body with laptop problems, they will give you
-                  excellent service to all his customers.
+                  Jerry changed the battery of our iPad and iPhone, and
+                  reprogrammed our MacBook. His prices are very reasonable. Very
+                  prompt. Picks up from you and drop them back to you either on
+                  the same day or day after. Highly recommended!
                 </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/computer-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Merry Smith</div>
-                <div className="pexx-tt-user-subtitle">CFO, InfoTech</div>
+                <div className="pexx-tt-user-title">Lim Lee</div>
               </div>
             </div>
             <div className="item">
               <div className="simple-testimonial text-center">
-                <div className="tt-title">Excellent team</div>
-                <div className="tt-rating">
+                <div className="tt-title !mb-2">Reliable & Accommodating</div>
+                <div className="tt-rating flex justify-center items-center mb-1">
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
@@ -1144,90 +1070,12 @@ export default function Home() {
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Keep up the excellent work. Thank you so much for your help.
-                  This is simply unbelievable!
+                  Good customer service and very reliable. Jerry is also very
+                  accommodating and work within my schedule to get my phone
+                  fixed despite being late at night and returned my phone within
+                  half an hour. Highly recommended
                 </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/printer-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Michale John</div>
-                <div className="pexx-tt-user-subtitle">
-                  Co-Founder, InfoLabs
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="simple-testimonial text-center">
-                <div className="tt-title">Flexible services</div>
-                <div className="tt-rating">
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                </div>
-                <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Profix did great job with fixing my laptop for a good price. I
-                  recommend any body with laptop problems, they will give you
-                  excellent service to all his customers.
-                </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/mobile-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Merry Smith</div>
-                <div className="pexx-tt-user-subtitle">CFO, InfoTech</div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="simple-testimonial text-center">
-                <div className="tt-title">Great customer support</div>
-                <div className="tt-rating">
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                </div>
-                <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Thanks John, I was really pleased with Profix’s service. Would
-                  definitely recommend you and have alredy given out some of
-                  your business cards that were left with me. All the best for
-                  future succes.
-                </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/computer-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Michale John</div>
-                <div className="pexx-tt-user-subtitle">
-                  Co-Founder, InfoLabs
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="simple-testimonial text-center">
-                <div className="tt-title">Excellent team</div>
-                <div className="tt-rating">
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                  <i className="tt-star fa fa-star" aria-hidden="true"></i>
-                </div>
-                <div className="tt-content">
-                  <div className="tt-quote">&#8220;</div>
-                  Keep up the excellent work. Thank you so much for your help.
-                  This is simply unbelievable!
-                </div>
-                <div className="tt-icon">
-                  <img src="/images/icons/printer-sm.png" alt="" />
-                </div>
-                <div className="pexx-tt-user-title">Michale John</div>
-                <div className="pexx-tt-user-subtitle">
-                  Co-Founder, InfoLabs
-                </div>
+                <div className="pexx-tt-user-title">Yuri Lye</div>
               </div>
             </div>
           </div>
@@ -1240,9 +1088,10 @@ export default function Home() {
               <i className="fas fa-bicycle" aria-hidden="true"></i>
             </div>
             <div className="contact-content">
-              <div className="contact-title">Request free consultation</div>
+              <div className="contact-title">Need a repair or upgrade?</div>
               <div className="text-justify only-xs-text-justify-center">
-                Get answers and advice from people you want it from.
+                Tell us your issue, and we'll send you a free quote—no strings
+                attached!
               </div>
             </div>
             <div className="contact-btn">
@@ -1381,108 +1230,312 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <div className="loader-block">
-        <div className="loader-back alt-bg"></div>
-        <div className="loader-image">
-          <img className="image" src="/images/parts/loader.gif" alt="" />
-        </div>
-      </div> */}
-      <footer className="footer">
-        <div className="container only-xs-text-justify-center">
-          <div className="solid-section">
-            <div className="row cols-md">
-              <div className="sm-col-3">
-                <div className="footer-logo">
-                  {/* <img src="http://placehold.co/180x50" alt="ProFix" /> */}
-                </div>
-                <div className="footer-text sm-text-justify">
-                  Profix is a Premium PSD Template. Best choice for your online
-                  store. Let purchase it to enjoy now
-                </div>
-              </div>
-              <div className="sm-col-8 sm-push-1">
-                <div className="row cols-md">
-                  <div className="sm-col-4">
-                    <div className="footer-title alt-color text-upper">
-                      Partners
-                    </div>
-                    <div>
-                      <a href="https://t31k.com/">T31K</a>
-                    </div>
-                    <div>
-                      <a href="https://getharmonize.app/">Harmonize</a>
-                    </div>
-                    <div>
-                      <a href="https://calorieasy.app/">Calorieasy</a>
-                    </div>
-                    <div>
-                      <a href="https://taroternity.com/">Taroternity</a>
-                    </div>
-                    <div>
-                      <a href="https://listskit.com/">Lists Kit</a>
-                    </div>
-                    <div>
-                      <a href="https://hackapura.com/">Hackapura</a>
-                    </div>{" "}
-                    <div>
-                      <a href="https://hackalumpur.com/">Hackalumpur</a>
-                    </div>{" "}
-                    <div>
-                      <a href="https://clemanteemusic.com/">Clemantee Music</a>
-                    </div>
-                    <div>
-                      <a href="https://mirabelledecoupage.com/">
-                        Mirabelle Decoupage
-                      </a>
-                    </div>
-                    <div>
-                      <a href="https://earthinterior.sg/">
-                        Earth Interior Design
-                      </a>
-                    </div>
-                  </div>
-                  <div className="sm-col-4">
-                    <div className="footer-title alt-color text-upper">
-                      Contacts
-                    </div>
-                    <div className="footer-text">
-                      (555) 555-0312
-                      <br />
-                      info@profix.com
-                    </div>
-                  </div>
-                  <div className="sm-col-4">
-                    <div className="footer-title alt-color text-upper">
-                      Socials
-                    </div>
-                    <div className="cols-list socials cols-sm inline-block">
-                      <a href="#" className="list-item">
-                        <i className="fab fa-facebook-f" aria-hidden="true"></i>
-                      </a>
-                      <a href="#" className="list-item">
-                        <i className="fab fa-twitter" aria-hidden="true"></i>
-                      </a>
-                      <a href="#" className="list-item">
-                        <i className="fab fa-pinterest" aria-hidden="true"></i>
-                      </a>
-                      <a href="#" className="list-item">
-                        <i
-                          className="fab fa-google-plus-g"
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                      <a href="#" className="list-item">
-                        <i className="fab fa-dribbble" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <footer className="bg-white">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+          <div className="sm:flex sm:items-center sm:justify-between px-2">
+            <div>
+              <Image src="/logo.png" alt="logo" width="150" height="0" />
+            </div>
+
+            <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+              <li>
+                <a
+                  href="https://facebook.com/fixitjerry"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Facebook</span>
+
+                  <svg
+                    className="size-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://instagram.com/fixitjerry"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Instagram</span>
+
+                  <svg
+                    className="size-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">GitHub</span>
+
+                  <svg
+                    className="size-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+            <div>
+              <p className="font-medium text-gray-900">Services</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {`Smartphone Repair`}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {`Tablet Repair`}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {`Laptop Repair`}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {`Computer Repair`}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {`Nintendo Switch Repair`}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Company</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    About{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Meet the Team
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Customers Reviews
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Partners</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://getharmonize.app/"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://calorieasy.app/"
+                  >
+                    Track calories with AI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://taroternity.com/"
+                  >
+                    AI Tarot Cards
+                  </a>
+                </li>
+                <li className="absolute opacity-0">
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://hackapura.com/"
+                  >
+                    Hackapura
+                  </a>
+                </li>{" "}
+                <li className="absolute opacity-0">
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://hackalumpur.com/"
+                  >
+                    Hackalumpur
+                  </a>
+                </li>{" "}
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://clemanteemusic.com/"
+                  >
+                    Clemantee Music
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://mirabelledecoupage.com/"
+                  >
+                    Mirabelle Decoupage
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:opacity-75"
+                    href="https://earthinterior.sg/"
+                  >
+                    Earth Interior Design SG
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition absolute opacity-0"
+                    href="https://getharmonize.app/"
+                  >
+                    Harmonize
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition absolute opacity-0"
+                    href="https://hackapura.com/"
+                  >
+                    Hackapura
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition absolute opacity-0"
+                    href="https://hackalumpmur.com/"
+                  >
+                    Hacka Lumpur
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition absolute opacity-0"
+                    href="https://ugcgenai.com/"
+                  >
+                    UGC Gen AI
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Legal</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Repair Warranty Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Refund Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Data Privacy Policy
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="footer-copyrights text-center top-separator ins-md">
-            &copy; 2017 <b>ProFix</b>. All Rights Reserved
-          </div>
+
+          <p className="text-xs text-gray-500">
+            {new Date().getFullYear()} Fix It Jerry Sdn Bhd. All rights
+            reserved.
+          </p>
         </div>
       </footer>
     </>
