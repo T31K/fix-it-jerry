@@ -837,14 +837,14 @@ export default function Home() {
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div className="tt-content">
-                  Need a hero to fix your Apple devices? For fast, professional,
-                  and honest service, head to Jerry!
+                  {`Need a hero to fix your Apple devices? For fast, professional,
+                  and honest service, head to Jerry!`}
                   <br />
                   <br />
-                  Jerry fixed the faulty charging port of my son's iPad. He
+                  {`Jerry fixed the faulty charging port of my son's iPad. He
                   picked it up and sent it back within a day. The joy on my
                   son's face is priceless! He also gave us valuable tips on
-                  device care.
+                  device care.`}
                   <br />
                   <br />
                   Will be back very soon to upgrade my MacBook! Thanks, Jerry!
@@ -932,8 +932,8 @@ export default function Home() {
             <div className="contact-content">
               <div className="contact-title">Need a repair or upgrade?</div>
               <div className="text-justify only-xs-text-justify-center">
-                Tell us your issue, and we'll send you a free quote—no strings
-                attached!
+                {`Tell us your issue, and we'll send you a free quote—no strings
+                attached!`}
               </div>
             </div>
             <div className="contact-btn">
