@@ -79,7 +79,7 @@ export default function Home() {
           <div className="menu-container menu-row">
             <div className="logo">
               <a href="index.html">
-                {/* <img src="http://via.placeholder.com/210x60" alt="ProFix" /> */}
+                {/* <img src="http://placehold.co/210x60" alt="ProFix" /> */}
               </a>
             </div>
             <div className="header-toggler pull-right xs-shown">
@@ -1273,7 +1273,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1282,7 +1282,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1291,7 +1291,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1300,7 +1300,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1309,7 +1309,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1318,7 +1318,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1327,7 +1327,7 @@ export default function Home() {
               <a className="grayscale-link" href="#">
                 <img
                   className="image"
-                  src="http://via.placeholder.com/720x405"
+                  src="http://placehold.co/720x405"
                   alt=""
                 />
               </a>
@@ -1393,7 +1393,7 @@ export default function Home() {
             <div className="row cols-md">
               <div className="sm-col-3">
                 <div className="footer-logo">
-                  {/* <img src="http://via.placeholder.com/180x50" alt="ProFix" /> */}
+                  {/* <img src="http://placehold.co/180x50" alt="ProFix" /> */}
                 </div>
                 <div className="footer-text sm-text-justify">
                   Profix is a Premium PSD Template. Best choice for your online
