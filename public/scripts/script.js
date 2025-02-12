@@ -21,7 +21,7 @@ initMap = false;
   setTimeout(showPage, 60000); // 60000 ~ 1 minute
 
   //Initiate Pentix scripts for all elements within body
-  $("body").pexInit();
+  // $("body").pexInit();
 
   $(".menu-items .toggle-icon").on("click", function () {
     $(this).closest("li").toggleClass("active");
