@@ -41,4 +41,86 @@ const reviews = [
   },
 ];
 
-export { reviews };
+const faq = [
+  {
+    question: "What is Fix It Jerry?",
+    answer: [
+      "Fix It Jerry is your trusted repair service for smartphones, laptops, tablets, and more.",
+      "We specialize in high-quality repairs with fast turnaround times.",
+      "From screen replacements to motherboard fixes, we've got you covered.",
+    ],
+  },
+  {
+    question: "What devices do you repair?",
+    answer: [
+      "We repair smartphones, tablets, laptops, desktop computers, gaming consoles, and more.",
+      "Whether it's an iPhone, Android, MacBook, or Nintendo Switch, we can fix it.",
+      "If you're unsure, contact us for a free assessment.",
+    ],
+  },
+  {
+    question: "How long does a repair take?",
+    answer: [
+      "Repair times vary depending on the issue.",
+      "Screen replacements and battery swaps can be done within an hour.",
+      "More complex repairs, like motherboard fixes, may take 1-3 days.",
+    ],
+  },
+  {
+    question: "Do you use original parts?",
+    answer: [
+      "We use high-quality parts that match or exceed OEM standards.",
+      "Original and aftermarket options are available based on your budget and preference.",
+      "Every part we use is tested for performance and durability.",
+    ],
+  },
+  {
+    question: "How much do repairs cost?",
+    answer: [
+      "Repair costs depend on the issue and device model.",
+      "We offer transparent pricing with no hidden fees.",
+      "Get a free quote by contacting us.",
+    ],
+  },
+  {
+    question: "Do you offer data recovery?",
+    answer: [
+      "Yes! We specialize in data recovery for hard drives, SSDs, and mobile devices.",
+      "If your device isn’t powering on, we may still be able to retrieve your data.",
+      "Contact us for a diagnostic and recovery options.",
+    ],
+  },
+  {
+    question: "Can I upgrade my laptop or PC?",
+    answer: [
+      "Absolutely! We offer RAM, SSD, and GPU upgrades for better performance.",
+      "Upgrading to an SSD can make your device significantly faster.",
+      "Bring your computer in, and we’ll recommend the best upgrade options.",
+    ],
+  },
+  {
+    question: "Is my personal data safe during repairs?",
+    answer: [
+      "Yes! Your privacy is a top priority.",
+      "We do not access or share personal files during repairs.",
+      "For added security, we recommend backing up your data before service.",
+    ],
+  },
+  {
+    question: "Do you offer home or office repair services?",
+    answer: [
+      "Yes, we provide on-site repair services for select issues.",
+      "We recommend contacting us and we'll come pickup the device.",
+    ],
+  },
+  {
+    question: "How do I book a repair?",
+    answer: [
+      "Booking a repair is easy! You can contact us via phone, WhatsApp, or our website.",
+      "Walk-ins are welcome, but scheduling an appointment ensures faster service.",
+      "Tell us the issue, and we’ll guide you through the next steps.",
+    ],
+  },
+];
+
+export { reviews, faq };

@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq";
 import Image from "next/image";
 
 export default function Home() {
@@ -1059,7 +1060,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section className="text-center content-section max-w-3xl mx-auto">
+        \
+        <div className="container">
+          <div className="section-head text-center container-md mb-5">
+            <h2
+              className="section-title text-upper text-lg"
+              data-inview-showup="showup-translate-right"
+            >
+              Frequently Asked Questions
+            </h2>
+            <Faq />
+          </div>
+        </div>
+      </section>
       <footer className="bg-white">
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between px-2">
