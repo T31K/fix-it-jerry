@@ -33,8 +33,8 @@ export const metadata = {
     title: "Fix It Jerry | Smartphone, Tablet, Laptop repairs Kuala Lumpur",
     description:
       "Fix It Jerry offers expert smartphone, tablet, and laptop repair services in Kuala Lumpur. Our skilled technicians provide fast and reliable solutions to get your devices back in perfect working order. Contact us for quality repairs and exceptional customer service.",
-    url: "https://fixitjerry.my",
-    images: ["https://fixitjerry.my/og.png"],
+    url: "https://fixitjerry.com",
+    images: ["https://fixitjerry.com/og.png"],
     locale: "en_US",
     type: "website",
   },
