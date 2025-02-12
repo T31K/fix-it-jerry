@@ -47,14 +47,14 @@ export default function RootLayout({ children }) {
       <body className={`body ${raleway.variable} ${montserrat.variable}`}>
         {children}
       </body>
-      <Script src="/scripts/jquery-3.3.1.min.js" />
-      <Script src="/scripts/parallax.min.js" />
+      <Script src="/scripts/jquery-3.3.1.min.js" async />
+      <Script src="/scripts/parallax.min.js" async />
       <Script src="/scripts/jquery.flexslider-min.js" />
       <Script src="/scripts/owl.carousel.min.js" />
       <Script src="/scripts/shuffle.min.js" />
-      <Script src="/scripts/jquery.waypoints.min.js" />
-      <Script src="/scripts/chosen.jquery.min.js" />
-      <Script src="/scripts/jquery-ui.min.js" />
+      <Script src="/scripts/jquery.waypoints.min.js" async />
+      <Script src="/scripts/chosen.jquery.min.js" async />
+      <Script src="/scripts/jquery-ui.min.js" async />
       <Script src="/scripts/pentix.js" />
       <Script src="/scripts/script.js" />
     </html>
