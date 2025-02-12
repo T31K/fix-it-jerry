@@ -107,9 +107,9 @@ const faq = [
     ],
   },
   {
-    question: "Do you offer home or office repair services?",
+    question: "Where do will you repair the device?",
     answer: [
-      "Yes, we provide on-site repair services for select issues.",
+      "We do both onsite and offsite repairs.",
       "We recommend contacting us and we'll come pickup the device.",
     ],
   },
