@@ -153,11 +153,11 @@ export default function Home() {
               />
               <div className="theme-back"></div>
               <div className="pos-center text-center col-12 text-white">
-                <div className="banner-title res-text-xxl">
+                <h1 className="banner-title res-text-xxl text-white">
                   Fast, Reliable Device <br />
                   Repairs Made Easy
-                </div>
-                <div className="banner-subtitle res-text-md w-4/5 md:w-2/5 mx-auto">
+                </h1>
+                <div className="banner-subtitle res-text-md w-4/5 md:w-2/5 mx-auto text-[#7ad7f9]">
                   Quick turnarounds with convenient pickup and return, clear and
                   honest diagnostics, and exceptional service at a value you can
                   trust. Experience hassle-free repairs every step of the way.
@@ -501,7 +501,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -538,7 +538,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -574,7 +574,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -611,7 +611,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -647,7 +647,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -683,7 +683,7 @@ export default function Home() {
                   </div>
                   <a
                     href="service.html"
-                    className="btn btn-md btns-bordered pull-right text-upper"
+                    className="btn btn-md pull-right text-upper text-white bg-[#a7d153]"
                   >
                     read more
                   </a>
@@ -693,7 +693,7 @@ export default function Home() {
           </div>
           <div className="text-center shift-xl">
             <a
-              className="btn text-upper"
+              className="btn text-upper !bg-[#a7d153] text-white"
               href="services.html"
               data-inview-showup="showup-translate-up"
             >

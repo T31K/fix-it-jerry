@@ -12,10 +12,10 @@ const FaqItem = ({ index, question, answer, activeIndex, setActiveIndex }) => {
   };
 
   return (
-    <li className="bg-none my-2 border-2 rounded-xl border-blue-400">
+    <li className="bg-none my-2 border-2 rounded-xl border-[#7ad7f9]">
       <p
         onClick={handleClick}
-        className="flex flex-row text-blue-400 justify-between items-center text-sm font-semibold p-3 !m-0 cursor-pointer"
+        className="flex flex-row text-[#a7d153] justify-between items-center text-sm font-semibold p-3 !m-0 cursor-pointer"
       >
         <span>{question}</span>
         <IconChevronDown
