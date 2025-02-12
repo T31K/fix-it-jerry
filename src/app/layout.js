@@ -58,15 +58,21 @@ export default function RootLayout({ children }) {
       <body className={`body ${raleway.variable} ${montserrat.variable}`}>
         {children}
       </body>
-      <Script src="/scripts/jquery-3.3.1.min.js" async />
-      <Script src="/scripts/parallax.min.js" async />
-      <Script src="/scripts/jquery.flexslider-min.js" async />
-      <Script src="/scripts/owl.carousel.min.js" />
-      <Script src="/scripts/shuffle.min.js" />
-      <Script src="/scripts/jquery.waypoints.min.js" async />
-      <Script src="/scripts/chosen.jquery.min.js" async />
-      <Script src="/scripts/jquery-ui.min.js" async />
-      <Script src="/scripts/pentix.js" />
+      <Script src="/scripts/jquery-3.3.1.min.js" strategy="beforeInteractive" />
+      <Script src="/scripts/parallax.min.js" strategy="afterInteractive" />
+      <Script
+        src="/scripts/jquery.flexslider-min.js"
+        strategy="afterInteractive"
+      />
+      <Script src="/scripts/owl.carousel.min.js" strategy="afterInteractive" />
+      <Script src="/scripts/shuffle.min.js" strategy="afterInteractive" />
+      <Script
+        src="/scripts/jquery.waypoints.min.js"
+        strategy="afterInteractive"
+      />
+      <Script src="/scripts/chosen.jquery.min.js" strategy="afterInteractive" />
+      <Script src="/scripts/jquery-ui.min.js" strategy="afterInteractive" />
+      <Script src="/scripts/pentix.js" strategy="afterInteractive" />
       <Script src="/scripts/script.js" strategy="afterInteractive" />
     </html>
   );
