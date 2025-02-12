@@ -837,10 +837,6 @@ export default function Home() {
                   <i className="tt-star fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div className="tt-content">
-                  {`Need a hero to fix your Apple devices? For fast, professional,
-                  and honest service, head to Jerry!`}
-                  <br />
-                  <br />
                   {`Jerry fixed the faulty charging port of my son's iPad. He
                   picked it up and sent it back within a day. The joy on my
                   son's face is priceless! He also gave us valuable tips on
