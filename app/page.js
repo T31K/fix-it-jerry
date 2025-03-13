@@ -289,7 +289,6 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
-        <Services />
 
         <section className="no-top">
           <div className="container">
