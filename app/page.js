@@ -652,13 +652,13 @@ const GadgetFixPage = () => {
                     <div className="pt-4 relative">
                       <h4>
                         <a className="text-dark" href="blog-single.html">
-                          The Latest Innovations: Top Gadgets to Watch in 2024
+                          {`The Latest Innovations: Top Gadgets to Watch in 2024`}
                         </a>
                       </h4>
                       <p className="mb-0">
-                        This month has been bustling with exciting developments
+                        {`This month has been bustling with exciting developments
                         in the world of gadgets. From groundbreaking new devices
-                        to innovative...
+                        to innovative...`}
                       </p>
                     </div>
                   </div>
@@ -695,10 +695,10 @@ const GadgetFixPage = () => {
               <img src="images/logo.webp" className="w-150px" alt="" />
               <div className="spacer-20"></div>
               <p>
-                We’re passionate about keeping your gadgets in top shape. Our
+                {`We’re passionate about keeping your gadgets in top shape. Our
                 dedicated team of experienced technicians combines technical
                 expertise with exceptional customer service to provide reliable
-                repairs for all your electronic devices.
+                repairs for all your electronic devices.`}
               </p>
               <div className="social-icons mb-sm-30">
                 <a href="#">
@@ -775,8 +775,9 @@ const GadgetFixPage = () => {
             <div className="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
               <div className="widget">
                 <div className="fw-bold text-white">
-                  <i className="icofont-clock-time me-2 id-color-2"></i>We're
-                  Open
+                  <i className="icofont-clock-time me-2 id-color-2"></i>
+                  {`We're
+                  Open`}
                 </div>
                 Monday - Saturday 08.00 - 18.00
                 <div className="spacer-20"></div>
