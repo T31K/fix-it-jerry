@@ -95,7 +95,7 @@ const randomUsp = [
 const repairItems = [
   {
     title: "Smartphone",
-    imgSrc: "images/svg-black/iphone-svgrepo-com.svg",
+    imgSrc: "/images/services/phone.webp",
     description:
       "Water damage, power supply, network & connectivity, audio IC, backlight IC, charging IC, touch IC, Face ID, Touch ID, LCD, touchscreen, battery, camera, back glass",
     services: [
@@ -115,7 +115,7 @@ const repairItems = [
   },
   {
     title: "Airpods",
-    imgSrc: "images/svg-black/tablet-svgrepo-com.svg",
+    imgSrc: "/images/services/airpods.webp",
     description:
       "Apple, Samsung, Microsoft, Lenovo, Huawei, Asus, Google, Acer, Dell, HP, Sony, Xiaomi, Alcatel, LG",
     services: [
@@ -135,7 +135,7 @@ const repairItems = [
   },
   {
     title: "iPod",
-    imgSrc: "images/svg-black/macbook-pro-svgrepo-com.svg",
+    imgSrc: "/images/services/ipod.webp",
     description:
       "Apple, Dell, HP, Lenovo, Asus, Acer, Microsoft, MSI, Razer, Samsung, LG, Toshiba, Huawei, Google, Alienware",
     services: [
@@ -155,7 +155,7 @@ const repairItems = [
   },
   {
     title: "Apple Watch",
-    imgSrc: "images/svg-black/software-svgrepo-com.svg",
+    imgSrc: "/images/services/apple_watch.webp",
     description:
       "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
     services: [
@@ -175,7 +175,7 @@ const repairItems = [
   },
   {
     title: "Tablet",
-    imgSrc: "images/svg-black/software-svgrepo-com.svg",
+    imgSrc: "/images/services/ipad.webp",
     description:
       "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
     services: [
@@ -195,7 +195,7 @@ const repairItems = [
   },
   {
     title: "Laptop",
-    imgSrc: "images/svg-black/software-svgrepo-com.svg",
+    imgSrc: "/images/services/macbook.webp",
     description:
       "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
     services: [
@@ -215,7 +215,7 @@ const repairItems = [
   },
   {
     title: "Nintendo Switch",
-    imgSrc: "images/svg-black/software-svgrepo-com.svg",
+    imgSrc: "/images/services/nintendo_switch.webp",
     description:
       "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
     services: [
@@ -235,7 +235,7 @@ const repairItems = [
   },
   {
     title: "Desktop",
-    imgSrc: "images/svg-black/software-svgrepo-com.svg",
+    imgSrc: "/images/services/desktop.webp",
     description:
       "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
     services: [

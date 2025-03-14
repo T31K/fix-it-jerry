@@ -6,6 +6,7 @@ import {
   IconArrowUp,
   IconDownload,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 // Mapping of service types to Tabler icons
 const serviceTypeIcons = {
@@ -14,7 +15,6 @@ const serviceTypeIcons = {
   upgrade: IconArrowUp,
   installation: IconDownload,
 };
-
 export default function Services() {
   return (
     <section className="py-12">
@@ -39,9 +39,11 @@ export default function Services() {
             >
               <div className="p-40 py-0 h-100 mb-sm-30">
                 {/* Device Icon and Title */}
-                <img
+                <Image
                   src={item.imgSrc}
-                  className="w-70px mb-3"
+                  width={138}
+                  height={138}
+                  className="mb-3"
                   alt={item.title}
                 />
                 <p className="fw-bold mb-4">{item.title}</p>
