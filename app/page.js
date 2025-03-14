@@ -1,8 +1,9 @@
 import React from "react";
-import { reviews, features } from "@/data";
+import { reviews, features, repairItems } from "@/data";
 
+import Hero from "@/components/hero";
 import Services from "@/components/services";
-
+import Image from "next/image";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
@@ -26,12 +27,12 @@ const GadgetFixPage = () => {
                     <div className="topbar-widget me-5">
                       <a href="#">
                         <i className="icofont-location-pin"></i>Our Workshop:
-                        100 S Main St, New York, NY
+                        Desa Parkcity, Kuala Lumpur, Malaysia
                       </a>
                     </div>
                     <div className="topbar-widget me-5">
                       <a href="#">
-                        <i className="icofont-clock-time"></i>Monday - Saturday
+                        <i className="icofont-clock-time"></i>Monday - Sunday
                         08.00 - 18.00
                       </a>
                     </div>
@@ -44,19 +45,13 @@ const GadgetFixPage = () => {
                       Book a Repair
                     </a>
                     <div className="social-icons">
-                      <a href="#">
+                      <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
+                        <i className="fa-brands fa-whatsapp fa-lg"></i>
+                      </a>
+                      <a href="https://facebook.com/fixitjerry">
                         <i className="fa-brands fa-facebook fa-lg"></i>
                       </a>
-                      <a href="#">
-                        <i className="fa-brands fa-x-twitter fa-lg"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-youtube fa-lg"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-pinterest fa-lg"></i>
-                      </a>
-                      <a href="#">
+                      <a href="https://instagram.com/fixitjerry">
                         <i className="fa-brands fa-instagram fa-lg"></i>
                       </a>
                     </div>
@@ -163,65 +158,7 @@ const GadgetFixPage = () => {
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
 
-        <section className="section-dark text-light no-top no-bottom position-relative z-1000">
-          <div className="v-center">
-            <div className="swiper">
-              <div className="swiper-wrapper">
-                {[5].map((num, index) => (
-                  <div key={index} className="swiper-slide">
-                    <div
-                      className="swiper-inner"
-                      data-bgimage={`url(images/slider/hero.webp)`}
-                    >
-                      <div className="sw-caption">
-                        <div className="container">
-                          <div className="row gx-5 align-items-center justify-content-between">
-                            <div className="spacer-double"></div>
-                            <div className="col-lg-5 mb-sm-30">
-                              <div className="subtitle s2 mb-4">
-                                Number 1 Device Repair in KL
-                              </div>
-                              <h1 className="slider-title !font-bold !text-7xl">
-                                {index === 0
-                                  ? "Fast, Reliable Device Repairs Made Easy"
-                                  : "Innovative Solutions Meet Skilled expertise"}
-                              </h1>
-                              <p className="slider-teaser">
-                                Your trusted partner in expert device repair.
-                                Where quality meets precision, and your gadgets
-                                find a second life!
-                              </p>
-                              <div className="spacer-10"></div>
-                              <a
-                                className="btn-main btn-line fx-slide mb10 mb-3"
-                                href="book-repair.html"
-                              >
-                                <span>Book a Repair</span>
-                              </a>
-                            </div>
-                            <div className="col-lg-6 sm-hide">
-                              <img
-                                src={`images/slider/${
-                                  index === 0 ? "laptop" : "bulb"
-                                }.webp`}
-                                className="w-100 p-lg-5 p-0"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="sw-overlay op-7"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="swiper-pagination"></div>
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         <Services />
 
@@ -694,26 +631,17 @@ const GadgetFixPage = () => {
               <img src="images/logo.webp" className="w-150px" alt="" />
               <div className="spacer-20"></div>
               <p>
-                {`We’re passionate about keeping your gadgets in top shape. Our
-                dedicated team of experienced technicians combines technical
-                expertise with exceptional customer service to provide reliable
-                repairs for all your electronic devices.`}
+                {`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}
               </p>
               <div className="social-icons mb-sm-30">
-                <a href="#">
-                  <i className="fa-brands fa-facebook-f"></i>
+                <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
+                  <i className="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="#">
-                  <i className="fa-brands fa-x-twitter"></i>
+                <a href="https://facebook.com/fixitjerry">
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#">
-                  <i className="fa-brands fa-discord"></i>
-                </a>
-                <a href="#">
-                  <i className="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="#">
-                  <i className="fa-brands fa-youtube"></i>
+                <a href="https://instagram.com/fixitjerry">
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </div>
             </div>
@@ -778,19 +706,19 @@ const GadgetFixPage = () => {
                   {`We're
                   Open`}
                 </div>
-                Monday - Saturday 08.00 - 18.00
+                Monday - Sunday 08.00 - 18.00
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="icofont-location-pin me-2 id-color-2"></i>
                   Workshop Location
                 </div>
-                100 S Main St, New York, NY
+                Desa Parkcity, Kuala Lumpur Malaysia
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="icofont-envelope me-2 id-color-2"></i>Send a
                   Message
                 </div>
-                contact@gadgetfix.com
+                hello@fixitjerry.com
               </div>
             </div>
           </div>
@@ -801,15 +729,15 @@ const GadgetFixPage = () => {
               <div className="col-md-12">
                 <div className="de-flex">
                   <div className="de-flex-col">
-                    Copyright {new Date().getFullYear()} - Fix It Jerry | All
+                    Copyright {new Date().getFullYear()} - Fix It Jerry - All
                     Rights Reserved
                   </div>
                   <ul className="menu-simple">
                     <li>
-                      <a href="#">Terms &amp; Conditions</a>
+                      <a href="/terms-and-conditions">Terms &amp; Conditions</a>
                     </li>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <a href="/privacy-policy">Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
@@ -827,68 +755,53 @@ const GadgetFixPage = () => {
         </div>
         <div id="extra-content">
           <img src="images/logo.webp" className="w-150px" alt="" />
-          <div className="spacer-30-line"></div>
+          {/* <div className="spacer-30-line"></div>
           <h5 className="mb-3">Our Services</h5>
           <div className="row g-2">
-            {[
-              { title: "Phone Repair", img: "iphone-svgrepo-com.svg" },
-              { title: "Tablet Repair", img: "tablet-svgrepo-com.svg" },
-              { title: "Laptop Repair", img: "macbook-pro-svgrepo-com.svg" },
-              { title: "Game Console", img: "game-svgrepo-com.svg" },
-              { title: "Smartwatch", img: "smartwatch-svgrepo-com.svg" },
-              { title: "Software Repair", img: "software-svgrepo-com.svg" },
-            ].map((service, index) => (
-              <div key={index} className="col-lg-4 col-sm-4">
-                <a
-                  className="p-0 py-2 text-center d-block"
-                  href="single-repair.html"
-                >
-                  <img
-                    src={`images/svg-color/${service.img}`}
-                    className="w-50px mb-3"
-                    alt=""
+            {repairItems.map((item, index) => (
+              <div
+                key={index}
+                className="col-lg-3 col-md-6 wow fadeInRight"
+                data-wow-delay={`${index * 0.2}s`}
+              >
+                <div className="h-100 mb-sm-30">
+                  <Image
+                    src={item.imgSrc}
+                    width={250}
+                    height={250}
+                    className="mb-3 bg-green-400 rounded-full"
+                    alt={item.title}
                   />
-                  <h6 className="mb-0">{service.title}</h6>
-                </a>
+                </div>
               </div>
             ))}
-          </div>
-          <div className="spacer-30-line"></div>
-          <h5>Contact Us</h5>
+          </div> */}
+          <h5 className="mt-12">Visit Us</h5>
           <div>
-            <i className="icofont-clock-time me-2 op-5"></i>Monday - Saturday
+            <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
             08.00 - 18.00
           </div>
           <div>
-            <i className="icofont-location-pin me-2 op-5"></i>100 S Main St, New
-            York,{" "}
+            <i className="icofont-location-pin me-2 op-5"></i>Desa Parkcity,
+            Kuala Lumpur Malaysia
           </div>
           <div>
-            <i className="icofont-envelope me-2 op-5"></i>contact@gadgetfix.com
+            <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
           </div>
           <div className="spacer-30-line"></div>
           <h5>About Us</h5>
-          <p>
-            We’re passionate about keeping your gadgets in top shape. Our
-            dedicated team of experienced technicians combines technical
-            expertise with exceptional customer service to provide reliable
-            repairs for all your electronic devices.
-          </p>
+          <p>{`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}</p>
+          <div className="spacer-30-line"></div>
+          <h5>Contact Us</h5>
           <div className="social-icons">
-            <a href="#">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#">
+            <a href="https://wa.me/+60183646909">
               <i className="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/fixitjerry">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixitjerry/">
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>

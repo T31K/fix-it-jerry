@@ -7,6 +7,7 @@ import {
   IconDownload,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { WordRotate } from "@/components/magicui/word-rotate";
 
 // Mapping of service types to Tabler icons
 const serviceTypeIcons = {
@@ -23,9 +24,15 @@ export default function Services() {
         <div className="row g-4 mb-2 justify-content-center">
           <div className="col-lg-5 text-center">
             <div className="subtitle s2 wow fadeInUp mb-2">Top Reasons</div>
-            <h2 className="wow fadeInUp" data-wow-delay=".2s">
-              Devices We Repair
-            </h2>
+            <div className="flex justify-center gap-x-1 w-full">
+              <h2 className="wow fadeInUp max-w-[210px]" data-wow-delay=".2s">
+                Devices We
+              </h2>{" "}
+              <WordRotate
+                className="leading-[30px] text-[#C6E76C] -400 max-w-[150px] w-[150px]"
+                words={["Repair", "Replace", "Upgrade", "Install"]}
+              />
+            </div>
           </div>
         </div>
 
