@@ -44,7 +44,7 @@ export default function Services() {
                             <span>Book a Repair</span>
                           </a>
                         </div>
-                        <div className="col-lg-6 sm-hide">
+                        <div className="col-lg-6 sm-hiden opacity-0">
                           <img
                             src={`images/slider/${
                               index === 0 ? "laptop" : "bulb"
