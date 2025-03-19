@@ -41,7 +41,7 @@ export default function Services() {
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-lg-3 col-md-6 wow fadeInRight"
+              className="col-lg-3 col-md-6"
               data-wow-delay={`${index * 0.2}s`}
             >
               <div className="p-40 py-0 h-100 mb-sm-30">
@@ -63,7 +63,12 @@ export default function Services() {
                         {IconComponent && (
                           <IconComponent size={20} className="me-2" />
                         )}
-                        <span>{srv.service}</span>
+                        <a
+                          href={srv.slug || "#"}
+                          className="hover:underline text-gray-700"
+                        >
+                          {srv.service}
+                        </a>
                       </li>
                     );
                   })}
@@ -71,11 +76,11 @@ export default function Services() {
 
                 {/* Read More Link */}
                 <a
-                  className="btn-plus mt-3 d-inline-block"
+                  className="btn-plus mt-3 d-inline-block "
                   href="single-repair.html"
                 >
                   <i className="fa fa-plus"></i>
-                  <span>Read more</span>
+                  <span>Learn more</span>
                 </a>
               </div>
             </div>
