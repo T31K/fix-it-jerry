@@ -35,12 +35,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${manrope.variable} antialiased`}>
         {children}
-        <Script src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
-        <Script src="/js/plugins.js"></Script>
-        <Script src="/js/designesia.js"></Script>
-        <Script src="/js/swiper.js"></Script>
-        <Script src="/js/custom-marquee.js"></Script>
-        <Script src="/js/custom-swiper-1.js"></Script>
+        <Script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          strategy="beforeInteractive"
+        ></Script>
+        <Script src="/js/plugins.js" strategy="afterInteractive"></Script>
+        <Script src="/js/designesia.js" strategy="afterInteractive"></Script>
+        <Script src="/js/swiper.js" strategy="afterInteractive"></Script>
+        <Script
+          src="/js/custom-marquee.js"
+          strategy="afterInteractive"
+        ></Script>
+        <Script
+          src="/js/custom-swiper-1.js"
+          strategy="afterInteractive"
+        ></Script>
       </body>
     </html>
   );
