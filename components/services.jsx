@@ -37,14 +37,14 @@ export default function Services() {
         </div>
 
         {/* Devices Grid */}
-        <div className="row g-0 grid-divider dark gap-y-12">
+        <div className="row g-0 grid-divider dark gapy-2 md:gap-y-12">
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-lg-3 col-md-6"
+              className="col-6 col-lg-3"
               data-wow-delay={`${index * 0.2}s`}
             >
-              <div className="p-40 py-0 h-100 mb-sm-30">
+              <div className="px-2 md:p-40 py-0 h-100 mb-sm-30">
                 {/* Device Icon and Title */}
                 <Image
                   src={item.imgSrc}
@@ -53,7 +53,9 @@ export default function Services() {
                   className="mb-3"
                   alt={item.title}
                 />
-                <p className="fw-bold mb-4">{item.title}</p>
+                <p className="fw-bold mb-2 md:mb-4 text-center md:text-left">
+                  {item.title}
+                </p>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0">
                   {item.services.map((srv, i) => {
@@ -65,7 +67,7 @@ export default function Services() {
                         )}
                         <a
                           href={srv.slug || "#"}
-                          className="hover:underline text-gray-700"
+                          className="hover:underline text-gray-700 text-sm md:text-lg mb-1.5 md:mb-0"
                         >
                           {srv.service}
                         </a>

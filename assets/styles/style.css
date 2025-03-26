@@ -8781,10 +8781,6 @@ body.dark-scheme::-webkit-scrollbar-track,
   display: none;
 }
 
-.border {
-  border-color: #EFEFEF !important;
-}
-
 .tparrows {
   background: none !important;
 }
