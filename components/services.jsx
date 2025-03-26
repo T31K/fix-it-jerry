@@ -50,12 +50,10 @@ export default function Services() {
                   src={item.imgSrc}
                   width={138}
                   height={138}
-                  className="mb-3"
+                  className="mb-3 "
                   alt={item.title}
                 />
-                <p className="fw-bold mb-2 md:mb-4 text-center md:text-left">
-                  {item.title}
-                </p>
+                <p className="fw-bold mb-2 md:mb-4 ">{item.title}</p>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0">
                   {item.services.map((srv, i) => {
