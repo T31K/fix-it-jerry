@@ -5,9 +5,11 @@ import "@/assets/styles/swiper.css";
 import "@/assets/styles/plugins.css";
 import "@/assets/styles/coloring.css";
 import "@/assets/styles/style.css";
+import "./styles/hero.css";
 import Script from "next/script";
 
 import { Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const manrope = Manrope({
   subsets: ["latin"],
