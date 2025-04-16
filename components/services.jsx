@@ -56,9 +56,13 @@ export default function Services() {
                   className="mb-3 "
                   alt={item.title}
                 />
-                <p className="fw-bold mb-2 md:mb-4 ">{item.title}</p>
+                <div className="flex flex-col items-center md:items-start mb-2 md:mb-4">
+                  <p className="fw-bold !m-0 !mr-2 text-xl text-green-600">
+                    {item.title}
+                  </p>
+                </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0">
+                <ul className="mb-0 !p-0 ">
                   {item.services.map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
@@ -68,7 +72,7 @@ export default function Services() {
                         )}
                         <a
                           href={srv.slug || "#"}
-                          className="hover:underline text-gray-700 text-sm md:text-lg mb-1.5 md:mb-0"
+                          className="hover:underline text-gray-700 text-md md:text-lg md:mb-0"
                         >
                           {srv.service}
                         </a>
@@ -78,13 +82,6 @@ export default function Services() {
                 </ul>
 
                 {/* Read More Link */}
-                <a
-                  className="btn-plus mt-3 d-inline-block "
-                  href="single-repair.html"
-                >
-                  <i className="fa fa-plus"></i>
-                  <span>Learn more</span>
-                </a>
               </div>
             </div>
           ))}

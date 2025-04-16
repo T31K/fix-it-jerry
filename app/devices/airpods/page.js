@@ -1,14 +1,9 @@
 import { features, repairItems } from "@/data";
-import ReviewBlock from "@/components/ReviewBlock";
-export default function page({ params }) {
-  // Find the service that matches the slug
-  const { slug } = params;
-  const items = [
-    ...repairItems[0].services.filter(
-      (item) => item.service_type === "replacement"
-    ),
-  ];
-  const item = items.find((item) => item.slug.split("/").pop() === slug);
+import InnerSideBar from "@/components/InnerSideBar";
+export default function page() {
+  // Get the smartphone item from repairItems
+  const airpodItem = repairItems.find((item) => item.title === "Airpods");
+
   return (
     <div id="wrapper">
       <div className="float-text show-on-scroll">
@@ -97,23 +92,8 @@ export default function page({ params }) {
                       </a>
                       <ul>
                         <li>
-                          <a className="menu-item" href="/services/repair">
-                            Repair
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/replacement">
-                            Replacement
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/upgrade">
-                            Upgrades
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/recovery">
-                            Recovery
+                          <a className="menu-item" href="/services/smartphone">
+                            Smartphone
                           </a>
                         </li>
                       </ul>
@@ -168,9 +148,7 @@ export default function page({ params }) {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">
-                  {item?.title?.split("|")[0]}
-                </h1>
+                <h1 className="md:whitespace-nowrap">Airpods Repair</h1>
               </div>
             </div>
           </div>
@@ -180,12 +158,11 @@ export default function page({ params }) {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="/devices">Devices</a>
               </li>
               <li>
-                <a href="/services/repair">Repair</a>
+                <a href="/services/airpods">Airpods</a>
               </li>
-              <li className="/services/repair/smartphone">Smartphone</li>
             </ul>
           </div>
           <div className="sw-overlay"></div>
@@ -195,145 +172,60 @@ export default function page({ params }) {
         <section>
           <div className="container">
             <div className="row g-4">
-              <div className="col-lg-3 hidden md:block">
-                <div className="me-lg-3">
-                  {/* navigation begin */}
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-dark text-light d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/phone.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Phone Repair</h4>
-                    <i className="icofont-long-arrow-right fs-24"></i>
-                  </a>
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-grey d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/ipad.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Tablet Repair</h4>
-                    <i className="icofont-long-arrow-right text-dark fs-24"></i>
-                  </a>
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-grey d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/macbook.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Laptop Repair</h4>
-                    <i className="icofont-long-arrow-right text-dark fs-24"></i>
-                  </a>
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-grey d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/nintendo_switch.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Game Console</h4>
-                    <i className="icofont-long-arrow-right text-dark fs-24"></i>
-                  </a>
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-grey d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/airpods.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Smartwatch</h4>
-                    <i className="icofont-long-arrow-right text-dark fs-24"></i>
-                  </a>
-                  <a
-                    href="single-repair-dark.html"
-                    className="bg-grey d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center"
-                  >
-                    <img
-                      src="/images/services/desktop.webp"
-                      className="w-[40px] me-3"
-                      alt=""
-                    />
-                    <h4 className="mb-0 flex-grow-1">Software Repair</h4>
-                    <i className="icofont-long-arrow-right text-dark fs-24"></i>
-                  </a>
-                  {/* navigation end */}
-
-                  <div className="spacer-double"></div>
-
-                  {/* testimonials end */}
-                  <ReviewBlock />
-
-                  <div className="spacer-double"></div>
-
-                  {/* cta banner begin */}
-                  <div className="p-40 rounded-2 overflow-hidden position-relative jarallax text-light">
-                    <img
-                      src="/images/background/1.webp"
-                      className="jarallax-img"
-                      alt=""
-                    />
-                    <div className="row align-items-center relative z-2">
-                      <div className="col-lg-12 text-center">
-                        <div className="subtitle s2 wow fadeInUp mb-3">
-                          {`#1 Phone Repair in KL`}
-                        </div>
-                        <h2 className="mb20 wow fadeInUp" data-wow-delay=".2s">
-                          {`Don't worry, send your smartphone to us`}{" "}
-                        </h2>
-                        <p>
-                          {`Let’s get your phone working like new again—visit us
-                            today or contact us to schedule your repair!`}
-                        </p>
-                        <a
-                          className="btn-main bg-color-2 fx-slide text-dark"
-                          href="book-repair.html"
-                        >
-                          <span>Book a Repair</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="sw-overlay"></div>
-                  </div>
-                  {/* cta banner end  */}
-
-                  <div className="spacer-double"></div>
-                </div>
-              </div>
+              <InnerSideBar activeLink="airpods" />
 
               <section className="col-lg-9 !py-0">
-                <div className="row space-y-4">
-                  {item?.sections.map((section, index) => (
-                    <div key={index}>
-                      <div className="col-sm-12 col-md-12">
-                        <h2>{section.heading}</h2>
-                        {Array.isArray(section.content) ? (
-                          <ul className="list-disc">
-                            {section.content.map((content, idx) => (
-                              <li key={idx}>{content}</li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p>{section.content}</p>
-                        )}
-                      </div>
-                      <div className="spacer-single"></div>
-                    </div>
-                  ))}
+                <div className="row">
+                  <div className="col-sm-12 col-md-12 mb-4">
+                    <h2 className="!text-4xl">Airpods Services</h2>
+                    <p>{airpodItem?.description}</p>
+                  </div>
                 </div>
+
+                {airpodItem?.services.map((service, serviceIndex) => (
+                  <div key={serviceIndex} className="row mb-5">
+                    <div className="col-sm-12 col-md-12">
+                      <h2 className="text-3xl font-bold mb-3">
+                        <a
+                          href={`/${service.slug}`}
+                          className="text-color hover:text-color-2"
+                        >
+                          {service.service}{" "}
+                          {service.service_type && `(${service.service_type})`}
+                        </a>
+                      </h2>
+
+                      {service.meta_description && (
+                        <p className="mb-4">{service.meta_description}</p>
+                      )}
+
+                      {/* Nested loop for sections within each service */}
+                      {service.sections &&
+                        service.sections.map((section, sectionIndex) => (
+                          <div key={sectionIndex} className="mb-4">
+                            <h3 className="text-xl font-semibold mb-2">
+                              {section.heading}
+                            </h3>
+                            {Array.isArray(section.content) ? (
+                              <ul className="list-disc pl-5">
+                                {section.content.map(
+                                  (content, contentIndex) => (
+                                    <li key={contentIndex} className="mb-1">
+                                      {content}
+                                    </li>
+                                  )
+                                )}
+                              </ul>
+                            ) : (
+                              <p>{section.content}</p>
+                            )}
+                          </div>
+                        ))}
+
+                      <div className="border-b border-gray-200 my-4"></div>
+                    </div>
+                  </div>
+                ))}
 
                 <div className="row g-0">
                   <div className="col-lg-8">
@@ -620,32 +512,16 @@ export default function page({ params }) {
   );
 }
 
-export async function generateStaticParams() {
-  return repairItems[0].services
-    .filter((item) => item.service_type === "replacement")
-    .map((item) => ({
-      slug: item.slug.split("/").pop(),
-    }));
-}
-
-export async function generateMetadata({ params }) {
-  const { slug } = params;
-  const items = [
-    ...repairItems[0].services.filter(
-      (item) => item.service_type === "replacement"
-    ),
-  ];
-  const item = items.find((item) => item.slug.split("/").pop() === slug);
-
-  if (!item) return { title: "Item Not Found" };
+export async function generateMetadata() {
+  const airpodItem = repairItems.find((item) => item.title === "Airpods");
 
   return {
-    title: `${item.title} | Fix It Jerry | #1 Phone, Devices, Gadget Repair in KL`,
-    description: `${item.description}`,
+    title: `Airpods Repair | Fix It Jerry | #1 Phone, Devices, Gadget Repair in KL`,
+    description: `${airpodItem?.description}`,
     openGraph: {
-      title: `${item.title} | Fix It Jerry | #1 Phone, Devices, Gadget Repair in KL`,
-      description: `${item.description}`,
-      url: `https://fixitjerry.com/services/services/repair/smartphone/${slug}`,
+      title: `Airpods Repair | Fix It Jerry | #1 Phone, Devices, Gadget Repair in KL`,
+      description: `${airpodItem?.description}`,
+      url: `https://fixitjerry.com/services/devices/smartphone`,
       images: "https://fixitjerry.com/og.png",
       locale: "en_US",
       type: "website",
@@ -664,8 +540,8 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.title} | #1 Phone, Devices, Gadget Repair in KL`,
-      description: `${item.description}`,
+      title: `Airpods Repair | #1 Phone, Devices, Gadget Repair in KL`,
+      description: `${airpodItem?.description}`,
       images: ["https://fixitjerry.com/og.png"],
     },
   };

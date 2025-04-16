@@ -101,7 +101,7 @@ const repairItems = [
     services: [
       {
         service_type: "repair",
-        service: "Water Damage",
+        service: "Water damage",
         slug: "services/repair/smartphone/water-damage",
         title: "Smartphone Water Damage Repair | Fix It Jerry",
         meta_description:
@@ -149,7 +149,7 @@ const repairItems = [
       },
       {
         service_type: "repair",
-        service: "Power Supply",
+        service: "Power supply",
         slug: "services/repair/smartphone/power-supply",
         title: "Smartphone Power Supply Repair | Fix It Jerry",
         meta_description:
@@ -197,7 +197,7 @@ const repairItems = [
       },
       {
         service_type: "repair",
-        service: "Network Issue",
+        service: "Network issue",
         slug: "services/repair/smartphone/network-issue",
         title: "Smartphone Network Issue Repair | Fix It Jerry",
         meta_description:
@@ -245,10 +245,9 @@ const repairItems = [
           },
         ],
       },
-
       {
         service_type: "replacement",
-        service: "LCD",
+        service: "LCD/touchscreen",
         slug: "services/replacement/smartphone/lcd",
         title: "Smartphone LCD Screen Replacement | Fix It Jerry",
         meta_description:
@@ -260,7 +259,7 @@ const repairItems = [
               "The LCD (Liquid Crystal Display) is responsible for displaying images on your phone. Damage to the LCD can cause dead pixels, lines, or a completely black screen, requiring a full replacement.",
           },
           {
-            heading: "Common Issues That Require LCD Replacement",
+            heading: "Common Issues That Require LCD",
             content: [
               "Cracked or shattered screen.",
               "Unresponsive touch or ghost touch.",
@@ -297,59 +296,6 @@ const repairItems = [
           },
         ],
       },
-      //  replacement
-      {
-        service_type: "replacement",
-        service: "Touchscreen",
-        slug: "services/replacement/smartphone/touchscreen",
-        title: "Smartphone Touchscreen Replacement | Fix It Jerry",
-        meta_description:
-          "Is your phone's touchscreen unresponsive or erratic? Fix It Jerry offers professional smartphone touchscreen replacement. Fast service with high-quality parts!",
-        sections: [
-          {
-            heading: "What is a Touchscreen Replacement?",
-            content:
-              "The touchscreen digitizer is responsible for detecting and processing touch inputs. If it's damaged or malfunctioning, your phone may not respond to touches correctly, requiring a replacement.",
-          },
-          {
-            heading: "Common Issues That Require Touchscreen Replacement",
-            content: [
-              "Touchscreen is completely unresponsive.",
-              "Ghost touch (phone registers touches without input).",
-              "Delayed or laggy touch response.",
-              "Cracked glass causing touch issues.",
-              "Multi-touch not working properly.",
-              "Dead spots where touch is not detected.",
-            ],
-          },
-          {
-            heading: "What to Do If Your Touchscreen is Not Working",
-            content: [
-              "Restart your phone to check if the issue is temporary.",
-              "Ensure your screen is clean and free from moisture.",
-              "Try using your phone without a screen protector.",
-              "Check if touch works in safe mode (to rule out software issues).",
-              "If none of these work, professional touchscreen replacement is needed.",
-            ],
-          },
-          {
-            heading: "How Fix It Jerry Replaces Touchscreens",
-            content: [
-              "Precision Touchscreen Removal – Safely detaching the damaged screen.",
-              "Digitizer Calibration – Ensuring accurate and smooth touch response.",
-              "High-Quality Replacement Parts – Using premium digitizers for durability.",
-              "Sealing & Frame Alignment – Ensuring a perfect fit for long-lasting performance.",
-            ],
-          },
-          {
-            heading: "Replacement Cost & Turnaround Time",
-            content: [
-              "Cost: RM 250 - RM 900 (Depending on phone model)",
-              "Turnaround Time: 1-2 hours.",
-            ],
-          },
-        ],
-      },
       {
         service_type: "replacement",
         service: "Battery",
@@ -364,7 +310,59 @@ const repairItems = [
               "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
           },
           {
-            heading: "Common Signs You Need a Battery Replacement",
+            heading: "Common Signs You Need a Battery",
+            content: [
+              "Battery drains quickly even with minimal use.",
+              "Phone shuts down unexpectedly, even when battery percentage is high.",
+              "Swollen battery causing the back cover to lift.",
+              "Phone gets excessively hot during use or charging.",
+              "Battery percentage jumps up or down randomly.",
+              "Phone only turns on when plugged in.",
+            ],
+          },
+          {
+            heading: "What to Do If Your Battery is Draining Fast",
+            content: [
+              "Check if any background apps are consuming excessive power.",
+              "Enable power-saving mode to extend battery life temporarily.",
+              "Try using a different charging cable and adapter.",
+              "Avoid using the phone while charging to prevent overheating.",
+              "If issues persist, a professional battery replacement is recommended.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Your Battery",
+            content: [
+              "Battery Health Diagnosis – Checking battery cycles and overall condition.",
+              "Safe Battery Removal – Carefully removing the old battery without damaging components.",
+              "Premium Replacement Battery – Using high-quality, long-lasting batteries.",
+              "Post-Replacement Testing – Ensuring battery performance and proper charging functionality.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: [
+              "Cost: RM 180 - RM 600 (Depending on phone model)",
+              "Turnaround Time: 30 minutes - 1 hour.",
+            ],
+          },
+        ],
+      },
+      {
+        service_type: "replacement",
+        service: "Housing",
+        slug: "services/replacement/smartphone/housing",
+        title: "Smartphone Housing Replacement | Fix It Jerry",
+        meta_description:
+          "Is your phone’s housing damaged or scratched? Fix It Jerry offers professional smartphone housing replacement with durable materials and quick service!",
+        sections: [
+          {
+            heading: "What is a Battery Replacement?",
+            content:
+              "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
+          },
+          {
+            heading: "Common Signs You Need a Battery",
             content: [
               "Battery drains quickly even with minimal use.",
               "Phone shuts down unexpectedly, even when battery percentage is high.",
@@ -405,7 +403,7 @@ const repairItems = [
       // /////
       {
         service_type: "upgrade",
-        service: "OS Upgrade",
+        service: "Storage Upgrade",
         slug: "services/upgrade/smartphone/os-upgrade",
         title: "Smartphone OS Upgrade Service | Fix It Jerry",
         meta_description:
@@ -454,10 +452,9 @@ const repairItems = [
           },
         ],
       },
-
       {
         service_type: "upgrade",
-        service: "Performance Boost",
+        service: "General Servicing",
         slug: "services/upgrade/smartphone/performance-boost",
         title: "Smartphone Performance Boost Service | Fix It Jerry",
         meta_description:
@@ -508,7 +505,7 @@ const repairItems = [
       },
       {
         service_type: "upgrade",
-        service: "Storage Upgrade",
+        service: "OS installation",
         slug: "services/upgrade/smartphone/storage-upgrade",
         title: "Smartphone Storage Upgrade Service | Fix It Jerry",
         meta_description:
@@ -557,227 +554,148 @@ const repairItems = [
           },
         ],
       },
-      // ///// installation
-      {
-        service_type: "installation",
-        service: "Software Install",
-        slug: "services/installation/smartphone/software-install",
-        title: "Smartphone Software Installation Service | Fix It Jerry",
-        meta_description:
-          "Need help installing software on your smartphone? Fix It Jerry offers professional software installation services, ensuring smooth setup and compatibility!",
-        sections: [
-          {
-            heading: "What is a Software Installation Service?",
-            content:
-              "Software installation involves setting up and configuring essential apps, drivers, and system tools on your smartphone to ensure smooth functionality and security.",
-          },
-          {
-            heading: "Common Reasons for Software Installation",
-            content: [
-              "Need help installing system or security updates.",
-              "Apps not installing due to compatibility issues.",
-              "Phone requires specialized software for work or personal use.",
-              "Custom firmware or alternative OS installation required.",
-              "Corrupt software preventing normal phone operation.",
-            ],
-          },
-          {
-            heading: "What to Do Before Installing New Software",
-            content: [
-              "Ensure your phone has sufficient storage space for the new software.",
-              "Back up all important data in case of installation failure.",
-              "Check if the software is compatible with your phone model and OS version.",
-              "Make sure your phone is fully charged or plugged into a power source.",
-              "If software issues persist, professional installation is recommended.",
-            ],
-          },
-          {
-            heading: "How Fix It Jerry Installs Software on Your Phone",
-            content: [
-              "Software Compatibility Check – Ensuring your phone meets system requirements.",
-              "Installation & Setup – Secure installation of requested software or updates.",
-              "Bug Fixes & Troubleshooting – Resolving any installation errors or conflicts.",
-              "System Optimization – Configuring software for the best performance.",
-            ],
-          },
-          {
-            heading: "Installation Cost & Turnaround Time",
-            content: [
-              "Cost: RM 80 - RM 300 (Depending on software complexity)",
-              "Turnaround Time: 30 minutes - 2 hours.",
-            ],
-          },
-        ],
-      },
-      {
-        service_type: "installation",
-        service: "OS Setup",
-        slug: "services/installation/smartphone/os-setup",
-        title: "Smartphone OS Setup Service | Fix It Jerry",
-        meta_description:
-          "Need help setting up your phone’s operating system? Fix It Jerry provides expert OS setup services, ensuring a smooth and optimized installation for your device!",
-        sections: [
-          {
-            heading: "What is OS Setup?",
-            content:
-              "Operating System (OS) setup involves installing and configuring your smartphone’s system software to ensure it functions optimally, securely, and efficiently.",
-          },
-          {
-            heading: "Common Reasons for OS Setup",
-            content: [
-              "Setting up a new phone with the latest OS version.",
-              "Reinstalling the OS after a factory reset.",
-              "Fixing software corruption or boot issues.",
-              "Switching to a different OS (e.g., custom ROM installation).",
-              "Optimizing system performance and removing bloatware.",
-            ],
-          },
-          {
-            heading: "What to Do Before Setting Up a New OS",
-            content: [
-              "Back up all important data to prevent data loss.",
-              "Ensure your phone is fully charged or plugged into a power source.",
-              "Check if your phone model is compatible with the desired OS version.",
-              "Make sure you have stable Wi-Fi for downloading system updates.",
-              "If switching to a custom OS, verify its stability and features.",
-            ],
-          },
-          {
-            heading: "How Fix It Jerry Sets Up Your Phone’s OS",
-            content: [
-              "OS Installation – Installing the latest or preferred operating system version.",
-              "System Configuration – Setting up language, region, and security preferences.",
-              "Data Transfer & Backup – Ensuring seamless transition from the old OS.",
-              "Performance Optimization – Removing unnecessary bloatware for a faster experience.",
-            ],
-          },
-          {
-            heading: "Setup Cost & Turnaround Time",
-            content: [
-              "Cost: RM 100 - RM 500 (Depending on OS complexity)",
-              "Turnaround Time: 1 - 3 hours.",
-            ],
-          },
-        ],
-      },
-      {
-        service_type: "installation",
-        service: "App Install",
-        slug: "services/installation/smartphone/app-install",
-        title: "Smartphone App Installation Service | Fix It Jerry",
-        meta_description:
-          "Need help installing apps on your smartphone? Fix It Jerry offers professional app installation services, ensuring smooth setup and compatibility!",
-        sections: [
-          {
-            heading: "What is an App Installation Service?",
-            content:
-              "App installation involves downloading, setting up, and configuring applications on your smartphone to ensure they function correctly and securely.",
-          },
-          {
-            heading: "Common Reasons for Professional App Installation",
-            content: [
-              "Difficulty installing apps due to compatibility issues.",
-              "Need help setting up specialized or business applications.",
-              "Google Play Store or App Store errors preventing downloads.",
-              "Phone running out of storage or slow during installations.",
-              "Custom app installations that require specific configurations.",
-            ],
-          },
-          {
-            heading: "What to Do Before Installing Apps",
-            content: [
-              "Ensure your phone has enough storage space for new apps.",
-              "Check if your phone’s OS is updated for better compatibility.",
-              "Verify that your internet connection is stable.",
-              "Enable app installation from trusted sources only to prevent malware.",
-              "If facing persistent issues, professional app installation is recommended.",
-            ],
-          },
-          {
-            heading: "How Fix It Jerry Installs Apps on Your Phone",
-            content: [
-              "App Compatibility Check – Ensuring apps work properly on your device.",
-              "Installation & Setup – Secure download and proper configuration.",
-              "Storage Optimization – Freeing up space if needed for new apps.",
-              "Error Troubleshooting – Fixing any Play Store/App Store installation issues.",
-            ],
-          },
-          {
-            heading: "Installation Cost & Turnaround Time",
-            content: [
-              "Cost: RM 50 - RM 200 (Depending on app complexity)",
-              "Turnaround Time: 15 minutes - 1 hour.",
-            ],
-          },
-        ],
-      },
     ],
   },
   {
     title: "Airpods",
     imgSrc: "/images/services/airpods.webp",
     description:
-      "Apple, Samsung, Microsoft, Lenovo, Huawei, Asus, Google, Acer, Dell, HP, Sony, Xiaomi, Alcatel, LG",
+      "Battery replacement, charging case repair, firmware updates, general servicing, connectivity issues",
     services: [
-      {
-        service_type: "repair",
-        service: "Connectivity repair",
-        slug: "services/repair/airpods/connectivity-repair",
-      },
-      {
-        service_type: "repair",
-        service: "Battery service",
-        slug: "services/repair/airpods/battery-service",
-      },
-      {
-        service_type: "repair",
-        service: "Firmware update",
-        slug: "services/repair/airpods/firmware-update",
-      },
-      {
-        service_type: "replacement",
-        service: "Earbud replacement",
-        slug: "services/replacement/airpods/earbud-replacement",
-      },
       {
         service_type: "replacement",
         service: "Battery",
         slug: "services/replacement/airpods/battery",
+        title: "AirPods Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Experiencing short battery life on your AirPods? Fix It Jerry offers fast and reliable battery replacement for AirPods. Book your repair today!",
+        sections: [
+          {
+            heading: "What is an AirPods Battery Replacement?",
+            content:
+              "AirPods batteries degrade over time, leading to reduced listening time, connectivity drops, or failure to charge. Replacing the batteries restores performance and longevity.",
+          },
+          {
+            heading: "Common Signs You Need a Battery Replacement",
+            content: [
+              "Battery life has significantly decreased.",
+              "One or both AirPods don’t hold a charge.",
+              "Charging case doesn’t fully charge the AirPods.",
+              "AirPods shut off randomly during use.",
+            ],
+          },
+          {
+            heading: "What to Do If Your AirPods Battery Is Failing",
+            content: [
+              "Check if your AirPods firmware is up to date.",
+              "Reset your AirPods and re-pair with your device.",
+              "Try charging with a different cable and adapter.",
+              "If issues persist, battery replacement is recommended.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces AirPods Batteries",
+            content: [
+              "Battery Testing – We assess each pod and the charging case individually.",
+              "Battery Swap – Replacing degraded cells with high-quality components.",
+              "Post-Replacement Testing – Ensuring charge cycles and connectivity work properly.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 180 - RM 400", "Turnaround Time: 1-2 hours."],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Charging case",
+        slug: "services/repair/airpods/charging-case",
+        title: "AirPods Charging Case Repair | Fix It Jerry",
+        meta_description:
+          "Is your AirPods charging case not working properly? Fix It Jerry offers expert repairs for AirPods charging cases. Fast diagnostics and affordable repairs!",
+        sections: [
+          {
+            heading: "What is a Charging Case Issue?",
+            content:
+              "The charging case is responsible for powering and storing your AirPods. Issues with the case can prevent charging, syncing, or even proper storage.",
+          },
+          {
+            heading: "Common Charging Case Problems",
+            content: [
+              "Case not charging or showing no lights.",
+              "One AirPod charges but the other doesn’t.",
+              "Loose or broken lightning/USB-C port.",
+              "Case overheats while charging.",
+            ],
+          },
+          {
+            heading: "What to Do Before Repair",
+            content: [
+              "Try cleaning the contacts inside the case and the port.",
+              "Use a different charging cable and wall adapter.",
+              "Reset the AirPods and test again.",
+              "If the issue continues, it may require a repair or port replacement.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Charging Cases",
+            content: [
+              "Port Repair – Fixing loose or broken lightning/USB-C ports.",
+              "Connector Cleaning – Removing corrosion or debris inside the case.",
+              "Battery & Board Check – Diagnosing internal components for failure.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 150 - RM 350", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Charging case",
-        slug: "services/replacement/airpods/charging-case",
-      },
-      {
-        service_type: "upgrade",
-        service: "Firmware upgrade",
-        slug: "services/upgrade/airpods/firmware-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "Audio tuning",
-        slug: "services/upgrade/airpods/audio-tuning",
-      },
-      {
-        service_type: "upgrade",
-        service: "Performance tweak",
-        slug: "services/upgrade/airpods/performance-tweak",
-      },
-      {
-        service_type: "installation",
-        service: "Device pairing",
-        slug: "services/installation/airpods/device-pairing",
-      },
-      {
-        service_type: "installation",
-        service: "App configuration",
-        slug: "services/installation/airpods/app-configuration",
-      },
-      {
-        service_type: "installation",
-        service: "Software update",
-        slug: "services/installation/airpods/software-update",
+        service: "General servicing",
+        slug: "services/repair/airpods/general-servicing",
+        title: "AirPods General Servicing & Firmware Updates | Fix It Jerry",
+        meta_description:
+          "Need help updating your AirPods firmware or cleaning them up? Fix It Jerry provides thorough AirPods servicing and software updates.",
+        sections: [
+          {
+            heading: "What is AirPods General Servicing?",
+            content:
+              "Servicing includes firmware updates, cleaning, performance tuning, and checking for hardware issues. This can restore performance and prevent future problems.",
+          },
+          {
+            heading: "Common Reasons for Servicing",
+            content: [
+              "Sound imbalance or low volume.",
+              "Microphone issues during calls.",
+              "Frequent disconnections or lag.",
+              "Outdated firmware affecting performance.",
+            ],
+          },
+          {
+            heading: "What to Do Before Servicing",
+            content: [
+              "Check for firmware updates via your iPhone settings.",
+              "Try cleaning your AirPods with a soft brush.",
+              "Reset your AirPods and re-pair them.",
+              "If problems persist, bring them in for a full servicing.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Performs Servicing",
+            content: [
+              "Firmware Update – Ensuring software is up to date.",
+              "Component Cleaning – Safe cleaning of speaker mesh and microphones.",
+              "Diagnostic Test – Ensuring both pods and the case function properly.",
+            ],
+          },
+          {
+            heading: "Service Cost & Turnaround Time",
+            content: ["Cost: RM 100 - RM 250", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
     ],
   },
@@ -785,67 +703,226 @@ const repairItems = [
     title: "iPod",
     imgSrc: "/images/services/ipod.webp",
     description:
-      "Apple, Dell, HP, Lenovo, Asus, Acer, Microsoft, MSI, Razer, Samsung, LG, Toshiba, Huawei, Google, Alienware",
+      "Battery replacement, screen repair, button replacement, storage upgrade, OS installation",
     services: [
       {
-        service_type: "repair",
-        service: "Screen repair",
-        slug: "services/repair/ipod/screen-repair",
-      },
-      {
-        service_type: "repair",
-        service: "Battery fix",
-        slug: "services/repair/ipod/battery-fix",
-      },
-      {
-        service_type: "repair",
-        service: "Button repair",
-        slug: "services/repair/ipod/button-repair",
+        service_type: "replacement",
+        service: "Battery",
+        slug: "services/replacement/ipod/battery",
+        title: "iPod Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Battery dying fast or iPod not turning on? Fix It Jerry offers professional iPod battery replacements using high-quality components. Fast turnaround!",
+        sections: [
+          {
+            heading: "What is a Battery Replacement?",
+            content:
+              "Over time, iPod batteries degrade, leading to reduced usage time or sudden shutdowns. Replacing the battery restores original performance.",
+          },
+          {
+            heading: "Common Signs You Need a Battery Replacement",
+            content: [
+              "iPod dies quickly even after full charge.",
+              "Device only works when plugged in.",
+              "Swollen battery or warped casing.",
+              "Battery percentage jumps or freezes.",
+            ],
+          },
+          {
+            heading: "What to Do Before Replacing the Battery",
+            content: [
+              "Back up your data if possible.",
+              "Avoid using the iPod if the battery is swollen.",
+              "Do not attempt to remove the battery yourself.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces iPod Batteries",
+            content: [
+              "Battery Health Check – Assessing wear levels.",
+              "Safe Removal – Opening the casing without damaging internals.",
+              "New Battery Installation – Using premium-grade cells.",
+              "Full Test – Verifying charge/discharge cycles after install.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 150 - RM 400", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "LCD replacement",
-        slug: "services/replacement/ipod/lcd-replacement",
+        service: "LCD/touch screen",
+        slug: "services/replacement/ipod/lcd",
+        title: "iPod LCD Screen Replacement | Fix It Jerry",
+        meta_description:
+          "Cracked or unresponsive iPod screen? Fix It Jerry offers fast and affordable LCD screen replacements for iPods. Restore your display today!",
+        sections: [
+          {
+            heading: "What is an LCD Screen Replacement?",
+            content:
+              "The LCD handles visuals and touch input. Physical damage or malfunction may require a full screen replacement to restore proper functionality.",
+          },
+          {
+            heading: "Common Issues That Require Screen Replacement",
+            content: [
+              "Cracks or shattered glass.",
+              "Unresponsive or erratic touch.",
+              "Dead pixels or colored lines.",
+              "Flickering or black screen.",
+            ],
+          },
+          {
+            heading: "What to Do Before Screen Replacement",
+            content: [
+              "Back up your data to iTunes or iCloud.",
+              "Avoid pressing on the damaged screen.",
+              "Bring in the device for assessment.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces LCD Screens",
+            content: [
+              "Damage Assessment – Confirming the issue isn't internal.",
+              "Full Screen Assembly Replacement – Not just the glass.",
+              "Adhesion & Sealing – Ensuring dust and water resistance.",
+              "Calibration – Ensuring smooth touch response post-repair.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 700", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Battery replacement",
-        slug: "services/replacement/ipod/battery-replacement",
-      },
-      {
-        service_type: "replacement",
-        service: "Speaker replacement",
-        slug: "services/replacement/ipod/speaker-replacement",
-      },
-      {
-        service_type: "upgrade",
-        service: "Software upgrade",
-        slug: "services/upgrade/ipod/software-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "Hardware upgrade",
-        slug: "services/upgrade/ipod/hardware-upgrade",
+        service: "Button",
+        slug: "services/replacement/ipod/button",
+        title: "iPod Button Repair | Fix It Jerry",
+        meta_description:
+          "Is your iPod’s home or volume button stuck or unresponsive? Fix It Jerry specializes in iPod button repairs with quick service and affordable pricing.",
+        sections: [
+          {
+            heading: "What is a Button Replacement?",
+            content:
+              "Button issues include unresponsive or physically stuck controls. We restore button functionality with part replacements and flex cable repairs.",
+          },
+          {
+            heading: "Common Signs You Need a Button Repair",
+            content: [
+              "Home button doesn’t respond to presses.",
+              "Volume buttons stuck or not clicking.",
+              "Power button fails to wake or lock the iPod.",
+            ],
+          },
+          {
+            heading: "What to Do Before Repair",
+            content: [
+              "Try a restart to rule out software lag.",
+              "Check for dirt or obstruction in the button crevices.",
+              "Avoid pressing forcefully to prevent internal damage.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs iPod Buttons",
+            content: [
+              "Button & Flex Cable Replacement – Ensures full responsiveness.",
+              "Cleaning & Alignment – Fixing debris or misaligned buttons.",
+              "Post-Test – Ensuring every button responds correctly.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 100 - RM 300", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
       {
         service_type: "upgrade",
         service: "Storage upgrade",
         slug: "services/upgrade/ipod/storage-upgrade",
+        title: "iPod Storage Upgrade | Fix It Jerry",
+        meta_description:
+          "Running out of space on your iPod? Fix It Jerry offers storage upgrades to give your device more room for music and media.",
+        sections: [
+          {
+            heading: "What is a Storage Upgrade?",
+            content:
+              "We increase your iPod’s storage capacity, allowing you to store more songs, podcasts, and files. Ideal for users running out of space.",
+          },
+          {
+            heading: "Common Signs You Need More Storage",
+            content: [
+              "'Storage Almost Full' warnings constantly.",
+              "Unable to download new songs or files.",
+              "Sluggish performance due to limited space.",
+            ],
+          },
+          {
+            heading: "What to Do Before Upgrading",
+            content: [
+              "Back up all your media to a computer.",
+              "Delete unused content to temporarily free space.",
+              "Schedule a time for the upgrade to avoid data loss.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Performs Storage Upgrades",
+            content: [
+              "Compatibility Check – Ensuring your model supports upgrades.",
+              "Storage Swap – Replacing with larger SSD/flash module.",
+              "Data Migration – Retaining your music and settings if possible.",
+            ],
+          },
+          {
+            heading: "Upgrade Cost & Turnaround Time",
+            content: ["Cost: RM 300 - RM 800", "Turnaround Time: 2-3 hours."],
+          },
+        ],
       },
       {
         service_type: "installation",
-        service: "OS install",
-        slug: "services/installation/ipod/os-install",
-      },
-      {
-        service_type: "installation",
-        service: "Software setup",
-        slug: "services/installation/ipod/software-setup",
-      },
-      {
-        service_type: "installation",
-        service: "App install",
-        slug: "services/installation/ipod/app-install",
+        service: "OS installation",
+        slug: "services/installation/ipod/os-installation",
+        title: "iPod OS Installation | Fix It Jerry",
+        meta_description:
+          "Need your iPod software reinstalled or updated? Fix It Jerry provides OS installation services for smooth performance and app compatibility.",
+        sections: [
+          {
+            heading: "What is an OS Installation?",
+            content:
+              "Reinstalling or updating the operating system can resolve software glitches, lag, and restore functionality after corruption or resets.",
+          },
+          {
+            heading: "When You Might Need It",
+            content: [
+              "iPod is stuck in a boot loop or recovery mode.",
+              "Software is outdated and apps aren’t working.",
+              "System crashes or frequent freezing.",
+              "Failed firmware updates.",
+            ],
+          },
+          {
+            heading: "What to Do Before OS Installation",
+            content: [
+              "Ensure your data is backed up if the device is accessible.",
+              "Note down any login credentials you’ll need post-reset.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Performs OS Installation",
+            content: [
+              "Diagnostic – Ensuring the issue is OS-related.",
+              "Installation – Flashing the correct firmware version.",
+              "Testing – Verifying full system functionality after update.",
+            ],
+          },
+          {
+            heading: "Installation Cost & Turnaround Time",
+            content: ["Cost: RM 80 - RM 200", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
     ],
   },
@@ -853,67 +930,97 @@ const repairItems = [
     title: "Apple Watch",
     imgSrc: "/images/services/apple_watch.webp",
     description:
-      "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
+      "Battery replacement, screen repair, sensor issues, OS troubleshooting, data recovery",
     services: [
       {
-        service_type: "repair",
-        service: "Sensor repair",
-        slug: "services/repair/apple-watch/sensor-repair",
-      },
-      {
-        service_type: "repair",
-        service: "Battery service",
-        slug: "services/repair/apple-watch/battery-service",
-      },
-      {
-        service_type: "repair",
-        service: "Display repair",
-        slug: "services/repair/apple-watch/display-repair",
+        service_type: "replacement",
+        service: "Battery",
+        slug: "services/replacement/apple-watch/battery",
+        title: "Apple Watch Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Is your Apple Watch battery draining too fast or not charging? Fix It Jerry offers fast and professional Apple Watch battery replacement services.",
+        sections: [
+          {
+            heading: "What is an Apple Watch Battery Replacement?",
+            content:
+              "Apple Watch batteries degrade over time, resulting in shorter usage times, unexpected shutdowns, or charging issues. A battery replacement restores your watch’s longevity and reliability.",
+          },
+          {
+            heading: "Signs You Need a Battery Replacement",
+            content: [
+              "Battery life is significantly shorter than before.",
+              "Watch gets warm or hot while charging.",
+              "Apple Watch shuts down randomly.",
+              "Device only turns on when connected to charger.",
+            ],
+          },
+          {
+            heading: "What to Do Before Replacement",
+            content: [
+              "Back up your Apple Watch via your iPhone.",
+              "Unpair the watch from your phone before service.",
+              "Don’t attempt to open or pry the device yourself.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces the Battery",
+            content: [
+              "Battery Health Check – Testing cycle count and condition.",
+              "Careful Disassembly – Using proper tools to avoid screen damage.",
+              "High-Quality Battery Swap – Installing reliable replacements.",
+              "Full Functionality Test – Ensuring normal performance post-replacement.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 180 - RM 400", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Screen replacement",
-        slug: "services/replacement/apple-watch/screen-replacement",
-      },
-      {
-        service_type: "replacement",
-        service: "Battery replacement",
-        slug: "services/replacement/apple-watch/battery-replacement",
-      },
-      {
-        service_type: "replacement",
-        service: "Strap replacement",
-        slug: "services/replacement/apple-watch/strap-replacement",
-      },
-      {
-        service_type: "upgrade",
-        service: "Firmware upgrade",
-        slug: "services/upgrade/apple-watch/firmware-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "Performance boost",
-        slug: "services/upgrade/apple-watch/performance-boost",
-      },
-      {
-        service_type: "upgrade",
-        service: "Feature upgrade",
-        slug: "services/upgrade/apple-watch/feature-upgrade",
-      },
-      {
-        service_type: "installation",
-        service: "App install",
-        slug: "services/installation/apple-watch/app-install",
-      },
-      {
-        service_type: "installation",
-        service: "OS configuration",
-        slug: "services/installation/apple-watch/os-configuration",
-      },
-      {
-        service_type: "installation",
-        service: "Device setup",
-        slug: "services/installation/apple-watch/device-setup",
+        service: "LCD/touchscreen",
+        slug: "services/replacement/apple-watch/lcd",
+        title: "Apple Watch Screen Replacement | Fix It Jerry",
+        meta_description:
+          "Cracked or unresponsive Apple Watch screen? Fix It Jerry offers expert screen replacement for all Apple Watch models. Fast, clean, and affordable service.",
+        sections: [
+          {
+            heading: "What is an Apple Watch LCD Replacement?",
+            content:
+              "A cracked or malfunctioning Apple Watch screen affects both display and touch functions. LCD replacements restore both visuals and usability.",
+          },
+          {
+            heading: "When You Need a Screen Replacement",
+            content: [
+              "Cracked or shattered display.",
+              "Touch input not working or misfiring.",
+              "Black screen or dead pixels.",
+              "Display flickering or dim.",
+            ],
+          },
+          {
+            heading: "What to Do Before Getting It Replaced",
+            content: [
+              "Unpair your watch from your iPhone.",
+              "Back up health and activity data to iCloud.",
+              "Avoid using the watch with exposed internals.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Apple Watch Screens",
+            content: [
+              "Screen Diagnosis – Confirming internal damage.",
+              "Precision Screen Removal – No damage to surrounding case.",
+              "New LCD Installation – Using factory-grade replacements.",
+              "Waterproof Sealing – Maintaining durability after repair.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 800", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
     ],
   },
@@ -921,67 +1028,462 @@ const repairItems = [
     title: "Tablet",
     imgSrc: "/images/services/ipad.webp",
     description:
-      "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
+      "Water damage, power supply, network & connectivity, audio IC, backlight IC, charging IC, touch IC, Face ID, Touch ID, LCD, touchscreen, battery, camera, back glass",
     services: [
       {
         service_type: "repair",
-        service: "Screen repair",
-        slug: "services/repair/tablet/screen-repair",
+        service: "Water damage",
+        slug: "services/repair/smartphone/water-damage",
+        title: "Smartphone Water Damage Repair | Fix It Jerry",
+        meta_description:
+          "Dropped your phone in water? Fix It Jerry provides expert smartphone water damage repair services. Fast, reliable, and affordable repairs. Contact us today!",
+        sections: [
+          {
+            heading: "What is Water Damage?",
+            content:
+              "Water can enter the phone and damage internal components. Symptoms include screen flickering, overheating, no sound, charging issues, and unresponsive touch.",
+          },
+          {
+            heading: "Common Issues with Water Damage",
+            content: [
+              "Phone won’t turn on or keeps restarting.",
+              "Touchscreen stops working or behaves erratically.",
+              "No sound or muffled speakers.",
+              "Charging issues (slow charging, not charging, overheating).",
+              "No SIM detection, weak signal, or Wi-Fi/Bluetooth failures.",
+              "Display issues (flickering, black screen, discoloration).",
+              "Touch ID/Face ID not working.",
+            ],
+          },
+          {
+            heading: "What to Do After Water Damage",
+            content: [
+              "Power Off Immediately – Prevents short circuits.",
+              "Do NOT Charge – Charging may worsen the damage.",
+              "Dry the Phone – Use silica gel packets or a vacuum (avoid rice, as dust can get inside).",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Water Damage",
+            content: [
+              "Component-Level Repair – Identifying and replacing corroded parts.",
+              "Ultrasonic Cleaning – Deep cleaning to remove residue and corrosion.",
+              "Battery & Charging Port Replacement – If damaged due to water exposure.",
+              "IC Repairs – If chips like Power IC, Baseband IC, or Audio IC are affected.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 200 - RM 800", "Turnaround Time: 1-3 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Battery fix",
-        slug: "services/repair/tablet/battery-fix",
+        service: "Power supply",
+        slug: "services/repair/smartphone/power-supply",
+        title: "Smartphone Power Supply Repair | Fix It Jerry",
+        meta_description:
+          "Is your smartphone not turning on or shutting down randomly? Fix It Jerry provides expert power supply repair services. Get fast and affordable repairs today!",
+        sections: [
+          {
+            heading: "What is a Power Supply Issue?",
+            content:
+              "The power supply unit in a smartphone regulates and distributes power to all components. If it's faulty, your phone may not charge, turn on, or may shut down unexpectedly.",
+          },
+          {
+            heading: "Common Issues with Power Supply Failure",
+            content: [
+              "Phone does not turn on at all.",
+              "Random shutdowns or restarts.",
+              "Overheating while charging or using the phone.",
+              "Battery drains quickly despite full charge.",
+              "Phone only turns on when plugged into a charger.",
+              "Charging port feels loose or unresponsive.",
+            ],
+          },
+          {
+            heading: "What to Do If Your Phone Has Power Supply Issues",
+            content: [
+              "Try using a different charger and cable to rule out accessories.",
+              "Perform a hard reset to check if it’s a software issue.",
+              "Check the charging port for dust or debris and clean it gently.",
+              "If the phone still won’t turn on, seek professional repair to prevent further damage.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Power Supply Issues",
+            content: [
+              "Component-Level Diagnosis – Checking the motherboard and power ICs for faults.",
+              "Charging Port Repair or Replacement – Fixing loose or damaged charging ports.",
+              "Battery Connector & Circuit Repair – Ensuring power is properly delivered to components.",
+              "Power IC Replacement – Replacing faulty power management chips if necessary.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 900", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Button repair",
-        slug: "services/repair/tablet/button-repair",
+        service: "Network issue",
+        slug: "services/repair/smartphone/network-issue",
+        title: "Smartphone Network Issue Repair | Fix It Jerry",
+        meta_description:
+          "Experiencing no signal, weak network, or dropped calls? Fix It Jerry offers expert smartphone network issue repair. Get fast and reliable service today!",
+        sections: [
+          {
+            heading: "What are Network Issues?",
+            content:
+              "Network issues can arise from faulty hardware, software bugs, or SIM-related problems. A malfunctioning Baseband IC, damaged antennas, or misconfigured settings can lead to poor or no network reception.",
+          },
+          {
+            heading: "Common Network Problems in Smartphones",
+            content: [
+              "No service or SIM card not detected.",
+              "Weak signal even in areas with strong network coverage.",
+              "Frequent call drops or poor call quality.",
+              "Wi-Fi or Bluetooth won't turn on or keeps disconnecting.",
+              "Cannot connect to mobile data (4G/5G not working).",
+              "Airplane mode stuck or network unavailable error.",
+            ],
+          },
+          {
+            heading: "What to Do If Your Phone Has Network Issues",
+            content: [
+              "Restart your phone to refresh network connections.",
+              "Toggle Airplane mode on and off to reset the network.",
+              "Remove and reinsert the SIM card to check for connection issues.",
+              "Check if the issue persists with a different SIM card.",
+              "Update your phone’s software to fix potential bugs.",
+              "If the problem persists, seek professional diagnosis and repair.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Network Issues",
+            content: [
+              "Baseband IC Repair – Fixing or replacing faulty network processing chips.",
+              "SIM Card Slot Repair – Resolving loose or broken SIM connectors.",
+              "Antenna Circuit Fix – Checking and replacing damaged antennas for better signal strength.",
+              "Firmware & Software Troubleshooting – Reflashing corrupted baseband software to restore connectivity.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 200 - RM 850", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "LCD replacement",
-        slug: "services/replacement/tablet/lcd-replacement",
+        service: "LCD/touchscreen",
+        slug: "services/replacement/smartphone/lcd",
+        title: "Smartphone LCD Screen Replacement | Fix It Jerry",
+        meta_description:
+          "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable smartphone LCD screen replacement. High-quality parts and expert service!",
+        sections: [
+          {
+            heading: "What is an LCD Screen Replacement?",
+            content:
+              "The LCD (Liquid Crystal Display) is responsible for displaying images on your phone. Damage to the LCD can cause dead pixels, lines, or a completely black screen, requiring a full replacement.",
+          },
+          {
+            heading: "Common Issues That Require LCD",
+            content: [
+              "Cracked or shattered screen.",
+              "Unresponsive touch or ghost touch.",
+              "Black screen despite the phone being on.",
+              "Vertical or horizontal lines on the display.",
+              "Flickering or dim screen.",
+              "Dead pixels or screen discoloration.",
+            ],
+          },
+          {
+            heading: "What to Do If Your LCD is Damaged",
+            content: [
+              "Avoid applying pressure on the screen to prevent further damage.",
+              "Do not attempt to use the phone if the screen is unresponsive.",
+              "If possible, back up important data before bringing it for repair.",
+              "Seek professional LCD replacement to restore full functionality.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces LCD Screens",
+            content: [
+              "High-Quality LCD Replacement – We use only premium parts for durability.",
+              "Screen Calibration – Ensuring touch responsiveness after replacement.",
+              "Adhesive Sealing – Proper installation to prevent dust and moisture entry.",
+              "Frame Alignment – Checking for any structural damage around the display.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: [
+              "Cost: RM 300 - RM 1200 (Depending on phone model)",
+              "Turnaround Time: 1-2 hours.",
+            ],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Battery replacement",
-        slug: "services/replacement/tablet/battery-replacement",
+        service: "Battery",
+        slug: "services/replacement/smartphone/battery",
+        title: "Smartphone Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Is your phone’s battery draining fast or not charging properly? Fix It Jerry offers professional smartphone battery replacement with high-quality parts and quick service!",
+        sections: [
+          {
+            heading: "What is a Battery Replacement?",
+            content:
+              "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
+          },
+          {
+            heading: "Common Signs You Need a Battery",
+            content: [
+              "Battery drains quickly even with minimal use.",
+              "Phone shuts down unexpectedly, even when battery percentage is high.",
+              "Swollen battery causing the back cover to lift.",
+              "Phone gets excessively hot during use or charging.",
+              "Battery percentage jumps up or down randomly.",
+              "Phone only turns on when plugged in.",
+            ],
+          },
+          {
+            heading: "What to Do If Your Battery is Draining Fast",
+            content: [
+              "Check if any background apps are consuming excessive power.",
+              "Enable power-saving mode to extend battery life temporarily.",
+              "Try using a different charging cable and adapter.",
+              "Avoid using the phone while charging to prevent overheating.",
+              "If issues persist, a professional battery replacement is recommended.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Your Battery",
+            content: [
+              "Battery Health Diagnosis – Checking battery cycles and overall condition.",
+              "Safe Battery Removal – Carefully removing the old battery without damaging components.",
+              "Premium Replacement Battery – Using high-quality, long-lasting batteries.",
+              "Post-Replacement Testing – Ensuring battery performance and proper charging functionality.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: [
+              "Cost: RM 180 - RM 600 (Depending on phone model)",
+              "Turnaround Time: 30 minutes - 1 hour.",
+            ],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Housing fix",
-        slug: "services/replacement/tablet/housing-fix",
+        service: "Housing",
+        slug: "services/replacement/smartphone/battery",
+        title: "Smartphone Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Is your phone’s battery draining fast or not charging properly? Fix It Jerry offers professional smartphone battery replacement with high-quality parts and quick service!",
+        sections: [
+          {
+            heading: "What is a Battery Replacement?",
+            content:
+              "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
+          },
+          {
+            heading: "Common Signs You Need a Battery",
+            content: [
+              "Battery drains quickly even with minimal use.",
+              "Phone shuts down unexpectedly, even when battery percentage is high.",
+              "Swollen battery causing the back cover to lift.",
+              "Phone gets excessively hot during use or charging.",
+              "Battery percentage jumps up or down randomly.",
+              "Phone only turns on when plugged in.",
+            ],
+          },
+          {
+            heading: "What to Do If Your Battery is Draining Fast",
+            content: [
+              "Check if any background apps are consuming excessive power.",
+              "Enable power-saving mode to extend battery life temporarily.",
+              "Try using a different charging cable and adapter.",
+              "Avoid using the phone while charging to prevent overheating.",
+              "If issues persist, a professional battery replacement is recommended.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Your Battery",
+            content: [
+              "Battery Health Diagnosis – Checking battery cycles and overall condition.",
+              "Safe Battery Removal – Carefully removing the old battery without damaging components.",
+              "Premium Replacement Battery – Using high-quality, long-lasting batteries.",
+              "Post-Replacement Testing – Ensuring battery performance and proper charging functionality.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: [
+              "Cost: RM 180 - RM 600 (Depending on phone model)",
+              "Turnaround Time: 30 minutes - 1 hour.",
+            ],
+          },
+        ],
+      },
+      // /////
+      {
+        service_type: "upgrade",
+        service: "Storage Upgrade",
+        slug: "services/upgrade/smartphone/os-upgrade",
+        title: "Smartphone OS Upgrade Service | Fix It Jerry",
+        meta_description:
+          "Looking to upgrade your phone’s operating system? Fix It Jerry offers professional OS upgrade services for better performance, security, and new features!",
+        sections: [
+          {
+            heading: "What is an OS Upgrade?",
+            content:
+              "An OS (Operating System) upgrade updates your smartphone’s software to a newer version, providing better performance, improved security, and new features.",
+          },
+          {
+            heading: "Common Reasons to Upgrade Your OS",
+            content: [
+              "Your current OS version is outdated and no longer supported.",
+              "Newer apps require a more recent OS version.",
+              "Security vulnerabilities in older software versions.",
+              "Performance issues like lagging, freezing, or slow app launches.",
+              "New features and improvements available in the latest OS.",
+            ],
+          },
+          {
+            heading: "What to Do Before Upgrading Your OS",
+            content: [
+              "Back up all important data to prevent data loss.",
+              "Ensure your phone has at least 50% battery or is plugged in.",
+              "Check if your phone model is compatible with the latest OS.",
+              "Free up storage space for a smooth upgrade process.",
+              "Verify internet connection stability for uninterrupted downloads.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Performs OS Upgrades",
+            content: [
+              "Compatibility Check – Ensuring your device supports the latest OS version.",
+              "Data Backup Assistance – Helping you back up important files before upgrading.",
+              "OS Installation – Secure and error-free installation of the new software.",
+              "Post-Upgrade Optimization – Configuring settings for smooth performance.",
+            ],
+          },
+          {
+            heading: "Upgrade Cost & Turnaround Time",
+            content: [
+              "Cost: RM 80 - RM 300 (Depending on phone model)",
+              "Turnaround Time: 30 minutes - 2 hours.",
+            ],
+          },
+        ],
       },
       {
         service_type: "upgrade",
-        service: "OS upgrade",
-        slug: "services/upgrade/tablet/os-upgrade",
+        service: "General Servicing",
+        slug: "services/upgrade/smartphone/performance-boost",
+        title: "Smartphone Performance Boost Service | Fix It Jerry",
+        meta_description:
+          "Is your smartphone running slow or lagging? Fix It Jerry offers professional performance boost services to enhance speed, optimize storage, and improve efficiency!",
+        sections: [
+          {
+            heading: "What is a Performance Boost?",
+            content:
+              "A performance boost optimizes your smartphone’s speed and responsiveness by clearing unnecessary data, optimizing settings, and upgrading components if necessary.",
+          },
+          {
+            heading: "Common Signs Your Phone Needs a Performance Boost",
+            content: [
+              "Apps take a long time to open or crash frequently.",
+              "The phone lags or freezes during use.",
+              "Insufficient storage warnings despite deleting files.",
+              "Battery drains faster than usual due to background processes.",
+              "Overheating while performing basic tasks.",
+            ],
+          },
+          {
+            heading: "What to Do Before a Performance Boost",
+            content: [
+              "Back up your important files to avoid data loss.",
+              "Uninstall unused apps to free up storage.",
+              "Check for pending software updates.",
+              "Restart your phone to see if temporary lag issues resolve.",
+              "If the problem persists, professional optimization is needed.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Boosts Your Phone's Performance",
+            content: [
+              "Storage Optimization – Clearing junk files and unnecessary cache.",
+              "Software Optimization – Adjusting system settings for speed improvement.",
+              "Hardware Inspection – Checking battery, RAM, and processor performance.",
+              "OS & App Updates – Ensuring all software is up-to-date and bug-free.",
+            ],
+          },
+          {
+            heading: "Upgrade Cost & Turnaround Time",
+            content: [
+              "Cost: RM 100 - RM 500 (Depending on optimization level)",
+              "Turnaround Time: 1 - 3 hours.",
+            ],
+          },
+        ],
       },
       {
         service_type: "upgrade",
-        service: "Speed boost",
-        slug: "services/upgrade/tablet/speed-boost",
-      },
-      {
-        service_type: "upgrade",
-        service: "Storage upgrade",
-        slug: "services/upgrade/tablet/storage-upgrade",
-      },
-      {
-        service_type: "installation",
-        service: "Software install",
-        slug: "services/installation/tablet/software-install",
-      },
-      {
-        service_type: "installation",
-        service: "App setup",
-        slug: "services/installation/tablet/app-setup",
-      },
-      {
-        service_type: "installation",
-        service: "Driver install",
-        slug: "services/installation/tablet/driver-install",
+        service: "OS installation",
+        slug: "services/upgrade/smartphone/storage-upgrade",
+        title: "Smartphone Storage Upgrade Service | Fix It Jerry",
+        meta_description:
+          "Running out of storage on your phone? Fix It Jerry offers professional smartphone storage upgrade services to expand capacity and improve performance!",
+        sections: [
+          {
+            heading: "What is a Storage Upgrade?",
+            content:
+              "A storage upgrade increases your smartphone's internal storage capacity, allowing you to store more apps, photos, videos, and files without performance slowdowns.",
+          },
+          {
+            heading: "Common Signs You Need a Storage Upgrade",
+            content: [
+              "Frequent 'Storage Almost Full' warnings.",
+              "Cannot install new apps due to low space.",
+              "Phone slows down due to limited storage availability.",
+              "Camera unable to take photos/videos due to insufficient space.",
+              "Difficulty saving files or downloading updates.",
+            ],
+          },
+          {
+            heading: "What to Do Before Upgrading Your Storage",
+            content: [
+              "Back up all important files to avoid data loss.",
+              "Uninstall unused apps to free up storage.",
+              "Move photos, videos, and large files to cloud storage or an SD card.",
+              "Check if your device supports storage expansion via microSD card.",
+              "If storage is still insufficient, a professional storage upgrade is needed.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Upgrades Your Phone’s Storage",
+            content: [
+              "Storage Expansion – Installing a larger capacity storage chip (for supported models).",
+              "MicroSD Card Installation – Setting up and optimizing external storage expansion.",
+              "Data Transfer & Backup – Ensuring no data is lost during the upgrade process.",
+              "Performance Optimization – Configuring new storage for smooth operation.",
+            ],
+          },
+          {
+            heading: "Upgrade Cost & Turnaround Time",
+            content: [
+              "Cost: RM 200 - RM 800 (Depending on upgrade option)",
+              "Turnaround Time: 2 - 4 hours.",
+            ],
+          },
+        ],
       },
     ],
   },
@@ -989,135 +1491,376 @@ const repairItems = [
     title: "Laptop",
     imgSrc: "/images/services/macbook.webp",
     description:
-      "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
+      "Water damage repair, Power supply repair, Network issue repair, Screen replacement, Battery replacement, Keyboard replacement, Hinge replacement, Storage upgrade, General servicing, OS installation",
     services: [
       {
         service_type: "repair",
-        service: "Keyboard fix",
-        slug: "services/repair/laptop/keyboard-fix",
+        service: "Water damage",
+        slug: "services/repair/laptop/water-damage",
+        title: "Laptop Water Damage Repair | Fix It Jerry",
+        meta_description:
+          "Spilled water on your laptop? Fix It Jerry provides professional laptop water damage repair services with deep cleaning and component-level diagnostics.",
+        sections: [
+          {
+            heading: "What is Water Damage?",
+            content:
+              "Liquids can cause short circuits or corrosion on your laptop’s motherboard and components. Acting fast is critical to prevent permanent damage.",
+          },
+          {
+            heading: "Common Signs of Water Damage",
+            content: [
+              "Laptop doesn’t turn on or restarts randomly.",
+              "Keyboard or trackpad stops working.",
+              "Screen flickers or won’t display properly.",
+              "Unusual sounds or overheating.",
+            ],
+          },
+          {
+            heading: "What to Do After Spilling Water",
+            content: [
+              "Power off the laptop immediately.",
+              "Do not attempt to charge it.",
+              "Keep it upside down to drain excess liquid.",
+              "Bring it in for professional cleaning and diagnostics ASAP.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Water-Damaged Laptops",
+            content: [
+              "Component-Level Diagnosis – Identifying corroded parts.",
+              "Ultrasonic Cleaning – Deep cleaning of affected components.",
+              "Board Repair or Replacement – Fixing or replacing damaged circuits.",
+              "Full System Testing – Ensuring all functions are restored.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 1000", "Turnaround Time: 2-4 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Fan repair",
-        slug: "services/repair/laptop/fan-repair",
+        service: "Power supply",
+        slug: "services/repair/laptop/power-supply",
+        title: "Laptop Power Supply Repair | Fix It Jerry",
+        meta_description:
+          "Laptop not powering on or randomly shutting down? Fix It Jerry offers expert power supply repair for all laptop models. Fast turnaround and reliable service.",
+        sections: [
+          {
+            heading: "What is a Power Supply Repair?",
+            content:
+              "Your laptop’s power supply delivers electricity to all internal parts. Damage or failure can cause your laptop to stop functioning entirely.",
+          },
+          {
+            heading: "Common Power Supply Issues",
+            content: [
+              "Laptop doesn't power on.",
+              "Battery doesn't charge.",
+              "Laptop shuts down when charger is removed.",
+              "Power jack feels loose or damaged.",
+            ],
+          },
+          {
+            heading: "What to Do If You Suspect a Power Issue",
+            content: [
+              "Try another charger or adapter.",
+              "Check for LED indicators or battery light.",
+              "Don’t force the power jack if it feels loose.",
+              "Bring in the laptop for testing and diagnostics.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Power Supply Issues",
+            content: [
+              "DC Jack Repair – Fixing broken or loose charging ports.",
+              "Power Circuit Diagnosis – Checking motherboard power components.",
+              "Battery Connector Fix – Ensuring power flows properly.",
+              "Power Management IC Replacement – Fixing faulty chips.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 200 - RM 600", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Screen repair",
-        slug: "services/repair/laptop/screen-repair",
+        service: "Network issue",
+        slug: "services/repair/laptop/network",
+        title: "Laptop Network Issue Repair | Fix It Jerry",
+        meta_description:
+          "Wi-Fi or Bluetooth not working on your laptop? Fix It Jerry provides quick and affordable network issue diagnostics and repair for all brands.",
+        sections: [
+          {
+            heading: "What Are Laptop Network Issues?",
+            content:
+              "Network issues can prevent your laptop from connecting to Wi-Fi or Bluetooth, often due to driver errors, antenna damage, or faulty hardware.",
+          },
+          {
+            heading: "Common Network Problems",
+            content: [
+              "Wi-Fi won't connect or drops frequently.",
+              "Bluetooth not pairing or disappears from settings.",
+              "No network adapters detected.",
+              "Slow internet despite strong signal.",
+            ],
+          },
+          {
+            heading: "What to Try Before Bringing It In",
+            content: [
+              "Restart your laptop and router.",
+              "Update your network drivers.",
+              "Test with another Wi-Fi network.",
+              "If problems persist, professional repair is needed.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Repairs Network Issues",
+            content: [
+              "Driver Reinstallation – Fixing corrupted or outdated drivers.",
+              "Wi-Fi Card Replacement – Swapping out failing adapters.",
+              "Antenna Repair – Reconnecting or replacing broken antennas.",
+              "OS Troubleshooting – Resolving software conflicts.",
+            ],
+          },
+          {
+            heading: "Repair Cost & Turnaround Time",
+            content: ["Cost: RM 180 - RM 500", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Battery replacement",
-        slug: "services/replacement/laptop/battery-replacement",
+        service: "Screen",
+        slug: "services/replacement/laptop/screen",
+        title: "Laptop Screen Replacement | Fix It Jerry",
+        meta_description:
+          "Broken or flickering laptop screen? Fix It Jerry provides screen replacement services with fast turnaround and high-quality parts.",
+        sections: [
+          {
+            heading: "What is a Laptop Screen Replacement?",
+            content:
+              "If your screen is cracked, showing lines, or has display issues, it likely needs full panel replacement. We use original-grade components for your laptop model.",
+          },
+          {
+            heading: "Signs You Need a Screen Replacement",
+            content: [
+              "Cracks, black spots, or screen flickering.",
+              "Lines across the display.",
+              "No image but backlight is working.",
+              "Unusual screen colors or brightness issues.",
+            ],
+          },
+          {
+            heading: "How We Replace Laptop Screens",
+            content: [
+              "Damage Diagnosis – Confirming panel and cable status.",
+              "Panel Replacement – Matching model with compatible screens.",
+              "Display Calibration – Ensuring color accuracy and brightness.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 300 - RM 1000", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Keyboard swap",
-        slug: "services/replacement/laptop/keyboard-swap",
+        service: "Battery",
+        slug: "services/replacement/laptop/battery",
+        title: "Laptop Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Battery draining fast or not charging? Fix It Jerry offers quick and reliable laptop battery replacements with warranty.",
+        sections: [
+          {
+            heading: "What is a Battery Replacement?",
+            content:
+              "Laptop batteries wear out after a few hundred charge cycles. Replacing it restores your laptop’s portability and performance.",
+          },
+          {
+            heading: "Common Battery Issues",
+            content: [
+              "Battery drains quickly or doesn't charge.",
+              "Laptop shuts down when unplugged.",
+              "Swollen battery bulging the chassis.",
+              "Laptop only works when plugged in.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Batteries",
+            content: [
+              "Battery Health Assessment – Measuring cycle count and wear.",
+              "Safe Removal – Avoiding damage to connectors.",
+              "New Battery Install – Using quality certified replacements.",
+              "Post-Check – Verifying charge and safety sensors.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 600", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Hinge replacement",
-        slug: "services/replacement/laptop/hinge-replacement",
-      },
-      {
-        service_type: "upgrade",
-        service: "RAM upgrade",
-        slug: "services/upgrade/laptop/ram-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "SSD upgrade",
-        slug: "services/upgrade/laptop/ssd-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "GPU upgrade",
-        slug: "services/upgrade/laptop/gpu-upgrade",
-      },
-      {
-        service_type: "installation",
-        service: "OS install",
-        slug: "services/installation/laptop/os-install",
-      },
-      {
-        service_type: "installation",
-        service: "Driver setup",
-        slug: "services/installation/laptop/driver-setup",
-      },
-      {
-        service_type: "installation",
-        service: "Software install",
-        slug: "services/installation/laptop/software-install",
-      },
-    ],
-  },
-  {
-    title: "Nintendo Switch",
-    imgSrc: "/images/services/nintendo_switch.webp",
-    description:
-      "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
-    services: [
-      {
-        service_type: "repair",
-        service: "Joy-Con repair",
-        slug: "services/repair/nintendo-switch/joy-con-repair",
-      },
-      {
-        service_type: "repair",
-        service: "Screen fix",
-        slug: "services/repair/nintendo-switch/screen-fix",
-      },
-      {
-        service_type: "repair",
-        service: "Battery repair",
-        slug: "services/repair/nintendo-switch/battery-repair",
+        service: "Keyboard",
+        slug: "services/replacement/laptop/keyboard",
+        title: "Laptop Keyboard Replacement | Fix It Jerry",
+        meta_description:
+          "Sticky, unresponsive, or missing keys? Fix It Jerry offers laptop keyboard replacements for all major brands. Quick and reliable service.",
+        sections: [
+          {
+            heading: "When You Need a Keyboard Replacement",
+            content: [
+              "Certain keys don’t respond or double-type.",
+              "Liquid spill caused keyboard to stop working.",
+              "Keys are physically missing or broken.",
+            ],
+          },
+          {
+            heading: "How We Replace Your Laptop Keyboard",
+            content: [
+              "Full Keyboard Removal – For both top-case and individual styles.",
+              "Internal Cable Connection – Proper reconnection for functionality.",
+              "Key Testing – Ensuring all keys register properly.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 400", "Turnaround Time: 2-3 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Screen swap",
-        slug: "services/replacement/nintendo-switch/screen-swap",
-      },
-      {
-        service_type: "replacement",
-        service: "Battery replacement",
-        slug: "services/replacement/nintendo-switch/battery-replacement",
-      },
-      {
-        service_type: "replacement",
-        service: "Button repair",
-        slug: "services/replacement/nintendo-switch/button-repair",
-      },
-      {
-        service_type: "upgrade",
-        service: "Firmware upgrade",
-        slug: "services/upgrade/nintendo-switch/firmware-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "Performance boost",
-        slug: "services/upgrade/nintendo-switch/performance-boost",
+        service: "Hinge",
+        slug: "services/replacement/laptop/hinge",
+        title: "Laptop Hinge Repair | Fix It Jerry",
+        meta_description:
+          "Is your laptop screen wobbling or not closing properly? Fix It Jerry provides sturdy and secure hinge repair or replacement services.",
+        sections: [
+          {
+            heading: "What is a Hinge Repair?",
+            content:
+              "Laptop hinges can loosen, break, or snap from daily use or accidental drops. We repair or replace hinges to ensure smooth screen movement and structural integrity.",
+          },
+          {
+            heading: "Signs You Need a Hinge Fix",
+            content: [
+              "Screen wobbles or doesn’t stay upright.",
+              "Creaking or grinding when opening.",
+              "Visible cracks around the hinge area.",
+              "Laptop can’t fully open or close properly.",
+            ],
+          },
+          {
+            heading: "How We Fix Laptop Hinges",
+            content: [
+              "Tightening Loose Hinges – Simple adjustments if no breakage.",
+              "Hinge Replacement – Installing new hinges for damaged units.",
+              "Chassis Reinforcement – Fixing cracked casing around the hinge.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 350", "Turnaround Time: 2-4 hours."],
+          },
+        ],
       },
       {
         service_type: "upgrade",
         service: "Storage upgrade",
-        slug: "services/upgrade/nintendo-switch/storage-upgrade",
+        slug: "services/upgrade/laptop/storage",
+        title: "Laptop Storage Upgrade | Fix It Jerry",
+        meta_description:
+          "Running out of space or need faster performance? Fix It Jerry offers SSD and HDD storage upgrades for laptops. Speed up your system today!",
+        sections: [
+          {
+            heading: "What is a Storage Upgrade?",
+            content:
+              "We replace your old hard drive or SSD with a higher capacity or faster one — increasing speed, storage, and responsiveness.",
+          },
+          {
+            heading: "Upgrade Benefits",
+            content: [
+              "Faster boot and load times.",
+              "More room for apps, files, and media.",
+              "Better reliability with modern SSDs.",
+            ],
+          },
+          {
+            heading: "How We Upgrade Storage",
+            content: [
+              "Drive Compatibility Check – Ensuring your laptop supports the upgrade.",
+              "Data Backup – Preserving your files before upgrade.",
+              "New Drive Install – SSD or larger HDD installation.",
+              "OS Clone or Fresh Install – Based on customer preference.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 800", "Turnaround Time: 2-4 hours."],
+          },
+        ],
+      },
+      {
+        service_type: "upgrade",
+        service: "General servicing",
+        slug: "services/upgrade/laptop/servicing",
+        title: "Laptop General Servicing | Fix It Jerry",
+        meta_description:
+          "Laptop feeling slow or getting hot? Fix It Jerry offers thorough laptop servicing to clean, optimize, and refresh your system inside out.",
+        sections: [
+          {
+            heading: "What Is General Servicing?",
+            content:
+              "General servicing includes cleaning the internal fans, reapplying thermal paste, optimizing the OS, and running diagnostics to keep your laptop running smooth.",
+          },
+          {
+            heading: "Included in This Service",
+            content: [
+              "Dust & fan cleaning.",
+              "Thermal paste reapplication.",
+              "Startup and performance optimization.",
+              "Hardware diagnostics and health check.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 150 - RM 400", "Turnaround Time: 2-4 hours."],
+          },
+        ],
       },
       {
         service_type: "installation",
-        service: "System update",
-        slug: "services/installation/nintendo-switch/system-update",
-      },
-      {
-        service_type: "installation",
-        service: "Software install",
-        slug: "services/installation/nintendo-switch/software-install",
-      },
-      {
-        service_type: "installation",
-        service: "Configuration",
-        slug: "services/installation/nintendo-switch/configuration",
+        service: "OS installation",
+        slug: "services/installation/laptop/os-installation",
+        title: "Laptop OS Installation | Fix It Jerry",
+        meta_description:
+          "Need Windows or macOS reinstalled? Fix It Jerry offers clean OS installs for laptops, including backup, format, and post-setup.",
+        sections: [
+          {
+            heading: "What is an OS Installation?",
+            content:
+              "We perform clean operating system installations to remove bloatware, fix software issues, or upgrade to the latest version.",
+          },
+          {
+            heading: "Included in the Service",
+            content: [
+              "Data backup (if needed).",
+              "Disk formatting.",
+              "OS installation (Windows/macOS/Linux).",
+              "Driver and update setup.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 100 - RM 250", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
     ],
   },
@@ -1125,67 +1868,597 @@ const repairItems = [
     title: "Desktop",
     imgSrc: "/images/services/desktop.webp",
     description:
-      "Operating System, Software Installation, Data Recovery, Virus and Malware Removal",
+      "Water damage repair, Power supply repair, GPU repair, Fan replacement, Storage upgrade, Custom build assembly, OS installation, Heatsink reapplication, General servicing",
     services: [
       {
         service_type: "repair",
-        service: "Power supply fix",
-        slug: "services/repair/desktop/power-supply-fix",
+        service: "Water damage",
+        slug: "services/repair/desktop/water-damage",
+        title: "Desktop Water Damage Repair | Fix It Jerry",
+        meta_description:
+          "Spilled liquid into your PC? Fix It Jerry provides desktop water damage repair with component-level cleaning and restoration. Fast and professional service.",
+        sections: [
+          {
+            heading: "What is Desktop Water Damage?",
+            content:
+              "Liquids can short-circuit the motherboard, GPU, PSU, or storage drives in a desktop. Immediate repair is crucial to prevent permanent failure.",
+          },
+          {
+            heading: "Common Signs of Water Damage",
+            content: [
+              "PC won’t power on.",
+              "Smoke or burning smell from components.",
+              "Random shutdowns or freezing.",
+              "Corrosion on ports or connectors.",
+            ],
+          },
+          {
+            heading: "What to Do Immediately",
+            content: [
+              "Turn off the power supply immediately.",
+              "Do NOT try to turn it back on.",
+              "Bring it in for cleaning and diagnostics ASAP.",
+            ],
+          },
+          {
+            heading: "How We Repair Water-Damaged Desktops",
+            content: [
+              "Board Cleaning – Ultrasonic cleaning of corroded areas.",
+              "Component Testing – Check motherboard, GPU, RAM, PSU.",
+              "Replace Damaged Parts – Power ICs, RAM slots, etc.",
+              "Thermal Paste Reapplication – After deep cleaning.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 900", "Turnaround Time: 1-3 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Fan repair",
-        slug: "services/repair/desktop/fan-repair",
+        service: "Power supply",
+        slug: "services/repair/desktop/power-supply",
+        title: "Desktop Power Supply Repair | Fix It Jerry",
+        meta_description:
+          "PC not powering up or randomly shutting off? Fix It Jerry offers expert desktop power supply repairs and replacements. Reliable and safe solutions.",
+        sections: [
+          {
+            heading: "What is a Power Supply Repair?",
+            content:
+              "The PSU (Power Supply Unit) distributes electricity to your PC's components. A faulty PSU can lead to startup failures or random shutdowns.",
+          },
+          {
+            heading: "Common PSU Problems",
+            content: [
+              "No power or sudden shutdowns.",
+              "Visible sparks or burning smell.",
+              "Fan in PSU not spinning.",
+              "Inconsistent power output to components.",
+            ],
+          },
+          {
+            heading: "How We Fix It",
+            content: [
+              "PSU Testing – Checking voltage output and connectors.",
+              "Fuse & Capacitor Replacement – Common internal failures.",
+              "Full PSU Swap – Replacing with suitable wattage PSU.",
+              "Cable Management – Ensuring stable power flow.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 150 - RM 500", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "repair",
-        service: "Diagnostics",
-        slug: "services/repair/desktop/diagnostics",
+        service: "GPU",
+        slug: "services/repair/desktop/gpu",
+        title: "Desktop GPU Repair | Fix It Jerry",
+        meta_description:
+          "Having graphical glitches or your GPU isn’t detected? Fix It Jerry offers GPU diagnostics, cleaning, reballing, and repair for desktop PCs.",
+        sections: [
+          {
+            heading: "What is GPU Repair?",
+            content:
+              "The GPU handles all graphics processing. GPU failure can cause no display, crashes, or artifacts on-screen.",
+          },
+          {
+            heading: "Common GPU Issues",
+            content: [
+              "No display on boot.",
+              "Driver crashes or BSOD.",
+              "Visual artifacts during use.",
+              "Fans spinning but GPU not detected.",
+            ],
+          },
+          {
+            heading: "How We Fix Your GPU",
+            content: [
+              "Thermal Rework – Reapplying thermal paste or pads.",
+              "Deep Cleaning – Clearing out dust and debris.",
+              "Reballing or Solder Fixes – On-chip repairs if needed.",
+              "Firmware Updates – Flashing corrupted GPU BIOS.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 700", "Turnaround Time: 2-3 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Motherboard",
-        slug: "services/replacement/desktop/motherboard",
+        service: "Fan",
+        slug: "services/replacement/desktop/fan",
+        title: "Desktop Fan Replacement | Fix It Jerry",
+        meta_description:
+          "Is your desktop overheating or making loud noises? Fix It Jerry offers fan replacements to keep your PC cool and quiet.",
+        sections: [
+          {
+            heading: "What is Fan Replacement?",
+            content:
+              "Cooling fans help manage internal temperatures. If they fail, your system may overheat or shut down.",
+          },
+          {
+            heading: "Common Signs of Fan Issues",
+            content: [
+              "Unusual noise from inside the case.",
+              "Frequent overheating.",
+              "Fans not spinning.",
+              "PC shuts down during high load.",
+            ],
+          },
+          {
+            heading: "What We Do",
+            content: [
+              "Fan Testing – Confirming failure or low RPM.",
+              "Replacement – Matching fan type (CPU, case, GPU).",
+              "Thermal Paste – Reapplying if replacing CPU fan.",
+              "Cable Routing – Clean internal wiring after install.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 80 - RM 300", "Turnaround Time: 1 hour."],
+          },
+        ],
+      },
+      {
+        service_type: "upgrade",
+        service: "Storage upgrade",
+        slug: "services/upgrade/desktop/storage",
+        title: "Desktop Storage Upgrade | Fix It Jerry",
+        meta_description:
+          "Out of space or want faster load times? Fix It Jerry upgrades your desktop with SSDs or large-capacity HDDs for blazing performance.",
+        sections: [
+          {
+            heading: "Why Upgrade Storage?",
+            content:
+              "Adding or replacing a drive improves speed and expands your file capacity. SSDs significantly speed up boot and app load times.",
+          },
+          {
+            heading: "Upgrade Options",
+            content: [
+              "SATA SSD for fast storage.",
+              "NVMe for ultra-fast boot and app loading.",
+              "HDDs for large-capacity backups.",
+              "Dual-drive systems for speed + storage balance.",
+            ],
+          },
+          {
+            heading: "How We Do It",
+            content: [
+              "Drive Compatibility Check.",
+              "OS Cloning or Fresh Install.",
+              "Data Migration (if needed).",
+              "Mounting and Cable Routing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 800", "Turnaround Time: 2-3 hours."],
+          },
+        ],
+      },
+      {
+        service_type: "installation",
+        service: "Custom build",
+        slug: "services/installation/desktop/custom-build",
+        title: "Custom PC Build Assembly | Fix It Jerry",
+        meta_description:
+          "Want a custom gaming or workstation PC? Fix It Jerry builds custom desktops tailored to your needs. Expert assembly and cable management included.",
+        sections: [
+          {
+            heading: "What is Custom PC Assembly?",
+            content:
+              "Whether you're a gamer, creator, or developer, we help you build a custom PC with the right components — optimized for performance and budget.",
+          },
+          {
+            heading: "Included in Our Custom Build Service",
+            content: [
+              "Full PC assembly from provided or sourced parts.",
+              "Optimal airflow and thermal layout.",
+              "Cable management and tie-downs.",
+              "BIOS setup and OS installation (optional).",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 600", "Turnaround Time: 1-2 days."],
+          },
+        ],
+      },
+      {
+        service_type: "installation",
+        service: "OS installation",
+        slug: "services/installation/desktop/os",
+        title: "Desktop OS Installation | Fix It Jerry",
+        meta_description:
+          "Need Windows, Linux, or macOS installed on your desktop? Fix It Jerry offers clean and professional OS installation services with drivers setup.",
+        sections: [
+          {
+            heading: "What’s Included",
+            content: [
+              "Disk formatting and OS install.",
+              "Driver installation and testing.",
+              "Basic updates and antivirus (on request).",
+              "Backup (optional).",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 80 - RM 200", "Turnaround Time: 1-2 hours."],
+          },
+        ],
+      },
+      {
+        service_type: "installation",
+        service: "Heatsink reapplication",
+        slug: "services/installation/desktop/heatsink",
+        title: "Heatsink Reapplication | Fix It Jerry",
+        meta_description:
+          "Experiencing high temps or fan noise? Fix It Jerry re-applies thermal paste and reseats your heatsink for optimal cooling.",
+        sections: [
+          {
+            heading: "Why Reapply Thermal Paste?",
+            content:
+              "Old thermal paste can dry out, leading to poor heat transfer and higher CPU temps. Reapplication helps restore proper cooling.",
+          },
+          {
+            heading: "How We Do It",
+            content: [
+              "Clean off old thermal paste from CPU/GPU.",
+              "Apply high-quality thermal compound.",
+              "Reseat heatsink with correct pressure.",
+              "Test temps before and after service.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: [
+              "Cost: RM 60 - RM 150",
+              "Turnaround Time: 30 mins - 1 hour.",
+            ],
+          },
+        ],
+      },
+      {
+        service_type: "installation",
+        service: "General servicing",
+        slug: "services/installation/desktop/servicing",
+        title: "Desktop General Servicing | Fix It Jerry",
+        meta_description:
+          "Slow, hot, or noisy desktop? Fix It Jerry provides comprehensive desktop servicing, cleaning, optimization, and system tune-ups.",
+        sections: [
+          {
+            heading: "What’s Included in General Servicing?",
+            content: [
+              "Internal cleaning (dust and debris removal).",
+              "Fan and airflow optimization.",
+              "Thermal paste renewal (if needed).",
+              "Software cleanup and OS optimization.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 100 - RM 300", "Turnaround Time: 1-2 hours."],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Nintendo Switch",
+    imgSrc: "/images/services/nintendo_switch.webp",
+    description:
+      "Water damage repair, Power supply repair, Wifi and charging port replacement, LCD/touchscreen replacement, Battery replacement, Buttons replacement, OS installation, Heatsink reapplication, General servicing",
+    services: [
+      {
+        service_type: "repair",
+        service: "Water damage",
+        slug: "services/repair/nintendo-switch/water-damage",
+        title: "Nintendo Switch Water Damage Repair | Fix It Jerry",
+        meta_description:
+          "Dropped your Switch in water? Fix It Jerry provides expert Nintendo Switch water damage repair, deep cleaning, and component restoration.",
+        sections: [
+          {
+            heading: "What is Water Damage?",
+            content:
+              "Water exposure can cause internal corrosion or short circuits on the motherboard, battery, and screen. Prompt repair is essential to avoid permanent damage.",
+          },
+          {
+            heading: "Common Signs of Water Damage",
+            content: [
+              "Won’t turn on or keeps restarting.",
+              "Unresponsive buttons or touchscreen.",
+              "No audio or distorted sound.",
+              "Charging or battery issues after water contact.",
+            ],
+          },
+          {
+            heading: "What to Do Immediately",
+            content: [
+              "Power off your Switch immediately.",
+              "Do not try to charge or turn it back on.",
+              "Bring it in for diagnostics and cleaning ASAP.",
+            ],
+          },
+          {
+            heading: "How We Repair Water Damage",
+            content: [
+              "Ultrasonic Cleaning – Deep clean of all internals.",
+              "Component Testing – Identify what needs replacement.",
+              "Board-Level Repair – Fix or replace corroded parts.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 200 - RM 600", "Turnaround Time: 2-3 days."],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Power supply",
+        slug: "services/repair/nintendo-switch/power-supply",
+        title: "Nintendo Switch Power Supply Repair | Fix It Jerry",
+        meta_description:
+          "Nintendo Switch not turning on or charging? Fix It Jerry provides power supply repair and diagnostics to restore power safely.",
+        sections: [
+          {
+            heading: "What is a Power Supply Repair?",
+            content:
+              "The power delivery system in your Switch includes the charging IC, battery connector, and USB-C port. Issues here can stop your console from charging or turning on.",
+          },
+          {
+            heading: "Symptoms of Power Supply Failure",
+            content: [
+              "Not turning on even with a working charger.",
+              "Overheating while plugged in.",
+              "Battery stuck at 1% or won’t charge.",
+            ],
+          },
+          {
+            heading: "How We Fix It",
+            content: [
+              "Charging Port & IC Check – Ensuring clean, stable current.",
+              "Power Rail Diagnosis – Testing internal voltage pathways.",
+              "Board-Level Fixes – Replacing damaged connectors or chips.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 200 - RM 500", "Turnaround Time: 1-2 days."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "PSU replacement",
-        slug: "services/replacement/desktop/psu-replacement",
+        service: "Wifi and charging port",
+        slug: "services/replacement/nintendo-switch/wifi-charging-port",
+        title:
+          "Nintendo Switch Wi-Fi & Charging Port Replacement | Fix It Jerry",
+        meta_description:
+          "Wi-Fi not connecting or Switch not charging? Fix It Jerry offers fast and reliable replacement of Wi-Fi antennas and USB-C charging ports.",
+        sections: [
+          {
+            heading: "When You Need This Replacement",
+            content: [
+              "Switch won’t connect to Wi-Fi or loses signal frequently.",
+              "Charging cable feels loose or doesn’t connect.",
+              "USB-C port is damaged or unresponsive.",
+            ],
+          },
+          {
+            heading: "What We Replace",
+            content: [
+              "USB-C Charging Port – Full port desolder and replacement.",
+              "Wi-Fi Antennas – Swap or reseat broken antenna cables.",
+              "ICs (if needed) – Charging controller or network chips.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 180 - RM 400", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "replacement",
-        service: "Hard drive swap",
-        slug: "services/replacement/desktop/hard-drive-swap",
+        service: "LCD/touchscreen",
+        slug: "services/replacement/nintendo-switch/lcd-touchscreen",
+        title: "Nintendo Switch LCD & Touchscreen Replacement | Fix It Jerry",
+        meta_description:
+          "Cracked screen or unresponsive touch? Fix It Jerry offers LCD and touchscreen replacements for Nintendo Switch with high-quality parts.",
+        sections: [
+          {
+            heading: "Common Screen Issues",
+            content: [
+              "Cracked or shattered glass.",
+              "Dead pixels or color problems.",
+              "Touch not responding.",
+              "Black or flickering screen.",
+            ],
+          },
+          {
+            heading: "What We Do",
+            content: [
+              "Full Display Assembly Replacement.",
+              "Touch Digitizer Replacement (if needed).",
+              "Screen Calibration & Testing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 600", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
-        service_type: "upgrade",
-        service: "RAM upgrade",
-        slug: "services/upgrade/desktop/ram-upgrade",
+        service_type: "replacement",
+        service: "Battery",
+        slug: "services/replacement/nintendo-switch/battery",
+        title: "Nintendo Switch Battery Replacement | Fix It Jerry",
+        meta_description:
+          "Battery draining fast or not holding charge? Fix It Jerry offers professional Nintendo Switch battery replacement using high-quality cells.",
+        sections: [
+          {
+            heading: "When to Replace the Battery",
+            content: [
+              "Switch dies quickly even at 100%.",
+              "Battery percentage stuck or jumps.",
+              "Bulging battery or backplate separating.",
+            ],
+          },
+          {
+            heading: "How We Replace It",
+            content: [
+              "Battery Health Check.",
+              "Safe Removal & Proper Adhesive Use.",
+              "High-Quality Replacement Cells.",
+              "Post-Replacement Testing & Charging Cycle Checks.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 180 - RM 350", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
       {
-        service_type: "upgrade",
-        service: "SSD upgrade",
-        slug: "services/upgrade/desktop/ssd-upgrade",
-      },
-      {
-        service_type: "upgrade",
-        service: "GPU upgrade",
-        slug: "services/upgrade/desktop/gpu-upgrade",
+        service_type: "replacement",
+        service: "Buttons",
+        slug: "services/replacement/nintendo-switch/buttons",
+        title: "Nintendo Switch Button Replacement | Fix It Jerry",
+        meta_description:
+          "Joy-Con or Switch buttons not working? Fix It Jerry provides button repair and replacements for all Nintendo Switch controls.",
+        sections: [
+          {
+            heading: "Symptoms of Button Failure",
+            content: [
+              "Sticky, unresponsive, or jammed buttons.",
+              "Button inputs not registering properly.",
+              "Joy-Con buttons misfiring or lagging.",
+            ],
+          },
+          {
+            heading: "How We Repair Buttons",
+            content: [
+              "Individual Button Module Replacement.",
+              "Internal Flex Cable Repair.",
+              "Joy-Con Shell or Rubber Dome Replacements.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 150 - RM 300", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
       {
         service_type: "installation",
-        service: "OS install",
-        slug: "services/installation/desktop/os-install",
+        service: "OS installation",
+        slug: "services/installation/nintendo-switch/os-installation",
+        title: "Nintendo Switch OS Installation & Reset | Fix It Jerry",
+        meta_description:
+          "System acting weird or full of errors? Fix It Jerry offers Nintendo Switch OS reinstallation and full reformat services for a fresh start.",
+        sections: [
+          {
+            heading: "When OS Installation Is Needed",
+            content: [
+              "Frequent system crashes or lag.",
+              "Corrupted firmware or update failure.",
+              "Preparing console for resale or clean reset.",
+            ],
+          },
+          {
+            heading: "Included in This Service",
+            content: [
+              "Backup (optional).",
+              "Factory Reset or System Restore.",
+              "Firmware Reinstallation.",
+              "Post-Setup & Testing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 80 - RM 200", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
       {
         service_type: "installation",
-        service: "Driver install",
-        slug: "services/installation/desktop/driver-install",
+        service: "Heatsink reapplication",
+        slug: "services/installation/nintendo-switch/heatsink",
+        title: "Nintendo Switch Heatsink Reapplication | Fix It Jerry",
+        meta_description:
+          "Overheating or fan running loud? Fix It Jerry re-applies thermal paste on your Nintendo Switch to restore proper cooling.",
+        sections: [
+          {
+            heading: "Why Reapply Thermal Paste?",
+            content:
+              "Old or dried thermal paste reduces heat transfer, causing thermal throttling or excessive fan noise.",
+          },
+          {
+            heading: "What We Do",
+            content: [
+              "Remove motherboard & heatsink assembly.",
+              "Clean old paste thoroughly.",
+              "Apply new premium-grade thermal compound.",
+              "Reassemble and test temperature performance.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 80 - RM 180", "Turnaround Time: 1 hour."],
+          },
+        ],
       },
       {
         service_type: "installation",
-        service: "Software setup",
-        slug: "services/installation/desktop/software-setup",
+        service: "General servicing",
+        slug: "services/installation/nintendo-switch/servicing",
+        title: "Nintendo Switch General Servicing | Fix It Jerry",
+        meta_description:
+          "Slow performance or strange behavior? Fix It Jerry provides full Nintendo Switch servicing — internal cleaning, diagnostics, and performance tuning.",
+        sections: [
+          {
+            heading: "What’s Included",
+            content: [
+              "Internal dust removal.",
+              "Fan cleaning & lubrication.",
+              "Thermal paste reapplication (if needed).",
+              "Firmware & system checkup.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround Time",
+            content: ["Cost: RM 100 - RM 250", "Turnaround Time: 1-2 hours."],
+          },
+        ],
       },
     ],
   },
