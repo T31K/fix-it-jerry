@@ -24,12 +24,15 @@ export default function Services() {
         <div className="row g-4 mb-2 justify-content-center">
           <div className="col-lg-5 text-center">
             <div className="subtitle s2 wow fadeInUp mb-2">Top Reasons</div>
-            <div className="flex justify-center gap-x-1 w-full">
-              <h2 className="wow fadeInUp max-w-[210px]" data-wow-delay=".2s">
+            <div className="flex flex-col items-center w-full">
+              <h2
+                className="wow fadeInUp text-center !-mb-1"
+                data-wow-delay=".2s"
+              >
                 Devices We
-              </h2>{" "}
+              </h2>
               <WordRotate
-                className="leading-[30px] text-[#C6E76C] -400 max-w-[150px] w-[150px]"
+                className="leading-[30px] text-[#C6E76C] -400 text-center"
                 words={["Repair", "Replace", "Upgrade", "Install"]}
               />
             </div>
