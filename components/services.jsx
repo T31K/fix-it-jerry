@@ -8,6 +8,8 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { WordRotate } from "@/components/magicui/word-rotate";
+import { IconPlus } from "@tabler/icons-react";
+import { IconChevronRight } from "@tabler/icons-react";
 
 // Mapping of service types to Tabler icons
 const serviceTypeIcons = {
@@ -63,7 +65,7 @@ export default function Services() {
                 </div>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0 ">
-                  {item.services.map((srv, i) => {
+                  {item.services.slice(0, 3).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
                       <li key={i} className="d-flex align-items-center">
@@ -71,7 +73,7 @@ export default function Services() {
                           <IconComponent size={20} className="me-2" />
                         )}
                         <a
-                          href={srv.slug || "#"}
+                          href={srv.slug || `/devices/${item.title.toLowerCase()}?hash=${srv.hash}`}
                           className="hover:underline text-gray-700 text-md md:text-lg md:mb-0"
                         >
                           {srv.service}
@@ -82,6 +84,13 @@ export default function Services() {
                 </ul>
 
                 {/* Read More Link */}
+                <a
+                  href={`/devices/${item.title.toLowerCase()}`}
+                  className="hover:underline text-gray-700 text-md md:text-lg md:mb-0 flex items-center mt-4 rounded-full bg-green-500/70 text-white w-fit px-3"
+                >
+                  See All
+                  <IconChevronRight size={20} className="" />
+                </a>
               </div>
             </div>
           ))}

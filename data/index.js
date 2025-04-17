@@ -99,11 +99,16 @@ const repairItems = [
     description:
       "Water damage, power supply, network & connectivity, audio IC, backlight IC, charging IC, touch IC, Face ID, Touch ID, LCD, touchscreen, battery, camera, back glass",
     services: [
+      // ================================== repair ==================================
+      // ================================== repair ==================================
+      // ================================== repair ==================================
+      // ================================== repair ==================================
       {
         service_type: "repair",
-        service: "Water damage",
-        slug: "services/repair/smartphone/water-damage",
+        service: "Water damage/CPU Damage",
+        hash: "water-damage",
         title: "Smartphone Water Damage Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/water_damage.webp",
         meta_description:
           "Dropped your phone in water? Fix It Jerry provides expert smartphone water damage repair services. Fast, reliable, and affordable repairs. Contact us today!",
         sections: [
@@ -149,411 +154,735 @@ const repairItems = [
       },
       {
         service_type: "repair",
-        service: "Power supply",
-        slug: "services/repair/smartphone/power-supply",
-        title: "Smartphone Power Supply Repair | Fix It Jerry",
+        service: "Power IC",
+        hash: "power-ic",
+        title: "Smartphone Power IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/power_ic.webp",
         meta_description:
-          "Is your smartphone not turning on or shutting down randomly? Fix It Jerry provides expert power supply repair services. Get fast and affordable repairs today!",
+          "Phone not turning on or randomly shutting down? Fix It Jerry provides expert Power IC repair services to restore stable performance.",
         sections: [
           {
-            heading: "What is a Power Supply Issue?",
+            heading: "What is a Power IC?",
             content:
-              "The power supply unit in a smartphone regulates and distributes power to all components. If it's faulty, your phone may not charge, turn on, or may shut down unexpectedly.",
+              "The Power IC (integrated circuit) controls power distribution in your phone. A faulty IC can cause boot loops, overheating, and shutdowns.",
           },
           {
-            heading: "Common Issues with Power Supply Failure",
+            heading: "Common Symptoms of Power IC Failure",
             content: [
-              "Phone does not turn on at all.",
-              "Random shutdowns or restarts.",
-              "Overheating while charging or using the phone.",
-              "Battery drains quickly despite full charge.",
-              "Phone only turns on when plugged into a charger.",
-              "Charging port feels loose or unresponsive.",
+              "Phone doesn’t turn on or only turns on when plugged in.",
+              "Sudden restarts or boot loops.",
+              "Overheating even when idle.",
+              "Battery drains quickly or charges erratically.",
             ],
           },
           {
-            heading: "What to Do If Your Phone Has Power Supply Issues",
+            heading: "Recommended Actions",
             content: [
-              "Try using a different charger and cable to rule out accessories.",
-              "Perform a hard reset to check if it’s a software issue.",
-              "Check the charging port for dust or debris and clean it gently.",
-              "If the phone still won’t turn on, seek professional repair to prevent further damage.",
+              "Avoid using fast chargers from unknown brands.",
+              "Stop charging if the phone heats excessively.",
+              "Bring in the device for circuit-level inspection.",
             ],
           },
           {
-            heading: "How Fix It Jerry Repairs Power Supply Issues",
+            heading: "How We Fix It",
             content: [
-              "Component-Level Diagnosis – Checking the motherboard and power ICs for faults.",
-              "Charging Port Repair or Replacement – Fixing loose or damaged charging ports.",
-              "Battery Connector & Circuit Repair – Ensuring power is properly delivered to components.",
-              "Power IC Replacement – Replacing faulty power management chips if necessary.",
+              "Component testing and replacement of faulty Power IC.",
+              "Reinforcement of battery circuitry and solder joints.",
+              "Battery and charging port assessment.",
             ],
           },
           {
-            heading: "Repair Cost & Turnaround Time",
-            content: ["Cost: RM 250 - RM 900", "Turnaround Time: 1-2 days."],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 600", "Time: 1 - 2 days"],
           },
         ],
       },
       {
         service_type: "repair",
-        service: "Network issue",
-        slug: "services/repair/smartphone/network-issue",
-        title: "Smartphone Network Issue Repair | Fix It Jerry",
+        service: "Baseband IC",
+        hash: "baseband-ic",
+        title: "Smartphone Baseband IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/baseband_ic.webp",
         meta_description:
-          "Experiencing no signal, weak network, or dropped calls? Fix It Jerry offers expert smartphone network issue repair. Get fast and reliable service today!",
+          "No signal or mobile network issues? Fix It Jerry repairs Baseband ICs to restore full network functionality.",
         sections: [
           {
-            heading: "What are Network Issues?",
+            heading: "What is the Baseband IC?",
             content:
-              "Network issues can arise from faulty hardware, software bugs, or SIM-related problems. A malfunctioning Baseband IC, damaged antennas, or misconfigured settings can lead to poor or no network reception.",
+              "The Baseband IC handles mobile signal, calling, SIM detection and network connection. It’s crucial for cellular communication.",
           },
           {
-            heading: "Common Network Problems in Smartphones",
+            heading: "Symptoms of Baseband IC Failure",
             content: [
-              "No service or SIM card not detected.",
-              "Weak signal even in areas with strong network coverage.",
-              "Frequent call drops or poor call quality.",
-              "Wi-Fi or Bluetooth won't turn on or keeps disconnecting.",
-              "Cannot connect to mobile data (4G/5G not working).",
-              "Airplane mode stuck or network unavailable error.",
+              "No signal or service despite SIM being inserted.",
+              "SIM not detected or keeps disconnecting.",
+              "Can’t make or receive calls.",
+              "4G/LTE or mobile data not working.",
             ],
           },
           {
-            heading: "What to Do If Your Phone Has Network Issues",
+            heading: "Quick Checks Before Repair",
             content: [
-              "Restart your phone to refresh network connections.",
-              "Toggle Airplane mode on and off to reset the network.",
-              "Remove and reinsert the SIM card to check for connection issues.",
-              "Check if the issue persists with a different SIM card.",
-              "Update your phone’s software to fix potential bugs.",
-              "If the problem persists, seek professional diagnosis and repair.",
+              "Try another SIM card.",
+              "Check for software updates.",
+              "Toggle Airplane mode on/off.",
             ],
           },
           {
-            heading: "How Fix It Jerry Repairs Network Issues",
+            heading: "How We Fix It",
             content: [
-              "Baseband IC Repair – Fixing or replacing faulty network processing chips.",
-              "SIM Card Slot Repair – Resolving loose or broken SIM connectors.",
-              "Antenna Circuit Fix – Checking and replacing damaged antennas for better signal strength.",
-              "Firmware & Software Troubleshooting – Reflashing corrupted baseband software to restore connectivity.",
+              "Chip-level soldering and replacement of Baseband IC.",
+              "Signal path and antenna inspection.",
+              "Software reprogramming if needed.",
             ],
           },
           {
-            heading: "Repair Cost & Turnaround Time",
-            content: ["Cost: RM 200 - RM 850", "Turnaround Time: 1-2 days."],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 700", "Time: 1 - 2 days"],
           },
         ],
       },
       {
-        service_type: "replacement",
-        service: "LCD/touchscreen",
-        slug: "services/replacement/smartphone/lcd",
-        title: "Smartphone LCD Screen Replacement | Fix It Jerry",
+        service_type: "repair",
+        service: "Audio IC",
+        hash: "audio-ic",
+        title: "Smartphone Audio IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/audio_ic.webp",
         meta_description:
-          "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable smartphone LCD screen replacement. High-quality parts and expert service!",
+          "No sound during calls or mic not working? We specialize in Audio IC repair for smartphones with sound and voice issues.",
         sections: [
           {
-            heading: "What is an LCD Screen Replacement?",
+            heading: "What is the Audio IC?",
             content:
-              "The LCD (Liquid Crystal Display) is responsible for displaying images on your phone. Damage to the LCD can cause dead pixels, lines, or a completely black screen, requiring a full replacement.",
+              "The Audio IC manages audio input/output functions like mic, speaker, and headphones. Damage leads to no sound or recording failures.",
           },
           {
-            heading: "Common Issues That Require LCD",
+            heading: "Common Symptoms",
             content: [
-              "Cracked or shattered screen.",
-              "Unresponsive touch or ghost touch.",
-              "Black screen despite the phone being on.",
-              "Vertical or horizontal lines on the display.",
-              "Flickering or dim screen.",
-              "Dead pixels or screen discoloration.",
+              "No mic function during calls.",
+              "Voice memos  don’t record.",
+              "Can’t hear callers or vice versa.",
+              "Speaker or earphones work intermittently.",
             ],
           },
           {
-            heading: "What to Do If Your LCD is Damaged",
+            heading: "Before Repair",
             content: [
-              "Avoid applying pressure on the screen to prevent further damage.",
-              "Do not attempt to use the phone if the screen is unresponsive.",
-              "If possible, back up important data before bringing it for repair.",
-              "Seek professional LCD replacement to restore full functionality.",
+              "Test mic with voice recorder.",
+              "Use headphones to isolate internal audio issues.",
+              "Check for any recent drops or water exposure.",
             ],
           },
           {
-            heading: "How Fix It Jerry Replaces LCD Screens",
+            heading: "Our Repair Process",
             content: [
-              "High-Quality LCD Replacement – We use only premium parts for durability.",
-              "Screen Calibration – Ensuring touch responsiveness after replacement.",
-              "Adhesive Sealing – Proper installation to prevent dust and moisture entry.",
-              "Frame Alignment – Checking for any structural damage around the display.",
+              "Chip-level diagnostics.",
+              "Audio IC replacement with micro-soldering.",
+              "Mic/speaker port testing.",
             ],
           },
           {
-            heading: "Replacement Cost & Turnaround Time",
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 650", "Time: 1 day"],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Backlight IC",
+        hash: "backlight-ic",
+        title: "Smartphone Backlight IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/backlight_ic.webp",
+        meta_description:
+          "Display turns on but screen is dark? Our Backlight IC repair restores your smartphone’s screen visibility quickly.",
+        sections: [
+          {
+            heading: "What is Backlight IC?",
+            content:
+              "The Backlight IC powers the screen brightness. If it fails, the screen stays dark even though the phone is on.",
+          },
+          {
+            heading: "Symptoms",
             content: [
-              "Cost: RM 300 - RM 1200 (Depending on phone model)",
-              "Turnaround Time: 1-2 hours.",
+              "Black screen but phone is vibrating or playing sounds.",
+              "Screen is visible only under bright light.",
+              "Backlight flickers randomly.",
             ],
+          },
+          {
+            heading: "What You Can Try First",
+            content: [
+              "Shine flashlight at screen to check for faint display.",
+              "Avoid DIY screen pressure techniques.",
+              "Bring in immediately to avoid worsening damage.",
+            ],
+          },
+          {
+            heading: "How We Fix It",
+            content: [
+              "Micro-soldering replacement of Backlight IC.",
+              "Connector inspection and reballing if needed.",
+              "Brightness calibration and testing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 600", "Time: 1 - 2 days"],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Charging IC",
+        hash: "charging-ic",
+        title: "Smartphone Charging IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/charging_ic.webp",
+        meta_description:
+          "Phone not charging properly or overheating while charging? Get your Charging IC repaired today by Fix It Jerry!",
+        sections: [
+          {
+            heading: "What is the Charging IC?",
+            content:
+              "The Charging IC controls voltage flow during charging. It protects your phone’s battery and motherboard.",
+          },
+          {
+            heading: "Issues Caused by Faulty Charging IC",
+            content: [
+              "Phone heats up while charging.",
+              "Phone doesn’t charge or charges slowly.",
+              "Inconsistent charging or auto-shutdown.",
+            ],
+          },
+          {
+            heading: "What to Avoid",
+            content: [
+              "Using third-party chargers.",
+              "Continuing to charge when phone overheats.",
+              "DIY port cleaning (may short-circuit board).",
+            ],
+          },
+          {
+            heading: "Our Fix",
+            content: [
+              "Remove and replace damaged Charging IC chip.",
+              "Port and circuit diagnostics.",
+              "Post-repair voltage regulation tests.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 700", "Time: 1 - 2 days"],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Touch IC",
+        hash: "touch-ic",
+        title: "Smartphone Touch IC Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/touch_ic.webp",
+        meta_description:
+          "Touchscreen not responding or acting weird? Our Touch IC repair restores accurate screen functionality fast.",
+        sections: [
+          {
+            heading: "What is Touch IC?",
+            content:
+              "The Touch IC detects your finger input and relays it to the processor. It’s essential for a responsive screen.",
+          },
+          {
+            heading: "Symptoms of Touch IC Issues",
+            content: [
+              "No response when touching screen.",
+              "Random ghost touches.",
+              "Only part of the screen works.",
+              "Swipe gestures don’t register.",
+            ],
+          },
+          {
+            heading: "What to Try Before Repair",
+            content: [
+              "Restart your phone.",
+              "Check screen protector or case.",
+              "If problem persists, it’s likely hardware-related.",
+            ],
+          },
+          {
+            heading: "Fix Process",
+            content: [
+              "Touch IC inspection and replacement.",
+              "Board-level diagnostics.",
+              "Post-repair calibration for accuracy.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 750", "Time: 1 - 2 days"],
+          },
+        ],
+      },
+      {
+        service_type: "repair",
+        service: "Face ID & Touch ID malfunction",
+        hash: "face-id-touch-id",
+        title: "Face ID & Touch ID Repair | Fix It Jerry",
+        image: "/images/devices/smartphone/face_id.webp",
+        meta_description:
+          "Biometric security not working? Fix It Jerry provides Face ID and Touch ID repairs to restore quick and secure access.",
+        sections: [
+          {
+            heading: "What Causes Biometric Failures?",
+            content:
+              "Face ID and Touch ID rely on dedicated sensors and chips. Hardware damage or misalignment can lead to failures.",
+          },
+          {
+            heading: "Common Issues",
+            content: [
+              "Face ID not available or setup fails.",
+              "Touch ID doesn’t register or is slow.",
+              "Authentication works intermittently.",
+            ],
+          },
+          {
+            heading: "Tips Before Repair",
+            content: [
+              "Try re-registering your face or fingerprint.",
+              "Update iOS/Android to latest version.",
+              "Reset Face/Touch ID settings.",
+            ],
+          },
+          {
+            heading: "Repair Approach",
+            content: [
+              "Sensor recalibration and cable inspection.",
+              "Component-level replacement if needed.",
+              "Secure Enclave sync check for Apple devices.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 300 - RM 900", "Time: 2 - 3 days"],
+          },
+        ],
+      },
+      // ================================== replacement ==================================
+      // ================================== replacement ==================================
+      // ================================== replacement ==================================
+      // ================================== replacement ==================================
+      {
+  service_type: "replacement",
+  service: "LCD Screen / Touchscreen",
+  hash: "lcd-screen-touchscreen",
+  title: "Smartphone Screen Replacement | Fix It Jerry",
+  meta_description:
+    "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable smartphone LCD & touchscreen replacement using premium parts.",
+  sections: [
+    {
+      heading: "When Do You Need a Screen Replacement?",
+      content: [
+        "Cracked glass or shattered display.",
+        "Unresponsive touch or ghost touches.",
+        "Black screen even when phone is on.",
+        "Lines, dead pixels, or flickering screen.",
+      ],
+    },
+    {
+      heading: "Our Screen Replacement Process",
+      content: [
+        "Careful screen disassembly and cleanup.",
+        "Premium LCD and digitizer replacement.",
+        "Touch sensitivity testing and calibration.",
+        "Dust sealing and frame alignment.",
+      ],
+    },
+    {
+      heading: "Cost & Turnaround",
+      content: ["Cost: RM 300 - RM 1200", "Time: 1 - 2 hours"],
+    },
+  ],
+      },
+      {
+        service_type: "replacement",
+        service: "Housing",
+        hash: "housing",
+        title: "Smartphone Housing Replacement | Fix It Jerry",
+        meta_description:
+          "Phone looking beat up? Fix It Jerry offers full smartphone housing replacements for a fresh look and restored durability.",
+        sections: [
+          {
+            heading: "Signs You Need a Housing Replacement",
+            content: [
+              "Dented or cracked phone frame.",
+              "Back panel won’t stay in place.",
+              "Loose edges or compromised water resistance.",
+              "Buttons feel stuck or misaligned.",
+            ],
+          },
+          {
+            heading: "How We Replace the Housing",
+            content: [
+              "Full disassembly of internal components.",
+              "Transfer of logic board, battery, and camera.",
+              "New housing installation and resealing.",
+              "Button & port realignment and testing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 800", "Time: 1 - 2 days"],
           },
         ],
       },
       {
         service_type: "replacement",
         service: "Battery",
-        slug: "services/replacement/smartphone/battery",
+        hash: "battery",
         title: "Smartphone Battery Replacement | Fix It Jerry",
         meta_description:
-          "Is your phone’s battery draining fast or not charging properly? Fix It Jerry offers professional smartphone battery replacement with high-quality parts and quick service!",
+          "Battery drains too fast or shuts off suddenly? Get a premium battery replacement at Fix It Jerry today.",
         sections: [
           {
-            heading: "What is a Battery Replacement?",
-            content:
-              "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
-          },
-          {
-            heading: "Common Signs You Need a Battery",
+            heading: "When to Replace Your Battery",
             content: [
-              "Battery drains quickly even with minimal use.",
-              "Phone shuts down unexpectedly, even when battery percentage is high.",
-              "Swollen battery causing the back cover to lift.",
-              "Phone gets excessively hot during use or charging.",
-              "Battery percentage jumps up or down randomly.",
-              "Phone only turns on when plugged in.",
+              "Phone shuts off even when it shows 20-30%.",
+              "Battery percentage jumps randomly.",
+              "Device gets hot during normal use.",
+              "Battery has expanded or looks swollen.",
             ],
           },
           {
-            heading: "What to Do If Your Battery is Draining Fast",
+            heading: "Our Battery Swap Procedure",
             content: [
-              "Check if any background apps are consuming excessive power.",
-              "Enable power-saving mode to extend battery life temporarily.",
-              "Try using a different charging cable and adapter.",
-              "Avoid using the phone while charging to prevent overheating.",
-              "If issues persist, a professional battery replacement is recommended.",
+              "Battery health check and diagnostics.",
+              "Removal using non-invasive tools.",
+              "New battery installation with premium cells.",
+              "Post-repair charging & thermal tests.",
             ],
           },
           {
-            heading: "How Fix It Jerry Replaces Your Battery",
-            content: [
-              "Battery Health Diagnosis – Checking battery cycles and overall condition.",
-              "Safe Battery Removal – Carefully removing the old battery without damaging components.",
-              "Premium Replacement Battery – Using high-quality, long-lasting batteries.",
-              "Post-Replacement Testing – Ensuring battery performance and proper charging functionality.",
-            ],
-          },
-          {
-            heading: "Replacement Cost & Turnaround Time",
-            content: [
-              "Cost: RM 180 - RM 600 (Depending on phone model)",
-              "Turnaround Time: 30 minutes - 1 hour.",
-            ],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 600", "Time: 30 minutes - 1 hour"],
           },
         ],
       },
       {
         service_type: "replacement",
-        service: "Housing",
-        slug: "services/replacement/smartphone/housing",
-        title: "Smartphone Housing Replacement | Fix It Jerry",
+        service: "Camera",
+        hash: "camera",
+        title: "Smartphone Camera Replacement | Fix It Jerry",
         meta_description:
-          "Is your phone’s housing damaged or scratched? Fix It Jerry offers professional smartphone housing replacement with durable materials and quick service!",
+          "Blurry photos or camera not opening? Fix It Jerry replaces front or rear smartphone cameras with precision and care.",
         sections: [
           {
-            heading: "What is a Battery Replacement?",
-            content:
-              "Over time, smartphone batteries degrade, leading to poor battery life, unexpected shutdowns, or charging issues. Replacing the battery restores optimal performance and extends your phone’s lifespan.",
-          },
-          {
-            heading: "Common Signs You Need a Battery",
+            heading: "Camera Replacement Needed If...",
             content: [
-              "Battery drains quickly even with minimal use.",
-              "Phone shuts down unexpectedly, even when battery percentage is high.",
-              "Swollen battery causing the back cover to lift.",
-              "Phone gets excessively hot during use or charging.",
-              "Battery percentage jumps up or down randomly.",
-              "Phone only turns on when plugged in.",
+              "Camera app shows black screen.",
+              "Photos are blurry or won’t focus.",
+              "Camera won’t open or crashes the app.",
+              "Cracks or scratches on camera glass.",
             ],
           },
           {
-            heading: "What to Do If Your Battery is Draining Fast",
+            heading: "Our Replacement Process",
             content: [
-              "Check if any background apps are consuming excessive power.",
-              "Enable power-saving mode to extend battery life temporarily.",
-              "Try using a different charging cable and adapter.",
-              "Avoid using the phone while charging to prevent overheating.",
-              "If issues persist, a professional battery replacement is recommended.",
+              "Camera module testing and identification.",
+              "Safe removal and flex cable inspection.",
+              "New OEM camera installation.",
+              "Focus and clarity test post-repair.",
             ],
           },
           {
-            heading: "How Fix It Jerry Replaces Your Battery",
-            content: [
-              "Battery Health Diagnosis – Checking battery cycles and overall condition.",
-              "Safe Battery Removal – Carefully removing the old battery without damaging components.",
-              "Premium Replacement Battery – Using high-quality, long-lasting batteries.",
-              "Post-Replacement Testing – Ensuring battery performance and proper charging functionality.",
-            ],
-          },
-          {
-            heading: "Replacement Cost & Turnaround Time",
-            content: [
-              "Cost: RM 180 - RM 600 (Depending on phone model)",
-              "Turnaround Time: 30 minutes - 1 hour.",
-            ],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 220 - RM 700", "Time: 1 - 2 hours"],
           },
         ],
       },
-      // /////
       {
-        service_type: "upgrade",
-        service: "Storage Upgrade",
-        slug: "services/upgrade/smartphone/os-upgrade",
-        title: "Smartphone OS Upgrade Service | Fix It Jerry",
+        service_type: "replacement",
+        service: "Backglass",
+        hash: "backglass",
+        title: "Smartphone Back Glass Replacement | Fix It Jerry",
         meta_description:
-          "Looking to upgrade your phone’s operating system? Fix It Jerry offers professional OS upgrade services for better performance, security, and new features!",
+          "Cracked or shattered back glass? Restore your phone's sleek look with a safe backglass replacement at Fix It Jerry.",
         sections: [
           {
-            heading: "What is an OS Upgrade?",
-            content:
-              "An OS (Operating System) upgrade updates your smartphone’s software to a newer version, providing better performance, improved security, and new features.",
-          },
-          {
-            heading: "Common Reasons to Upgrade Your OS",
+            heading: "Why Replace the Backglass?",
             content: [
-              "Your current OS version is outdated and no longer supported.",
-              "Newer apps require a more recent OS version.",
-              "Security vulnerabilities in older software versions.",
-              "Performance issues like lagging, freezing, or slow app launches.",
-              "New features and improvements available in the latest OS.",
+              "Sharp cracks that can cut fingers.",
+              "Affects wireless charging performance.",
+              "Waterproofing compromised.",
+              "Looks broken and reduces resale value.",
             ],
           },
           {
-            heading: "What to Do Before Upgrading Your OS",
+            heading: "How We Replace Back Glass",
             content: [
-              "Back up all important data to prevent data loss.",
-              "Ensure your phone has at least 50% battery or is plugged in.",
-              "Check if your phone model is compatible with the latest OS.",
-              "Free up storage space for a smooth upgrade process.",
-              "Verify internet connection stability for uninterrupted downloads.",
+              "Precision heating and separation (no force).",
+              "Glass adhesive residue removal.",
+              "Laser machine or cold separation method.",
+              "New glass application with adhesive curing.",
             ],
           },
           {
-            heading: "How Fix It Jerry Performs OS Upgrades",
-            content: [
-              "Compatibility Check – Ensuring your device supports the latest OS version.",
-              "Data Backup Assistance – Helping you back up important files before upgrading.",
-              "OS Installation – Secure and error-free installation of the new software.",
-              "Post-Upgrade Optimization – Configuring settings for smooth performance.",
-            ],
-          },
-          {
-            heading: "Upgrade Cost & Turnaround Time",
-            content: [
-              "Cost: RM 80 - RM 300 (Depending on phone model)",
-              "Turnaround Time: 30 minutes - 2 hours.",
-            ],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 200 - RM 600", "Time: 1 - 3 hours"],
           },
         ],
+      },
+      {
+        service_type: "replacement",
+        service: "Mic & Speaker",
+        hash: "mic-speaker",
+        title: "Smartphone Mic & Speaker Replacement | Fix It Jerry",
+        meta_description:
+          "Can’t hear during calls or voice not detected? Fix It Jerry replaces faulty mics and speakers quickly and affordably.",
+        sections: [
+          {
+            heading: "Common Mic/Speaker Problems",
+            content: [
+              "Others can’t hear you during calls.",
+              "No sound from speaker or crackling noise.",
+              "Voice memos or videos don’t capture sound.",
+              "Ear speaker too soft even at max volume.",
+            ],
+          },
+          {
+            heading: "Repair Steps",
+            content: [
+              "Component testing for mic and earpiece.",
+              "Dust/debris removal from mesh.",
+              "Mic/speaker module swap with OEM parts.",
+              "Sound test after replacement.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 150 - RM 500", "Time: 30 minutes - 2 hours"],
+          },
+        ],
+      },
+      {
+        service_type: "replacement",
+        service: "WiFi & Charging Port",
+        hash: "charging-port",
+        title: "Charging Port & WiFi Antenna Replacement | Fix It Jerry",
+        meta_description:
+          "Charging problems or no WiFi? We replace your smartphone’s charging port and antenna modules with precision.",
+        sections: [
+          {
+            heading: "When to Replace This",
+            content: [
+              "Charging only works at certain angles.",
+              "Cable won’t stay plugged in.",
+              "WiFi shows weak signal or drops frequently.",
+              "Phone won’t detect charger at all.",
+            ],
+          },
+          {
+            heading: "Replacement Process",
+            content: [
+              "Charging port desoldering & board cleanup.",
+              "Connector and antenna flex replacement.",
+              "Multi-point charging & WiFi signal test.",
+              "Frame reseating and waterproofing tape.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 650", "Time: 1 - 2 hours"],
+          },
+        ],
+      },
+      {
+        service_type: "replacement",
+        service: "Home Button / Side Buttons",
+        hash: "buttons",
+        title: "Smartphone Button Replacement | Fix It Jerry",
+        meta_description:
+          "Power button not working? Volume buttons stuck? We replace smartphone home, power, and volume buttons efficiently.",
+        sections: [
+          {
+            heading: "Symptoms of Button Failure",
+            content: [
+              "Power button is stuck or unresponsive.",
+              "Home button doesn’t click or trigger anything.",
+              "Volume buttons only work sometimes.",
+              "Fingerprint sensor on home button doesn’t work.",
+            ],
+          },
+          {
+            heading: "Button Replacement Process",
+            content: [
+              "Open device to access button cable and bracket.",
+              "Replace flex cable or button mechanism.",
+              "Fingerprint calibration (if applicable).",
+              "Function test post-installation.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 160 - RM 500", "Time: 1 - 2 hours"],
+          },
+        ],
+      },
+      // ================================== upgrade ==================================
+      // ================================== upgrade ==================================
+      // ================================== upgrade ==================================
+      // ================================== upgrade ==================================
+      {
+      service_type: "upgrade",
+      service: "Storage Upgrade",
+      hash: "storage-upgrade",
+      title: "Smartphone Storage Upgrade | Fix It Jerry",
+      meta_description:
+        "Running out of space? Fix It Jerry upgrades your smartphone’s internal storage so you can store more and perform faster.",
+      sections: [
+        {
+          heading: "Why Upgrade Storage?",
+          content: [
+            "Constant 'Storage Full' notifications.",
+            "Lag during app installs or updates.",
+            "Can’t take photos or record videos due to lack of space.",
+          ],
+        },
+        {
+          heading: "How We Upgrade Your Storage",
+          content: [
+            "Internal storage chip upgrade (for eligible models).",
+            "MicroSD setup and configuration.",
+            "Data backup and safe transfer.",
+            "System optimization after expansion.",
+          ],
+        },
+        {
+          heading: "Cost & Turnaround",
+          content: ["Cost: RM 200 - RM 800", "Time: 2 - 4 hours"],
+        },
+      ],
+      },
+      {
+  service_type: "upgrade",
+  service: "Installation and Reformat",
+  hash: "os-installation",
+  title: "Smartphone OS, App & Software Installation | Fix It Jerry",
+  meta_description:
+    "Slow phone? Buggy apps? Fix It Jerry formats and installs OS, apps, and software to give your phone a fresh start.",
+  sections: [
+    {
+      heading: "When to Reformat & Reinstall",
+      content: [
+        "Phone is slow or unresponsive.",
+        "Malware or app crashing issues.",
+        "Want a clean fresh system setup.",
+      ],
+    },
+    {
+      heading: "Our Process",
+      content: [
+        "Back up important data (if accessible).",
+        "Reformat and clean OS install.",
+        "Install essential apps or your preferred software.",
+        "Optimize system for performance.",
+      ],
+    },
+    {
+      heading: "Cost & Turnaround",
+      content: ["Cost: RM 100 - RM 300", "Time: 1 - 2 hours"],
+    },
+  ],
       },
       {
         service_type: "upgrade",
         service: "General Servicing",
-        slug: "services/upgrade/smartphone/performance-boost",
-        title: "Smartphone Performance Boost Service | Fix It Jerry",
+        hash: "general-servicing",
+        title: "Smartphone General Servicing | Fix It Jerry",
         meta_description:
-          "Is your smartphone running slow or lagging? Fix It Jerry offers professional performance boost services to enhance speed, optimize storage, and improve efficiency!",
+          "Dusty ports? Sluggish performance? Fix It Jerry offers general servicing for your smartphone to keep it running smooth.",
         sections: [
           {
-            heading: "What is a Performance Boost?",
-            content:
-              "A performance boost optimizes your smartphone’s speed and responsiveness by clearing unnecessary data, optimizing settings, and upgrading components if necessary.",
-          },
-          {
-            heading: "Common Signs Your Phone Needs a Performance Boost",
+            heading: "What’s Included in General Servicing",
             content: [
-              "Apps take a long time to open or crash frequently.",
-              "The phone lags or freezes during use.",
-              "Insufficient storage warnings despite deleting files.",
-              "Battery drains faster than usual due to background processes.",
-              "Overheating while performing basic tasks.",
+              "Cleaning of charging ports and speaker grills.",
+              "Removal of dust and debris from internals.",
+              "Thermal paste reapplication (if needed).",
+              "Performance check and light diagnostics.",
             ],
           },
           {
-            heading: "What to Do Before a Performance Boost",
+            heading: "Best Time to Get Servicing",
             content: [
-              "Back up your important files to avoid data loss.",
-              "Uninstall unused apps to free up storage.",
-              "Check for pending software updates.",
-              "Restart your phone to see if temporary lag issues resolve.",
-              "If the problem persists, professional optimization is needed.",
+              "Phone heats up even during idle use.",
+              "Buttons feel sticky or ports loose.",
+              "Device hasn’t been opened in over 2 years.",
             ],
           },
           {
-            heading: "How Fix It Jerry Boosts Your Phone's Performance",
-            content: [
-              "Storage Optimization – Clearing junk files and unnecessary cache.",
-              "Software Optimization – Adjusting system settings for speed improvement.",
-              "Hardware Inspection – Checking battery, RAM, and processor performance.",
-              "OS & App Updates – Ensuring all software is up-to-date and bug-free.",
-            ],
-          },
-          {
-            heading: "Upgrade Cost & Turnaround Time",
-            content: [
-              "Cost: RM 100 - RM 500 (Depending on optimization level)",
-              "Turnaround Time: 1 - 3 hours.",
-            ],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 80 - RM 250", "Time: 1 - 2 hours"],
           },
         ],
       },
       {
         service_type: "upgrade",
-        service: "OS installation",
-        slug: "services/upgrade/smartphone/storage-upgrade",
-        title: "Smartphone Storage Upgrade Service | Fix It Jerry",
+        service: "Apple ID Bypass",
+        hash: "apple-id-bypass",
+        title: "Apple ID Bypass Service | Fix It Jerry",
         meta_description:
-          "Running out of storage on your phone? Fix It Jerry offers professional smartphone storage upgrade services to expand capacity and improve performance!",
+          "Locked out of your device due to forgotten Apple ID? Fix It Jerry provides professional Apple ID bypass solutions for eligible devices.",
         sections: [
           {
-            heading: "What is a Storage Upgrade?",
-            content:
-              "A storage upgrade increases your smartphone's internal storage capacity, allowing you to store more apps, photos, videos, and files without performance slowdowns.",
-          },
-          {
-            heading: "Common Signs You Need a Storage Upgrade",
+            heading: "When You Need This",
             content: [
-              "Frequent 'Storage Almost Full' warnings.",
-              "Cannot install new apps due to low space.",
-              "Phone slows down due to limited storage availability.",
-              "Camera unable to take photos/videos due to insufficient space.",
-              "Difficulty saving files or downloading updates.",
+              "You forgot the Apple ID password.",
+              "Bought a second-hand phone that’s still locked.",
+              "Device is stuck on Activation Lock screen.",
             ],
           },
           {
-            heading: "What to Do Before Upgrading Your Storage",
+            heading: "Our Approach",
             content: [
-              "Back up all important files to avoid data loss.",
-              "Uninstall unused apps to free up storage.",
-              "Move photos, videos, and large files to cloud storage or an SD card.",
-              "Check if your device supports storage expansion via microSD card.",
-              "If storage is still insufficient, a professional storage upgrade is needed.",
+              "We verify rightful ownership documentation.",
+              "Use secure bypass software (only for eligible iPhones).",
+              "Ensure device is usable post-bypass.",
+              "We do NOT support stolen devices.",
             ],
           },
           {
-            heading: "How Fix It Jerry Upgrades Your Phone’s Storage",
-            content: [
-              "Storage Expansion – Installing a larger capacity storage chip (for supported models).",
-              "MicroSD Card Installation – Setting up and optimizing external storage expansion.",
-              "Data Transfer & Backup – Ensuring no data is lost during the upgrade process.",
-              "Performance Optimization – Configuring new storage for smooth operation.",
-            ],
-          },
-          {
-            heading: "Upgrade Cost & Turnaround Time",
-            content: [
-              "Cost: RM 200 - RM 800 (Depending on upgrade option)",
-              "Turnaround Time: 2 - 4 hours.",
-            ],
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 250 - RM 850", "Time: 1 - 3 days"],
           },
         ],
       },
+      {
+        service_type: "upgrade",
+        service: "Data Backup & Recovery",
+        hash: "data-recovery",
+        title: "Data Backup & Recovery | Fix It Jerry",
+        meta_description:
+          "Accidentally deleted files or can't access phone data? Fix It Jerry provides full data backup and recovery services.",
+        sections: [
+          {
+            heading: "Why You Might Need Recovery",
+            content: [
+              "You accidentally deleted important files.",
+              "Phone is stuck in bootloop or can't turn on.",
+              "Screen is broken and data is inaccessible.",
+            ],
+          },
+          {
+            heading: "How We Recover It",
+            content: [
+              "We attempt NAND-level recovery (if needed).",
+              "Use advanced data extraction tools.",
+              "Clone data to new device or drive.",
+              "Encrypt and export data to USB or cloud.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 300 - RM 1200", "Time: 2 hours - 3 days"],
+          },
+        ],
+      }
     ],
   },
   {
@@ -565,7 +894,7 @@ const repairItems = [
       {
         service_type: "replacement",
         service: "Battery",
-        slug: "services/replacement/airpods/battery",
+        hash: "battery",
         title: "AirPods Battery Replacement | Fix It Jerry",
         meta_description:
           "Experiencing short battery life on your AirPods? Fix It Jerry offers fast and reliable battery replacement for AirPods. Book your repair today!",
@@ -978,6 +1307,51 @@ const repairItems = [
         ],
       },
       {
+        service_type: "replacement",
+        service: "LCD/touchscreen",
+        slug: "services/replacement/apple-watch/lcd",
+        title: "Apple Watch Screen Replacement | Fix It Jerry",
+        meta_description:
+          "Cracked or unresponsive Apple Watch screen? Fix It Jerry offers expert screen replacement for all Apple Watch models. Fast, clean, and affordable service.",
+        sections: [
+          {
+            heading: "What is an Apple Watch LCD Replacement?",
+            content:
+              "A cracked or malfunctioning Apple Watch screen affects both display and touch functions. LCD replacements restore both visuals and usability.",
+          },
+          {
+            heading: "When You Need a Screen Replacement",
+            content: [
+              "Cracked or shattered display.",
+              "Touch input not working or misfiring.",
+              "Black screen or dead pixels.",
+              "Display flickering or dim.",
+            ],
+          },
+          {
+            heading: "What to Do Before Getting It Replaced",
+            content: [
+              "Unpair your watch from your iPhone.",
+              "Back up health and activity data to iCloud.",
+              "Avoid using the watch with exposed internals.",
+            ],
+          },
+          {
+            heading: "How Fix It Jerry Replaces Apple Watch Screens",
+            content: [
+              "Screen Diagnosis – Confirming internal damage.",
+              "Precision Screen Removal – No damage to surrounding case.",
+              "New LCD Installation – Using factory-grade replacements.",
+              "Waterproof Sealing – Maintaining durability after repair.",
+            ],
+          },
+          {
+            heading: "Replacement Cost & Turnaround Time",
+            content: ["Cost: RM 250 - RM 800", "Turnaround Time: 1-2 hours."],
+          },
+        ],
+      },
+           {
         service_type: "replacement",
         service: "LCD/touchscreen",
         slug: "services/replacement/apple-watch/lcd",

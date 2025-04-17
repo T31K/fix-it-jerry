@@ -179,22 +179,26 @@ const GadgetFixPage = () => {
                 {
                   title: "Repair",
                   desc: "Replacing the display screen of an electronic device, such as a smartphone, tablet, laptop, or television.",
-                  img: "cpu_repair.webp",
+                  img: "macbook_repair.webp",
+                  estimated_days: "2 - 3 days",
                 },
                 {
                   title: "Replacement",
                   desc: "Over time, batteries can degrade, leading to decreased performance, reduced battery life, even complete failure.",
-                  img: "battery_replacement.webp",
+                  img: "charging_port_replacement.webp",
+                  estimated_days: "0.5 - 1 day(s)",
                 },
                 {
                   title: "Upgrade",
                   desc: "It can be particularly detrimental to electronic components, corrosion, short circuits, and other issues.",
                   img: "ram_upgrade.webp",
+                  estimated_days: "1 - 2 days",
                 },
                 {
                   title: "Data Recovery",
                   desc: "Retrieving or restoring inaccessible, lost, corrupted, or accidentally deleted data from storage.",
-                  img: "hard_disk_data_recovery.webp",
+                  img: "data_recovery.webp",
+                  estimated_days: "4 - 5 days",
                 },
               ].map((issue, index) => (
                 <div
@@ -205,7 +209,7 @@ const GadgetFixPage = () => {
                   <div className="bg-dark-2 text-light h-100 rounded-1 overflow-hidden">
                     <div className="relative overflow-hidden">
                       <p className="d-inline bg-blur abs abs-center px-2 rounded-3 text-center bottom-10 z-1000 text-white mb-0 fs-14">
-                        Estimated 1 - 3 days
+                        {issue.estimated_days}
                       </p>
                       <img
                         src={`images/services/${issue.img}`}
