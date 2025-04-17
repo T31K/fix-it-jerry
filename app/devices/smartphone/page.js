@@ -175,7 +175,10 @@ export default function Page({ searchParams }) {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">Nintendo Switch Repair</h1>
+                <h1 className="md:whitespace-nowrap">Smartphone Service</h1>
+                <p className="text-gray-700 max-w-3xl text-sm md:text-base text-center mt-3">
+                  {smartphoneItem?.description}
+                </p>
               </div>
             </div>
           </div>
@@ -188,7 +191,7 @@ export default function Page({ searchParams }) {
                 <a href="/devices">Devices</a>
               </li>
               <li>
-                <a href="/services/nintendo_switch">Nintendo Switch</a>
+                <a href="/services/smartphone">Smartphone</a>
               </li>
             </ul>
           </div>
@@ -202,14 +205,6 @@ export default function Page({ searchParams }) {
               <InnerSideBar activeLink="smartphone" />
 
               <section className="col-lg-9 !py-0">
-                <div className="bg-gradient-to-r from-brand-50 to-brand-100 p-4 md:p-8 rounded-2xl mb-6 md:mb-8">
-                  <h1 className="text-3xl md:text-4xl font-bold text-brand-800 mb-2 md:mb-3">
-                    Smartphone Services
-                  </h1>
-                  <p className="text-gray-700 max-w-3xl text-sm md:text-base">
-                    {smartphoneItem?.description}
-                  </p>
-                </div>
 
                 <Tabs defaultValue={activeTab} className="w-full">
                   <TabsList className="mb-6 md:mb-8 flex whitespace-nowrap">
@@ -368,6 +363,13 @@ export default function Page({ searchParams }) {
                               <Card>
                                 <CardContent>
                                   <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <Image
+                                      src={service.image}
+                                      width={400}
+                                      height={400}
+                                      className="mb-3 bg-green-400 rounded-lg"
+                                      alt={service.title}
+                                    />
                                     {service.sections?.map(
                                       (section, secIndex) => (
                                         <div key={secIndex} className="mb-4">
@@ -422,6 +424,13 @@ export default function Page({ searchParams }) {
                               <Card>
                                 <CardContent>
                                   <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <Image
+                                      src={service.image}
+                                      width={400}
+                                      height={400}
+                                      className="mb-3 bg-green-400 rounded-lg"
+                                      alt={service.title}
+                                    />
                                     {service.sections?.map(
                                       (section, secIndex) => (
                                         <div key={secIndex} className="mb-4">

@@ -473,6 +473,7 @@ const repairItems = [
   service: "LCD Screen / Touchscreen",
   hash: "lcd-screen-touchscreen",
   title: "Smartphone Screen Replacement | Fix It Jerry",
+  image: "/images/devices/smartphone/lcd_screen.webp",
   meta_description:
     "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable smartphone LCD & touchscreen replacement using premium parts.",
   sections: [
@@ -505,6 +506,7 @@ const repairItems = [
         service: "Housing",
         hash: "housing",
         title: "Smartphone Housing Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/housing.webp",
         meta_description:
           "Phone looking beat up? Fix It Jerry offers full smartphone housing replacements for a fresh look and restored durability.",
         sections: [
@@ -537,6 +539,7 @@ const repairItems = [
         service: "Battery",
         hash: "battery",
         title: "Smartphone Battery Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/battery.webp",
         meta_description:
           "Battery drains too fast or shuts off suddenly? Get a premium battery replacement at Fix It Jerry today.",
         sections: [
@@ -569,6 +572,7 @@ const repairItems = [
         service: "Camera",
         hash: "camera",
         title: "Smartphone Camera Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/camera.webp",
         meta_description:
           "Blurry photos or camera not opening? Fix It Jerry replaces front or rear smartphone cameras with precision and care.",
         sections: [
@@ -601,6 +605,7 @@ const repairItems = [
         service: "Backglass",
         hash: "backglass",
         title: "Smartphone Back Glass Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/backglass.webp",
         meta_description:
           "Cracked or shattered back glass? Restore your phone's sleek look with a safe backglass replacement at Fix It Jerry.",
         sections: [
@@ -633,6 +638,7 @@ const repairItems = [
         service: "Mic & Speaker",
         hash: "mic-speaker",
         title: "Smartphone Mic & Speaker Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/mic_speaker.webp",
         meta_description:
           "Can’t hear during calls or voice not detected? Fix It Jerry replaces faulty mics and speakers quickly and affordably.",
         sections: [
@@ -665,6 +671,7 @@ const repairItems = [
         service: "WiFi & Charging Port",
         hash: "charging-port",
         title: "Charging Port & WiFi Antenna Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/wifi_charging_port.webp",
         meta_description:
           "Charging problems or no WiFi? We replace your smartphone’s charging port and antenna modules with precision.",
         sections: [
@@ -697,6 +704,7 @@ const repairItems = [
         service: "Home Button / Side Buttons",
         hash: "buttons",
         title: "Smartphone Button Replacement | Fix It Jerry",
+        image: "/images/devices/smartphone/home_button.webp",
         meta_description:
           "Power button not working? Volume buttons stuck? We replace smartphone home, power, and volume buttons efficiently.",
         sections: [
@@ -733,6 +741,7 @@ const repairItems = [
       service: "Storage Upgrade",
       hash: "storage-upgrade",
       title: "Smartphone Storage Upgrade | Fix It Jerry",
+      image: "/images/devices/smartphone/storage_upgrade.webp",
       meta_description:
         "Running out of space? Fix It Jerry upgrades your smartphone’s internal storage so you can store more and perform faster.",
       sections: [
@@ -764,6 +773,7 @@ const repairItems = [
   service: "Installation and Reformat",
   hash: "os-installation",
   title: "Smartphone OS, App & Software Installation | Fix It Jerry",
+  image: "/images/devices/smartphone/installation_reformat.webp",
   meta_description:
     "Slow phone? Buggy apps? Fix It Jerry formats and installs OS, apps, and software to give your phone a fresh start.",
   sections: [
@@ -795,6 +805,7 @@ const repairItems = [
         service: "General Servicing",
         hash: "general-servicing",
         title: "Smartphone General Servicing | Fix It Jerry",
+        image: "/images/devices/smartphone/general_servicing.webp",
         meta_description:
           "Dusty ports? Sluggish performance? Fix It Jerry offers general servicing for your smartphone to keep it running smooth.",
         sections: [
@@ -826,6 +837,7 @@ const repairItems = [
         service: "Apple ID Bypass",
         hash: "apple-id-bypass",
         title: "Apple ID Bypass Service | Fix It Jerry",
+        image: "/images/devices/smartphone/apple_id_bypass.webp",
         meta_description:
           "Locked out of your device due to forgotten Apple ID? Fix It Jerry provides professional Apple ID bypass solutions for eligible devices.",
         sections: [
@@ -857,6 +869,7 @@ const repairItems = [
         service: "Data Backup & Recovery",
         hash: "data-recovery",
         title: "Data Backup & Recovery | Fix It Jerry",
+        image: "/images/devices/smartphone/data_backup.webp",
         meta_description:
           "Accidentally deleted files or can't access phone data? Fix It Jerry provides full data backup and recovery services.",
         sections: [
