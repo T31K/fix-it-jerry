@@ -1,10 +1,35 @@
 import { features, repairItems } from "@/data";
 import InnerSideBar from "@/components/InnerSideBar";
-export default function page() {
-  // Get the switch item from repairItems
-  const nintendoSwitchItem = repairItems.find(
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
+export default function Page({ searchParams }) {
+  const nintendoSwitchItems = repairItems.find(
     (item) => item.title === "Nintendo Switch"
   );
+
+  // Extract hash from search params
+  const hash = searchParams?.hash || "";
+
+  // Find the service that matches the hash
+  const targetService = nintendoSwitchItems?.services.find(
+    (service) => service.hash === hash
+  );
+
+  // Determine which tab should be active based on the service type
+  const activeTab = targetService?.service_type || "repair";
 
   return (
     <div id="wrapper">
@@ -94,8 +119,8 @@ export default function page() {
                       </a>
                       <ul>
                         <li>
-                          <a className="menu-item" href="/services/smartphone">
-                            Smartphone
+                          <a className="menu-item" href="/services/nintendo_switch">
+                            Nintendo Switch
                           </a>
                         </li>
                       </ul>
@@ -150,7 +175,10 @@ export default function page() {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">Nintendo Switch Repair</h1>
+                <h1 className="md:whitespace-nowrap">Laptop Services</h1>
+                <p className="text-gray-700 max-w-3xl text-sm md:text-base text-center mt-3">
+                  {nintendoSwitchItems?.description}
+                </p>
               </div>
             </div>
           </div>
@@ -177,376 +205,201 @@ export default function page() {
               <InnerSideBar activeLink="switch" />
 
               <section className="col-lg-9 !py-0">
-                <div className="row">
-                  <div className="col-sm-12 col-md-12 mb-4">
-                    <h2 className="!text-4xl">Nintendo Switch Services</h2>
-                    <p>{nintendoSwitchItem?.description}</p>
-                  </div>
-                </div>
 
-                {nintendoSwitchItem?.services.map((service, serviceIndex) => (
-                  <div key={serviceIndex} className="row mb-5">
-                    <div className="col-sm-12 col-md-12">
-                      <h2 className="text-3xl font-bold mb-3">
-                        <a
-                          href={`/${service.slug}`}
-                          className="text-color hover:text-color-2"
+                <Tabs defaultValue={activeTab} className="w-full">
+
+
+                  {/* Repairs Tab Content */}
+                  <TabsContent value="repair">
+                    {nintendoSwitchItems?.services
+                      .filter((service) => service.service_type === "repair")
+                      .map((service, index) => (
+                        <Accordion
+                          key={index}
+                          type="single"
+                          collapsible
+                          defaultValue={
+                            service.hash === hash
+                              ? `repair-${service.hash}`
+                              : undefined
+                          }
                         >
-                          {service.service}{" "}
-                          {service.service_type && `(${service.service_type})`}
-                        </a>
-                      </h2>
+                          <AccordionItem value={`repair-${service.hash}`}>
+                            <AccordionTrigger>
+                              {service.service}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              <Card>
+                                <CardContent>
 
-                      {service.meta_description && (
-                        <p className="mb-4">{service.meta_description}</p>
-                      )}
+                                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <Image
+                                      src={service.image}
+                                      width={400}
+                                      height={400}
+                                      className="mb-3 border rounded-lg"
+                                      alt={service.title}
+                                    />
+                                    {service.sections?.map(
+                                      (section, secIndex) => (
+                                        <div key={secIndex} className="mb-4">
+                                          <h4 className="text-lg font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
+                                            {section.heading}
+                                          </h4>
+                                          {Array.isArray(section.content) ? (
+                                            <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-sm md:text-base">
+                                              {section.content.map(
+                                                (item, i) => (
+                                                  <li key={i}>{item}</li>
+                                                )
+                                              )}
+                                            </ul>
+                                          ) : (
+                                            <p className="text-gray-700 text-sm md:text-base">
+                                              {section.content}
+                                            </p>
+                                          )}
+                                        </div>
+                                      )
+                                    )}
+                                  </div>
+                                </CardContent>
+                              </Card>
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      ))}
+                  </TabsContent>
 
-                      {/* Nested loop for sections within each service */}
-                      {service.sections &&
-                        service.sections.map((section, sectionIndex) => (
-                          <div key={sectionIndex} className="mb-4">
-                            <h3 className="text-xl font-semibold mb-2">
-                              {section.heading}
-                            </h3>
-                            {Array.isArray(section.content) ? (
-                              <ul className="list-disc pl-5">
-                                {section.content.map(
-                                  (content, contentIndex) => (
-                                    <li key={contentIndex} className="mb-1">
-                                      {content}
-                                    </li>
-                                  )
-                                )}
-                              </ul>
-                            ) : (
-                              <p>{section.content}</p>
-                            )}
-                          </div>
-                        ))}
+                  {/* Replacements Tab Content */}
+                  <TabsContent value="replacement">
+                    {nintendoSwitchItems?.services
+                      .filter(
+                        (service) => service.service_type === "replacement"
+                      )
+                      .map((service, index) => (
+                        <Accordion
+                          key={index}
+                          type="single"
+                          collapsible
+                          defaultValue={
+                            service.hash === hash
+                              ? `replacement-${service.hash}`
+                              : undefined
+                          }
+                        >
+                          <AccordionItem value={`replacement-${service.hash}`}>
+                            <AccordionTrigger>
+                              {service.service}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              <Card>
+                                <CardContent>
+                                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <Image
+                                      src={service.image}
+                                      width={400}
+                                      height={400}
+                                      className="mb-3 border rounded-lg"
+                                      alt={service.title}
+                                    />
+                                    {service.sections?.map(
+                                      (section, secIndex) => (
+                                        <div key={secIndex} className="mb-4">
+                                          <h4 className="text-lg font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
+                                            {section.heading}
+                                          </h4>
+                                          {Array.isArray(section.content) ? (
+                                            <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-sm md:text-base">
+                                              {section.content.map(
+                                                (item, i) => (
+                                                  <li key={i}>{item}</li>
+                                                )
+                                              )}
+                                            </ul>
+                                          ) : (
+                                            <p className="text-gray-700 text-sm md:text-base">
+                                              {section.content}
+                                            </p>
+                                          )}
+                                        </div>
+                                      )
+                                    )}
+                                  </div>
+                                </CardContent>
+                              </Card>
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      ))}
+                  </TabsContent>
 
-                      <div className="border-b border-gray-200 my-4"></div>
-                    </div>
-                  </div>
-                ))}
-
-                <div className="row g-0">
-                  <div className="col-lg-8">
-                    <div className="row g-0">
-                      <div className="col-sm-6">
-                        <div className="p-5 bg-color-2 text-dark">
-                          <h3>Original Parts</h3>
-                          <p className="mb-0">
-                            We use only original parts for all our gadget
-                            repairs, ensuring your device gets the best quality
-                            and performance.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <img
-                          alt=""
-                          className="h-100 mh-200"
-                          src="/images/misc/1.webp"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-8 offset-lg-4">
-                    <div className="row g-0">
-                      <div className="col-sm-6">
-                        <div className="p-5 bg-dark-2 text-light">
-                          <h3>Affordable Prices</h3>
-                          <p className="mb-0">
-                            {`We offer competitive prices for all our gadget repairs,
-                            ensuring you get the best value for your money.`}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <img
-                          alt=""
-                          className="h-100 mh-200"
-                          src="/images/misc/3.webp"
-                        ></img>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="spacer-single"></div>
-
-                  <div className="row g-4 mb-2 justify-content-center">
-                    <div className="col-lg-5 text-center">
-                      <div className="subtitle s2 wow fadeInUp mb-2">
-                        Top Reasons
-                      </div>
-                      <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                        Why Choose Us
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="row g-4">
-                    {features.map((reason, index) => (
-                      <div
-                        key={index}
-                        className="col-lg-4 col-md-6 wow fadeInUp"
-                      >
-                        <div className="relative">
-                          <i className="abs fs-40 p-3 border-1-black icon_check rounded-1 text-dark"></i>
-                          <div className="ps-100 ms-4">
-                            <h4>{reason.title}</h4>
-                            <p>{`${reason.feature} `}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                  {/* Upgrades Tab Content */}
+                  <TabsContent value="upgrade">
+                    {nintendoSwitchItems?.services
+                      .filter((service) => service.service_type === "upgrade")
+                      .map((service, index) => (
+                        <Accordion
+                          key={index}
+                          type="single"
+                          collapsible
+                          defaultValue={
+                            service.hash === hash
+                              ? `upgrade-${service.hash}`
+                              : undefined
+                          }
+                        >
+                          <AccordionItem value={`upgrade-${service.hash}`}>
+                            <AccordionTrigger>
+                              {service.service}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              <Card>
+                                <CardContent>
+                                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                    <Image
+                                      src={service.image}
+                                      width={400}
+                                      height={400}
+                                      className="mb-3 border rounded-lg"
+                                      alt={service.title}
+                                    />
+                                    {service.sections?.map(
+                                      (section, secIndex) => (
+                                        <div key={secIndex} className="mb-4">
+                                          <h4 className="text-lg font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
+                                            {section.heading}
+                                          </h4>
+                                          {Array.isArray(section.content) ? (
+                                            <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-sm md:text-base">
+                                              {section.content.map(
+                                                (item, i) => (
+                                                  <li key={i}>{item}</li>
+                                                )
+                                              )}
+                                            </ul>
+                                          ) : (
+                                            <p className="text-gray-700 text-sm md:text-base">
+                                              {section.content}
+                                            </p>
+                                          )}
+                                        </div>
+                                      )
+                                    )}
+                                  </div>
+                                </CardContent>
+                              </Card>
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      ))}
+                  </TabsContent>
+                </Tabs>
               </section>
             </div>
           </div>
         </section>
-
-        <section className="bg-color-2 pt-40 pb-40">
-          <div className="container">
-            <div className="row g-4 align-items-center">
-              <div className="col-lg-9">
-                <h3 className="mb-1">
-                  <i className="icofont-check-circled fs-32 me-3"></i>Quick,
-                  reliable, and affordable gadget repairs
-                </h3>
-              </div>
-
-              <div className="col-lg-3 text-lg-end text-start">
-                <a className="btn-main" href="book-repair.html">
-                  Book a Repair
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      {/* Footer */}
-      <footer className="section-dark">
-        <div className="container">
-          <div className="row gx-5">
-            <div className="col-lg-4 col-sm-6">
-              <img src="/images/logo.webp" className="w-150px" alt="" />
-              <div className="spacer-20"></div>
-              <p>
-                {`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}
-              </p>
-              <div className="social-icons mb-sm-30">
-                <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
-                  <i className="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://facebook.com/fixitjerry">
-                  <i className="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com/fixitjerry">
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
-              <div className="row">
-                <div className="col-lg-6 col-sm-6">
-                  <div className="widget">
-                    <h5>Company</h5>
-                    <ul>
-                      <li>
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="services">Our Services</a>
-                      </li>
-                      <li>
-                        <a href="track.html">Track My Repair</a>
-                      </li>
-                      <li>
-                        <a href="book-repair.html">Book a Repair</a>
-                      </li>
-                      <li>
-                        <a href="blog.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-6 col-sm-6">
-                  <div className="widget">
-                    <h5>Our Services</h5>
-                    <ul>
-                      <li>
-                        <a href="services.html">Phone Repair</a>
-                      </li>
-                      <li>
-                        <a href="services.html">Tablet Repair</a>
-                      </li>
-                      <li>
-                        <a href="services.html">Computer &amp; Laptop</a>
-                      </li>
-                      <li>
-                        <a href="services.html">Game Console</a>
-                      </li>
-                      <li>
-                        <a href="services.html">Smartwatch Repair</a>
-                      </li>
-                      <li>
-                        <a href="services.html">Software Repair</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
-              <div className="widget">
-                <div className="fw-bold text-white">
-                  <i className="icofont-clock-time me-2 id-color-2"></i>
-                  {`We're
-                  Open`}
-                </div>
-                Monday - Sunday 08.00 - 18.00
-                <div className="spacer-20"></div>
-                <div className="fw-bold text-white">
-                  <i className="icofont-location-pin me-2 id-color-2"></i>
-                  Workshop Location
-                </div>
-                Desa Parkcity, Kuala Lumpur Malaysia
-                <div className="spacer-20"></div>
-                <div className="fw-bold text-white">
-                  <i className="icofont-envelope me-2 id-color-2"></i>Send a
-                  Message
-                </div>
-                hello@fixitjerry.com
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="subfooter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="de-flex">
-                  <div className="de-flex-col">
-                    Copyright {new Date().getFullYear()} - Fix It Jerry - All
-                    Rights Reserved
-                  </div>
-                  <ul className="menu-simple">
-                    <li>
-                      <a href="/terms-and-conditions">Terms &amp; Conditions</a>
-                    </li>
-                    <li>
-                      <a href="/privacy-policy">Privacy Policy</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      {/* Overlay content */}
-      <div id="extra-wrap" className="text-light">
-        <div id="btn-close">
-          <span></span>
-          <span></span>
-        </div>
-        <div id="extra-content">
-          <img src="/images/logo.webp" className="w-150px" alt="" />
-          {/* <div className="spacer-30-line"></div>
-          <h5 className="mb-3">Our Services</h5>
-          <div className="row g-2">
-            {repairItems.map((item, index) => (
-              <div
-                key={index}
-                className="col-lg-3 col-md-6 wow fadeInRight"
-                data-wow-delay={`${index * 0.2}s`}
-              >
-                <div className="h-100 mb-sm-30">
-                  <Image
-                    src={item.imgSrc}
-                    width={250}
-                    height={250}
-                    className="mb-3 bg-green-400 rounded-full"
-                    alt={item.title}
-                  />
-                </div>
-              </div>
-            ))}
-          </div> */}
-          <h5 className="mt-12">Visit Us</h5>
-          <div>
-            <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
-            08.00 - 18.00
-          </div>
-          <div>
-            <i className="icofont-location-pin me-2 op-5"></i>Desa Parkcity,
-            Kuala Lumpur Malaysia
-          </div>
-          <div>
-            <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
-          </div>
-          <div className="spacer-30-line"></div>
-          <h5>About Us</h5>
-          <p>{`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}</p>
-          <div className="spacer-30-line"></div>
-          <h5>Contact Us</h5>
-          <div className="social-icons">
-            <a href="https://wa.me/+60183646909">
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.facebook.com/fixitjerry">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/fixitjerry/">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
-}
-
-export async function generateMetadata() {
-  const nintendoSwitchItem = repairItems.find(
-    (item) => item.title === "Nintendo Switch"
-  );
-
-  return {
-    title: `Nintendo Switch Repair | Fix It Jerry | #1 Nintendo Switch, Devices, Gadget Repair in KL`,
-    description: `${nintendoSwitchItem?.description}`,
-    openGraph: {
-      title: `Nintendo Switch Repair | Fix It Jerry | #1 Nintendo Switch, Devices, Gadget Repair in KL`,
-      description: `${nintendoSwitchItem?.description}`,
-      url: `https://fixitjerry.com/services/devices/nintendo_switch`,
-      images: "https://fixitjerry.com/og.png",
-      locale: "en_US",
-      type: "website",
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        noimageindex: false,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `Nintendo Switch Repair | #1 Nintendo Switch, Devices, Gadget Repair in KL`,
-      description: `${nintendoSwitchItem?.description}`,
-      images: ["https://fixitjerry.com/og.png"],
-    },
-  };
 }
