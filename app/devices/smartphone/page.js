@@ -304,7 +304,7 @@ export default function Page({ searchParams }) {
                                       src={service.image}
                                       width={400}
                                       height={400}
-                                      className="mb-3 bg-green-400 rounded-lg"
+                                      className="mb-3 border rounded-lg"
                                       alt={service.title}
                                     />
                                     {service.sections?.map(
@@ -367,7 +367,7 @@ export default function Page({ searchParams }) {
                                       src={service.image}
                                       width={400}
                                       height={400}
-                                      className="mb-3 bg-green-400 rounded-lg"
+                                      className="mb-3 border rounded-lg"
                                       alt={service.title}
                                     />
                                     {service.sections?.map(
@@ -428,7 +428,7 @@ export default function Page({ searchParams }) {
                                       src={service.image}
                                       width={400}
                                       height={400}
-                                      className="mb-3 bg-green-400 rounded-lg"
+                                      className="mb-3 border rounded-lg"
                                       alt={service.title}
                                     />
                                     {service.sections?.map(

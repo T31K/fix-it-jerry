@@ -8343,63 +8343,6 @@ p.slider-teaser{
 }
 
 /* scrollbar */
-body::-webkit-scrollbar,
-#de_modal::-webkit-scrollbar {
-  width: 5px;
-}
-
-body::-webkit-scrollbar-track,
-#de_modal::-webkit-scrollbar-track {
-  background: #dddddd;
-}
-
-body::-webkit-scrollbar-thumb,
-#de_modal::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
-body.dark-scheme::-webkit-scrollbar-track,
-#de_modal::-webkit-scrollbar-track {
-  background: var(--bg-dark-1);
-}
-
-.scrollbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  transition: all linear 0.1s;
-  min-width: 0%;
-  z-index:1000;
-}
-
-.scrollbar-v {
-  background: var(--secondary-color);
-  position: fixed;
-  top: calc(50% + 60px);
-  left: 43px;
-  width: 2px;
-  transition: all linear 0.1s;
-  min-height: 0%;
-  z-index:1000;
-}
-
-.scrollbar-v:before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 2px;
-  min-height: 100px;
-  background: rgba(0, 0, 0, .15);
-}
-
-
-.scrollbar-v.dark:before{
-  background: rgba(255, 255, 255, .2);
-}
 
 .float-text {
     width: 20px;
