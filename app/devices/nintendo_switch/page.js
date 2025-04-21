@@ -175,7 +175,7 @@ export default function Page({ searchParams }) {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">Laptop Services</h1>
+                <h1 className="md:whitespace-nowrap">Nintendo Switch Services</h1>
                 <p className="text-gray-700 max-w-3xl text-sm md:text-base text-center mt-3">
                   {nintendoSwitchItems?.description}
                 </p>
@@ -207,7 +207,74 @@ export default function Page({ searchParams }) {
               <section className="col-lg-9 !py-0">
 
                 <Tabs defaultValue={activeTab} className="w-full">
-
+                  <TabsList className="mb-6 md:mb-8 flex whitespace-nowrap">
+                    <TabsTrigger value="repair">
+                      <span className="flex items-center gap-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="hidden sm:inline"
+                        >
+                          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                          <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span className="text-xs sm:text-sm">Repairs</span>
+                      </span>
+                    </TabsTrigger>
+                    <TabsTrigger value="replacement">
+                      <span className="flex items-center gap-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="hidden sm:inline"
+                        >
+                          <path d="M14 4c0-1.1.9-2 2-2"></path>
+                          <path d="M20 2c1.1 0 2 .9 2 2"></path>
+                          <path d="M22 8c0 1.1-.9 2-2 2"></path>
+                          <path d="M16 10c-1.1 0-2-.9-2-2"></path>
+                          <path d="M17 6h-5a2 2 0 0 0-2 2v8"></path>
+                          <path d="m2 2 20 20"></path>
+                          <path d="M4 14a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8"></path>
+                        </svg>
+                        <span className="text-xs sm:text-sm">Replace</span>
+                      </span>
+                    </TabsTrigger>
+                    <TabsTrigger value="upgrade">
+                      <span className="flex items-center gap-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="hidden sm:inline"
+                        >
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                          <polyline points="17 8 12 3 7 8"></polyline>
+                          <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <span className="text-xs sm:text-sm">Upgrades</span>
+                      </span>
+                    </TabsTrigger>
+                  </TabsList>
 
                   {/* Repairs Tab Content */}
                   <TabsContent value="repair">
