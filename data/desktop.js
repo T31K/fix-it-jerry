@@ -108,6 +108,7 @@ const desktopItems = {
   service_type: "repair",
   service: "GPU",
   hash: "gpu",
+  popular: true,
   image: "/images/devices/laptop/gpu.webp",
   title: "Desktop GPU Repair & Replacement | Fix It Jerry",
   meta_description:
@@ -340,6 +341,7 @@ const desktopItems = {
   service: "Data Backup & Recovery",
   image: '/images/devices/laptop/data_backup.webp',
   hash: "desktop-data-recovery",
+  popular: true,
   title: "Desktop Data Backup & Recovery | Fix It Jerry",
   meta_description:
     "Lost files or failed hard drive? We recover your data and back it up safely to external drives or cloud.",
