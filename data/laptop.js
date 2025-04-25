@@ -14,6 +14,7 @@ const laptopItems = {
       service: "Water damage/CPU Damage",
       hash: "water-damage",
       popular: true,
+      image: "/images/devices/smartphone/water_damage.webp",
       title: "Laptop Water Damage Repair | Fix It Jerry",
       meta_description:
         "Spilled liquid on your laptop? Our expert water damage repair service can save your device and data. Fast and reliable service.",
@@ -64,6 +65,7 @@ const laptopItems = {
       service: "Power IC",
       hash: "power-ic",
       title: "Laptop Power IC Repair | Fix It Jerry",
+      image: "/images/devices/laptop/power_ic.webp",
       meta_description:
         "Laptop won’t turn on? It could be the Power IC. We specialize in laptop power IC repair to restore stable power flow and functionality.",
       sections: [
@@ -101,6 +103,7 @@ const laptopItems = {
       service: "Baseband IC",
       hash: "baseband-ic",
       title: "Laptop Baseband IC Repair | Fix It Jerry",
+      image: "/images/devices/laptop/baseband_ic.webp",
       meta_description:
         "Laptop showing no Wi-Fi or cellular signal? Our baseband IC repair service restores network and connectivity functions.",
       sections: [
@@ -138,6 +141,7 @@ const laptopItems = {
       service: "Audio IC",
       hash: "audio-ic",
       title: "Laptop Audio IC Repair | Fix It Jerry",
+      image: "/images/devices/smartphone/audio_ic.webp",
       meta_description:
         "Laptop speakers or mic not working? Our Audio IC repair service solves sound-related issues effectively.",
       sections: [
@@ -175,6 +179,7 @@ const laptopItems = {
       service: "Charging IC",
       hash: "charging-ic",
       title: "Laptop Charging IC Repair | Fix It Jerry",
+      image: "/images/devices/laptop/charging_ic.webp",
       meta_description:
         "Laptop not charging properly? We repair or replace charging ICs to restore safe and stable power.",
       sections: [
@@ -212,6 +217,7 @@ const laptopItems = {
       service: "Backlight IC",
       hash: "backlight-ic",
       title: "Laptop Backlight IC Repair | Fix It Jerry",
+      image: "/images/devices/laptop/backlight_ic.webp",
       meta_description:
         "Laptop screen turns on but stays black? It could be the backlight IC. We repair it to restore screen visibility.",
       sections: [
@@ -248,6 +254,7 @@ const laptopItems = {
       service: "GPU",
       hash: "gpu-repair",
       title: "Laptop GPU Repair | Fix It Jerry",
+      image: "/images/devices/laptop/gpu.webp",
       meta_description:
         "Seeing glitches, crashes, or overheating? Our GPU repair service handles graphics chip failures on laptops.",
       sections: [
@@ -286,6 +293,7 @@ const laptopItems = {
   hash: "lcd-screen",
   popular: true,
   title: "Laptop LCD Screen Replacement | Fix It Jerry",
+  image: "/images/devices/laptop/lcd_screen.webp",
   meta_description:
     "Cracked or black laptop screen? Fix It Jerry replaces damaged LCD screens fast with top quality panels.",
   sections: [
@@ -318,6 +326,7 @@ const laptopItems = {
   service: "Top & Bottom Casing / Hinge",
   hash: "casing-hinge",
   title: "Laptop Casing & Hinge Replacement | Fix It Jerry",
+  image: "/images/devices/laptop/casing.webp",
   meta_description:
     "Broken laptop casing or loose hinges? We replace top and bottom casings, restore hinges, and bring your device back to sturdy shape.",
   sections: [
@@ -351,6 +360,7 @@ const laptopItems = {
   hash: "battery",
   popular: true,
   title: "Laptop Battery Replacement | Fix It Jerry",
+  image: "/images/devices/laptop/battery.webp",
   meta_description:
     "Battery not holding charge? We replace your laptop’s battery to restore reliable, long-lasting power.",
   sections: [
@@ -383,6 +393,7 @@ const laptopItems = {
   service: "Fan",
   hash: "fan",
   title: "Laptop Fan Replacement | Fix It Jerry",
+  image: "/images/devices/laptop/fan.webp",
   meta_description:
     "Laptop overheating or making loud noise? We replace damaged or faulty fans to restore cooling performance.",
   sections: [
@@ -413,6 +424,7 @@ const laptopItems = {
 {
   service_type: "replacement",
   service: "Keyboard & Trackpad",
+  image: "/images/devices/laptop/keyboard.webp",
   hash: "keyboard-trackpad",
   title: "Laptop Keyboard & Trackpad Replacement | Fix It Jerry",
   meta_description:
@@ -447,6 +459,7 @@ const laptopItems = {
   service: "Mic & Speaker",
   hash: "mic-speaker",
   title: "Laptop Mic & Speaker Replacement | Fix It Jerry",
+  image: "/images/devices/smartphone/mic_speaker.webp",
   meta_description:
     "Can’t hear sound or your mic isn’t picking up voice? We replace internal laptop speakers and microphones for crystal-clear communication.",
   sections: [
@@ -478,6 +491,7 @@ const laptopItems = {
   service_type: "replacement",
   service: "WiFi & Charging Port",
   hash: "wifi-charging-port",
+  image: "/images/devices/laptop/wifi.webp",
   title: "Laptop WiFi & Charging Port Replacement | Fix It Jerry",
   meta_description:
     "Laptop can’t charge or keeps disconnecting from WiFi? We replace damaged charging ports and WiFi cards for stable performance.",
@@ -510,6 +524,7 @@ const laptopItems = {
   service_type: "replacement",
   service: "Camera",
   hash: "camera",
+  image: "/images/devices/laptop/camera.webp",
   title: "Laptop Camera Replacement | Fix It Jerry",
   meta_description:
     "Blurry or non-functional webcam? Fix It Jerry replaces faulty laptop cameras for clear video calls and meetings.",
@@ -543,6 +558,7 @@ const laptopItems = {
   service_type: "upgrade",
   service: "Storage/SSD Upgrade",
   hash: "storage-upgrade",
+  image: "/images/devices/laptop/ssd_upgrade.webp",
   title: "Laptop SSD & Storage Upgrade | Fix It Jerry",
   meta_description:
     "Running out of space or experiencing slow speeds? We upgrade your laptop’s SSD or hard drive for faster performance and more storage.",
@@ -575,6 +591,7 @@ const laptopItems = {
   service_type: "upgrade",
   service: "RAM Upgrade",
   hash: "ram-upgrade",
+  image: "/images/devices/laptop/ram_upgrade.webp",
   title: "Laptop RAM Upgrade | Fix It Jerry",
   meta_description:
     "Is your laptop lagging or freezing? Upgrade your RAM for better multitasking and smoother performance.",
@@ -607,6 +624,7 @@ const laptopItems = {
   service_type: "upgrade",
   service: "Installation and Reformat",
   hash: "installation-reformat",
+  image: "/images/devices/laptop/installation.webp",
   title: "Laptop OS & Software Installation | Fix It Jerry",
   meta_description:
     "Need a clean slate? We format and reinstall your OS, apps, and drivers to get your laptop running like new.",
@@ -639,6 +657,7 @@ const laptopItems = {
   service_type: "upgrade",
   service: "Heatsink Reapplication",
   hash: "heatsink-repaste",
+  image: "/images/devices/laptop/heatsink.webp",
   title: "Laptop Heatsink Reapplication | Fix It Jerry",
   meta_description:
     "Laptop overheating or fan constantly running? We clean and reapply thermal paste to restore cooling efficiency.",
@@ -672,6 +691,7 @@ const laptopItems = {
   service: "General Servicing",
   hash: "general-servicing",
   title: "Laptop General Servicing | Fix It Jerry",
+  image: "/images/devices/laptop/general_servicing.webp",
   meta_description:
     "Keep your laptop running smoothly. We provide full internal cleaning, diagnostics, and light tune-ups.",
   sections: [
@@ -704,6 +724,7 @@ const laptopItems = {
   service: "Apple ID Bypass",
   hash: "apple-id-bypass",
   title: "MacBook Apple ID Bypass | Fix It Jerry",
+  image: "/images/devices/laptop/apple_id_bypass.webp",
   meta_description:
     "Locked out of your MacBook due to iCloud? We provide Apple ID bypass solutions for eligible models with proof of ownership.",
   sections: [
@@ -736,6 +757,7 @@ const laptopItems = {
   service: "Data Backup & Recovery",
   hash: "data-recovery",
   title: "Laptop Data Backup & Recovery | Fix It Jerry",
+  image: "/images/devices/laptop/data_backup.webp",
   meta_description:
     "Accidentally deleted files or can’t access your laptop? We recover lost data and help you back it up safely.",
   sections: [
