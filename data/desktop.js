@@ -7,6 +7,7 @@ const desktopItems = {
     {
   service_type: "repair",
   service: "Water damage / CPU Damage",
+  image: "/images/devices/smartphone/water_damage.webp",
   hash: "water-damage",
   popular: true,
   title: "Desktop Water Damage & CPU Repair | Fix It Jerry",
@@ -40,6 +41,7 @@ const desktopItems = {
 {
   service_type: "replacement",
   service: "Power Supply",
+  image: '/images/devices/laptop/power_ic.webp',
   hash: "power-supply",
   title: "Desktop Power Supply Replacement | Fix It Jerry",
   meta_description:
@@ -72,6 +74,7 @@ const desktopItems = {
 {
   service_type: "replacement",
   service: "WiFi Card",
+  image: "/images/devices/laptop/wifi.webp",
   hash: "wifi-card",
   title: "Desktop WiFi Card Replacement | Fix It Jerry",
   meta_description:
@@ -105,6 +108,7 @@ const desktopItems = {
   service_type: "repair",
   service: "GPU",
   hash: "gpu",
+  image: "/images/devices/laptop/gpu.webp",
   title: "Desktop GPU Repair & Replacement | Fix It Jerry",
   meta_description:
     "Artifacts, crashes, or no display? We diagnose and fix GPU issues or replace it with a compatible graphics card.",
@@ -137,6 +141,7 @@ const desktopItems = {
   service_type: "replacement",
   service: "Fan",
   hash: "fan",
+  image: '/images/devices/laptop/fan.webp',
   title: "Desktop Fan Replacement | Fix It Jerry",
   meta_description:
     "Noisy or dead fans in your PC? We replace faulty case, CPU, or GPU fans to keep your desktop cool and quiet.",
@@ -170,6 +175,7 @@ const desktopItems = {
   service: "Storage/SSD Upgrade",
   hash: "desktop-storage-upgrade",
   title: "Desktop SSD & Storage Upgrade | Fix It Jerry",
+  image: '/images/devices/laptop/ssd_upgrade.webp',
   meta_description:
     "Running out of storage or want faster load times? We upgrade desktop SSDs and hard drives for better performance and capacity.",
   sections: [
@@ -202,6 +208,7 @@ const desktopItems = {
   service: "RAM Upgrade",
   hash: "desktop-ram-upgrade",
   title: "Desktop RAM Upgrade | Fix It Jerry",
+  image: '/images/devices/laptop/ram_upgrade.webp',
   meta_description:
     "Need better multitasking or gaming performance? We upgrade desktop RAM with high-speed compatible modules.",
   sections: [
@@ -233,6 +240,7 @@ const desktopItems = {
   service_type: "upgrade",
   service: "Installation and Reformat",
   hash: "desktop-installation-reformat",
+  image: '/images/devices/laptop/installation.webp',
   title: "Desktop OS Installation & Reformat | Fix It Jerry",
   meta_description:
     "Give your desktop a clean start. We format and reinstall your OS, drivers, and basic apps for smooth performance.",
@@ -265,6 +273,7 @@ const desktopItems = {
   service_type: "upgrade",
   service: "Heatsink Reapplication",
   hash: "desktop-heatsink-repaste",
+  image: '/images/devices/laptop/heatsink.webp',
   title: "Desktop Heatsink & Thermal Paste Reapplication | Fix It Jerry",
   meta_description:
     "Overheating issues or high fan noise? We clean and reapply thermal paste to your CPU/GPU heatsinks for cooler and quieter performance.",
@@ -297,6 +306,7 @@ const desktopItems = {
   service_type: "upgrade",
   service: "General Servicing",
   hash: "desktop-general-servicing",
+  image: '/images/devices/laptop/general_servicing.webp',
   title: "Desktop General Servicing | Fix It Jerry",
   meta_description:
     "Dusty or noisy desktop? We clean your PC inside-out, run full diagnostics, and make sure everything is running in top shape.",
@@ -328,6 +338,7 @@ const desktopItems = {
 {
   service_type: "upgrade",
   service: "Data Backup & Recovery",
+  image: '/images/devices/laptop/data_backup.webp',
   hash: "desktop-data-recovery",
   title: "Desktop Data Backup & Recovery | Fix It Jerry",
   meta_description:
@@ -362,6 +373,7 @@ const desktopItems = {
   service: "Custom Build Assembly",
   hash: "custom-build-assembly",
   title: "Custom PC Build Assembly | Fix It Jerry",
+  image: '/images/devices/desktop/build_assembly.webp',
   meta_description:
     "Bought all your PC parts but need help building it? We assemble and optimize your custom desktop build professionally.",
   sections: [

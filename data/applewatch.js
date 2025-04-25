@@ -9,6 +9,7 @@ const applewatchItems = {
     service: "LCD Screen / Touchscreen",
     hash: "applewatch-lcd-touchscreen",
     popular: true,
+    image: '/images/devices/apple_watch/lcd.webp',
     title: "Apple Watch Screen Replacement | Fix It Jerry",
     meta_description:
       "Cracked or unresponsive Apple Watch screen? We replace broken LCDs and touch panels with precision and care.",
