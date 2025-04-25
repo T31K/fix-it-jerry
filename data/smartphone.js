@@ -11,6 +11,7 @@ const smartphoneItems = {
       {
         service_type: "repair",
         service: "Water damage/CPU Damage",
+  popular: true,
         hash: "water-damage",
         title: "Smartphone Water Damage Repair | Fix It Jerry",
         image: "/images/devices/smartphone/water_damage.webp",
@@ -375,6 +376,7 @@ const smartphoneItems = {
       // ================================== replacement ==================================
       {
   service_type: "replacement",
+  popular: true,
   service: "LCD Screen / Touchscreen",
   hash: "lcd-screen-touchscreen",
   title: "Smartphone Screen Replacement | Fix It Jerry",
@@ -444,6 +446,7 @@ const smartphoneItems = {
         service: "Battery",
         hash: "battery",
         title: "Smartphone Battery Replacement | Fix It Jerry",
+        popular: true,
         image: "/images/devices/smartphone/battery.webp",
         meta_description:
           "Battery drains too fast or shuts off suddenly? Get a premium battery replacement at Fix It Jerry today.",

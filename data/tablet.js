@@ -1,6 +1,6 @@
 const tabletItems = {
     title: "Tablet",
-    imgSrc: "/images/services/tablet.webp",
+    imgSrc: "/images/services/ipad.webp",
     description:
       "Water damage, power supply, network & connectivity, audio IC, backlight IC, charging IC, touch IC, Face ID, Touch ID, LCD, touchscreen, battery, camera, back glass",
     services: [
@@ -14,6 +14,7 @@ const tabletItems = {
         hash: "water-damage",
         title: "Tablet Water Damage Repair | Fix It Jerry",
         image: "/images/devices/smartphone/water_damage.webp",
+        popular: true,
         meta_description:
           "Dropped your tablet in water? Fix It Jerry provides expert tablet water damage repair services. Fast, reliable, and affordable repairs. Contact us today!",
         sections: [
@@ -194,50 +195,6 @@ const tabletItems = {
       },
       {
         service_type: "repair",
-        service: "Backlight IC",
-        hash: "backlight-ic",
-        title: "Tablet Backlight IC Repair | Fix It Jerry",
-        image: "/images/devices/smartphone/backlight_ic.webp",
-        meta_description:
-          "Display turns on but screen is dark? Our Backlight IC repair restores your tablet’s screen visibility quickly.",
-        sections: [
-          {
-            heading: "What is Backlight IC?",
-            content:
-              "The Backlight IC powers the screen brightness. If it fails, the screen stays dark even though the tablet is on.",
-          },
-          {
-            heading: "Symptoms",
-            content: [
-              "Black screen but tablet is vibrating or playing sounds.",
-              "Screen is visible only under bright light.",
-              "Backlight flickers randomly.",
-            ],
-          },
-          {
-            heading: "What You Can Try First",
-            content: [
-              "Shine flashlight at screen to check for faint display.",
-              "Avoid DIY screen pressure techniques.",
-              "Bring in immediately to avoid worsening damage.",
-            ],
-          },
-          {
-            heading: "How We Fix It",
-            content: [
-              "Micro-soldering replacement of Backlight IC.",
-              "Connector inspection and reballing if needed.",
-              "Brightness calibration and testing.",
-            ],
-          },
-          {
-            heading: "Cost & Turnaround",
-            content: ["Cost: RM 180 - RM 600", "Time: 1 - 2 days"],
-          },
-        ],
-      },
-      {
-        service_type: "repair",
         service: "Charging IC",
         hash: "charging-ic",
         title: "Tablet Charging IC Repair | Fix It Jerry",
@@ -277,6 +234,50 @@ const tabletItems = {
           {
             heading: "Cost & Turnaround",
             content: ["Cost: RM 200 - RM 700", "Time: 1 - 2 days"],
+          },
+        ],
+      },
+            {
+        service_type: "repair",
+        service: "Backlight IC",
+        hash: "backlight-ic",
+        title: "Tablet Backlight IC Repair | Fix It Jerry",
+        image: "/images/devices/tablet/backlight_ic.webp",
+        meta_description:
+          "Display turns on but screen is dark? Our Backlight IC repair restores your tablet’s screen visibility quickly.",
+        sections: [
+          {
+            heading: "What is Backlight IC?",
+            content:
+              "The Backlight IC powers the screen brightness. If it fails, the screen stays dark even though the tablet is on.",
+          },
+          {
+            heading: "Symptoms",
+            content: [
+              "Black screen but tablet is vibrating or playing sounds.",
+              "Screen is visible only under bright light.",
+              "Backlight flickers randomly.",
+            ],
+          },
+          {
+            heading: "What You Can Try First",
+            content: [
+              "Shine flashlight at screen to check for faint display.",
+              "Avoid DIY screen pressure techniques.",
+              "Bring in immediately to avoid worsening damage.",
+            ],
+          },
+          {
+            heading: "How We Fix It",
+            content: [
+              "Micro-soldering replacement of Backlight IC.",
+              "Connector inspection and reballing if needed.",
+              "Brightness calibration and testing.",
+            ],
+          },
+          {
+            heading: "Cost & Turnaround",
+            content: ["Cost: RM 180 - RM 600", "Time: 1 - 2 days"],
           },
         ],
       },
@@ -378,6 +379,7 @@ const tabletItems = {
   service: "LCD Screen / Touchscreen",
   hash: "lcd-screen-touchscreen",
   title: "Tablet Screen Replacement | Fix It Jerry",
+  popular: true,
   image: "/images/devices/smartphone/lcd_screen.webp",
   meta_description:
     "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable tablet LCD & touchscreen replacement using premium parts.",
@@ -443,6 +445,7 @@ const tabletItems = {
         service_type: "replacement",
         service: "Battery",
         hash: "battery",
+        popular: true,
         title: "Tablet Battery Replacement | Fix It Jerry",
         image: "/images/devices/smartphone/battery.webp",
         meta_description:
@@ -507,29 +510,29 @@ const tabletItems = {
       },
       {
         service_type: "replacement",
-        service: "Backglass",
-        hash: "backglass",
-        title: "Tablet Back Glass Replacement | Fix It Jerry",
-        image: "/images/devices/smartphone/backglass.webp",
+        service: "Touchscreen",
+        hash: "touchscreen",
+        title: "Tablet Touchscreen Replacement | Fix It Jerry",
+        image: "/images/devices/tablet/backlight_ic.webp",
         meta_description:
-          "Cracked or shattered back glass? Restore your tablet's sleek look with a safe backglass replacement at Fix It Jerry.",
+          "Unresponsive or cracked touchscreen? Fix It Jerry replaces faulty tablet touchscreens with precision and care.",
         sections: [
           {
-            heading: "Why Replace the Backglass?",
+            heading: "Touchscreen Replacement Needed If...",
             content: [
-              "Sharp cracks that can cut fingers.",
-              "Affects wireless charging performance.",
-              "Waterproofing compromised.",
-              "Looks broken and reduces resale value.",
+              "Screen is unresponsive or slow to react.",
+              "Cracks or scratches on the screen.",
+              "Multi-touch gestures won’t register.",
+              "Calibration issues or ghost touches.",
             ],
           },
           {
-            heading: "How We Replace Back Glass",
+            heading: "Our Replacement Process",
             content: [
-              "Precision heating and separation (no force).",
-              "Glass adhesive residue removal.",
-              "Laser machine or cold separation method.",
-              "New glass application with adhesive curing.",
+              "Digitizer and LCD separation.",
+              "New touchscreen installation and alignment.",
+              "Touch sensitivity testing and calibration.",
+              "Dust sealing and frame alignment.",
             ],
           },
           {

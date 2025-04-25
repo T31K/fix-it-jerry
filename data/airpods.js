@@ -8,6 +8,7 @@ const airpodsItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "airpods-battery",
+    popular: true,
     title: "AirPods Battery Replacement | Fix It Jerry",
     meta_description:
       "AirPods not lasting long or won’t charge? We replace worn-out AirPods and AirPods Pro batteries with precision.",
@@ -40,6 +41,7 @@ const airpodsItems = {
     service_type: "replacement",
     service: "Cleaning",
     hash: "airpods-cleaning",
+    popular: true,
     title: "AirPods Deep Cleaning Service | Fix It Jerry",
     meta_description:
       "Sound too soft or dirty AirPods? We provide full disassembly and deep cleaning to restore clarity and hygiene.",

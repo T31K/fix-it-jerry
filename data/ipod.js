@@ -8,6 +8,7 @@ const ipodItems = {
     service_type: "replacement",
     service: "LCD Screen / Touchscreen",
     hash: "ipod-lcd-touchscreen",
+    popular: true,
     title: "iPod Screen Replacement | Fix It Jerry",
     meta_description:
       "Cracked iPod screen or unresponsive touch? We replace iPod LCDs and touch panels for full visual and functional restoration.",
@@ -40,6 +41,7 @@ const ipodItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "ipod-battery",
+    popular: true,
     title: "iPod Battery Replacement | Fix It Jerry",
     meta_description:
       "iPod not holding charge or battery swelling? We replace faulty iPod batteries for longer playback and safety.",

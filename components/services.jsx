@@ -59,22 +59,23 @@ export default function Services() {
                   alt={item.title}
                 />
                 <div className="flex flex-col items-center md:items-start mb-2 md:mb-4">
-                  <p className="fw-bold !m-0 !mr-2 text-xl text-green-600">
+                  <p className="fw-bold !m-0 !mr-2 text-lg md:text-xl text-green-600">
                     {item.title}
                   </p>
                 </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0 ">
-                  {item.services.slice(0, 3).map((srv, i) => {
+                <ul className="mb-0 !p-0 min-h-24">
+                  {item.services.filter(srv => srv.popular).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
                       <li key={i} className="d-flex align-items-center">
                         {IconComponent && (
-                          <IconComponent size={20} className="me-2" />
+                          <IconComponent size={16} className="me-2" />
                         )}
                         <a
                           href={srv.slug || `/devices/${item.title.toLowerCase()}?hash=${srv.hash}`}
-                          className="hover:underline text-gray-700 text-md md:text-lg md:mb-0"
+                          className="hover:underline text-gray-700 text-md md:text-lg md:mb-0 truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
+                          title={srv.service}
                         >
                           {srv.service}
                         </a>

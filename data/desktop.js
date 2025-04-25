@@ -8,6 +8,7 @@ const desktopItems = {
   service_type: "repair",
   service: "Water damage / CPU Damage",
   hash: "water-damage",
+  popular: true,
   title: "Desktop Water Damage & CPU Repair | Fix It Jerry",
   meta_description:
     "Spilled water or CPU failure? We repair water-damaged desktops and replace affected components to get your PC back online.",

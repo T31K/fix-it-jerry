@@ -38,7 +38,7 @@ const GadgetFixPage = () => {
                     </div>
                   </div>
                   <div className="d-flex">
-                    <a
+                  <a
                       className="btn-topbar bg-color me-3"
                       href="book-repair.html"
                     >

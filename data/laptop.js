@@ -1,6 +1,6 @@
 const laptopItems = {
   title: "Laptop",
-  imgSrc: "/images/services/laptop.webp",
+  imgSrc: "/images/services/macbook.webp",
   description:
     "Water damage, power supply, network issues, screen replacement, battery replacement, keyboard replacement, hinge repair, storage upgrade, general servicing, OS installation",
   services: [
@@ -13,6 +13,7 @@ const laptopItems = {
       service_type: "repair",
       service: "Water damage/CPU Damage",
       hash: "water-damage",
+      popular: true,
       title: "Laptop Water Damage Repair | Fix It Jerry",
       meta_description:
         "Spilled liquid on your laptop? Our expert water damage repair service can save your device and data. Fast and reliable service.",
@@ -283,6 +284,7 @@ const laptopItems = {
   service_type: "replacement",
   service: "LCD Screen",
   hash: "lcd-screen",
+  popular: true,
   title: "Laptop LCD Screen Replacement | Fix It Jerry",
   meta_description:
     "Cracked or black laptop screen? Fix It Jerry replaces damaged LCD screens fast with top quality panels.",
@@ -347,6 +349,7 @@ const laptopItems = {
   service_type: "replacement",
   service: "Battery",
   hash: "battery",
+  popular: true,
   title: "Laptop Battery Replacement | Fix It Jerry",
   meta_description:
     "Battery not holding charge? We replace your laptop’s battery to restore reliable, long-lasting power.",

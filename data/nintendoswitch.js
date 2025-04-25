@@ -1,6 +1,6 @@
 const nintendoswitchItems = {
   title: "Nintendo Switch",
-  imgSrc: "/images/services/nintendoswitch.webp",
+  imgSrc: "/images/services/nintendo_switch.webp",
   description:
     "Water damage, power supply repair, charging port repair, LCD & touchscreen replacement, battery replacement, button replacement, OS installation, heatsink reapplication, general servicing",
   services: [
@@ -9,6 +9,7 @@ const nintendoswitchItems = {
     service_type: "repair",
     service: "Water Damage",
     hash: "switch-water-damage",
+    popular: true,
     title: "Nintendo Switch Water Damage Repair | Fix It Jerry",
     meta_description:
       "Dropped your Switch in water or spilled a drink on it? We repair water-damaged Nintendo Switch consoles and restore them to working condition.",
@@ -139,6 +140,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "LCD Screen / Touchscreen",
     hash: "switch-lcd-touchscreen",
+    popular: true,
     title: "Nintendo Switch Screen Replacement | Fix It Jerry",
     meta_description:
       "Cracked screen or unresponsive touch? We replace damaged Nintendo Switch LCD and touchscreen panels fast.",
@@ -203,6 +205,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "switch-battery",
+    popular: true,
     title: "Nintendo Switch Battery Replacement | Fix It Jerry",
     meta_description:
       "Battery draining fast or won’t charge? We replace old or swollen Nintendo Switch batteries safely and quickly.",

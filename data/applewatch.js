@@ -1,6 +1,6 @@
 const applewatchItems = {
   title: "Apple Watch",
-  imgSrc: "/images/services/applewatch.webp",
+  imgSrc: "/images/services/apple_watch.webp",
   description:
     "Battery replacement, screen replacement, water damage repair, button repair, sensor calibration",
   services:   [
@@ -8,6 +8,7 @@ const applewatchItems = {
     service_type: "replacement",
     service: "LCD Screen / Touchscreen",
     hash: "applewatch-lcd-touchscreen",
+    popular: true,
     title: "Apple Watch Screen Replacement | Fix It Jerry",
     meta_description:
       "Cracked or unresponsive Apple Watch screen? We replace broken LCDs and touch panels with precision and care.",
@@ -40,6 +41,7 @@ const applewatchItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "applewatch-battery",
+    popular: true,
     title: "Apple Watch Battery Replacement | Fix It Jerry",
     meta_description:
       "Battery not holding charge or swelling the screen? We replace Apple Watch batteries to restore safe and long-lasting use.",
