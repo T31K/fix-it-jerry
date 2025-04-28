@@ -9,7 +9,7 @@ const applewatchItems = {
     service: "LCD Screen / Touchscreen",
     hash: "applewatch-lcd-touchscreen",
     popular: true,
-    image: '/images/devices/apple_watch/lcd.webp',
+    image: '/images/devices/apple_watch/lcd_screen.webp',
     title: "Apple Watch Screen Replacement | Fix It Jerry",
     meta_description:
       "Cracked or unresponsive Apple Watch screen? We replace broken LCDs and touch panels with precision and care.",
@@ -42,6 +42,7 @@ const applewatchItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "applewatch-battery",
+    image: '/images/devices/apple_watch/battery.webp',
     popular: true,
     title: "Apple Watch Battery Replacement | Fix It Jerry",
     meta_description:

@@ -380,7 +380,7 @@ const tabletItems = {
   hash: "lcd-screen-touchscreen",
   title: "Tablet Screen Replacement | Fix It Jerry",
   popular: true,
-  image: "/images/devices/smartphone/lcd_screen.webp",
+  image: "/images/devices/tablet/broken_ipad.webp",
   meta_description:
     "Cracked or unresponsive screen? Fix It Jerry offers fast and affordable tablet LCD & touchscreen replacement using premium parts.",
   sections: [
@@ -480,7 +480,7 @@ const tabletItems = {
         service: "Camera",
         hash: "camera",
         title: "Tablet Camera Replacement | Fix It Jerry",
-        image: "/images/devices/smartphone/camera.webp",
+        image: "/images/devices/tablet/camera_2.webp",
         meta_description:
           "Blurry photos or camera not opening? Fix It Jerry replaces front or rear tablet cameras with precision and care.",
         sections: [

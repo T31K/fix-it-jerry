@@ -77,7 +77,7 @@ export default function Services() {
                           className="hover:underline text-gray-700 text-md md:text-lg md:mb-0 truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >
-                          {srv.service}
+                          {srv.service.split("/")[0]}
                         </a>
                       </li>
                     );

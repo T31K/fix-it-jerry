@@ -8,6 +8,7 @@ const airpodsItems = {
     service_type: "replacement",
     service: "Battery",
     hash: "airpods-battery",
+    image: "/images/devices/airpods/battery.webp",
     popular: true,
     title: "AirPods Battery Replacement | Fix It Jerry",
     meta_description:
@@ -41,6 +42,7 @@ const airpodsItems = {
     service_type: "replacement",
     service: "Cleaning",
     hash: "airpods-cleaning",
+    image: "/images/devices/airpods/case.webp",
     popular: true,
     title: "AirPods Deep Cleaning Service | Fix It Jerry",
     meta_description:

@@ -41,7 +41,7 @@ const desktopItems = {
 {
   service_type: "replacement",
   service: "Power Supply",
-  image: '/images/devices/laptop/power_ic.webp',
+  image: '/images/devices/desktop/power_supply.webp',
   hash: "power-supply",
   title: "Desktop Power Supply Replacement | Fix It Jerry",
   meta_description:
@@ -274,7 +274,7 @@ const desktopItems = {
   service_type: "upgrade",
   service: "Heatsink Reapplication",
   hash: "desktop-heatsink-repaste",
-  image: '/images/devices/laptop/heatsink.webp',
+  image: '/images/devices/desktop/heatsink.webp',
   title: "Desktop Heatsink & Thermal Paste Reapplication | Fix It Jerry",
   meta_description:
     "Overheating issues or high fan noise? We clean and reapply thermal paste to your CPU/GPU heatsinks for cooler and quieter performance.",

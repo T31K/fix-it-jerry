@@ -8,6 +8,7 @@ const nintendoswitchItems = {
   {
     service_type: "repair",
     service: "Water Damage",
+    image: "/images/devices/smartphone/water_damage.webp",
     hash: "switch-water-damage",
     popular: true,
     title: "Nintendo Switch Water Damage Repair | Fix It Jerry",
@@ -41,6 +42,7 @@ const nintendoswitchItems = {
   {
     service_type: "repair",
     service: "Power Supply",
+    image: "/images/devices/desktop/power_supply.webp",
     hash: "switch-power-supply",
     title: "Nintendo Switch Power Supply Repair | Fix It Jerry",
     meta_description:
@@ -73,6 +75,7 @@ const nintendoswitchItems = {
   {
     service_type: "repair",
     service: "WiFi and Charging Port",
+    image: "/images/devices/desktop/wifi.webp",
     hash: "switch-wifi-charging",
     title: "Nintendo Switch WiFi & Charging Port Repair | Fix It Jerry",
     meta_description:
@@ -105,6 +108,7 @@ const nintendoswitchItems = {
   {
     service_type: "repair",
     service: "Cartridge Slot",
+    image: "/images/devices/smartphone/data_backup.webp",
     hash: "switch-cartridge-slot",
     title: "Nintendo Switch Cartridge Slot Repair | Fix It Jerry",
     meta_description:
@@ -140,6 +144,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "LCD Screen / Touchscreen",
     hash: "switch-lcd-touchscreen",
+    image: "/images/devices/nintendo_switch/lcd_screen.webp",
     popular: true,
     title: "Nintendo Switch Screen Replacement | Fix It Jerry",
     meta_description:
@@ -173,6 +178,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Housing",
     hash: "switch-housing",
+    image: "/images/devices/nintendo_switch/housing.webp",
     title: "Nintendo Switch Housing Replacement | Fix It Jerry",
     meta_description:
       "Switch body cracked or scratched? We replace the entire outer shell, restoring your console’s look and durability.",
@@ -206,6 +212,7 @@ const nintendoswitchItems = {
     service: "Battery",
     hash: "switch-battery",
     popular: true,
+    image: "/images/devices/smartphone/battery.webp",
     title: "Nintendo Switch Battery Replacement | Fix It Jerry",
     meta_description:
       "Battery draining fast or won’t charge? We replace old or swollen Nintendo Switch batteries safely and quickly.",
@@ -238,6 +245,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Joy-con Parts",
     hash: "switch-joycon-parts",
+    image: "/images/devices/nintendo_switch/joycon_parts.webp",
     title: "Nintendo Switch Joy-Con Parts Replacement | Fix It Jerry",
     meta_description:
       "Drifting analogs or broken rails? We replace thumbsticks, rails, and internal Joy-Con parts to restore smooth gameplay.",
@@ -270,6 +278,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Fan",
     hash: "switch-fan",
+    image: "/images/devices/laptop/fan.webp",
     title: "Nintendo Switch Fan Replacement | Fix It Jerry",
     meta_description:
       "Switch heating up or fan making noise? We replace damaged fans to restore proper cooling.",
@@ -302,6 +311,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Mic & Speaker",
     hash: "switch-mic-speaker",
+    image: "/images/devices/smartphone/mic_speaker.webp",
     title: "Nintendo Switch Mic & Speaker Replacement | Fix It Jerry",
     meta_description:
       "Sound too soft or mic not working? We replace faulty speakers or mics inside your Nintendo Switch.",
@@ -334,6 +344,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "WiFi & Charging Port",
     hash: "switch-wifi-charging-port",
+    image: "/images/devices/smartphone/wifi_charging_port.webp",
     title: "Nintendo Switch WiFi & Charging Port Replacement | Fix It Jerry",
     meta_description:
       "Switch won’t connect to WiFi or charge properly? We replace worn-out WiFi modules and USB-C charging ports.",
@@ -366,6 +377,7 @@ const nintendoswitchItems = {
     service_type: "replacement",
     service: "Buttons",
     hash: "switch-buttons",
+    image: "/images/devices/nintendo_switch/buttons.webp",
     title: "Nintendo Switch Button Replacement | Fix It Jerry",
     meta_description:
       "Sticky or unresponsive buttons? We replace A/B/X/Y, power, volume, and home buttons on your Switch.",
@@ -400,6 +412,7 @@ const nintendoswitchItems = {
     service_type: "upgrade",
     service: "General Servicing",
     hash: "switch-general-servicing",
+    image: "/images/devices/laptop/general_servicing.webp",
     title: "Nintendo Switch General Servicing | Fix It Jerry",
     meta_description:
       "Switch running hot or slow? We provide general cleaning, diagnostics, and performance servicing for your Nintendo Switch.",
@@ -432,6 +445,7 @@ const nintendoswitchItems = {
     service_type: "upgrade",
     service: "Data Backup & Recovery",
     hash: "switch-data-recovery",
+    image: "/images/devices/laptop/data_backup.webp",
     title: "Nintendo Switch Data Backup & Recovery | Fix It Jerry",
     meta_description:
       "Need to back up or recover lost game saves and user data? We safely recover and store your Nintendo Switch data.",
@@ -464,6 +478,7 @@ const nintendoswitchItems = {
     service_type: "upgrade",
     service: "Installation and Reformat",
     hash: "switch-installation-reformat",
+    image: "/images/devices/smartphone/installation_reformat.webp",
     title: "Nintendo Switch OS Reinstallation | Fix It Jerry",
     meta_description:
       "Switch stuck in a boot loop or system error? We reinstall the Nintendo Switch OS and restore it to factory condition.",
@@ -496,6 +511,7 @@ const nintendoswitchItems = {
     service_type: "upgrade",
     service: "Heatsink Reapplication",
     hash: "switch-heatsink-repaste",
+    image: "/images/devices/laptop/heatsink.webp",
     title: "Nintendo Switch Heatsink & Thermal Paste Service | Fix It Jerry",
     meta_description:
       "Switch heating too much or shutting down mid-game? We reapply thermal paste to keep your console cool and running smooth.",

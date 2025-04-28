@@ -19,6 +19,12 @@ const services = [
     icon: "/images/services/macbook.webp",
     link: "/devices/laptop",
   },
+    {
+    name: "desktop",
+    title: "Desktop",
+    icon: "/images/services/desktop.webp",
+    link: "/devices/desktop",
+  },
   {
     name: "switch",
     title: "Nintendo Switch",
@@ -30,12 +36,6 @@ const services = [
     title: "Airpods",
     icon: "/images/services/airpods.webp",
     link: "/devices/airpods",
-  },
-  {
-    name: "desktop",
-    title: "Desktop",
-    icon: "/images/services/desktop.webp",
-    link: "/devices/desktop",
   },
   {
     name: "apple_watch",
