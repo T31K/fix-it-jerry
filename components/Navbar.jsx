@@ -61,7 +61,7 @@ function Navbar() {
                     <div className="de-flex-col">
                     {/* Logo */}
                     <div id="logo">
-                        <a href="index.html">
+                        <a href="/">
                         <img
                             className="logo-main"
                             src="/images/logo.webp"
@@ -83,14 +83,49 @@ function Navbar() {
                     <div className="de-flex-col header-col-mid">
                     <ul id="mainmenu">
                         <li>
-                        <a className="menu-item" href="services.html">
-                            Services
+                        <a className="menu-item" href="/devices">
+                            Devices
                         </a>
                         <ul>
                             <li>
-                            <a className="menu-item" href="/services/airpods">
-                                Airpods
-                            </a>
+                                <a className="menu-item" href="/devices/smartphone">
+                                    Smartphone
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/tablet">
+                                    Tablet
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/laptop">
+                                    Laptop
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/desktop">
+                                    Desktop
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/nintendo_switch">
+                                    Nintendo Switch
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/airpods">
+                                    Airpods
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/apple_watch">
+                                    Apple Watch
+                                </a>
+                            </li>
+                            <li>
+                                <a className="menu-item" href="/devices/ipod">
+                                    iPod
+                                </a>
                             </li>
                         </ul>
                         </li>

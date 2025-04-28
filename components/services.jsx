@@ -42,39 +42,39 @@ export default function Services() {
         </div>
 
         {/* Devices Grid */}
-        <div className="row g-0 grid-divider dark gapy-2 md:gap-y-12">
+        <div className="row g-4 px-4">
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-6 col-lg-3"
+              className="col-6 col-md-4 col-lg-3 mb-4"
               data-wow-delay={`${index * 0.2}s`}
             >
-              <div className="px-2 md:p-40 py-0 h-100 mb-sm-30">
+              <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-4 h-100 text-center">
                 {/* Device Icon and Title */}
                 <Image
                   src={item.imgSrc}
                   width={138}
                   height={138}
-                  className="mb-3 "
+                  className="mb-3 mx-auto"
                   alt={item.title}
                 />
-                <div className="flex flex-col items-center md:items-start mb-2 md:mb-4">
+                <div className="flex flex-col items-center mb-2 md:mb-4">
                   <p className="fw-bold !m-0 !mr-2 text-lg md:text-xl text-green-600">
                     {item.title}
                   </p>
                 </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0 min-h-24">
+                <ul className="mb-0 !p-0 min-h-24 list-none text-left mx-auto w-fit">
                   {item.services.filter(srv => srv.popular).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
-                      <li key={i} className="d-flex align-items-center">
+                      <li key={i} className="flex items-center mb-2">
                         {IconComponent && (
-                          <IconComponent size={16} className="me-2" />
+                          <IconComponent size={16} className="mr-2" />
                         )}
                         <a
                           href={srv.slug || `/devices/${item.title.toLowerCase()}?hash=${srv.hash}`}
-                          className="hover:underline text-gray-700 text-md md:text-lg md:mb-0 truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
+                          className="hover:underline text-gray-700 text-md md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >
                           {srv.service.split("/")[0]}
@@ -85,13 +85,15 @@ export default function Services() {
                 </ul>
 
                 {/* Read More Link */}
-                <a
-                  href={`/devices/${item.title.toLowerCase()}`}
-                  className="hover:underline text-gray-700 text-md md:text-lg md:mb-0 flex items-center mt-4 rounded-full bg-green-500/70 text-white w-fit px-3"
-                >
-                  See All
-                  <IconChevronRight size={20} className="" />
-                </a>
+                <div className="flex justify-end mt-6">
+                  <a
+                    href={`/devices/${item.title.toLowerCase().replace(/\s/g, '_')}`}
+                    className="hover:underline text-gray-700 text-md md:text-lg flex items-center rounded-full bg-green-500/70 text-white px-3 py-1"
+                  >
+                    See All
+                    <IconChevronRight size={20} />
+                  </a>
+                </div>
               </div>
             </div>
           ))}

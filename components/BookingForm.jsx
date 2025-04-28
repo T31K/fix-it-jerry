@@ -1,5 +1,5 @@
 "use client";
-
+import axios from "axios";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -75,10 +75,37 @@ export default function BookingForm() {
     issue: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    try {
+      const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/fij/booking`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (res.status === 200) {
+        alert("Booking submitted!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          deviceType: "",
+          deviceBrand: "",
+          issue: "",
+        });
+      } else {
+        alert("Something went wrong.");
+      }
+    } catch (err) {
+      console.error("Submit error:", err);
+      alert("Failed to send booking.");
+    }
   };
 
   return (

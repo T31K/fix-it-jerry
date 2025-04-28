@@ -4,6 +4,8 @@ import { reviews, features, repairItems } from "@/data";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import { IconBrandFacebook } from "@tabler/icons-react";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
@@ -16,143 +18,7 @@ const GadgetFixPage = () => {
 
       {/* Page preloader */}
 
-      {/* Header */}
-      <header className="transparent has-topbar">
-        <div id="topbar">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="d-flex justify-content-between xs-hide">
-                  <div className="d-flex">
-                    <div className="topbar-widget me-5">
-                      <a href="#">
-                        <i className="icofont-location-pin"></i>Our Workshop:
-                        Desa Parkcity, Kuala Lumpur, Malaysia
-                      </a>
-                    </div>
-                    <div className="topbar-widget me-5">
-                      <a href="#">
-                        <i className="icofont-clock-time"></i>Monday - Sunday
-                        08.00 - 18.00
-                      </a>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                  <a
-                      className="btn-topbar bg-color me-3"
-                      href="book-repair.html"
-                    >
-                      Book a Repair
-                    </a>
-                    <div className="social-icons">
-                      <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
-                        <i className="fa-brands fa-whatsapp fa-lg"></i>
-                      </a>
-                      <a href="https://facebook.com/fixitjerry">
-                        <i className="fa-brands fa-facebook fa-lg"></i>
-                      </a>
-                      <a href="https://instagram.com/fixitjerry">
-                        <i className="fa-brands fa-instagram fa-lg"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="clearfix"></div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="de-flex sm-pt10">
-                <div className="de-flex-col">
-                  {/* Logo */}
-                  <div id="logo">
-                    <a href="index.html">
-                      <img
-                        className="logo-main"
-                        src="images/logo.webp"
-                        alt=""
-                      />
-                      <img
-                        className="logo-scroll"
-                        src="images/logo-black.webp"
-                        alt=""
-                      />
-                      <img
-                        className="logo-mobile"
-                        src="images/logo.webp"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div className="de-flex-col header-col-mid">
-                  <ul id="mainmenu">
-                    <li>
-                      <a className="menu-item" href="services.html">
-                        Services
-                      </a>
-                      <ul>
-                        <li>
-                          <a className="menu-item" href="/services/repair">
-                            Repair
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/replacement">
-                            Replacement
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/upgrade">
-                            Upgrades
-                          </a>
-                        </li>
-                        <li>
-                          <a className="menu-item" href="/services/recovery">
-                            Recovery
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a className="menu-item" href="/book-a-repair">
-                        Book a Repair
-                      </a>
-                    </li>
-                    <li>
-                      <a className="menu-item" href="/track-my-repair">
-                        Track My Repair
-                      </a>
-                    </li>
-                    <li>
-                      <a className="menu-item" href="blog.html">
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a className="menu-item" href="contact.html">
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="de-flex-col">
-                  <div className="menu_side_area">
-                    <span id="menu-btn"></span>
-                  </div>
-                  <div id="btn-extra">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Content */}
       <div className="no-bottom no-top" id="content">
@@ -206,7 +72,7 @@ const GadgetFixPage = () => {
                   className={`col-lg-3 col-md-6 wow fadeInRight hover`}
                   data-wow-delay={`${(index % 4) * 0.3}s`}
                 >
-                  <div className="bg-dark-2 text-light h-100 rounded-1 overflow-hidden">
+                  <div className="bg-dark-2 text-light h-100 rounded-1 border-[2px] border-[#303030] overflow-hidden">
                     <div className="relative overflow-hidden">
                       <p className="d-inline bg-blur abs abs-center px-2 rounded-3 text-center bottom-10 z-1000 text-white mb-0 fs-14">
                         {issue.estimated_days}
@@ -216,7 +82,6 @@ const GadgetFixPage = () => {
                         className="img-fluid hover-scale-1-1"
                         alt=""
                       />
-                      <div className="de-overlay-gradient-dark op-5 h-50 top-50"></div>
                     </div>
                     <div className="p-30">
                       <h4 className="border-bottom-1-light pb-3">
@@ -306,7 +171,7 @@ const GadgetFixPage = () => {
           </div>
         </section>
 
-        <section className="bg-color-2 pt-60 pb-60">
+        <section className="bg-color-2 pt-60 pb-60 hidden">
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-lg-4">
@@ -392,10 +257,13 @@ const GadgetFixPage = () => {
           <div className="container">
             <div className="row g-4 mb-4">
               <div className="col-lg-6 offset-lg-3 text-center">
-                <div className="subtitle wow fadeInUp mb-3">Testimonials</div>
-                <h2 className="wow fadeInUp" data-wow-delay=".2s">
+                <div className="subtitle wow fadeInUp">Testimonials</div>
+                <h2 className="wow fadeInUp !mb-0" data-wow-delay=".2s">
                   Our Happy Customers
                 </h2>
+                <div className="wow fadeInUp !mb-8" data-wow-delay=".3s">
+                  <span className="fs-20 text-[#C6E76C] italic font-bold">Trusted by 2000+ happy customers</span>
+                </div>
               </div>
             </div>
             <div className="row g-4">
@@ -406,19 +274,24 @@ const GadgetFixPage = () => {
                 {reviews.map((review, index) => (
                   <div key={index} className="item">
                     <div className="relative p-2">
-                      <div className="relative flex items-center gap-x-2">
-                        <div
-                          className=" z-2 w-12 h-12 rounded-full bg-gray-200"
-                          alt=""
-                        ></div>
-                        <div>
+                      <div className="relative flex items-center gap-x-4">
+                        <img src={review.profile_pic} className="w-14 h-14 rounded-full bg-green-200" alt="profile_pic" />
+                        <div className="flex-grow">
                           <div className="fw-600">{review.name}</div>
                           <div className="d-stars -mt-2">
                             {[...Array(5)].map((_, i) => (
-                              <i key={i} className="fa fa-star"></i>
+                              <i key={i} className="fa fa-star " style={{ color: 'yellow' }}></i>
                             ))}
                           </div>
                         </div>
+                        <a 
+                          href={review.review_link} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center justify-center rounded-full w-10 h-10 bg-[#C6E76C]"
+                        >
+                          <IconBrandFacebook size={20} color="#333" />
+                        </a>
                       </div>
 
                       <p>{review.content}</p>
