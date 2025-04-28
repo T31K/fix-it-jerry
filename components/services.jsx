@@ -46,7 +46,7 @@ export default function Services() {
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-6 col-md-4 col-lg-3 mb-4"
+              className="col-12 col-md-4 col-lg-3 mb-4"
               data-wow-delay={`${index * 0.2}s`}
             >
               <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-4 h-100 text-center">
