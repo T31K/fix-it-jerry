@@ -21,7 +21,7 @@ const reviews = [
   {
     content:
       "Excellent customer service. The staff was very friendly and helpful, and they went above and beyond to ensure my satisfaction. I highly recommend their services to anyone in need of repairs.",
-    name: "Renju Karukayil Abraham",
+    name: "Renju Abraham",
     profile_pic: 'images/reviews/profile_2.webp',
     img_link:
       "https://scontent.fkul2-4.fna.fbcdn.net/v/t39.30808-1/468873877_10162625980114122_1353397557366678940_n.jpg?stp=c0.7.200.200a_cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=BBtoGR_4JUYQ7kNvgEIUPoM&_nc_zt=24&_nc_ht=scontent.fkul2-4.fna&_nc_gid=ALeM6T8hRjfsA6rrmHuWD3y&oh=00_AYCS_ywcx1-gy1eNR6DVocGyM0R_hXd0knVTNHpuUlx2ng&oe=678693B4",
