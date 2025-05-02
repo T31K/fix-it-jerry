@@ -4,4 +4,4 @@ Disallow: /order/
 Disallow: /order/*
 Allow: /
 
-Sitemap: https://dreamchanted.com/sitemap.xml
+Sitemap: https://fixitjerry.com/sitemap.xml
