@@ -4,7 +4,7 @@ import BookingForm from "./BookingForm";
 
 export default function Services() {
   return (
-    <section className="min-h-screen relative">
+    <section className=" relative">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"

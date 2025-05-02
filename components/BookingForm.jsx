@@ -114,13 +114,13 @@ export default function BookingForm() {
         <div className="flex items-center gap-x-2">
           <Wrench size={24} />
           <h2 className="text-xl sm:text-2xl font-bold text-white !m-0">
-            Book a Repair
+            Book a Repair now!
           </h2>
         </div>
         <p className="!m-0 flex items-center gap-1 text-xs md:text-sm">
           {`We've fixed`}
           <span className="inline-block min-w-[4ch] text-right font-bold">
-            <CountUp end={1893} duration={1.5} separator="," />
+            <CountUp end={2493} duration={1.5} separator="," />
           </span>
           {` devices – let's make yours next!`}
         </p>
@@ -206,31 +206,30 @@ export default function BookingForm() {
           </Select>
         </div>
 
-        {formData.deviceType && (
-          <div className="space-y-2">
-            <Label htmlFor="deviceBrand" className="font-bold">
-              Device Brand & Model
-            </Label>
-            <Select
-              value={formData.deviceBrand}
-              onValueChange={(value) =>
-                setFormData({ ...formData, deviceBrand: value })
-              }
-              className="bg-white text-slate-700"
-            >
-              <SelectTrigger className="bg-white text-slate-700">
-                <SelectValue placeholder="Select brand" />
-              </SelectTrigger>
-              <SelectContent className="bg-white z-[9999] text-slate-700">
-                {deviceBrands[formData.deviceType]?.map((brand) => (
-                  <SelectItem key={brand} value={brand}>
-                    {brand}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-        )}
+        <div className="space-y-2">
+          <Label htmlFor="deviceBrand" className="font-bold">
+            Device Brand & Model
+          </Label>
+          <Select
+            value={formData.deviceBrand}
+            disabled={!formData.deviceType}
+            onValueChange={(value) =>
+              setFormData({ ...formData, deviceBrand: value })
+            }
+            className="bg-white text-slate-700"
+          >
+            <SelectTrigger className="bg-white text-slate-700">
+              <SelectValue placeholder="Select brand" />
+            </SelectTrigger>
+            <SelectContent className="bg-white z-[9999] text-slate-700">
+              {deviceBrands[formData.deviceType]?.map((brand) => (
+                <SelectItem key={brand} value={brand}>
+                  {brand}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
 
         <div className="space-y-2">
           <Label htmlFor="issue" className="font-bold">
