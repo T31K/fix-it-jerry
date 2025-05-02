@@ -103,7 +103,7 @@ function InnerSideBar({ activeLink }) {
               </p>
               <a
                 className="btn-main bg-color-2 fx-slide text-dark"
-                href="book-repair.html"
+                href="/book-a-repair"
               >
                 <span>Book a Repair</span>
               </a>

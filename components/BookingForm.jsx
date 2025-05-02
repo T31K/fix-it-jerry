@@ -65,7 +65,7 @@ const deviceBrands = {
   tv: ["Samsung", "LG", "Sony", "TCL", "Philips", "Hisense", "Other"],
 };
 
-export default function BookingForm() {
+export default function BookingForm({showTitle = true}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -111,7 +111,10 @@ export default function BookingForm() {
   return (
     <Card className="w-full max-w-[500px] p-4 sm:p-6 bg-[#4d6c77] !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white">
       <form onSubmit={handleSubmit} className="space-y-4 !border-none">
-        <div className="flex items-center gap-x-2">
+{showTitle && (
+        <>
+
+          <div className="flex items-center gap-x-2">
           <Wrench size={24} />
           <h2 className="text-xl sm:text-2xl font-bold text-white !m-0">
             Book a Repair now!
@@ -124,6 +127,8 @@ export default function BookingForm() {
           </span>
           {` devices – let's make yours next!`}
         </p>
+        </>
+)}
         <div className="space-y-2">
           <Label htmlFor="name" className="font-bold">
             Full Name

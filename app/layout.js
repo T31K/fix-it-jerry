@@ -26,7 +26,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Fix It Jeery | #1 Phone Repair in Kuala Lumpur",
+  title: "Fix It Jerry | #1 Phone Repair in Kuala Lumpur",
   description: "Fix It Jerry is the best phone repair shop in Kuala Lumpur. We offer a wide range of services for all types of devices including smartphones, tablets, laptops, airpods, Nintendo Switch, and TVs.",
 };
 

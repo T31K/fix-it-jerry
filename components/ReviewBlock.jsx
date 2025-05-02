@@ -11,7 +11,7 @@ export default function ReviewBlock() {
               <img
                 className="relative z-2 w-80px rounded-1"
                 alt=""
-                src="/images/testimonial/1.webp"
+               src={`/${review.profile_pic}`}
               />
             </div>
             <div className="mt-3 fw-600">{review.name}</div>
