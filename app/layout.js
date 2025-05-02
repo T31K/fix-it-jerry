@@ -25,6 +25,18 @@ export const metadata = {
       'Fix It Jerry is the best phone repair shop in Kuala Lumpur. We offer a wide range of services for all types of devices including smartphones, tablets, laptops, airpods, Nintendo Switch, and TVs.',
     url: 'https://fixitjerry.com',
     images: ['https://fixitjerry.com/og.png'],
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: false,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     locale: 'en_US',
     type: 'website',
   },

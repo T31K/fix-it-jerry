@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /order
+Disallow: /order/
+Disallow: /order/*
+Allow: /
+
+Sitemap: https://dreamchanted.com/sitemap.xml
