@@ -4,7 +4,7 @@ function Footer() {
         <div className="container">
           <div className="row gx-5">
             <div className="col-lg-4 col-sm-6">
-              <img src="images/logo.webp" className="w-150px" alt="" />
+              <img src="images/logo.webp" className="w-24 h-24" alt="" />
               <div className="spacer-20"></div>
               <p>
                 {`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}

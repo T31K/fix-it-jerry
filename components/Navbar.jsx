@@ -63,9 +63,10 @@ function Navbar() {
                     <div id="logo">
                         <a href="/">
                         <img
-                            className="logo-main"
+                            className="logo-main w-12 h-12"
                             src="/images/logo.webp"
                             alt=""
+
                         />
                         <img
                             className="logo-scroll"
