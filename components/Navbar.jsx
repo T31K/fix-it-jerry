@@ -74,7 +74,7 @@ function Navbar() {
                             alt=""
                         />
                         <img
-                            className="logo-mobile"
+                            className="logo-mobile w-12 h-12"
                             src="/images/logo.webp"
                             alt=""
                         />
