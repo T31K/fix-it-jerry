@@ -117,7 +117,7 @@ export default function BookingForm({showTitle = true}) {
           <div className="flex items-center gap-x-2">
           <Wrench size={24} />
           <h2 className="text-xl sm:text-2xl font-bold text-white !m-0">
-            Book a Repair now!
+            Book a repair now!
           </h2>
         </div>
         <p className="!m-0 flex items-center gap-1 text-xs md:text-sm">
@@ -127,6 +127,7 @@ export default function BookingForm({showTitle = true}) {
           </span>
           {` devices – let's make yours next!`}
         </p>
+        <p className="text-xs text-white/70 !m-0">Get a free quote</p>
         </>
 )}
         <div className="space-y-2">
