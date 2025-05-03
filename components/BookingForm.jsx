@@ -48,6 +48,31 @@ const deviceBrands = {
     "MSI",
     "Other",
   ],
+  desktop: [
+    "Apple iMac",
+    "Dell",
+    "HP",
+    "Lenovo",
+    "ASUS",
+    "Acer",
+    "Custom Built",
+    "Other",
+  ],
+  ipad: [
+    "iPad Pro",
+    "iPad Air",
+    "iPad Mini",
+    "iPad (Standard)",
+    "Other",
+  ],
+  applewatch: [
+    "Apple Watch Series 9",
+    "Apple Watch Series 8",
+    "Apple Watch SE",
+    "Apple Watch Ultra",
+    "Apple Watch Ultra 2",
+    "Other",
+  ],
   airpods: [
     "AirPods 2nd Gen",
     "AirPods 3rd Gen",
@@ -62,7 +87,6 @@ const deviceBrands = {
     "Nintendo Switch OLED",
     "Other",
   ],
-  tv: ["Samsung", "LG", "Sony", "TCL", "Philips", "Hisense", "Other"],
 };
 
 export default function BookingForm({showTitle = true}) {
@@ -205,9 +229,11 @@ export default function BookingForm({showTitle = true}) {
               <SelectItem value="phone">Smartphone</SelectItem>
               <SelectItem value="tablet">Tablet</SelectItem>
               <SelectItem value="laptop">Laptop</SelectItem>
+              <SelectItem value="desktop">Desktop</SelectItem>
+              <SelectItem value="ipad">iPad</SelectItem>
+              <SelectItem value="applewatch">Apple Watch</SelectItem>
               <SelectItem value="airpods">Airpods</SelectItem>
               <SelectItem value="switch">Nintendo Switch</SelectItem>
-              <SelectItem value="tv">TV</SelectItem>
             </SelectContent>
           </Select>
         </div>
