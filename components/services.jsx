@@ -42,11 +42,11 @@ export default function Services() {
         </div>
 
         {/* Devices Grid */}
-        <div className="row g-4 px-4">
+        <div className="row g-4 md:px-4">
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-12 col-md-4 col-lg-3 mb-4"
+              className="col-6 col-md-4 col-lg-3 mb-4 px-1 md:px-4"
               data-wow-delay={`${index * 0.2}s`}
             >
               <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-4 h-100 text-center">
@@ -59,7 +59,7 @@ export default function Services() {
                   alt={item.title}
                 />
                 <div className="flex flex-col items-center mb-2 md:mb-4">
-                  <p className="fw-bold !m-0 !mr-2 text-lg md:text-xl text-green-600">
+                  <p className="fw-bold !m-0 !mr-2 text-lg md:text-xl text-green-600 whitespace-nowrap">
                     {item.title}
                   </p>
                 </div>
@@ -77,7 +77,7 @@ export default function Services() {
                           className="hover:underline text-gray-700 text-md md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >
-                          {srv.service.split("/")[0]}
+                          {srv.service.split(/&|\//)[0]}
                         </a>
                       </li>
                     );

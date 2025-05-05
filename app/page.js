@@ -10,11 +10,6 @@ import { IconBrandFacebook } from "@tabler/icons-react";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
-      <div className="float-text show-on-scroll">
-        <span>
-          <a href="#">Scroll to top</a>
-        </span>
-      </div>
       <div className="scrollbar-v show-on-scroll"></div>
       <Navbar />
       <div className="no-bottom no-top" id="content">
