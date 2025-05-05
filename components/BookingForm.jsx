@@ -135,9 +135,8 @@ export default function BookingForm({showTitle = true}) {
   return (
     <Card className="w-full max-w-[500px] p-4 sm:p-6 bg-[#4d6c77] !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white">
       <form onSubmit={handleSubmit} className="space-y-4 !border-none">
-{showTitle && (
+      {showTitle && (
         <>
-
           <div className="flex items-center gap-x-2">
           <Wrench size={24} />
           <h2 className="text-xl sm:text-2xl font-bold text-white !m-0">
