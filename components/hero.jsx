@@ -4,21 +4,7 @@ import BookingForm from "./BookingForm";
 
 export default function Services() {
   return (
-    <section className="min-h-screen relative">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(/images/slider/hero.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
-
-      {/* Content */}
+    <section className="min-h-screen relative bg-[url('/images/slider/hero.webp')] bg-cover bg-center bg-no-repeat">
       <div className="relative z-10 container mx-auto px-4 py-8 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-8 items-start lg:items-center">
           <div className="">

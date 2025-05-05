@@ -1,7 +1,8 @@
+import { Menu } from "lucide-react";
 
 function Navbar() {
   return (
-      <>
+      <div>
         <div className="float-text show-on-scroll">
         <span>
           <a href="#">Scroll to top</a>
@@ -136,11 +137,6 @@ function Navbar() {
                         </a>
                         </li>
                         <li>
-                        <a className="menu-item" href="/track-my-repair">
-                            Track My Repair
-                        </a>
-                        </li>
-                        <li>
                         <a className="menu-item" href="blog.html">
                             Blog
                         </a>
@@ -154,7 +150,7 @@ function Navbar() {
                     </div>
                     <div className="de-flex-col">
                     <div className="menu_side_area">
-                        <span id="menu-btn"></span>
+                        <Menu id="menu-btn" className="cursor-pointer" />
                     </div>
                     <div id="btn-extra">
                         <span></span>
@@ -166,7 +162,45 @@ function Navbar() {
             </div>
             </div>
         </header>
-      </>
+
+        <div id="extra-wrap" className="text-light">
+        <div id="btn-close">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="extra-content">
+          <img src="images/logo.webp" className="w-150px" alt="" />
+          <h5 className="mt-12">Visit Us</h5>
+          <div>
+            <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
+            08.00 - 18.00
+          </div>
+          <div>
+            <i className="icofont-location-pin me-2 op-5"></i>Desa Parkcity,
+            Kuala Lumpur Malaysia
+          </div>
+          <div>
+            <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
+          </div>
+          <div className="spacer-30-line"></div>
+          <h5>About Us</h5>
+          <p>{`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}</p>
+          <div className="spacer-30-line"></div>
+          <h5>Contact Us</h5>
+          <div className="social-icons">
+            <a href="https://wa.me/+60183646909">
+              <i className="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/fixitjerry">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixitjerry/">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
     );
 }
 

@@ -16,12 +16,7 @@ const GadgetFixPage = () => {
         </span>
       </div>
       <div className="scrollbar-v show-on-scroll"></div>
-
-      {/* Page preloader */}
-
       <Navbar />
-
-      {/* Content */}
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
 
@@ -500,69 +495,7 @@ const GadgetFixPage = () => {
           </div>
         </section>
       </div>
-
-      {/* Footer */}
       <Footer />
-
-      {/* Overlay content */}
-      <div id="extra-wrap" className="text-light">
-        <div id="btn-close">
-          <span></span>
-          <span></span>
-        </div>
-        <div id="extra-content">
-          <img src="images/logo.webp" className="w-150px" alt="" />
-          {/* <div className="spacer-30-line"></div>
-          <h5 className="mb-3">Our Services</h5>
-          <div className="row g-2">
-            {repairItems.map((item, index) => (
-              <div
-                key={index}
-                className="col-lg-3 col-md-6 wow fadeInRight"
-                data-wow-delay={`${index * 0.2}s`}
-              >
-                <div className="h-100 mb-sm-30">
-                  <Image
-                    src={item.imgSrc}
-                    width={250}
-                    height={250}
-                    className="mb-3 bg-green-400 rounded-full"
-                    alt={item.title}
-                  />
-                </div>
-              </div>
-            ))}
-          </div> */}
-          <h5 className="mt-12">Visit Us</h5>
-          <div>
-            <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
-            08.00 - 18.00
-          </div>
-          <div>
-            <i className="icofont-location-pin me-2 op-5"></i>Desa Parkcity,
-            Kuala Lumpur Malaysia
-          </div>
-          <div>
-            <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
-          </div>
-          <div className="spacer-30-line"></div>
-          <h5>About Us</h5>
-          <p>{`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}</p>
-          <div className="spacer-30-line"></div>
-          <h5>Contact Us</h5>
-          <div className="social-icons">
-            <a href="https://wa.me/+60183646909">
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.facebook.com/fixitjerry">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/fixitjerry/">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

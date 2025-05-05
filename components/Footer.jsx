@@ -38,10 +38,10 @@ function Footer() {
                         <a href="/book-a-repair">Book a Repair</a>
                       </li>
                       <li>
-                        <a href="/blog">Blog</a>
+                        <a href="#">Blog</a>
                       </li>
                       <li>
-                        <a href="/contact">Contact</a>
+                        <a href="#">Contact</a>
                       </li>
                     </ul>
                   </div>
