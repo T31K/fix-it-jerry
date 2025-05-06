@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
   const [branchIndex, setBranchIndex] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const branches = [
     "Desa Parkcity, Kuala Lumpur, Malaysia",
@@ -29,9 +30,32 @@ function Navbar() {
       setBranchIndex((prevIndex) => (prevIndex + 1) % branches.length);
     }, 1400);
 
+    // Setup menu toggle handlers
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('btn-close');
+    const extraWrap = document.getElementById('extra-wrap');
+    
+    if (menuBtn && closeBtn && extraWrap) {
+      menuBtn.addEventListener('click', () => {
+        extraWrap.classList.add('active');
+        setMenuOpen(true);
+      });
+      
+      closeBtn.addEventListener('click', () => {
+        extraWrap.classList.remove('active');
+        setMenuOpen(false);
+      });
+    }
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       clearInterval(branchRotationInterval);
+      
+      // Clean up event listeners
+      if (menuBtn && closeBtn) {
+        menuBtn.removeEventListener('click', () => {});
+        closeBtn.removeEventListener('click', () => {});
+      }
     };
   }, []);
 
@@ -190,7 +214,17 @@ function Navbar() {
                     </div>
                     <div className="de-flex-col">
                     <div className="menu_side_area">
-                        <Menu id="menu-btn" className="cursor-pointer" />
+                        <Menu 
+                          id="menu-btn" 
+                          className="cursor-pointer"
+                          onClick={() => {
+                            const extraWrap = document.getElementById('extra-wrap');
+                            if (extraWrap) {
+                              extraWrap.classList.add('active');
+                              setMenuOpen(true);
+                            }
+                          }}
+                        />
                     </div>
                     <div id="btn-extra">
                         <span></span>
@@ -204,7 +238,13 @@ function Navbar() {
         </header>
 
         <div id="extra-wrap" className="text-light">
-        <div id="btn-close">
+        <div id="btn-close" onClick={() => {
+          const extraWrap = document.getElementById('extra-wrap');
+          if (extraWrap) {
+            extraWrap.classList.remove('active');
+            setMenuOpen(false);
+          }
+        }}>
           <span></span>
           <span></span>
         </div>
@@ -215,9 +255,27 @@ function Navbar() {
             <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
             08.00 - 18.00
           </div>
-          <div>
-            <i className="icofont-location-pin me-2 op-5"></i>Desa Parkcity,
-            Kuala Lumpur Malaysia
+          <h5 className="mt-4">Our Branches</h5>
+          <div className="mb-4">
+            <strong>Desa Parkcity:</strong><br/>
+            <span className="ps-1">
+            <i className="icofont-location-pin me-2 op-5"></i>7, Jalan Residen Utama, Desa Parkcity</span><br/>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>017-2101646 (Jerry)</span>
+          </div>
+          <div className="mb-4">
+            <strong>Subang Jaya:</strong><br/>
+            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>   22-1, Jalan SS 15/8, SS 15</span><br/>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3646909 (Jack)</span>
+          </div>
+          <div className="mb-4">
+            <strong>Bukit Jalil:</strong><br/>
+            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>1-10, Jalan Bukit Jalil indah 4B</span><br/>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3101909 (John)</span>
+          </div>
+          <div className="mb-4">
+            <strong>Puchong:</strong><br/>
+            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>23A, Jalan Sri Manja 10, Taman Sri Manja</span><br/>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>018-7673909 (Jason)</span>
           </div>
           <div>
             <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
