@@ -142,7 +142,7 @@ function Navbar() {
                         </a>
                         </li>
                         <li>
-                        <a className="menu-item" href="contact.html">
+                        <a className="menu-item" href="/c.html">
                             Contact
                         </a>
                         </li>
