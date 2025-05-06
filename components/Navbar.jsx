@@ -1,6 +1,40 @@
+"use client"
 import { Menu } from "lucide-react";
+import React, { useState, useEffect } from "react";
 
 function Navbar() {
+  const [isSticky, setIsSticky] = useState(false);
+  const [branchIndex, setBranchIndex] = useState(0);
+
+  const branches = [
+    "Desa Parkcity, Kuala Lumpur, Malaysia",
+    "Subang Jaya, Selangor",
+    "Bukit Jalil, Kuala Lumpur",
+    "Puchong, Selangor"
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Rotate through branches every 3 seconds
+    const branchRotationInterval = setInterval(() => {
+      setBranchIndex((prevIndex) => (prevIndex + 1) % branches.length);
+    }, 1400);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearInterval(branchRotationInterval);
+    };
+  }, []);
+
   return (
       <div>
         <div className="float-text show-on-scroll">
@@ -17,16 +51,22 @@ function Navbar() {
                 <div className="col-lg-12">
                     <div className="d-flex justify-content-between xs-hide">
                     <div className="d-flex">
-                        <div className="topbar-widget me-5">
-                        <a href="#">
-                            <i className="icofont-location-pin"></i>Our Workshop:
-                            Desa Parkcity, Kuala Lumpur, Malaysia
+                        <div className="topbar-widget me-5 w-[360px]">
+                        <a href="/contact#branches">
+                            <i className="icofont-location-pin"></i>Our Workshops:{" "}
+                            {branches[branchIndex]}
                         </a>
                         </div>
                         <div className="topbar-widget me-5">
                         <a href="#">
                             <i className="icofont-clock-time"></i>Monday - Sunday
                             08.00 - 18.00
+                        </a>
+                        </div>
+                        <div className="topbar-widget me-5">
+                        <a href="#">
+                            <i className="icofont-phone"></i>Contact Number
+                            +60183646909
                         </a>
                         </div>
                     </div>

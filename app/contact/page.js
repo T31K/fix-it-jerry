@@ -62,7 +62,7 @@ function page() {
                     </div>
                     <div>
                       <h5 className="mb-0">Phone</h5>
-                      <p className="mb-0">(123) 456-7890</p>
+                      <p className="mb-0">+60183646909</p>
                     </div>
                   </div>
 
@@ -72,7 +72,7 @@ function page() {
                     </div>
                     <div>
                       <h5 className="mb-0">Email</h5>
-                      <p className="mb-0">support@fixitjerry.com</p>
+                      <p className="mb-0">hello@fixitjerry.com</p>
                     </div>
                   </div>
                 </div>
@@ -187,15 +187,15 @@ function page() {
                 <div className="bg-white p-4 rounded-1 shadow-sm h-100 border">
                   <h3 className="mb-3">Desa Parkcity</h3>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconMapPin className="text-light" size={24} />
                     </div>
-                    <div>
-                      <p className="mb-0">7, Jalan Residen Utama, Desa Parkcity, <br/>52200 Wilayah Persekutuan, Kuala Lumpur</p>
+                    <div className="overflow-hidden">
+                      <p className="mb-0 text-wrap">7, Jalan Residen Utama, Desa Parkcity, <br/>52200 Wilayah Persekutuan, Kuala Lumpur</p>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
@@ -220,15 +220,15 @@ function page() {
                 <div className="bg-white p-4 rounded-1 shadow-sm h-100 border">
                   <h3 className="mb-3">Subang Jaya</h3>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconMapPin className="text-light" size={24} />
                     </div>
-                    <div>
-                      <p className="mb-0">22-1, Jalan SS 15/8, SS 15,<br/> 47500 Subang Jaya, Selangor</p>
+                    <div className="overflow-hidden">
+                      <p className="mb-0 text-wrap">22-1, Jalan SS 15/8, SS 15,<br/> 47500 Subang Jaya, Selangor</p>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
@@ -253,15 +253,15 @@ function page() {
                 <div className="bg-white p-4 rounded-1 shadow-sm h-100 border">
                   <h3 className="mb-3">Bukit Jalil</h3>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconMapPin className="text-light" size={24} />
                     </div>
-                    <div>
-                      <p className="mb-0">1-10, Jalan Bukit Jalil indah 4B, <br/>Bukit Jalil, Taman Ltat, 57000 Wilayah Persekutuan, Kuala Lumpur</p>
+                    <div className="overflow-hidden">
+                      <p className="mb-0 text-wrap">1-10, Jalan Bukit Jalil indah 4B, <br/>Bukit Jalil, Taman Ltat, 57000 Kuala Lumpur</p>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
@@ -286,15 +286,15 @@ function page() {
                 <div className="bg-white p-4 rounded-1 shadow-sm h-100 border">
                   <h3 className="mb-3">Puchong</h3>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconMapPin className="text-light" size={24} />
                     </div>
-                    <div>
-                      <p className="mb-0">23A, Jalan Sri Manja 10, Taman Sri Manja, <br/>46000 Petaling Jaya, Selangor</p>
+                    <div className="overflow-hidden">
+                      <p className="mb-0 text-wrap">23A, Jalan Sri Manja 10, Taman Sri Manja, <br/>46000 Petaling Jaya, Selangor</p>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-dark-2 p-3 rounded-1 me-3">
+                    <div className="bg-dark-2 p-3 rounded-1 me-3 flex-shrink-0">
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
