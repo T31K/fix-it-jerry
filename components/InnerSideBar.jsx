@@ -95,7 +95,7 @@ function InnerSideBar({ activeLink }) {
                 {`#1 Phone Repair in KL`}
               </div>
               <h2 className="mb20 wow fadeInUp" data-wow-delay=".2s">
-                {`Don't worry, send your smartphone to us`}{" "}
+                {`Don't worry, send your device to us`}{" "}
               </h2>
               <p>
                 {`Let’s get your phone working like new again—visit us
