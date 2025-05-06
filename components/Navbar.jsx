@@ -34,13 +34,13 @@ function Navbar() {
     const menuBtn = document.getElementById('menu-btn');
     const closeBtn = document.getElementById('btn-close');
     const extraWrap = document.getElementById('extra-wrap');
-    
+
     if (menuBtn && closeBtn && extraWrap) {
       menuBtn.addEventListener('click', () => {
         extraWrap.classList.add('active');
         setMenuOpen(true);
       });
-      
+
       closeBtn.addEventListener('click', () => {
         extraWrap.classList.remove('active');
         setMenuOpen(false);
@@ -50,7 +50,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       clearInterval(branchRotationInterval);
-      
+
       // Clean up event listeners
       if (menuBtn && closeBtn) {
         menuBtn.removeEventListener('click', () => {});
@@ -206,7 +206,7 @@ function Navbar() {
                         </a>
                         </li>
                         <li>
-                        <a className="menu-item" href="/c.html">
+                        <a className="menu-item" href="/contact">
                             Contact
                         </a>
                         </li>
@@ -214,8 +214,8 @@ function Navbar() {
                     </div>
                     <div className="de-flex-col">
                     <div className="menu_side_area">
-                        <Menu 
-                          id="menu-btn" 
+                        <Menu
+                          id="menu-btn"
                           className="cursor-pointer"
                           onClick={() => {
                             const extraWrap = document.getElementById('extra-wrap');
