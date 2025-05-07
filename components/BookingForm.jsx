@@ -87,6 +87,9 @@ const deviceBrands = {
     "Nintendo Switch OLED",
     "Other",
   ],
+  others: [
+    "Others",
+  ],
 };
 
 export default function BookingForm({showTitle = true}) {
@@ -233,6 +236,7 @@ export default function BookingForm({showTitle = true}) {
               <SelectItem value="applewatch">Apple Watch</SelectItem>
               <SelectItem value="airpods">Airpods</SelectItem>
               <SelectItem value="switch">Nintendo Switch</SelectItem>
+              <SelectItem value="others">Others</SelectItem>
             </SelectContent>
           </Select>
         </div>

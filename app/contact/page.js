@@ -93,8 +93,12 @@ function page() {
                 <h4 className="mt-6">Business Hours</h4>
                 <div className="mb-4">
                   <div className="d-flex justify-content-between mb-2">
-                    <span>Monday - Sunday:</span>
+                    <span>Monday - Friday:</span>
                     <span>10:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="d-flex justify-content-between mb-2">
+                    <span>Saturday - Sunday:</span>
+                    <span>10:00 AM - 3:00 PM</span>
                   </div>
                 </div>
                 <div className="d-flex align-items-center mb-4">

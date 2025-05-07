@@ -88,13 +88,21 @@ function Footer() {
                   {`We're
                   Open`}
                 </div>
-                Monday - Sunday 10AM - 6PM
+                Monday - Friday 10AM - 6PM
+                <br />
+                Saturday -Sunday 10AM - 3PM
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="icofont-location-pin me-2 id-color-2"></i>
                   Workshop Location
                 </div>
                 Desa Parkcity, Kuala Lumpur
+                <br/>
+                Subang Jaya, Selangor
+                <br/>
+                Bukit Jalil, Kuala Lumpur
+                <br/>
+                Puchong, Selangor
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="fa-brands fa-whatsapp me-2 id-color-2"></i>Send a

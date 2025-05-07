@@ -83,8 +83,14 @@ function Navbar() {
                         </div>
                         <div className="topbar-widget me-5">
                         <a href="#">
-                            <i className="icofont-clock-time"></i>Monday - Sunday
+                            <i className="icofont-clock-time"></i>Monday - Friday
                             10AM - 6PM
+                        </a>
+                        </div>
+                        <div className="topbar-widget me-5">
+                        <a href="#">
+                            <i className="icofont-clock-time"></i>Saturday - Sunday
+                            10AM - 3PM
                         </a>
                         </div>
                         <div className="topbar-widget me-5">
