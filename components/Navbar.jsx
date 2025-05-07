@@ -84,7 +84,7 @@ function Navbar() {
                         <div className="topbar-widget me-5">
                         <a href="#">
                             <i className="icofont-clock-time"></i>Monday - Sunday
-                            08.00 - 18.00
+                            10AM - 6PM
                         </a>
                         </div>
                         <div className="topbar-widget me-5">
@@ -253,19 +253,19 @@ function Navbar() {
           <h5 className="mt-12">Visit Us</h5>
           <div>
             <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
-            08.00 - 18.00
+            10AM - 6PM
           </div>
           <h5 className="mt-4">Our Branches</h5>
           <div className="mb-4">
             <strong>Desa Parkcity:</strong><br/>
             <span className="ps-1">
             <i className="icofont-location-pin me-2 op-5"></i>7, Jalan Residen Utama, Desa Parkcity</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>017-2101646 (Jerry)</span>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3646909 (Jerry)</span>
           </div>
           <div className="mb-4">
             <strong>Subang Jaya:</strong><br/>
             <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>   22-1, Jalan SS 15/8, SS 15</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3646909 (Jack)</span>
+            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3267909 (Jack)</span>
           </div>
           <div className="mb-4">
             <strong>Bukit Jalil:</strong><br/>

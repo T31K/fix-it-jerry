@@ -106,9 +106,12 @@ function page() {
                   </div>
                 </div>
                 <div className="d-flex align-items-center mb-4">
+                    <a href="#branches" className="text-decoration-none">
+
                   <div className="bg-dark-2 p-3 rounded-1 me-3">
                     <IconArrowDown className="text-light" size={24} />
                   </div>
+                  </a>
                   <div>
                     <a href="#branches" className="text-decoration-none">
                       <h5 className="mb-0">View All Branches</h5>
@@ -199,7 +202,7 @@ function page() {
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
-                      <p className="mb-0">017-2101646 (Jerry)</p>
+                      <p className="mb-0">018-3646909 (Jerry)</p>
                     </div>
                   </div>
                   <div className="rounded-1 overflow-hidden mb-3">

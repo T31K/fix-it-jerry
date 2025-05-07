@@ -88,7 +88,7 @@ function Footer() {
                   {`We're
                   Open`}
                 </div>
-                Monday - Sunday 08.00 - 18.00
+                Monday - Sunday 10AM - 6PM
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="icofont-location-pin me-2 id-color-2"></i>
