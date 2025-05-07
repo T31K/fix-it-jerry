@@ -8,7 +8,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const branches = [
-    "Desa Parkcity, Kuala Lumpur, Malaysia",
+    "Desa Parkcity, Kuala Lumpur",
     "Subang Jaya, Selangor",
     "Bukit Jalil, Kuala Lumpur",
     "Puchong, Selangor"

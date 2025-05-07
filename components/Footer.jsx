@@ -94,7 +94,7 @@ function Footer() {
                   <i className="icofont-location-pin me-2 id-color-2"></i>
                   Workshop Location
                 </div>
-                Desa Parkcity, Kuala Lumpur Malaysia
+                Desa Parkcity, Kuala Lumpur
                 <div className="spacer-20"></div>
                 <div className="fw-bold text-white">
                   <i className="fa-brands fa-whatsapp me-2 id-color-2"></i>Send a
