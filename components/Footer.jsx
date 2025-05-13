@@ -13,10 +13,10 @@ function Footer() {
                 <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
                   <i className="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://facebook.com/fixitjerry">
+                <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://instagram.com/fixitjerry">
+                <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </div>

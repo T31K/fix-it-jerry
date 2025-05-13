@@ -4,9 +4,9 @@ import BookingForm from "./BookingForm";
 
 export default function Services() {
   return (
-    <section className="min-h-screen relative bg-[url('/images/slider/hero.webp')] bg-cover bg-center bg-no-repeat">
-      <div className="relative z-10 container mx-auto px-4 py-8 sm:py-20">
-        <div className="grid lg:grid-cols-2 gap-8 items-start lg:items-center">
+    <section className="hero-container min-h-screen relative bg-[url('/images/slider/hero.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="relative z-10 container mx-auto px-4 md:py-24 py-8 main-hero">
+        <div className="grid lg:grid-cols-2 md:gap-8 gap-4 items-start lg:items-center">
           <div className="">
             <div className="text-sm sm:text-base text-white mb-2 sm:mb-4">
               Number 1 Device Repair in KL
@@ -20,7 +20,7 @@ export default function Services() {
                 Easy
               </LineShadowText>
             </h1>
-            <p className="text-white text-sm sm:text-lg max-w-xl ">
+            <p className="text-white text-sm sm:text-lg max-w-xl m-0 md:mb-2">
               We fix phones, tablets and laptop at an affordable price with
               quality service guaranteed.
             </p>

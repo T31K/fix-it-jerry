@@ -46,10 +46,10 @@ export default function Services() {
           {repairItems.map((item, index) => (
             <div
               key={index}
-              className="col-6 col-md-4 col-lg-3 mb-4 px-1 md:px-4"
+              className="col-6 col-md-4 col-lg-3 !my-1 md:mb-4 px-1 md:px-4"
               data-wow-delay={`${index * 0.2}s`}
             >
-              <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-4 h-100 text-center">
+              <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-2 md:p-4 h-100 text-center">
                 {/* Device Icon and Title */}
                 <Image
                   src={item.imgSrc}
@@ -59,12 +59,12 @@ export default function Services() {
                   alt={item.title}
                 />
                 <div className="flex flex-col items-center mb-2 md:mb-4">
-                  <p className="fw-bold !m-0 !mr-2 text-lg md:text-xl text-green-600 whitespace-nowrap">
+                  <p className="fw-bold !m-0 !mr-2 text-sm md:text-xl text-green-600 whitespace-nowrap">
                     {item.title}
                   </p>
                 </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0 min-h-24 list-none text-left mx-auto w-fit">
+                <ul className="mb-0 !p-0 min-h-12 md:min-h-24 list-none text-left mx-auto w-fit">
                   {item.services.filter(srv => srv.popular).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
@@ -74,7 +74,7 @@ export default function Services() {
                         )}
                         <a
                           href={srv.slug || `/devices/${item.title.toLowerCase()}?hash=${srv.hash}`}
-                          className="hover:underline text-gray-700 text-md md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
+                          className="hover:underline text-gray-700 text-sm md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >
                           {srv.service.split(/&|\//)[0]}
@@ -88,7 +88,7 @@ export default function Services() {
                 <div className="flex justify-end mt-6">
                   <a
                     href={`/devices/${item.title.toLowerCase().replace(/\s/g, '_')}`}
-                    className="hover:underline text-gray-700 text-md md:text-lg flex items-center rounded-full bg-green-500/70 text-white px-3 py-1"
+                    className="hover:underline text-gray-700 text-sm md:text-lg flex items-center rounded-full bg-green-500/70 text-white px-3 py-1"
                   >
                     See All
                     <IconChevronRight size={20} />

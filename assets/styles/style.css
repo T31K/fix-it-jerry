@@ -12050,6 +12050,9 @@ img {
     /* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+  .main-hero {
+    padding-top: 0 !important;
+  }
 
    header .logo-main {
     display: none;

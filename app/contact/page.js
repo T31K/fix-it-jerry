@@ -79,13 +79,10 @@ function page() {
 
                 <h4 className="mb-3">Follow Us</h4>
                 <div className="d-flex">
-                  <a href="#" className="bg-dark-2 p-3 rounded-1 me-2">
+                  <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="bg-dark-2 p-3 rounded-1 me-2">
                     <IconBrandFacebook className="text-light" size={24} />
                   </a>
-                  <a href="#" className="bg-dark-2 p-3 rounded-1 me-2">
-                    <IconBrandTwitter className="text-light" size={24} />
-                  </a>
-                  <a href="#" className="bg-dark-2 p-3 rounded-1 me-2">
+                  <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="bg-dark-2 p-3 rounded-1 me-2">
                     <IconBrandInstagram className="text-light" size={24} />
                   </a>
                 </div>
@@ -203,7 +200,7 @@ function page() {
                   </div>
                   <div className="rounded-1 overflow-hidden mb-3">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7572351241654!2d101.63374!3d3.1865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4fdc72066f57%3A0xde2f95452a83dcce!2sDesa%20ParkCity!5e0!3m2!1sen!2smy!4v1620841858816!5m2!1sen!2smy"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.308370541805!2d101.62684859631975!3d3.185320037159793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc48a5d32f5fb7%3A0x1fbfb9bf04283220!2sDesa%20Parkcity%2C%2052200%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1747120963170!5m2!1sen!2smy"
                       width="100%"
                       height="250"
                       style={{ border: 0 }}
@@ -231,7 +228,7 @@ function page() {
                       <IconPhone className="text-light" size={24} />
                     </div>
                     <div>
-                      <p className="mb-0">018-3646909 (Jack)</p>
+                      <p className="mb-0">018-3267909 (Jack)</p>
                     </div>
                   </div>
                   <div className="rounded-1 overflow-hidden mb-3">
@@ -269,7 +266,7 @@ function page() {
                   </div>
                   <div className="rounded-1 overflow-hidden mb-3">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1778030745256!2d101.6729!3d3.0536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc35c1d6c0ca93%3A0x74e7dad01e42a97b!2sBukit%20Jalil%2C%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1620841858816!5m2!1sen!2smy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1806703217867!2d101.65986438749555!3d3.046220089012788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ad906518665%3A0xc12c16702a2c0000!2sJalan%20Bukit%20Jalil%20Indah%204B%2C%2043300!5e0!3m2!1sen!2smy!4v1747121044258!5m2!1sen!2smy"
                       width="100%"
                       height="250"
                       style={{ border: 0 }}

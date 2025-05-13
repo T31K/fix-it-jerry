@@ -6,7 +6,7 @@ import Services from "@/components/services";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { IconBrandFacebook } from "@tabler/icons-react";
+import { IconBrandFacebook, IconCheck } from "@tabler/icons-react";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
@@ -97,15 +97,18 @@ const GadgetFixPage = () => {
                 </h2>
               </div>
             </div>
-            <div className="row g-4">
-              {features.map((reason, index) => (
-                <div key={index} className="col-lg-4 col-md-6 wow fadeInUp">
-                  <div className="relative">
-                    <i className="abs fs-40 p-4 border-1-black icon_check rounded-1 text-dark"></i>
-                    <div className="ps-100 ms-4">
-                      <h4>{reason.title}</h4>
-                      <p>{`${reason.feature} `}</p>
-                    </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+              {features.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex h-full items-start gap-4 md:p-4 p-1"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center border-2 border-gray-800 rounded-full shrink-0">
+                    <IconCheck className="text-gray-800 w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
+                    <p className="text-gray-600 text-sm">{item.feature}</p>
                   </div>
                 </div>
               ))}
@@ -300,10 +303,15 @@ const GadgetFixPage = () => {
               <div className="row">
                 {/* Image */}
                 <div className="col-lg-6 position-lg-absolute left-half h-100 overflow-hidden rounded-bottom-end-60">
-                  <div
+                  <Image
+                    src="/images/misc/faq.webp"
+                    alt="faq"
                     className="image"
-                    data-bgimage="url(images/misc/faq.webp) center"
-                  ></div>
+                    fill
+                    objectFit="cover"
+                    objectPosition="center"
+                    loading="lazy"
+                  />
                 </div>
                 {/* Text */}
                 <div className="col-lg-6 offset-lg-6 relative z-2">

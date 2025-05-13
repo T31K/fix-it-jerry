@@ -136,7 +136,7 @@ export default function BookingForm({showTitle = true}) {
   };
 
   return (
-    <Card className="w-full max-w-[500px] p-4 sm:p-6 bg-[#4d6c77] !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white">
+    <Card className="w-full max-w-[500px] p-3 sm:p-6 bg-[#4d6c77] !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white">
       <form onSubmit={handleSubmit} className="space-y-4 !border-none">
       {showTitle && (
         <>
@@ -164,7 +164,7 @@ export default function BookingForm({showTitle = true}) {
             id="name"
             placeholder="Enter your name"
             value={formData.name}
-            className="bg-white !mt-0 text-slate-700"
+            className="bg-white !mt-0 text-slate-700 text-sm md:text-md"
             autoComplete="off"
             autoCapitalize="off"
             autoCorrect="off"
@@ -184,7 +184,7 @@ export default function BookingForm({showTitle = true}) {
             autoComplete="off"
             autoCapitalize="off"
             autoCorrect="off"
-            className="bg-white !mt-0 text-slate-700"
+            className="bg-white !mt-0 text-slate-700 text-sm md:text-md"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
@@ -201,7 +201,7 @@ export default function BookingForm({showTitle = true}) {
             id="phone"
             type="tel"
             placeholder="Enter your phone number"
-            className="bg-white !mt-0 text-slate-700"
+            className="bg-white !mt-0 text-slate-700 text-sm md:text-md"
             value={formData.phone}
             autoComplete="off"
             autoCapitalize="off"
@@ -222,7 +222,7 @@ export default function BookingForm({showTitle = true}) {
             onValueChange={(value) =>
               setFormData({ ...formData, deviceType: value, deviceBrand: "" })
             }
-            className="bg-white text-slate-700"
+            className="bg-white text-slate-700 text-sm md:text-md"
           >
             <SelectTrigger className="bg-white text-slate-700">
               <SelectValue placeholder="Select device type" />
@@ -272,7 +272,7 @@ export default function BookingForm({showTitle = true}) {
           </Label>
           <Textarea
             id="issue"
-            className="bg-white !mt-0 text-slate-700 resize-none"
+            className="bg-white !mt-0 text-slate-700 resize-none text-sm md:text-md"
             autoComplete="off"
             autoCapitalize="off"
             autoCorrect="off"
