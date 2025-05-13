@@ -285,17 +285,7 @@ export default function BookingForm({showTitle = true}) {
             required
           />
         </div>
-        <div className="flex md:justify-end gap-x-2 justify-between w-full">
-            <Button
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://wa.me/60183646909");
-            }}
-              className="w-fit text-slate-800 font-semibold bg-green-100/80 hover:bg-green-200 rounded-full"
-              >
-              <IconBrandWhatsapp size={24} />
-              Whatsapp Us
-            </Button>
+        <div className="flex justify-end">
           <Button
             type="submit"
             className="w-fit text-slate-800 font-semibold bg-[#C6E76C] hover:bg-[#C6E76C] rounded-full"
