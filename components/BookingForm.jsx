@@ -158,7 +158,7 @@ export default function BookingForm({showTitle = true}) {
         </>
 )}
         <div className="space-y-2">
-          <Label htmlFor="name" className="font-bold">
+          <Label  className="font-bold">
             Full Name
           </Label>
           <Input
@@ -175,7 +175,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email" className="font-bold">
+          <Label className="font-bold">
             Email
           </Label>
           <Input
@@ -195,7 +195,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="phone" className="font-bold">
+          <Label className="font-bold">
             Phone Number
           </Label>
           <Input
@@ -215,7 +215,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="deviceType" className="font-bold">
+          <Label className="font-bold">
             Device Type
           </Label>
           <Select
@@ -243,7 +243,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="deviceBrand" className="font-bold">
+          <Label className="font-bold">
             Device Brand & Model
           </Label>
           <Select
@@ -268,7 +268,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="issue" className="font-bold">
+          <Label className="font-bold">
             Describe the Issue
           </Label>
           <Textarea
