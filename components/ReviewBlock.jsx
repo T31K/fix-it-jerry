@@ -6,7 +6,7 @@ export default function ReviewBlock() {
       {/* testimonials begin */}
       {reviews.map((review, index) => (
         <div className="item" key={index}>
-          <div className="relative p-2">
+          <div className="relative p-0 md:p-2">
             <div className="relative">
               <img
                 className="relative z-2 w-80px rounded-1"
@@ -22,7 +22,7 @@ export default function ReviewBlock() {
                 ))}
               </span>
             </div>
-            <p>{review.content}</p>
+            <p className="!mt-2">{review.content}</p>
           </div>
         </div>
       ))}

@@ -9,6 +9,15 @@ import { tabletItems } from "./tablet";
 
 
 const reviews = [
+    {
+    content:
+      "I reached out to him, I thot he left dpc since I couldnt get reply on his Fb messenger. I checked again on dpc group, only to find its now a FB page Fix it jerry. and his clients have grown. So o messeged the business page , handed over ipad, in 1 day told me wat the actual issue was. Veryyyyy competitve price. And much better timeline. Got it yesterday evening. And it works fine , daughter is happy, we are happy. Thanks Jerry for your help. Will always recommend your services.",
+    name: "音楽音楽 ",
+    profile_pic: 'images/reviews/profile_4.webp',
+    img_link:
+      "https://scontent.fkul2-5.fna.fbcdn.net/v/t39.30808-1/262755500_10165843363690223_7321233469272889541_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oJVqTazNZVAQ7kNvgFFswuE&_nc_zt=24&_nc_ht=scontent.fkul2-5.fna&_nc_gid=ARpvQZWRV_mDrHbyFwGmY9p&oh=00_AYAaZWS5wIr1cvIXmbir8EXXrpuCG0Jr4MB3eP-PwuffOA&oe=678690DB",
+    review_link: "https://www.facebook.com/share/p/18kR6rafMZ/",
+  },
   {
     content:
       "Nice and effective service provided by them. The owner is responsible and trustworthy 👍 He fixed my MSI laptop screen with reasonable price cause i accidentally dropped it and the screen cracked.",
@@ -36,15 +45,7 @@ const reviews = [
       "https://scontent.fkul2-3.fna.fbcdn.net/v/t39.30808-1/468086310_10230892929820385_5002660105252129809_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=AbuALpSXHzUQ7kNvgFfYIDf&_nc_zt=24&_nc_ht=scontent.fkul2-3.fna&_nc_gid=ATochNGBHTcPBiuemgkwVFp&oh=00_AYD3HXyuigFuTPUgVvFrTQ3Sd6QW9Sdsla8GS3ayzUWR-g&oe=67869D74",
     review_link: "https://www.facebook.com/share/p/14pNhE8zSq4/",
   },
-  {
-    content:
-      "I reached out to him, I thot he left dpc since I couldnt get reply on his Fb messenger. I checked again on dpc group, only to find its now a FB page Fix it jerry. and his clients have grown. So o messeged the business page , handed over ipad, in 1 day told me wat the actual issue was. Veryyyyy competitve price. And much better timeline. Got it yesterday evening. And it works fine , daughter is happy, we are happy. Thanks Jerry for your help. Will always recommend your services.",
-    name: "音楽音楽 ",
-    profile_pic: 'images/reviews/profile_4.webp',
-    img_link:
-      "https://scontent.fkul2-5.fna.fbcdn.net/v/t39.30808-1/262755500_10165843363690223_7321233469272889541_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oJVqTazNZVAQ7kNvgFFswuE&_nc_zt=24&_nc_ht=scontent.fkul2-5.fna&_nc_gid=ARpvQZWRV_mDrHbyFwGmY9p&oh=00_AYAaZWS5wIr1cvIXmbir8EXXrpuCG0Jr4MB3eP-PwuffOA&oe=678690DB",
-    review_link: "https://www.facebook.com/share/p/18kR6rafMZ/",
-  },
+
   {
     content:
       "My daughter accidentally dropped her iPhone into the bathtub, causing it to go into recovery mode. Got Khye Mun’s contact from a friend, dropped it off on a Monday, and voilà! Fixed and collected on Thursday with all the data intact 😅 Loved that he kept me updated about the progress as well, very friendly and easy to deal with. Thanks again Jerry!",

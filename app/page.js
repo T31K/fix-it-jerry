@@ -10,15 +10,11 @@ import { IconBrandFacebook, IconCheck } from "@tabler/icons-react";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
-      <div className="scrollbar-v show-on-scroll"></div>
       <Navbar />
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
-
         <Hero />
-
         <Services />
-
         <section>
           <div className="container">
             <div className="row g-4 mb-2 justify-content-center">
@@ -88,7 +84,6 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
-
         <section className="no-top">
           <div className="container">
             <div className="row g-4 mb-2 justify-content-center">
@@ -117,86 +112,6 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="section-dark text-light jarallax">
-          <img
-            src="images/background/12.webp"
-            className="jarallax-img"
-            alt=""
-          />
-          <div className="sw-overlay"></div>
-          <div className="row g-4 mb-2 justify-content-center">
-            <div className="col-lg-5 text-center">
-              <div className="subtitle s2 wow fadeInUp mb-2">
-                Services Process
-              </div>
-              <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                How It Works
-              </h2>
-            </div>
-          </div>
-          <div className="container">
-            <div className="row g-4 grid-divider">
-              {[
-                "Select your repair & request a quote",
-                "Send you gadget or visit our store",
-                "Our technicians fix your gadget",
-                "We'll request payment",
-                "Return to you",
-              ].map((step, index) => (
-                <div
-                  key={index}
-                  className={`col-lg-1-5 col-md-6 wow fadeInRight`}
-                  data-wow-delay={`${index * 0.2 + 0.2}s`}
-                >
-                  <div className="de-step-s1 text-center">
-                    <div
-                      className={`d-number bg-color-2 text-dark wow fadeInRight`}
-                      data-wow-delay={`${index * 0.2 + 0.2}s`}
-                    >
-                      Step {index + 1}
-                    </div>
-                    <h4>{step}</h4>
-                    <div className="abs abs-center fs-96 top-50 text-white op-2 fw-bold">
-                      {index + 1}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-color-2 pt-60 pb-60 hidden">
-          <div className="container">
-            <div className="row align-items-center justify-content-between">
-              <div className="col-lg-4">
-                <h3 className="mb-0">Track Your Repair</h3>
-              </div>
-              <div className="col-lg-8">
-                <div className="row align-items-center justify-content-end">
-                  <div className="col-md-9 col-8">
-                    <div className="hover-underline">
-                      <input
-                        className="form-underline mb-0 no-border fs-18 !font-mono"
-                        id="order_id"
-                        name="order_id"
-                        placeholder="enter your order number here..."
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-4">
-                    <a className="btn-main fx-slide w-100" href="track.html">
-                      <span>Track It</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="no-top no-bottom overflow-hidden hidden">
           <div className="container-fluid relative half-fluid">
             <div className="container">
@@ -248,7 +163,6 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
-
         <section className="section-dark bg-dark-2 text-light">
           <div className="container">
             <div className="row g-4 mb-4">
@@ -298,8 +212,7 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="section-dark no-top no-bottom overflow-hidden">
+                <section className="section-dark no-top no-bottom overflow-hidden">
           <div className="container-fluid relative half-fluid">
             <div className="container">
               <div className="row">
@@ -411,13 +324,13 @@ const GadgetFixPage = () => {
                         ].map((faq, index) => (
                           <div key={index}>
                             <div
-                              className="accordion-section-title"
+                              className="accordion-section-title text-sm md:text-base !text-green-700"
                               data-tab={`#accordion-a${index + 1}`}
                             >
                               {faq.question}
                             </div>
                             <div
-                              className="accordion-section-content"
+                              className="accordion-section-content text-sm md:text-md"
                               id={`accordion-a${index + 1}`}
                             >
                               <p className="mb-0">{faq.answer}</p>
@@ -434,7 +347,7 @@ const GadgetFixPage = () => {
           </div>
         </section>
 
-        <section className="hidden">
+                <section className="hidden">
           <div className="container">
             <div className="row g-4">
               <div className="col-lg-6 offset-lg-3 text-center">
@@ -482,7 +395,7 @@ const GadgetFixPage = () => {
           </div>
         </section>
 
-        <section className="bg-color-2 pt-40 pb-40">
+                <section className="bg-color-2 pt-40 pb-40">
           <div className="container">
             <div className="row g-4 align-items-center">
               <div className="col-lg-9">
@@ -499,6 +412,7 @@ const GadgetFixPage = () => {
             </div>
           </div>
         </section>
+
       </div>
       <Footer />
     </div>
