@@ -28,13 +28,13 @@ export default function Services() {
             <div className="subtitle s2 wow fadeInUp mb-2">Top Reasons</div>
             <div className="flex flex-col items-center w-full">
               <h2
-                className="wow fadeInUp text-center !-mb-1"
+                className="wow fadeInUp text-center mb-0 mt-2"
                 data-wow-delay=".2s"
               >
                 Devices We
               </h2>
               <WordRotate
-                className="leading-[30px] text-[#C6E76C] -400 text-center"
+                className="text-[#C6E76C] -400 text-center mb-6"
                 words={["Repair", "Replace", "Upgrade", "Install"]}
               />
             </div>
@@ -49,7 +49,7 @@ export default function Services() {
               className="col-6 col-md-4 col-lg-3 !my-1 md:mb-4 px-1 md:px-4"
               data-wow-delay={`${index * 0.2}s`}
             >
-              <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-2 md:p-4 h-100 text-center">
+              <div className="bg-green-100/20 border-2 border-gray-800/20 rounded-2xl p-2 md:p-4 text-center">
                 {/* Device Icon and Title */}
                 <Image
                   src={item.imgSrc}
@@ -64,7 +64,7 @@ export default function Services() {
                   </p>
                 </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0 min-h-12 md:min-h-24 list-none text-left mx-auto w-fit">
+                <ul className="mb-0 !p-0 min-h-[90px] md:min-h-24 list-none text-left mx-auto w-fit">
                   {item.services.filter(srv => srv.popular).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (

@@ -31,7 +31,7 @@ const GadgetFixPage = () => {
                 </h2>
               </div>
             </div>
-            <div className="row g-4">
+            <div className="row g-4 mt-2 md:mt-0">
               {[
                 {
                   title: "Repair",
@@ -60,7 +60,7 @@ const GadgetFixPage = () => {
               ].map((issue, index) => (
                 <div
                   key={index}
-                  className={`col-lg-3 col-md-6 wow fadeInRight hover`}
+                  className={`col-6 col-md-3 wow fadeInRight hover p-2 !m-0`}
                   data-wow-delay={`${(index % 4) * 0.3}s`}
                 >
                   <div className="bg-dark-2 text-light h-100 rounded-1 border-[2px] border-[#303030] overflow-hidden">
@@ -74,11 +74,13 @@ const GadgetFixPage = () => {
                         alt=""
                       />
                     </div>
-                    <div className="p-30">
-                      <h4 className="border-bottom-1-light pb-3">
+                    <div className="p-3 md:p-8">
+                      <h4 className="border-bottom-1-light pb-3 text-sm md:text-base">
                         {issue.title}
                       </h4>
-                      <p className="mb-0">{issue.desc}</p>
+                      <p className="mb-0 text-sm md:text-sm">
+                        {issue.desc}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +99,7 @@ const GadgetFixPage = () => {
                 </h2>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 items-stretch">
               {features.map((item, index) => (
                 <div
                   key={index}

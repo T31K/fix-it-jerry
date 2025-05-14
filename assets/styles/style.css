@@ -3860,12 +3860,22 @@ h1,
   word-wrap: break-word;
 }
 
-h2 {
-  margin-top: 0;
-  font-size: 35px;
-  margin-bottom: 20px;
-  line-height: 44px;
-  padding-bottom: 5px;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  h2 {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px !important;
+  }
 }
 
 h3 {
