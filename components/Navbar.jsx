@@ -61,11 +61,6 @@ function Navbar() {
 
   return (
       <div>
-        <div className="float-text show-on-scroll">
-        <span>
-          <a href="#">Scroll to top</a>
-        </span>
-        </div>
         <div className="scrollbar-v show-on-scroll"></div>
 
         <header className="transparent has-topbar">
