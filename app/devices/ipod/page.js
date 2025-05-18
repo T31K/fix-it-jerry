@@ -41,8 +41,8 @@ export default function Page({ searchParams }) {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">iPod Services</h1>
-                <p className="text-gray-700 max-w-3xl text-sm md:text-base text-center mt-3">
+                <h1 className="md:whitespace-nowrap !text-[24px] md:!text-[48px]">iPod Services</h1>
+                <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
                   {ipodItems?.description}
                 </p>
               </div>
@@ -57,7 +57,7 @@ export default function Page({ searchParams }) {
                 <a href="/devices">Devices</a>
               </li>
               <li>
-                <a href="/services/airpods">Airpods</a>
+                <a href="/services/ipod">iPod</a>
               </li>
             </ul>
           </div>

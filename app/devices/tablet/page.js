@@ -77,8 +77,8 @@ export default function Page({ searchParams }) {
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
                 <div className="subtitle">Fix It Jerry</div>
-                <h1 className="md:whitespace-nowrap">Tablet Services</h1>
-                <p className="text-gray-700 max-w-3xl text-sm md:text-base text-center mt-3">
+                <h1 className="md:whitespace-nowrap !text-[24px] md:!text-[48px]">Tablet Services</h1>
+                <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
                   {tabletItem?.description}
                 </p>
               </div>
