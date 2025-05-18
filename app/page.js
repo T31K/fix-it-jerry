@@ -94,7 +94,7 @@ const GadgetFixPage = () => {
                 </h2>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 items-stretch px-3 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 items-stretch px-3 md:px-0 !h-auto">
               {features.map((item, index) => (
                 <div
                   key={index}
