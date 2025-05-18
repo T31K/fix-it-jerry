@@ -53,18 +53,18 @@ export default function Services() {
                 {/* Device Icon and Title */}
                 <Image
                   src={item.imgSrc}
-                  width={138}
-                  height={138}
-                  className="mb-3 mx-auto"
+                  width={240}
+                  height={240}
+                  className="mb-0 mx-auto md:mb-3 w-16 h-16 md:w-36 md:h-36"
                   alt={item.title}
                 />
-                <div className="flex flex-col items-center mb-2 md:mb-4">
+                <div className="flex flex-col items-center mb-3 md:mb-4">
                   <p className="fw-bold !m-0 !mr-2 text-sm md:text-xl text-green-600 whitespace-nowrap">
                     {item.title}
                   </p>
                 </div>
                 {/* List all services with their respective icons */}
-                <ul className="mb-0 !p-0 min-h-[90px] md:min-h-24 list-none text-left mx-auto w-fit">
+                <ul className="mb-0 !p-0 min-h-[70px] md:min-h-24 list-none text-left mx-auto w-fit">
                   {item.services.filter(srv => srv.popular).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (

@@ -39,7 +39,7 @@ const GadgetFixPage = () => {
                   title: "Replacement",
                   desc: "Over time, batteries can degrade, leading to decreased performance, reduced battery life, even complete failure.",
                   img: "charging_port_replacement.webp",
-                  estimated_days: "0.5 - 1 day(s)",
+                  estimated_days: "1 - 2 days",
                 },
                 {
                   title: "Upgrade",
@@ -94,7 +94,7 @@ const GadgetFixPage = () => {
                 </h2>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 items-stretch px-3 md:px-0">
               {features.map((item, index) => (
                 <div
                   key={index}
@@ -183,7 +183,7 @@ const GadgetFixPage = () => {
               >
                 {reviews.map((review, index) => (
                   <div key={index} className="item">
-                    <div className="relative p-2">
+                    <div className="relative px-3 md:p-2">
                       <div className="relative flex items-center gap-x-4">
                         <img src={review.profile_pic} className="w-14 h-14 rounded-full bg-green-200" alt="profile_pic" />
                         <div className="flex-grow">
@@ -231,7 +231,7 @@ const GadgetFixPage = () => {
                 {/* Text */}
                 <div className="col-lg-6 offset-lg-6 relative z-2">
                   <div className="spacer-double"></div>
-                  <div className="ps-lg-5">
+                  <div className="px-3 md:px-0">
                     <div className="subtitle s2 wow fadeInUp mb-2">
                       Questions
                     </div>
