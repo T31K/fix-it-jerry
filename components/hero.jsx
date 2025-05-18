@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section className="hero-container min-h-screen relative bg-[url('/images/slider/hero_2.webp')] bg-cover bg-center bg-no-repeat">
       <div className="relative z-10 container mx-auto px-4 md:py-24 py-8 main-hero">
-        <div className="grid lg:grid-cols-2 md:gap-8 gap-4 items-start lg:items-center">
+        <div className="grid lg:grid-cols-2 md:gap-8 gap-4 items-start lg:items-center !h-auto">
           <div className="">
             <div className="text-sm sm:text-base text-white mb-2 sm:mb-4">
               Number 1 Device Repair in KL
