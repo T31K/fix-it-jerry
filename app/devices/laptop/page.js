@@ -40,7 +40,7 @@ export default function Page({ searchParams }) {
                     />
                     {service.sections?.map((section, secIndex) => (
                       <div key={secIndex} className="mb-4">
-                        <h4 className="text-lg font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
+                        <h4 className="text-sm font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
                           {section.heading}
                         </h4>
                         {Array.isArray(section.content) ? (
