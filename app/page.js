@@ -217,7 +217,7 @@ const GadgetFixPage = () => {
             <div className="container">
               <div className="row">
                 {/* Image */}
-                <div className="col-lg-6 position-lg-absolute left-half h-100 overflow-hidden rounded-bottom-end-60">
+                <div className="col-lg-6 position-lg-absolute left-half h-100 overflow-hidden ">
                   <Image
                     src="/images/misc/faq.webp"
                     alt="faq"
