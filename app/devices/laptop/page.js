@@ -40,17 +40,17 @@ export default function Page({ searchParams }) {
                     />
                     {service.sections?.map((section, secIndex) => (
                       <div key={secIndex} className="mb-4">
-                        <h4 className="text-sm font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
+                        <h4 className="text-xs font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
                           {section.heading}
                         </h4>
                         {Array.isArray(section.content) ? (
-                          <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-sm md:text-base">
+                          <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-xs md:text-base">
                             {section.content.map((item, i) => (
                               <li key={i}>{item}</li>
                             ))}
                           </ul>
                         ) : (
-                          <p className="text-gray-700 text-sm md:text-base">
+                          <p className="text-gray-700 text-xs md:text-base">
                             {section.content}
                           </p>
                         )}
