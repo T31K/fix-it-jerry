@@ -307,7 +307,7 @@ const GadgetFixPage = () => {
                             ],
                           },
                           {
-                            question: "Where do will you repair the device?",
+                            question: "Where will you repair the device?",
                             answer: [
                               "We do both onsite and offsite repairs.",
                               "We recommend contacting us and we'll come pickup the device.",
