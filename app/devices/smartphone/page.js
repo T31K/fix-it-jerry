@@ -88,7 +88,7 @@ export default function Page() {
   };
 
   return (
-    <div id="wrapper">
+    <div id="wrapper" className="devices">
       <Navbar />
       <div id="content" className="no-top no-bottom">
         <div id="top"></div>
