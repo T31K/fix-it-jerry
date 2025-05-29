@@ -144,37 +144,6 @@ export default function Page() {
         </section>
       </div>
 
-      {/* Mobile Drawer */}
-      <div className="md:hidden">
-        <Drawer open={!!openDrawer} onOpenChange={handleClose}>
-          <DrawerContent>
-            {openDrawer && (
-              <>
-                <DrawerHeader>
-                  <DrawerTitle>{openDrawer.service}</DrawerTitle>
-                </DrawerHeader>
-                <ServiceContent service={openDrawer} />
-              </>
-            )}
-          </DrawerContent>
-        </Drawer>
-      </div>
-
-      {/* Desktop Dialog */}
-      <div className="hidden md:block">
-        <Dialog open={!!openDialog} onOpenChange={setOpenDialog}>
-          <DialogContent className="max-w-3xl">
-            {openDialog && (
-              <>
-                <DialogHeader>
-                  <DialogTitle>{openDialog.service}</DialogTitle>
-                </DialogHeader>
-                <ServiceContent service={openDialog} />
-              </>
-            )}
-          </DialogContent>
-        </Dialog>
-      </div>
     </div>
   );
 }
