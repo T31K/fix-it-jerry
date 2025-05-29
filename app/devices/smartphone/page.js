@@ -88,7 +88,7 @@ export default function Page() {
   };
 
   return (
-    <div id="wrapper" className="devices">
+    <div id="wrapper" >
       <Navbar />
       <div id="content" className="no-top no-bottom">
         <div id="top"></div>
@@ -122,7 +122,7 @@ export default function Page() {
           <div className="sw-overlay"></div>
         </section>
 
-        <section className="py-8">
+        <section className="py-8 h-[100vh]">
           <div className="container">
             <div className="row g-4">
               <InnerSideBar activeLink="smartphone" />

@@ -8370,10 +8370,6 @@ p.slider-teaser{
   .special-scrollbar::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
-  body:has(div.devices) {
-    height: 100vh !important;
-  }
 }
 
 .de_social-icons a{
