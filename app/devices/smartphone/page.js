@@ -88,6 +88,8 @@ export default function Page() {
   };
 
   return (
+      <>
+
     <div id="wrapper">
       <Navbar />
       <div id="content" className="no-top no-bottom">
@@ -143,6 +145,7 @@ export default function Page() {
           </div>
         </section>
       </div>
+    </div>
 
       {/* Mobile Drawer */}
       <Drawer open={!!openDrawer} onOpenChange={handleClose}>
@@ -170,7 +173,7 @@ export default function Page() {
           )}
         </DialogContent>
       </Dialog>
-    </div>
+      </>
   );
 }
 
