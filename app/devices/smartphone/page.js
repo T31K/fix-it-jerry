@@ -1,69 +1,21 @@
-import { features, repairItems } from "@/data";
-import InnerSideBar from "@/components/InnerSideBar";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+"use client";
+
+import { useState } from "react";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import InnerSideBar from "@/components/InnerSideBar";
+import { repairItems } from "@/data";
+import { Card } from "@/components/ui/card";
 
-export default function Page({ searchParams }) {
+export default function Page() {
   const smartphoneItem = repairItems.find((item) => item.title === "Smartphone");
-  const hash = searchParams?.hash || "";
-  const targetService = smartphoneItem?.services.find((service) => service.hash === hash);
-  const activeTab = targetService?.service_type || "repair";
-
-  const renderAccordionItems = (type) => (
-    <Accordion type="single" collapsible defaultValue={`${type}-${hash}`}>
-      {smartphoneItem?.services
-        .filter((service) => service.service_type === type)
-        .map((service, index) => (
-          <AccordionItem key={index} value={`${type}-${service.hash}`}>
-            <AccordionTrigger>{service.service}</AccordionTrigger>
-            <AccordionContent>
-              <Card>
-                <CardContent>
-                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    <Image
-                      src={service.image}
-                      width={400}
-                      height={400}
-                      className="mb-3 border rounded-lg"
-                      alt={service.title}
-                    />
-                    {service.sections?.map((section, secIndex) => (
-                      <div key={secIndex} className="mb-4">
-                        <h4 className="text-xs font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
-                          {section.heading}
-                        </h4>
-                        {Array.isArray(section.content) ? (
-                          <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-sm md:text-base">
-                            {section.content.map((item, i) => (
-                              <li key={i}>{item}</li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-gray-700 text-sm md:text-base">
-                            {section.content}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-    </Accordion>
-  );
+  const services = smartphoneItem?.services || [];
+  const [openDrawer, setOpenDrawer] = useState(null);
+  const [openDialog, setOpenDialog] = useState(false);
+  const handleOpen = (service) => setOpenDrawer(service);
+  const handleClose = () => setOpenDrawer(null);
 
   return (
     <div id="wrapper">
@@ -72,7 +24,11 @@ export default function Page({ searchParams }) {
         <div id="top"></div>
         <section id="subheader" className="relative jarallax text-light">
           <div className="de-gradient-edge-top"></div>
-          <img src="/images/background/4.webp" className="jarallax-img" alt="" />
+          <img
+            src="/images/background/4.webp"
+            className="jarallax-img"
+            alt=""
+          />
           <div className="container relative z-2">
             <div className="row justify-content-center">
               <div className="col-lg-6 text-center">
@@ -86,41 +42,134 @@ export default function Page({ searchParams }) {
           </div>
           <div className="crumb-wrapper">
             <ul className="crumb">
-              <li><a href="/">Home</a></li>
-              <li><a href="/devices">Devices</a></li>
-              <li><a href="/services/smartphone">Smartphone</a></li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/devices">Devices</a>
+              </li>
+              <li>
+                <a href="/services/smartphone">Smartphone</a>
+              </li>
             </ul>
           </div>
           <div className="sw-overlay"></div>
         </section>
 
-        <section>
+        {/* Content */}
+        <section className="py-8">
           <div className="container">
             <div className="row g-4">
               <InnerSideBar activeLink="smartphone" />
-              <section className="col-lg-9 !py-0">
-                <Tabs defaultValue={activeTab} className="w-full">
-                  <TabsList className="mb-6 md:mb-8 flex whitespace-nowrap">
-                    <TabsTrigger value="repair">Repairs</TabsTrigger>
-                    <TabsTrigger value="replacement">Replace</TabsTrigger>
-                    <TabsTrigger value="upgrade">Upgrades</TabsTrigger>
-                  </TabsList>
+              <div className="col-lg-9">
+                {/* Mobile Grid */}
+                <div className="grid grid-cols-2 gap-4 md:hidden">
+                  {services.map((service, idx) => (
+                    <Card
+                      key={idx}
+                      className="cursor-pointer rounded-lg p-2 hover:shadow transition"
+                      onClick={() => setOpenDrawer(service)}
+                    >
+                      <Image
+                        src={service.image}
+                        width={400}
+                        height={400}
+                        alt={service.title}
+                        className="rounded mb-2 object-cover"
+                      />
+                      <p className="text-xs font-semibold text-brand-700 text-center !m-0">
+                        {service.service}
+                      </p>
+                    </Card>
+                  ))}
+                </div>
 
-                  <TabsContent value="repair">
-                    {renderAccordionItems("repair")}
-                  </TabsContent>
-                  <TabsContent value="replacement">
-                    {renderAccordionItems("replacement")}
-                  </TabsContent>
-                  <TabsContent value="upgrade">
-                    {renderAccordionItems("upgrade")}
-                  </TabsContent>
-                </Tabs>
-              </section>
+                {/* Desktop Grid */}
+                <div className="hidden md:grid md:grid-cols-3 gap-6">
+                  {services.map((service, idx) => (
+                    <div
+                      key={idx}
+                      className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition"
+                      onClick={() => setOpenDialog(service)}
+                    >
+                      <Image
+                        src={service.image}
+                        width={400}
+                        height={400}
+                        alt={service.title}
+                        className="rounded mb-3 object-cover "
+                      />
+                      <p className="text-base font-semibold text-brand-700 text-center">
+                        {service.service}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </div>
+
+      {/* Mobile Drawer */}
+      <div className="md:hidden">
+        <Drawer open={!!openDrawer} onOpenChange={handleClose}>
+          <DrawerContent>
+            {openDrawer && (
+              <>
+                <DrawerHeader>
+                  <DrawerTitle>{openDrawer.service}</DrawerTitle>
+                </DrawerHeader>
+                <ServiceContent service={openDrawer} />
+              </>
+            )}
+          </DrawerContent>
+        </Drawer>
+      </div>
+      <div>
+        <Dialog open={!!openDialog} onOpenChange={setOpenDialog}>
+          <DialogContent className="max-w-3xl">
+            {openDialog && (
+              <>
+                <DialogHeader>
+                  <DialogTitle>{openDialog.service}</DialogTitle>
+                </DialogHeader>
+                <ServiceContent service={openDialog} />
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
+      </div>
+    </div>
+  );
+}
+
+function ServiceContent({ service }) {
+  return (
+    <div className="px-4 pb-6 h-[70vh] overflow-y-auto special-scrollbar">
+<Image
+      src={service.image}
+      width={200}
+      height={200}
+      alt={service.title}
+      className="rounded mb-4 w-full hidden md:block"
+    />
+      {service.sections?.map((section, idx) => (
+        <div key={idx} className="mb-4">
+          <h4 className="text-xs font-semibold mb-2 text-brand-700 border-b border-brand-100 pb-2">
+            {section.heading}
+          </h4>
+          {Array.isArray(section.content) ? (
+            <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+              {section.content.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm text-gray-700">{section.content}</p>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
