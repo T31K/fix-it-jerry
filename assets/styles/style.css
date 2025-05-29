@@ -8353,6 +8353,29 @@ p.slider-teaser{
   100%    { background: var(--primary-color);}
 }
 
+@media (min-width: 768px) {
+  .special-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .special-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .special-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .special-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    height: 100vh !important;
+  }
+}
+
 .de_social-icons a{
   color:#ffffff;
   margin:10px 0;
