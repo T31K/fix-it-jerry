@@ -88,65 +88,61 @@ export default function Page() {
   };
 
   return (
-      <>
-        <div id="wrapper">
-          <Navbar />
-          <div id="content" className="no-top no-bottom">
-            <div id="top"></div>
-            <section id="subheader" className="relative jarallax text-light">
-              <div className="de-gradient-edge-top"></div>
-              <img
-                src="/images/background/4.webp"
-                className="jarallax-img"
-                alt=""
-              />
-              <div className="container relative z-2">
-                <div className="row justify-content-center">
-                  <div className="col-lg-6 text-center">
-                    <div className="subtitle">Fix It Jerry</div>
-                    <h1 className="md:whitespace-nowrap !text-[24px] md:!text-[48px]">
-                      Smartphone Services
-                    </h1>
-                    <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
-                      {smartphoneItem?.description}
-                    </p>
-                  </div>
-                </div>
+    <div id="wrapper">
+      <Navbar />
+      <div id="content" className="no-top no-bottom">
+        <div id="top"></div>
+        <section id="subheader" className="relative jarallax text-light">
+          <div className="de-gradient-edge-top"></div>
+          <img
+            src="/images/background/4.webp"
+            className="jarallax-img"
+            alt=""
+          />
+          <div className="container relative z-2">
+            <div className="row justify-content-center">
+              <div className="col-lg-6 text-center">
+                <div className="subtitle">Fix It Jerry</div>
+                <h1 className="md:whitespace-nowrap !text-[24px] md:!text-[48px]">
+                  Smartphone Services
+                </h1>
+                <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
+                  {smartphoneItem?.description}
+                </p>
               </div>
-              <div className="crumb-wrapper">
-                <ul className="crumb">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/devices">Devices</a></li>
-                  <li><a href="/services/smartphone">Smartphone</a></li>
-                </ul>
-              </div>
-              <div className="sw-overlay"></div>
-            </section>
-
-            <section className="py-8">
-              <div className="container">
-                <div className="row g-4">
-                  <InnerSideBar activeLink="smartphone" />
-                  <div className="col-lg-9">
-                    <Tabs defaultValue="repair" className="w-full">
-                      <TabsList className="mb-6 flex whitespace-nowrap">
-                        <TabsTrigger value="repair">Repairs</TabsTrigger>
-                        <TabsTrigger value="replacement">Replacement</TabsTrigger>
-                        <TabsTrigger value="upgrade">Upgrades</TabsTrigger>
-                      </TabsList>
-
-                      <TabsContent value="repair">{renderGrid("repair")}</TabsContent>
-                      <TabsContent value="replacement">{renderGrid("replacement")}</TabsContent>
-                      <TabsContent value="upgrade">{renderGrid("upgrade")}</TabsContent>
-                    </Tabs>
-                  </div>
-                </div>
-              </div>
-            </section>
+            </div>
           </div>
-        </div>
+          <div className="crumb-wrapper">
+            <ul className="crumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/devices">Devices</a></li>
+              <li><a href="/services/smartphone">Smartphone</a></li>
+            </ul>
+          </div>
+          <div className="sw-overlay"></div>
+        </section>
 
-      {/* Mobile Drawer */}
+        <section className="py-8">
+          <div className="container">
+            <div className="row g-4">
+              <InnerSideBar activeLink="smartphone" />
+              <div className="col-lg-9">
+                <Tabs defaultValue="repair" className="w-full">
+                  <TabsList className="mb-6 flex whitespace-nowrap">
+                    <TabsTrigger value="repair">Repairs</TabsTrigger>
+                    <TabsTrigger value="replacement">Replacement</TabsTrigger>
+                    <TabsTrigger value="upgrade">Upgrades</TabsTrigger>
+                  </TabsList>
+
+                  <TabsContent value="repair">{renderGrid("repair")}</TabsContent>
+                  <TabsContent value="replacement">{renderGrid("replacement")}</TabsContent>
+                  <TabsContent value="upgrade">{renderGrid("upgrade")}</TabsContent>
+                </Tabs>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <Drawer open={!!openDrawer} onOpenChange={handleClose}>
         <DrawerContent>
           {openDrawer && (
@@ -159,7 +155,6 @@ export default function Page() {
           )}
         </DrawerContent>
       </Drawer>
-
       <Dialog open={!!openDialog} onOpenChange={setOpenDialog}>
         <DialogContent className="max-w-3xl">
           {openDialog && (
@@ -172,7 +167,8 @@ export default function Page() {
           )}
         </DialogContent>
       </Dialog>
-      </>
+    </div>
+
   );
 }
 
