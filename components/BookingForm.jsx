@@ -93,7 +93,7 @@ const deviceBrands = {
   ],
 };
 
-export default function BookingForm({showTitle = true}) {
+export default function BookingForm({showTitle = true, defaultColor = true}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -137,28 +137,28 @@ export default function BookingForm({showTitle = true}) {
   };
 
   return (
-    <Card className="w-full max-w-[500px] p-3 sm:p-6 bg-[#4d6c77] !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white">
+    <Card className={`w-full max-w-[500px] p-3 sm:p-6 ${defaultColor ? "bg-[#4d6c77]" : "bg-white"} !rounded-4xl relative font-manrope !border-[#4d6c77] font-semibold text-white`}>
       <form onSubmit={handleSubmit} className="space-y-4 !border-none">
       {showTitle && (
         <>
           <div className="flex items-center gap-x-2">
           <Wrench size={24} />
-          <h2 className="text-xl sm:text-2xl font-bold text-white !m-0">
+          <h2 className={`text-xl sm:text-2xl font-bold ${defaultColor ? "text-white" : "!text-slate-700"} !m-0`}>
             Book a repair now!
           </h2>
         </div>
         <p className="!m-0 flex items-center gap-1 text-xs md:text-sm">
           {`We've fixed`}
           <span className="inline-block min-w-[4ch] text-right font-bold">
-            <CountUp end={2493} duration={1.5} separator="," />
+            <CountUp end={3208} duration={1.5} separator="," />
           </span>
           {` devices – let's make yours next!`}
         </p>
-        <p className="text-xs text-white/70 !m-0">Get a free quote</p>
+        <p className={`text-xs ${defaultColor ? "text-white/70" : "text-slate-700"} !m-0`}>Get a free quote</p>
         </>
 )}
         <div className="space-y-2">
-          <Label  className="font-bold">
+          <Label  className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Full Name
           </Label>
           <Input
@@ -175,7 +175,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label className="font-bold">
+          <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Email
           </Label>
           <Input
@@ -195,7 +195,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label className="font-bold">
+          <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Phone Number
           </Label>
           <Input
@@ -215,7 +215,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label className="font-bold">
+          <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Device Type
           </Label>
           <Select
@@ -243,7 +243,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label className="font-bold">
+          <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Device Brand & Model
           </Label>
           <Select
@@ -268,7 +268,7 @@ export default function BookingForm({showTitle = true}) {
         </div>
 
         <div className="space-y-2">
-          <Label className="font-bold">
+          <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Describe the Issue
           </Label>
           <Textarea
