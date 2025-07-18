@@ -26,7 +26,7 @@ const tabletItems = {
           {
             heading: "Common Issues with Water Damage",
             content: [
-              "Phone won’t turn on or keeps restarting.",
+              "Tablet won’t turn on or keeps restarting.",
               "Touchscreen stops working or behaves erratically.",
               "No sound or muffled speakers.",
               "Charging issues (slow charging, not charging, overheating).",
@@ -75,7 +75,7 @@ const tabletItems = {
           {
             heading: "Common Symptoms of Power IC Failure",
             content: [
-              "Phone doesn’t turn on or only turns on when plugged in.",
+              "Tablet doesn’t turn on or only turns on when plugged in.",
               "Sudden restarts or boot loops.",
               "Overheating even when idle.",
               "Battery drains quickly or charges erratically.",
@@ -211,7 +211,7 @@ const tabletItems = {
             heading: "Issues Caused by Faulty Charging IC",
             content: [
               "Phone heats up while charging.",
-              "Phone doesn’t charge or charges slowly.",
+              "Tablet doesn’t charge or charges slowly.",
               "Inconsistent charging or auto-shutdown.",
             ],
           },
