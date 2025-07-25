@@ -100,7 +100,7 @@ export default function SmartphoneServicesClient({ smartphoneItem }) {
           {filtered.map((service, idx) => (
             <div
               key={idx}
-              className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition"
+              className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition h-full"
               onClick={() => setOpenDialog(service)}
             >
               <Image

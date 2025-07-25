@@ -73,7 +73,7 @@ export default function SmartphoneServicePage({ params }) {
           <div className="sw-overlay"></div>
         </section>
 
-        <section className="py-8 min-h-[70vh]">
+        <section className="py-8">
           <div className="container">
             <div className="row g-4">
               <InnerSideBar activeLink="smartphone" />

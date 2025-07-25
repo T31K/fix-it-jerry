@@ -1,69 +1,78 @@
-import { features, repairItems } from "@/data";
-import InnerSideBar from "@/components/InnerSideBar";
+"use client";
+
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import InnerSideBar from "@/components/InnerSideBar";
+import { repairItems } from "@/data";
+import { Card } from "@/components/ui/card";
 
-export default function Page({ searchParams }) {
+export default function Page() {
   const laptopItems = repairItems.find((item) => item.title === "Laptop");
-  const hash = searchParams?.hash || "";
-  const targetService = laptopItems?.services.find((service) => service.hash === hash);
-  const activeTab = targetService?.service_type || "repair";
 
-  const renderAccordionItems = (type) => (
-    <Accordion type="single" collapsible defaultValue={`${type}-${hash}`}>
-      {laptopItems?.services
-        .filter((service) => service.service_type === type)
-        .map((service, index) => (
-          <AccordionItem key={index} value={`${type}-${service.hash}`}>
-            <AccordionTrigger>{service.service}</AccordionTrigger>
-            <AccordionContent>
-              <Card>
-                <CardContent>
-                  <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    <Image
-                      src={service.image}
-                      width={400}
-                      height={400}
-                      className="mb-3 border rounded-lg"
-                      alt={service.title}
-                    />
-                    {service.sections?.map((section, secIndex) => (
-                      <div key={secIndex} className="mb-4">
-                        <h4 className="text-xs font-semibold mb-3 text-brand-700 border-b border-brand-100 pb-2">
-                          {section.heading}
-                        </h4>
-                        {Array.isArray(section.content) ? (
-                          <ul className="list-disc pl-5 space-y-1.5 text-gray-700 text-xs md:text-base">
-                            {section.content.map((item, i) => (
-                              <li key={i}>{item}</li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-gray-700 text-xs md:text-base">
-                            {section.content}
-                          </p>
-                        )}
-                      </div>
-                    ))}
+  const renderGrid = (type) => {
+    const filtered = laptopItems?.services.filter((s) => s.service_type === type) || [];
+
+    return (
+      <>
+        {/* Mobile Grid */}
+        <div className="grid grid-cols-2 gap-4 md:hidden">
+          {filtered.map((service, idx) => (
+            <Link key={idx} href={`/devices/laptop/${service.hash}`}>
+              <Card className="cursor-pointer rounded-lg p-2 hover:shadow transition">
+                <Image
+                  src={service.image}
+                  width={400}
+                  height={400}
+                  alt={service.title}
+                  className="rounded mb-2 object-cover"
+                />
+                <p className="text-xs font-semibold text-brand-700 text-center !m-0">
+                  {service.service}
+                </p>
+                {service.popular && (
+                  <div className="inline-block bg-brand-600 text-white px-2 py-1 rounded-full text-xs font-medium mt-1">
+                    Popular
                   </div>
-                </CardContent>
+                )}
               </Card>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-    </Accordion>
-  );
+            </Link>
+          ))}
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-6">
+          {filtered.map((service, idx) => (
+            <Link key={idx} href={`/devices/laptop/${service.hash}`}>
+              <div className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition h-full">
+                <Image
+                  src={service.image}
+                  width={400}
+                  height={400}
+                  alt={service.title}
+                  className="rounded mb-3 object-cover"
+                />
+                <p className="text-base font-semibold text-brand-700 text-center">
+                  {service.service}
+                </p>
+                {service.popular && (
+                  <div className="inline-block bg-brand-600 text-white px-3 py-1 rounded-full text-sm font-medium mt-2">
+                    Popular Service
+                  </div>
+                )}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </>
+    );
+  };
 
   return (
     <div id="wrapper">
@@ -88,35 +97,29 @@ export default function Page({ searchParams }) {
             <ul className="crumb">
               <li><a href="/">Home</a></li>
               <li><a href="/devices">Devices</a></li>
-              <li><a href="/services/laptop">Laptop</a></li>
+              <li><a href="/devices/laptop">Laptop</a></li>
             </ul>
           </div>
           <div className="sw-overlay"></div>
         </section>
 
-        <section>
+        <section className="py-8 h-[100vh]">
           <div className="container">
             <div className="row g-4">
               <InnerSideBar activeLink="laptop" />
-              <section className="col-lg-9 !py-0">
-                <Tabs defaultValue={activeTab} className="w-full">
-                  <TabsList className="mb-6 md:mb-8 flex whitespace-nowrap">
+              <div className="col-lg-9">
+                <Tabs defaultValue="repair" className="w-full">
+                  <TabsList className="mb-6 flex whitespace-nowrap">
                     <TabsTrigger value="repair">Repairs</TabsTrigger>
-                    <TabsTrigger value="replacement">Replace</TabsTrigger>
+                    <TabsTrigger value="replacement">Replacement</TabsTrigger>
                     <TabsTrigger value="upgrade">Upgrades</TabsTrigger>
                   </TabsList>
 
-                  <TabsContent value="repair">
-                    {renderAccordionItems("repair")}
-                  </TabsContent>
-                  <TabsContent value="replacement">
-                    {renderAccordionItems("replacement")}
-                  </TabsContent>
-                  <TabsContent value="upgrade">
-                    {renderAccordionItems("upgrade")}
-                  </TabsContent>
+                  <TabsContent value="repair">{renderGrid("repair")}</TabsContent>
+                  <TabsContent value="replacement">{renderGrid("replacement")}</TabsContent>
+                  <TabsContent value="upgrade">{renderGrid("upgrade")}</TabsContent>
                 </Tabs>
-              </section>
+              </div>
             </div>
           </div>
         </section>

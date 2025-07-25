@@ -50,7 +50,7 @@ export default function Page() {
         <div className="hidden md:grid md:grid-cols-3 gap-6">
           {filtered.map((service, idx) => (
             <Link key={idx} href={`/devices/smartphone/${service.hash}`}>
-              <div className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition">
+              <div className="cursor-pointer border rounded-xl p-3 hover:shadow-lg transition h-full">
                 <Image
                   src={service.image}
                   width={400}

@@ -6,16 +6,16 @@ import BookingForm from "@/components/BookingForm";
 import { repairItems } from "@/data";
 
 export async function generateStaticParams() {
-  const tabletItem = repairItems.find((item) => item.title === "Tablet");
+  const appleWatchItem = repairItems.find((item) => item.title === "Apple Watch");
 
-  return tabletItem?.services.map((service) => ({
+  return appleWatchItem?.services.map((service) => ({
     slug: service.hash,
   })) || [];
 }
 
 export async function generateMetadata({ params }) {
-  const tabletItem = repairItems.find((item) => item.title === "Tablet");
-  const service = tabletItem?.services.find((s) => s.hash === params.slug);
+  const appleWatchItem = repairItems.find((item) => item.title === "Apple Watch");
+  const service = appleWatchItem?.services.find((s) => s.hash === params.slug);
 
   if (!service) {
     return {
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function TabletServicePage({ params }) {
-  const tabletItem = repairItems.find((item) => item.title === "Tablet");
-  const service = tabletItem?.services.find((s) => s.hash === params.slug);
+export default function AppleWatchServicePage({ params }) {
+  const appleWatchItem = repairItems.find((item) => item.title === "Apple Watch");
+  const service = appleWatchItem?.services.find((s) => s.hash === params.slug);
 
   if (!service) {
     notFound();
@@ -57,7 +57,7 @@ export default function TabletServicePage({ params }) {
                   {service.service}
                 </h1>
                 <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
-                  Professional tablet {service.service.toLowerCase()} service
+                  Professional Apple Watch {service.service.toLowerCase()} service
                 </p>
               </div>
             </div>
@@ -66,8 +66,8 @@ export default function TabletServicePage({ params }) {
             <ul className="crumb">
               <li><a href="/">Home</a></li>
               <li><a href="/devices">Devices</a></li>
-              <li><a href="/devices/tablet">Tablet</a></li>
-              <li><a href={`/devices/tablet/${service.hash}`}>{service.service}</a></li>
+              <li><a href="/devices/apple_watch">Apple Watch</a></li>
+              <li><a href={`/devices/apple_watch/${service.hash}`}>{service.service}</a></li>
             </ul>
           </div>
           <div className="sw-overlay"></div>
@@ -76,17 +76,22 @@ export default function TabletServicePage({ params }) {
         <section className="py-8">
           <div className="container">
             <div className="row g-4">
-              <InnerSideBar activeLink="tablet" />
+              <InnerSideBar activeLink="apple_watch" />
               <div className="col-lg-9">
                 <div className="bg-white rounded-lg shadow-sm border p-6">
                   <div className="flex flex-col items-start gap-6">
                     <Image
                       src={service.image}
-                      width={400}
-                      height={400}
+                      width={300}
+                      height={300}
                       alt={service.service}
-                      className="rounded-lg max-w-xl object-cover"
+                      className="rounded-lg max-w-sm object-cover"
                     />
+                    {service.popular && (
+                      <div className="inline-block bg-brand-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Popular Service
+                      </div>
+                    )}
                     <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                       {service.service}
                     </h1>
@@ -113,8 +118,8 @@ export default function TabletServicePage({ params }) {
                       ))}
                     </div>
 
-                    <div className="mt-8 w-full flex justify-center">
-                      <BookingForm defaultColor={false} />
+                    <div className="mt-8 w-full">
+                      <BookingForm />
                     </div>
                   </div>
                 </div>
