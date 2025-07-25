@@ -42,13 +42,13 @@ export default function AppleWatchServicePage({ params }) {
       <Navbar />
       <div id="content" className="no-top no-bottom">
         <div id="top"></div>
-        <section id="subheader" className="relative jarallax text-light">
-          <div className="de-gradient-edge-top"></div>
-          <img
-            src="/images/background/4.webp"
-            className="jarallax-img"
-            alt=""
-          />
+        <section
+          id="subheader"
+          className="relative text-white bg-fixed bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/background/4.webp')`
+          }}
+        >
           <div className="container relative z-2">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
@@ -56,7 +56,7 @@ export default function AppleWatchServicePage({ params }) {
                 <h1 className="md:whitespace-nowrap !text-[24px] md:!text-[48px]">
                   {service.service}
                 </h1>
-                <p className="text-gray-700 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
+                <p className="text-gray-200 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
                   Professional Apple Watch {service.service.toLowerCase()} service
                 </p>
               </div>
@@ -70,7 +70,6 @@ export default function AppleWatchServicePage({ params }) {
               <li><a href={`/devices/apple_watch/${service.hash}`}>{service.service}</a></li>
             </ul>
           </div>
-          <div className="sw-overlay"></div>
         </section>
 
         <section className="py-8">
