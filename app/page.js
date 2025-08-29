@@ -6,10 +6,12 @@ import Services from "@/components/services";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PromotionalModal from "@/components/PromotionalModal";
 import { IconBrandFacebook, IconCheck } from "@tabler/icons-react";
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
+      <PromotionalModal />
       <Navbar />
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
