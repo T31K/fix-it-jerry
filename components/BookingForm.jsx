@@ -103,8 +103,15 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
     issue: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Prevent double submission
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
 
     try {
       const res = await axios.post(
@@ -133,6 +140,8 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
     } catch (err) {
       console.error("Submit error:", err);
       alert("Failed to send booking.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -288,10 +297,11 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
         <div className="flex justify-end">
           <Button
             type="submit"
-            className="w-fit text-slate-800 font-semibold bg-[#C6E76C] hover:bg-[#C6E76C] rounded-full"
+            disabled={isSubmitting}
+            className="w-fit text-slate-800 font-semibold bg-[#C6E76C] hover:bg-[#C6E76C] rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <Wrench size={24} />
-            Fix my device!
+            {isSubmitting ? "Submitting..." : "Fix my device!"}
           </Button>
         </div>
       </form>
