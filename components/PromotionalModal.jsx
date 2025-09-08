@@ -7,25 +7,25 @@ import { X, Gift, Clock, Star } from 'lucide-react';
 import Image from 'next/image';
 
 const PromotionalModal = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [hasShown, setHasShown] = useState(false);
 
-  useEffect(() => {
-    // Check if we've already shown the modal in this session
-    const hasShownModal = sessionStorage.getItem('promotionalModalShown');
+  // useEffect(() => {
+  //   // Check if we've already shown the modal in this session
+  //   const hasShownModal = sessionStorage.getItem('promotionalModalShown');
 
-    if (!hasShownModal) {
-      // Delay the modal opening by 2 seconds for better UX
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-        setHasShown(true);
-        // Mark as shown in session storage
-        sessionStorage.setItem('promotionalModalShown', 'true');
-      }, 2000);
+  //   if (!hasShownModal) {
+  //     // Delay the modal opening by 2 seconds for better UX
+  //     const timer = setTimeout(() => {
+  //       setIsOpen(true);
+  //       setHasShown(true);
+  //       // Mark as shown in session storage
+  //       sessionStorage.setItem('promotionalModalShown', 'true');
+  //     }, 2000);
 
-      return () => clearTimeout(timer);
-    }
-  }, []);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, []);
 
   const handleClose = () => {
     setIsOpen(false);
