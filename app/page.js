@@ -6,6 +6,7 @@ import Services from "@/components/services";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reviews from "@/components/Reviews";
 import PromotionalModal from "@/components/PromotionalModal";
 import { IconBrandFacebook, IconCheck } from "@tabler/icons-react";
 const GadgetFixPage = () => {
@@ -167,52 +168,16 @@ const GadgetFixPage = () => {
         </section>
         <section className="section-dark bg-dark-2 text-light">
           <div className="container">
-            <div className="row g-4 mb-4">
-              <div className="col-lg-6 offset-lg-3 text-center">
-                <div className="subtitle wow fadeInUp">Testimonials</div>
-                <h2 className="wow fadeInUp !mb-0" data-wow-delay=".2s">
-                  Our Happy Customers
+            <div className="row g-4 mb-2 justify-content-center">
+              <div className="col-lg-5 text-center">
+                <div className="subtitle s2 wow fadeInUp mb-2">Verified Reviews</div>
+                <h2 className="wow fadeInUp" data-wow-delay=".2s">
+                  All Love From Our Happy Customers
                 </h2>
-                <div className="wow fadeInUp !mb-8" data-wow-delay=".3s">
-                  <span className="fs-20 text-[#C6E76C] italic font-bold">Trusted by 2000+ happy customers</span>
-                </div>
-              </div>
-            </div>
-            <div className="row g-4">
-              <div
-                className="owl-carousel owl-theme wow fadeInUp"
-                id="testimonial-carousel"
-              >
-                {reviews.map((review, index) => (
-                  <div key={index} className="item">
-                    <div className="relative px-3 md:p-2">
-                      <div className="relative flex items-center gap-x-4">
-                        <img src={review.profile_pic} className="w-14 h-14 rounded-full bg-green-200" alt="profile_pic" />
-                        <div className="flex-grow">
-                          <div className="fw-600">{review.name}</div>
-                          <div className="d-stars -mt-2">
-                            {[...Array(5)].map((_, i) => (
-                              <i key={i} className="fa fa-star " style={{ color: 'yellow' }}></i>
-                            ))}
-                          </div>
-                        </div>
-                        <a
-                          href={review.review_link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-center rounded-full w-10 h-10 bg-[#C6E76C]"
-                        >
-                          <IconBrandFacebook size={20} color="#333" />
-                        </a>
-                      </div>
-
-                      <p>{review.content}</p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
+            <Reviews />
         </section>
                 <section className="section-dark no-top no-bottom overflow-hidden">
           <div className="container-fluid relative half-fluid">

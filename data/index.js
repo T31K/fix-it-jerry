@@ -7,55 +7,125 @@ import { desktopItems } from "./desktop";
 import { nintendoswitchItems } from "./nintendoswitch";
 import { tabletItems } from "./tablet";
 
-
 const reviews = [
-    {
-    content:
-      "I reached out to him, I thot he left dpc since I couldnt get reply on his Fb messenger. I checked again on dpc group, only to find its now a FB page Fix it jerry. and his clients have grown. So o messeged the business page , handed over ipad, in 1 day told me wat the actual issue was. Veryyyyy competitve price. And much better timeline. Got it yesterday evening. And it works fine , daughter is happy, we are happy. Thanks Jerry for your help. Will always recommend your services.",
-    name: "音楽音楽 ",
-    profile_pic: 'images/reviews/profile_4.webp',
-    img_link:
-      "https://scontent.fkul2-5.fna.fbcdn.net/v/t39.30808-1/262755500_10165843363690223_7321233469272889541_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oJVqTazNZVAQ7kNvgFFswuE&_nc_zt=24&_nc_ht=scontent.fkul2-5.fna&_nc_gid=ARpvQZWRV_mDrHbyFwGmY9p&oh=00_AYAaZWS5wIr1cvIXmbir8EXXrpuCG0Jr4MB3eP-PwuffOA&oe=678690DB",
-    review_link: "https://www.facebook.com/share/p/18kR6rafMZ/",
+  {
+    review: 'When every other phone repair shop gave on repairing my phone, this man was the only person who could help me repair. Thank you so much for help. Really appreciate it. Very prompt with response and patience to find out any issues. Highly recommended and reasonable price. ❤️1',
+    link: 'https://share.google/jm7jtVz1Iaqypl0E4',
+    name: 'Sithaarthan Vasu',
+    rating: 5,
   },
   {
-    content:
-      "Nice and effective service provided by them. The owner is responsible and trustworthy 👍 He fixed my MSI laptop screen with reasonable price cause i accidentally dropped it and the screen cracked.",
-    name: "Xin Yi",
-    profile_pic: 'images/reviews/profile_1.webp',
-    img_link:
-      "https://scontent.fkul2-3.fna.fbcdn.net/v/t39.30808-1/283523950_1066851904206195_8578689390276874189_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=JMIgtnwIBc4Q7kNvgHMVBDd&_nc_zt=24&_nc_ht=scontent.fkul2-3.fna&_nc_gid=A9vZVfFyjYLKIVJcCpRA1hR&oh=00_AYDRSjGz-bVI5-jLIJ3wSxeY0p1QpScD2g_p6sPOxKy2Jw&oe=6786858B",
-    review_link: "https://www.facebook.com/share/p/1AxyaWyCs5/",
+    review: 'Very friendly and nice guy. Price is reasonable. Service is very good. Phone repair was done professionally.',
+    link: 'https://share.google/s9lobZuMs093dTYfF',
+    name: 'Jayden K',
+    rating: 5,
   },
   {
-    content:
-      "Excellent customer service. The staff was very friendly and helpful, and they went above and beyond to ensure my satisfaction. I highly recommend their services to anyone in need of repairs.",
-    name: "Renju Abraham",
-    profile_pic: 'images/reviews/profile_2.webp',
-    img_link:
-      "https://scontent.fkul2-4.fna.fbcdn.net/v/t39.30808-1/468873877_10162625980114122_1353397557366678940_n.jpg?stp=c0.7.200.200a_cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=BBtoGR_4JUYQ7kNvgEIUPoM&_nc_zt=24&_nc_ht=scontent.fkul2-4.fna&_nc_gid=ALeM6T8hRjfsA6rrmHuWD3y&oh=00_AYCS_ywcx1-gy1eNR6DVocGyM0R_hXd0knVTNHpuUlx2ng&oe=678693B4",
-    review_link: "https://www.facebook.com/share/p/1YB3KjWADT/",
+    review: "The guys here really know how to fix. Brought it to my regular shop when my laptop completely died (no power light, charge, screen) and it was left for more than a month attempting to troubleshoot and finally informed that it's not worth fixing because the motherboard is unstable. Fix-it-Jerry took it in and within a day found that it was the CPU was faulty and fixed it they did. Refer picture alive!! They are clear on timelines and very reasonable with charges. Highly recommend!",
+    link: 'https://share.google/VfhzadUtNsfKWLdb7',
+    name: 'Jen Jun Wong',
+    rating: 5,
   },
   {
-    content:
-      "Fortunately for me, they live nearby so dropping off / delivery of my Macbook Pro was super convenient. Felt very assured from the constant communication throughout the process, and happy to say that my Mac came back in a very good condition! FIJ would be my go-to for any repairs now 🙂",
-    name: "Sara Jennavieve Chew ",
-    profile_pic: 'images/reviews/profile_3.webp',
-    img_link:
-      "https://scontent.fkul2-3.fna.fbcdn.net/v/t39.30808-1/468086310_10230892929820385_5002660105252129809_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=AbuALpSXHzUQ7kNvgFfYIDf&_nc_zt=24&_nc_ht=scontent.fkul2-3.fna&_nc_gid=ATochNGBHTcPBiuemgkwVFp&oh=00_AYD3HXyuigFuTPUgVvFrTQ3Sd6QW9Sdsla8GS3ayzUWR-g&oe=67869D74",
-    review_link: "https://www.facebook.com/share/p/14pNhE8zSq4/",
+    review: 'Sent my iPhone 13 pro max to Fix It Jerry to replace the touchscreen for half the price of what Apple Store quoted to replace the entire LCD. They reassured me that the touchscreen can be replaced if the glass is cracked. Satisfied with the overall quality!',
+    link: 'https://share.google/9CHGqBNGnVFUa5KW9',
+    name: 'Sean',
+    rating: 5,
   },
+  {
+    review: 'Excellent Service! Got my phone battery replaced today, and the whole process was quick, efficient, and hassle-free. The technician was professional, friendly, and explained everything clearly. My phone feels like new again! Highly recommend for anyone needing phone repairs or battery replacement.',
+    link: 'https://share.google/T6J3RyQkJz1nJ6Ewz',
+    name: 'L Yi Zhen',
+    rating: 5,
+  },
+  {
+    review: 'Always very careful with repairs, I really trust their service and always come back for repairs & battery changes too. My go-to shop every time.',
+    link: 'https://share.google/6QgbPug0okOybaJNc',
+    name: 'Larissa Lim',
+    rating: 5,
+  },
+  {
+    review: 'I’m a returning customer and always impressed with their service. Super responsive — replies usually within seconds! Very trustworthy and always able to solve whatever issue I have. Highly recommended!',
+    link: 'https://share.google/VuQ9CjhXfhJt8nUJV',
+    name: 'EminoreSow',
+    rating: 5,
+  },
+  {
+    review: 'This guys willing to go extra miles to make sure the devices is working fine. I have been his customer for few year. He help to change my phone battery and screen. Keep it up the good job :)',
+    link: 'https://share.google/op0IQuTqf0edM9xt8',
+    name: 'nicholas lee',
+    rating: 5,
+  },
+  {
+    review: 'Sent my laptop in for a battery issue and internal cleaning. The service was efficient, affordable, and done very well. Highly trustworthy and would definitely recommend!',
+    link: 'https://share.google/TwSfcWzopYHaB5XxX',
+    name: 'SHARVINA A/P K SELVAMANEY',
+    rating: 5,
+  },
+  {
+    review: 'Has been find around so long to fix my enook screen. Finally fix-it-jerry willing to take the task. My ebook is well repaired 😃. Helpful and price reasonable. Thanks for the service.',
+    link: 'https://share.google/855urUCCJWHA3lkRU',
+    name: 'Lim SY',
+    rating: 5,
+  },
+  {
+    review: 'I used Fix It Jerry when my iPhone screen broke and I needed a replacement urgently. He provided honest advice and was very transparent with the price options (cheaper than other options in the area too!) I gave him my phone at 9pm and it was ready to collect at 8am the next morning. I will definitely use his services in the future!',
+    link: 'https://share.google/XK9N8vCO0YsQEBdDX',
+    name: 'Amanda Hart',
+    rating: 5,
+  },
+  {
+    review: 'Very good service, fast with no issues and very reliable service from a very kind owner. Been through many battery changing services and was headache and many hidden fees, but not for this owner overall 5/5.',
+    link: 'https://share.google/24f4PaY4LALwIEE2G',
+    name: 'Khai 34',
+    rating: 5,
+  },
+  {
+    review: "Sent my Airpods in because the left side wasn't working although I charged it. Fix-It-Jerry found that it was a motherboard issue and also fixed the buzzer of my Airpods. Now it working like it always does. Service wise efficient and affordable too. Highly recommend.",
+    link: 'https://share.google/8ASaRU7GtS3CMRllI',
+    name: 'Lisa Koay EX',
+    rating: 5,
+  },
+  {
+    review: 'Many other shops refused to repair the SIM card reader on my device. But Fix It Jerry willingly repaired it for me. Thumbs up for his professionalism and also affordable charges!',
+    link: 'https://share.google/a42Ax3A7ShbtQ4OWE',
+    name: 'Eugene Soh',
+    rating: 5,
+  },
+  {
+    review: 'Honest and friendly technician. Jerry gave detailed explanation on my water damaged device, from diagnostic to repair. Overall a smooth process!',
+    link: 'https://share.google/CljbjATHWEVLeVzkq',
+    name: 'Yun Kai',
+    rating: 5,
+  },
+  {
+    review: 'Sent both my AirPods gen 2 and pro 1 to replace the batteries! Now it feels like a new one again. Glad to have used Jerry’s services. It wasn’t easy to find a place to replace AirPods batteries!!',
+    link: 'https://share.google/57uQCzWK9aOuO9vpe',
+    name: 'Jay',
+    rating: 5,
+  },
+  {
+    review: 'I recently had my AirPods repaired and I couldn’t be happier with the service. The whole process was smooth, fast, and very professional. My AirPods are now working perfectly, just like new. I got mine fixed it at a very reasonable price. Highly recommended to anyone who needs their AirPods repaired!',
+    link: 'https://share.google/FDxl0gy89iVAZeqZB',
+    name: 'Bernice Tay',
+    rating: 5,
+  },
+  {
+    review: 'Fix It Jerry has been my go-to repair solution since 2022. They have repaired several devices I own. And also recently bought a refurbished iPhone 11 from them. Highly recommended.',
+    link: 'https://share.google/3Rw6yqaDh4eXgRS1y',
+    name: 'Alibaba',
+    rating: 5,
+  },
+  {
+    review: 'Honest, straightforward and extremely straightforward. Will visit again in the near future! (Got my Apple Watch Fixed)',
+    link: 'https://share.google/x5xZ7ajZHMhal5rM9',
+    name: 'Andrew Lee',
+    rating: 5,
+  },
+]
+const r = [
 
-  {
-    content:
-      "My daughter accidentally dropped her iPhone into the bathtub, causing it to go into recovery mode. Got Khye Mun’s contact from a friend, dropped it off on a Monday, and voilà! Fixed and collected on Thursday with all the data intact 😅 Loved that he kept me updated about the progress as well, very friendly and easy to deal with. Thanks again Jerry!",
-    name: "Soo Yin",
-    profile_pic: 'images/reviews/profile_5.webp',
-    img_link:
-      "https://scontent.fkul2-5.fna.fbcdn.net/v/t39.30808-1/368301812_10167937434360370_2317861947656052898_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=d5s9CZY_4C8Q7kNvgH28sZJ&_nc_zt=24&_nc_ht=scontent.fkul2-5.fna&_nc_gid=Az260ojx-Gnyvq4F-CYtHDD&oh=00_AYCPU2sbW-SpxJpCwSdshmlS_w-Rpj9qDsEoejIKerpAug&oe=67868FB7",
 
-    review_link: "https://www.facebook.com/share/p/186Y2SrSiT/",
-  },
 ];
 
 const features = [
