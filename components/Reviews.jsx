@@ -42,17 +42,16 @@ export default function Reviews() {
           </div>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-
+        <div className="flex flex-col items-center gap-y-1">
+          <p className='!m-0 text-xs bg-green-200/50 px-2 whitespace-nowrap cursor-pointer font-semibold hover:bg-green-200/70 transition-colors duration-200 rounded-full'>Verified Review</p>
           {/* Google Review Button */}
           <a
             href={review.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-gray-600 rounded-full p-1.5 transition-colors duration-200 flex items-center justify-center"
             title="View Google Review"
           >
-            <IconBrandGoogle className="w-4 h-4" />
+          <img src="/images/logo-light/google_white.svg" alt="Google Review" className="w-12 " />
           </a>
         </div>
       </div>
