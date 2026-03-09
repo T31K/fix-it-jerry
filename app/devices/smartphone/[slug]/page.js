@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import InnerSideBar from "@/components/InnerSideBar";
 import BookingForm from "@/components/BookingForm";
 import { repairItems } from "@/data";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export async function generateStaticParams() {
   const smartphoneItem = repairItems.find((item) => item.title === "Smartphone");
@@ -20,12 +21,18 @@ export async function generateMetadata({ params }) {
   if (!service) {
     return {
       title: "Service Not Found | Fix It Jerry",
+      openGraph: { title: "Service Not Found | Fix It Jerry" },
     };
   }
 
   return {
     title: service.title,
     description: service.meta_description,
+    openGraph: {
+      title: service.title,
+      description: service.meta_description,
+      images: ['https://fixitjerry.com/og.png'],
+    },
   };
 }
 
@@ -44,7 +51,7 @@ export default function SmartphoneServicePage({ params }) {
         <div id="top"></div>
         <section
           id="subheader"
-          className="relative text-white bg-fixed bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center"
+          className="relative text-white bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/background/4.webp')`
           }}
@@ -120,6 +127,12 @@ export default function SmartphoneServicePage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Devices", url: "/devices" },
+        { name: "Smartphone", url: "/devices/smartphone" },
+        { name: service.service, url: `/devices/smartphone/${service.hash}` },
+      ]} />
     </div>
   );
 }

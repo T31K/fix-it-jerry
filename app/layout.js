@@ -6,6 +6,7 @@ import "@/assets/styles/plugins.css";
 import "@/assets/styles/coloring.css";
 import "@/assets/styles/style.css";
 import Script from "next/script";
+import JsonLd from "@/components/JsonLd";
 
 import { Manrope } from "next/font/google";
 
@@ -17,12 +18,12 @@ const manrope = Manrope({
 
 
 export const metadata = {
-  title: "Fix It Jerry | #1 Phone Repair in Kuala Lumpur",
-  description: "Fix It Jerry is the best phone repair shop in Kuala Lumpur. We offer a wide range of services for all types of devices including smartphones, tablets, laptops, airpods, Nintendo Switch, and TVs.",
+  title: "Fix It Jerry – Phone, Laptop & Device Repair KL",
+  description: "Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓",
   openGraph: {
-    title: 'Fix It Jerry | #1 Phone Repair in Kuala Lumpur',
+    title: 'Fix It Jerry – Phone, Laptop & Device Repair KL',
     description:
-      'Fix It Jerry is the best phone repair shop in Kuala Lumpur. We offer a wide range of services for all types of devices including smartphones, tablets, laptops, airpods, Nintendo Switch, and TVs.',
+      'Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓',
     url: 'https://fixitjerry.com',
     images: ['https://fixitjerry.com/og.png'],
     robots: {
@@ -46,6 +47,44 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.variable} antialiased`}>
+        <JsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Fix It Jerry",
+          "url": "https://fixitjerry.com",
+          "logo": "https://fixitjerry.com/images/logo.webp",
+          "image": "https://fixitjerry.com/og.png",
+          "description": "Fix It Jerry is a device repair shop in Kuala Lumpur specialising in smartphones, tablets, laptops, Nintendo Switch, AirPods, Apple Watch and more.",
+          "priceRange": "RM 80 - RM 1200",
+          "currenciesAccepted": "MYR",
+          "paymentAccepted": "Cash, Bank Transfer",
+          "telephone": "+60183646909",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7, Jalan Residen Utama",
+            "addressLocality": "Desa Parkcity",
+            "addressRegion": "Kuala Lumpur",
+            "postalCode": "52200",
+            "addressCountry": "MY"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 3.1796,
+            "longitude": 101.6227
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "10:00",
+              "closes": "20:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/fixitjerry",
+            "https://www.instagram.com/fixitjerry"
+          ]
+        }} />
         {children}
         <Script src="/js/plugins.js" strategy="beforeInteractive"></Script>
 

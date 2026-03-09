@@ -1,5 +1,5 @@
 import React from "react";
-import { reviews, features, repairItems } from "@/data";
+import { features } from "@/data";
 
 import Hero from "@/components/hero";
 import Services from "@/components/services";
@@ -8,7 +8,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reviews from "@/components/Reviews";
 import PromotionalModal from "@/components/PromotionalModal";
-import { IconBrandFacebook, IconCheck } from "@tabler/icons-react";
+import { IconCheck } from "@tabler/icons-react";
+
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">

@@ -1,306 +1,240 @@
-"use client"
-import { Menu } from "lucide-react";
+"use client";
 import React, { useState, useEffect } from "react";
+import { Menu, MapPin, Phone } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-function Navbar() {
-  const [isSticky, setIsSticky] = useState(false);
+const devices = [
+  { label: "iPhone", href: "/iphone" },
+  { label: "Samsung", href: "/samsung" },
+  { label: "Smartphone", href: "/devices/smartphone" },
+  { label: "Tablet", href: "/devices/tablet" },
+  { label: "Laptop", href: "/devices/laptop" },
+  { label: "Desktop", href: "/devices/desktop" },
+  { label: "Nintendo Switch", href: "/devices/nintendo_switch" },
+  { label: "AirPods", href: "/devices/airpods" },
+  { label: "Apple Watch", href: "/devices/apple_watch" },
+  { label: "iPod", href: "/devices/ipod" },
+];
+
+const navLinks = [
+  { label: "Book a Repair", href: "/book-a-repair" },
+  { label: "Guides", href: "/guides" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+];
+
+const branches = [
+  "Desa Parkcity, KL",
+  "Subang Jaya, Selangor",
+  "Bukit Jalil, KL",
+  "Puchong, Selangor",
+];
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
   const [branchIndex, setBranchIndex] = useState(0);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const branches = [
-    "Desa Parkcity, Kuala Lumpur",
-    "Subang Jaya, Selangor",
-    "Bukit Jalil, Kuala Lumpur",
-    "Puchong, Selangor"
-  ];
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-    window.addEventListener("scroll", handleScroll);
-
-    // Rotate through branches every 3 seconds
-    const branchRotationInterval = setInterval(() => {
-      setBranchIndex((prevIndex) => (prevIndex + 1) % branches.length);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBranchIndex((i) => (i + 1) % branches.length);
     }, 1400);
-
-    // Setup menu toggle handlers
-    const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('btn-close');
-    const extraWrap = document.getElementById('extra-wrap');
-
-    if (menuBtn && closeBtn && extraWrap) {
-      menuBtn.addEventListener('click', () => {
-        extraWrap.classList.add('active');
-        setMenuOpen(true);
-      });
-
-      closeBtn.addEventListener('click', () => {
-        extraWrap.classList.remove('active');
-        setMenuOpen(false);
-      });
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      clearInterval(branchRotationInterval);
-
-      // Clean up event listeners
-      if (menuBtn && closeBtn) {
-        menuBtn.removeEventListener('click', () => {});
-        closeBtn.removeEventListener('click', () => {});
-      }
-    };
+    return () => clearInterval(interval);
   }, []);
 
   return (
-      <div>
-        <div className="scrollbar-v show-on-scroll"></div>
+    <nav
+      className={cn(
+        "sticky top-0 z-50 w-full bg-[#2b3f48] transition-all duration-300",
+        scrolled ? "shadow-md" : ""
+      )}
+    >
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
 
-        <header className="transparent has-topbar">
-            <div id="topbar">
-            <div className="container">
-                <div className="row">
-                <div className="col-lg-12">
-                    <div className="d-flex justify-content-between xs-hide">
-                    <div className="d-flex">
-                        <div className="topbar-widget me-5 w-[360px]">
-                        <a href="/contact#branches">
-                            <i className="icofont-location-pin"></i>Our Workshops:{" "}
-                            {branches[branchIndex]}
-                        </a>
-                        </div>
-                        <div className="topbar-widget me-5">
-                        <a href="#">
-                            <i className="icofont-clock-time"></i>Monday - Friday
-                            10AM - 6PM
-                        </a>
-                        </div>
-                        <div className="topbar-widget me-5">
-                        <a href="#">
-                            <i className="icofont-clock-time"></i>Saturday - Sunday
-                            10AM - 3PM
-                        </a>
-                        </div>
-                        <div className="topbar-widget me-5">
-                        <a href="#">
-                            <i className="icofont-phone"></i>Contact Number
-                            +60183646909
-                        </a>
-                        </div>
-                    </div>
-                    <div className="d-flex">
-                        <a
-                        className="btn-topbar bg-color me-3"
-                        href="/"
-                        >
-                        Book a Repair
-                        </a>
-                        <div className="social-icons">
-                        <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!">
-                            <i className="fa-brands fa-whatsapp fa-lg"></i>
-                        </a>
-                        <a href="https://facebook.com/fixitjerry">
-                            <i className="fa-brands fa-facebook fa-lg"></i>
-                        </a>
-                        <a href="https://instagram.com/fixitjerry">
-                            <i className="fa-brands fa-instagram fa-lg"></i>
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <div className="clearfix"></div>
-            </div>
-            </div>
-            <div className="container">
-            <div className="row">
-                <div className="col-md-12">
-                <div className="de-flex sm-pt10">
-                    <div className="de-flex-col">
-                    {/* Logo */}
-                    <div id="logo">
-                        <a href="/">
-                        <img
-                            className="logo-main w-12 h-12"
-                            src="/images/logo.webp"
-                            alt=""
+        {/* Logo */}
+        <a href="/" className="flex items-center shrink-0">
+          <img src="/images/logo.webp" alt="Fix It Jerry" className="h-9 w-auto" />
+        </a>
 
-                        />
-                        <img
-                            className="logo-scroll"
-                            src="/images/logo-black.webp"
-                            alt=""
-                        />
-                        <img
-                            className="logo-mobile w-12 h-12"
-                            src="/images/logo.webp"
-                            alt=""
-                        />
-                        </a>
-                    </div>
-                    </div>
-                    <div className="de-flex-col header-col-mid">
-                    <ul id="mainmenu">
-                        <li>
-                        <a className="menu-item" href="/devices">
-                            Devices
-                        </a>
-                        <ul>
-                            <li>
-                                <a className="menu-item" href="/devices/smartphone">
-                                    Smartphone
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/tablet">
-                                    Tablet
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/laptop">
-                                    Laptop
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/desktop">
-                                    Desktop
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/nintendo_switch">
-                                    Nintendo Switch
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/airpods">
-                                    Airpods
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/apple_watch">
-                                    Apple Watch
-                                </a>
-                            </li>
-                            <li>
-                                <a className="menu-item" href="/devices/ipod">
-                                    iPod
-                                </a>
-                            </li>
-                        </ul>
-                        </li>
-                        <li>
-                        <a className="menu-item" href="/book-a-repair">
-                            Book a Repair
-                        </a>
-                        </li>
-                        <li>
-                        <a className="menu-item" href="blog.html">
-                            Blog
-                        </a>
-                        </li>
-                        <li>
-                        <a className="menu-item" href="/contact">
-                            Contact
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                    <div className="de-flex-col">
-                    <div className="menu_side_area">
-                        <Menu
-                          id="menu-btn"
-                          className="cursor-pointer"
-                          onClick={() => {
-                            const extraWrap = document.getElementById('extra-wrap');
-                            if (extraWrap) {
-                              extraWrap.classList.add('active');
-                              setMenuOpen(true);
-                            }
-                          }}
-                        />
-                    </div>
-                    <div id="btn-extra">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </header>
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex items-center gap-1 flex-1">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-transparent hover:bg-white/10 text-white font-medium text-sm h-9 px-3 data-[state=open]:bg-white/10">
+                  Devices
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid grid-cols-2 gap-1 p-3 w-[320px]">
+                    {devices.map((d) => (
+                      <li key={d.href}>
+                        <NavigationMenuLink asChild>
+                          <a
+                            href={d.href}
+                            className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-[#C6E76C]/20 hover:text-[#2b3f48] transition-colors font-medium"
+                          >
+                            {d.label}
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
-        <div id="extra-wrap" className="text-light">
-        <div id="btn-close" onClick={() => {
-          const extraWrap = document.getElementById('extra-wrap');
-          if (extraWrap) {
-            extraWrap.classList.remove('active');
-            setMenuOpen(false);
-          }
-        }}>
-          <span></span>
-          <span></span>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
-        <div id="extra-content">
-          <img src="images/logo.webp" className="w-150px" alt="" />
-          <h5 className="mt-12">Visit Us</h5>
-          <div>
-            <i className="icofont-clock-time me-2 op-5"></i>Monday - Sunday
-            10AM - 6PM
-          </div>
-          <h5 className="mt-4">Our Branches</h5>
-          <div className="mb-4">
-            <strong>Desa Parkcity:</strong><br/>
-            <span className="ps-1">
-            <i className="icofont-location-pin me-2 op-5"></i>7, Jalan Residen Utama, Desa Parkcity</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3646909 (Jerry)</span>
-          </div>
-          <div className="mb-4">
-            <strong>Subang Jaya:</strong><br/>
-            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>   22-1, Jalan SS 15/8, SS 15</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3267909 (Jack)</span>
-          </div>
-          <div className="mb-4">
-            <strong>Bukit Jalil:</strong><br/>
-            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>1-10, Jalan Bukit Jalil indah 4B</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>018-3101909 (John)</span>
-          </div>
-          <div className="mb-4">
-            <strong>Puchong:</strong><br/>
-            <span className="ps-1"><i className="icofont-location-pin me-2 op-5"></i>23A, Jalan Sri Manja 10, Taman Sri Manja</span><br/>
-            <span className="ps-1"><i className="icofont-phone me-1"></i>018-7673909 (Jason)</span>
-          </div>
-          <div>
-            <i className="icofont-envelope me-2 op-5"></i>hello@fixitjerry.com
-          </div>
-          <div className="spacer-30-line"></div>
-          <h5>About Us</h5>
-          <p>{`We fix phones, tablets and laptop at an affordable price with quality service guaranteed.`}</p>
-          <div className="spacer-30-line"></div>
-          <h5>Contact Us</h5>
-          <div className="social-icons">
-            <a href="https://wa.me/+60183646909">
-              <i className="fa-brands fa-whatsapp"></i>
+
+        {/* Right side: branch + phone + socials + CTA */}
+        <div className="hidden lg:flex items-center gap-4 text-xs text-white/70 shrink-0">
+          <a
+            href="/contact#branches"
+            className="flex items-center gap-1 hover:text-[#C6E76C] transition-colors w-[160px]"
+          >
+            <MapPin className="w-3 h-3 shrink-0 text-[#C6E76C]" />
+            <span className="truncate">{branches[branchIndex]}</span>
+          </a>
+
+          <a
+            href="tel:+60183646909"
+            className="flex items-center gap-1 hover:text-[#C6E76C] transition-colors"
+          >
+            <Phone className="w-3 h-3 text-[#C6E76C]" />
+            +60 18-364 6909
+          </a>
+
+          <div className="flex items-center gap-3">
+            <a href="https://wa.me/+60183646909?text=Hello%20from%20fixitjerry.com!" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6E76C] transition-colors">
+              <i className="fa-brands fa-whatsapp" />
             </a>
-            <a href="https://www.facebook.com/fixitjerry">
-              <i className="fa-brands fa-facebook"></i>
+            <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6E76C] transition-colors">
+              <i className="fa-brands fa-facebook" />
             </a>
-            <a href="https://www.instagram.com/fixitjerry/">
-              <i className="fa-brands fa-instagram"></i>
+            <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#C6E76C] transition-colors">
+              <i className="fa-brands fa-instagram" />
             </a>
           </div>
+
+          <a
+            href="/book-a-repair"
+            className="inline-flex items-center justify-center rounded-md px-4 py-1.5 text-sm font-semibold text-[#2b3f48] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors"
+          >
+            Book a Repair
+          </a>
         </div>
-        </div>
+
+        {/* Mobile toggle */}
+        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="lg:hidden h-9 w-9 text-white hover:bg-white/10 hover:text-white" aria-label="Open menu">
+              <Menu className="h-5 w-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-[300px] p-0 flex flex-col">
+            <SheetHeader className="px-5 pt-5 pb-4 border-b">
+              <SheetTitle className="text-left">
+                <img src="/images/logo.webp" alt="Fix It Jerry" className="h-8 w-auto" />
+              </SheetTitle>
+            </SheetHeader>
+
+            <div className="flex-1 overflow-y-auto px-5 py-4 space-y-6">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Devices</p>
+                <ul className="space-y-0.5">
+                  {devices.map((d) => (
+                    <li key={d.href}>
+                      <a href={d.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-[#C6E76C]/20 hover:text-[#2b3f48] transition-colors">
+                        {d.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Navigate</p>
+                <ul className="space-y-0.5">
+                  {navLinks.map((link) => (
+                    <li key={link.href}>
+                      <a href={link.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 transition-colors">
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Our Branches</p>
+                <div className="space-y-3 text-sm text-gray-600">
+                  {[
+                    { name: "Desa Parkcity", addr: "7, Jalan Residen Utama", phone: "018-3646909 (Jerry)" },
+                    { name: "Subang Jaya", addr: "22-1, Jalan SS 15/8, SS 15", phone: "018-3267909 (Jack)" },
+                    { name: "Bukit Jalil", addr: "1-10, Jalan Bukit Jalil Indah 4B", phone: "018-3101909 (John)" },
+                    { name: "Puchong", addr: "23A, Jalan Sri Manja 10", phone: "018-7673909 (Jason)" },
+                  ].map((b) => (
+                    <div key={b.name} className="pl-2 border-l-2 border-[#C6E76C]">
+                      <p className="font-semibold text-gray-800">{b.name}</p>
+                      <p className="text-gray-500 text-xs">{b.addr}</p>
+                      <p className="text-gray-500 text-xs">{b.phone}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="px-5 py-4 border-t space-y-3">
+              <a href="/book-a-repair" onClick={() => setMobileOpen(false)} className="flex items-center justify-center w-full rounded-md py-2.5 text-sm font-semibold text-[#2b3f48] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors">
+                Book a Repair
+              </a>
+              <div className="flex items-center justify-center gap-5 text-gray-400">
+                <a href="https://wa.me/+60183646909" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                  <i className="fa-brands fa-whatsapp text-lg" />
+                </a>
+                <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                  <i className="fa-brands fa-facebook text-lg" />
+                </a>
+                <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                  <i className="fa-brands fa-instagram text-lg" />
+                </a>
+              </div>
+            </div>
+          </SheetContent>
+        </Sheet>
+
       </div>
-    );
+    </nav>
+  );
 }
-
-export default Navbar;

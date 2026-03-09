@@ -86,7 +86,7 @@ export default function RepairStatusPage({ params }) {
         {/* Header Section */}
         <section
           id="subheader"
-          className="relative text-white bg-fixed bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center"
+          className="relative text-white bg-cover bg-center bg-no-repeat min-h-[400px] flex items-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/background/4.webp')`
           }}

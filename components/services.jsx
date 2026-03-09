@@ -5,11 +5,36 @@ import {
   IconRefresh,
   IconArrowUp,
   IconDownload,
+  IconChevronRight,
 } from "@tabler/icons-react";
 import Image from "next/image";
-import { WordRotate } from "@/components/magicui/word-rotate";
-import { IconPlus } from "@tabler/icons-react";
-import { IconChevronRight } from "@tabler/icons-react";
+import { HyperText } from "@/components/magicui/hyper-text";
+import { useState, useEffect } from "react";
+
+const WORDS = ["Repair", "Replace", "Upgrade", "Install"];
+
+function CyclingHyperText({ className }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % WORDS.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <HyperText
+      key={index}
+      className={className}
+      animateOnHover={false}
+      startOnView={false}
+      duration={600}
+    >
+      {WORDS[index]}
+    </HyperText>
+  );
+}
 
 // Mapping of service types to Tabler icons
 const serviceTypeIcons = {
@@ -33,10 +58,7 @@ export default function Services() {
               >
                 Devices We
               </h2>
-              <WordRotate
-                className="text-[#C6E76C] -400 text-center mb-6"
-                words={["Repair", "Replace", "Upgrade", "Install"]}
-              />
+              <CyclingHyperText className="text-[#C6E76C] text-center mb-6" />
             </div>
           </div>
         </div>
@@ -59,9 +81,9 @@ export default function Services() {
                   alt={item.title}
                 />
                 <div className="flex flex-col items-center mb-3 md:mb-4">
-                  <p className="fw-bold !m-0 !mr-2 text-sm md:text-xl text-green-600 whitespace-nowrap">
+                  <a href={`/devices/${item.title.toLowerCase().replace(/\s/g, '_')}`} className="fw-bold !m-0 !mr-2 text-sm md:text-xl text-green-600 whitespace-nowrap hover:underline">
                     {item.title}
-                  </p>
+                  </a>
                 </div>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0 min-h-[70px] md:min-h-24 list-none text-left mx-auto w-fit">
@@ -85,7 +107,25 @@ export default function Services() {
                 </ul>
 
                 {/* Read More Link */}
-                <div className="flex justify-end mt-6">
+                <div className="flex justify-end mt-6 gap-2 flex-wrap">
+                  {item.title === "Smartphone" && (
+                    <>
+                      <a
+                        href="/iphone"
+                        className="hover:underline text-sm md:text-base flex items-center rounded-full bg-[#2b3f48]/80 text-white px-3 py-1"
+                      >
+                        iPhone
+                        <IconChevronRight size={16} />
+                      </a>
+                      <a
+                        href="/samsung"
+                        className="hover:underline text-sm md:text-base flex items-center rounded-full bg-[#2b3f48]/80 text-white px-3 py-1"
+                      >
+                        Samsung
+                        <IconChevronRight size={16} />
+                      </a>
+                    </>
+                  )}
                   <a
                     href={`/devices/${item.title.toLowerCase().replace(/\s/g, '_')}`}
                     className="hover:underline text-gray-700 text-sm md:text-lg flex items-center rounded-full bg-green-500/70 text-white px-3 py-1"
