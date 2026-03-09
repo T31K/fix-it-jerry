@@ -27,6 +27,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: service.getTitle(model),
       description: service.getMetaDescription(model),
+      images: [`https://fixitjerry.com/og_images/iphone-${params.model}-${params.service}.png`],
     },
   };
 }

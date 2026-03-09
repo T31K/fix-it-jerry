@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: guide.metaTitle,
       description: guide.metaDescription,
-      images: ["https://fixitjerry.com/og.png"],
+      images: [`https://fixitjerry.com/og_images/guide-${params.slug}.png`],
     },
   };
 }

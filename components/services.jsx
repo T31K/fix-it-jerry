@@ -87,7 +87,7 @@ export default function Services() {
                 </div>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0 min-h-[70px] md:min-h-24 list-none text-left mx-auto w-fit">
-                  {item.services.filter(srv => srv.popular).map((srv, i) => {
+                  {item.services.slice(0, item.title === "Smartphone" ? 3 : 5).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
                       <li key={i} className="flex items-center mb-2">
@@ -104,28 +104,26 @@ export default function Services() {
                       </li>
                     );
                   })}
+                  {item.title === "Smartphone" && (
+                    <>
+                      <li className="flex items-center mb-2">
+                        <IconChevronRight size={16} className="mr-2 text-[#2b3f48]" />
+                        <a href="/iphone" className="hover:underline text-[#2b3f48] font-semibold text-sm md:text-lg">
+                          iPhone Repair
+                        </a>
+                      </li>
+                      <li className="flex items-center mb-2">
+                        <IconChevronRight size={16} className="mr-2 text-[#2b3f48]" />
+                        <a href="/samsung" className="hover:underline text-[#2b3f48] font-semibold text-sm md:text-lg">
+                          Samsung Repair
+                        </a>
+                      </li>
+                    </>
+                  )}
                 </ul>
 
                 {/* Read More Link */}
                 <div className="flex justify-end mt-6 gap-2 flex-wrap">
-                  {item.title === "Smartphone" && (
-                    <>
-                      <a
-                        href="/iphone"
-                        className="hover:underline text-sm md:text-base flex items-center rounded-full bg-[#2b3f48]/80 text-white px-3 py-1"
-                      >
-                        iPhone
-                        <IconChevronRight size={16} />
-                      </a>
-                      <a
-                        href="/samsung"
-                        className="hover:underline text-sm md:text-base flex items-center rounded-full bg-[#2b3f48]/80 text-white px-3 py-1"
-                      >
-                        Samsung
-                        <IconChevronRight size={16} />
-                      </a>
-                    </>
-                  )}
                   <a
                     href={`/devices/${item.title.toLowerCase().replace(/\s/g, '_')}`}
                     className="hover:underline text-gray-700 text-sm md:text-lg flex items-center rounded-full bg-green-500/70 text-white px-3 py-1"

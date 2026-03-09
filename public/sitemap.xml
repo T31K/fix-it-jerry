@@ -86,6 +86,227 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- iPhone hub -->
+  <url><loc>https://fixitjerry.com/iphone</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <!-- iPhone model pages -->
+  <url><loc>https://fixitjerry.com/iphone/11</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <!-- iPhone service pages (model × service) -->
+  <url><loc>https://fixitjerry.com/iphone/11/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/11/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/12-pro-max/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-mini/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/13-pro-max/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/14-pro-max/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/15-pro-max/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/iphone/16-pro-max/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Samsung hub -->
+  <url><loc>https://fixitjerry.com/samsung</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <!-- Samsung model pages -->
+  <url><loc>https://fixitjerry.com/samsung/s21</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21-plus</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22-plus</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23-plus</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24-plus</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-plus</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/note-20</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/note-20-ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a14</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a15</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a34</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a35</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a54</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/a55</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <!-- Samsung service pages (sample — all 23 models × 7 services) -->
+  <url><loc>https://fixitjerry.com/samsung/s21/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s21/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s22/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s23/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s24/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/samsung/s25-ultra/speaker-mic-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Guides hub + pages -->
+  <url><loc>https://fixitjerry.com/guides</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/power-ic-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/laptop-ic-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/backlight-ic-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/phone-wont-turn-on</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/phone-not-charging</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/screen-black-but-phone-is-on</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/laptop-not-turning-on</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
   <!-- Smartphone slug pages -->
   <url>
     <loc>https://fixitjerry.com/devices/smartphone/water-damage</loc>
@@ -568,17 +789,70 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Apple Watch slug pages -->
+  <!-- Apple Watch legacy slug pages -->
   <url>
     <loc>https://fixitjerry.com/devices/apple_watch/applewatch-lcd-touchscreen</loc>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://fixitjerry.com/devices/apple_watch/applewatch-battery</loc>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+  <!-- Apple Watch model hub -->
+  <url>
+    <loc>https://fixitjerry.com/apple-watch</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Apple Watch model pages -->
+  <url><loc>https://fixitjerry.com/apple-watch/series-6</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Apple Watch service pages -->
+  <url><loc>https://fixitjerry.com/apple-watch/series-6/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-6/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-6/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-6/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-6/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-7/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-8/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/series-9/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/ultra-2/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/apple-watch/se-2/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 
   <!-- iPod slug pages -->
   <url>

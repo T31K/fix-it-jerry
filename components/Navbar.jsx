@@ -28,7 +28,7 @@ const devices = [
   { label: "Desktop", href: "/devices/desktop" },
   { label: "Nintendo Switch", href: "/devices/nintendo_switch" },
   { label: "AirPods", href: "/devices/airpods" },
-  { label: "Apple Watch", href: "/devices/apple_watch" },
+  { label: "Apple Watch", href: "/apple-watch" },
   { label: "iPod", href: "/devices/ipod" },
 ];
 
