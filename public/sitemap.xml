@@ -306,6 +306,19 @@
   <url><loc>https://fixitjerry.com/guides/phone-not-charging</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://fixitjerry.com/guides/screen-black-but-phone-is-on</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://fixitjerry.com/guides/laptop-not-turning-on</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/iphone-battery-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/samsung-screen-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/apple-watch-battery-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/nintendo-switch-battery-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/ipad-screen-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/macbook-screen-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/airpods-battery-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/phone-data-recovery-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/water-damage-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/charging-port-repair-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/laptop-thermal-paste-repaste-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/apple-watch-screen-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/guides/nintendo-switch-fan-replacement-cost-malaysia</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 
   <!-- Smartphone slug pages -->
   <url>
@@ -853,6 +866,188 @@
   <url><loc>https://fixitjerry.com/apple-watch/se-2/crown-button-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://fixitjerry.com/apple-watch/se-2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://fixitjerry.com/apple-watch/se-2/charging-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <!-- iPad hub -->
+  <url><loc>https://fixitjerry.com/ipad</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- iPad model pages -->
+  <url><loc>https://fixitjerry.com/ipad/9th-gen</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- iPad service pages -->
+  <url><loc>https://fixitjerry.com/ipad/9th-gen/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/9th-gen/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/9th-gen/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/9th-gen/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/9th-gen/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/10th-gen/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/mini-6/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m1/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/air-m2-13/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m1/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m2/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-11-m4/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m1/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-12-m2/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/ipad/pro-13-m4/camera-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
+  <!-- MacBook hub -->
+  <url><loc>https://fixitjerry.com/macbook</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- MacBook model pages -->
+  <url><loc>https://fixitjerry.com/macbook/air-m1</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- MacBook service pages -->
+  <url><loc>https://fixitjerry.com/macbook/air-m1/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m1/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m1/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m1/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m1/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m2/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-m3/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/air-15-m3/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-13-m1/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m1-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m1-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m2-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m2-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m3-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m3-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-14-m4-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/keyboard-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 
   <!-- iPod slug pages -->
   <url>

@@ -21,6 +21,8 @@ import { cn } from "@/lib/utils";
 
 const devices = [
   { label: "iPhone", href: "/iphone" },
+  { label: "iPad", href: "/ipad" },
+  { label: "MacBook", href: "/macbook" },
   { label: "Samsung", href: "/samsung" },
   { label: "Smartphone", href: "/devices/smartphone" },
   { label: "Tablet", href: "/devices/tablet" },
