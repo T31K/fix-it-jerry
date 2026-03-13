@@ -88,10 +88,10 @@ export default function TabletServicePage({ params }) {
                   <div className="flex flex-col items-start gap-6">
                     <Image
                       src={service.image}
-                      width={400}
-                      height={400}
+                      width={800}
+                      height={450}
                       alt={service.service}
-                      className="rounded-lg max-w-xl object-cover"
+                      className="rounded-xl w-full max-h-[350px] object-cover mb-6"
                     />
                     <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                       {service.service}

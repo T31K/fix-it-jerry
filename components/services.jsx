@@ -95,7 +95,7 @@ export default function Services() {
                           <IconComponent size={16} className="mr-2" />
                         )}
                         <a
-                          href={srv.slug || `/devices/${item.title.toLowerCase().replace(/\s/g, '_')}?hash=${srv.hash}`}
+                          href={srv.slug || `/devices/${item.title.toLowerCase().replace(/\s/g, '_')}/${srv.hash}`}
                           className="hover:underline text-gray-700 text-sm md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >

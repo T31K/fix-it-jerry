@@ -1,23 +1,7 @@
-import { repairItems } from "@/data";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/services";
 
-export default function Page({ searchParams }) {
-  const laptopItems = repairItems.find(
-    (item) => item.title === "Laptop"
-  );
-
-  // Extract hash from search params
-  const hash = searchParams?.hash || "";
-
-  // Find the service that matches the hash
-  const targetService = laptopItems?.services.find(
-    (service) => service.hash === hash
-  );
-
-  // Determine which tab should be active based on the service type
-  const activeTab = targetService?.service_type || "repair";
-
+export default function Page() {
   return (
     <div id="wrapper">
       <Navbar />

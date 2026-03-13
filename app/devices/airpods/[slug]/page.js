@@ -88,10 +88,10 @@ export default function AirpodsServicePage({ params }) {
                   <div className="flex flex-col items-start gap-6">
                     <Image
                       src={service.image}
-                      width={300}
-                      height={300}
+                      width={800}
+                      height={450}
                       alt={service.service}
-                      className="rounded-lg max-w-sm object-cover"
+                      className="rounded-xl w-full max-h-[350px] object-cover mb-6"
                     />
                     {service.popular && (
                       <div className="inline-block bg-brand-600 text-white px-3 py-1 rounded-full text-sm font-medium">
