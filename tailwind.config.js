@@ -41,6 +41,12 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          500: "#5d8090",
+          600: "#4d6c77",
+          700: "#3d565f",
+          800: "#2d4047",
+        },
         main: "#A3E636",
         mainAccent: "#88cc19",
         overlay: "rgba(0,0,0,0.8)",

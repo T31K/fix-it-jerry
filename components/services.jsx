@@ -87,7 +87,7 @@ export default function Services() {
                 </div>
                 {/* List all services with their respective icons */}
                 <ul className="mb-0 !p-0 min-h-[70px] md:min-h-24 list-none text-left mx-auto w-fit">
-                  {item.services.slice(0, item.title === "Smartphone" ? 3 : 5).map((srv, i) => {
+                  {item.services.slice(0, 5).map((srv, i) => {
                     const IconComponent = serviceTypeIcons[srv.service_type];
                     return (
                       <li key={i} className="flex items-center mb-2">
@@ -104,22 +104,6 @@ export default function Services() {
                       </li>
                     );
                   })}
-                  {item.title === "Smartphone" && (
-                    <>
-                      <li className="flex items-center mb-2">
-                        <IconChevronRight size={16} className="mr-2 text-[#2b3f48]" />
-                        <a href="/iphone" className="hover:underline text-[#2b3f48] font-semibold text-sm md:text-lg">
-                          iPhone Repair
-                        </a>
-                      </li>
-                      <li className="flex items-center mb-2">
-                        <IconChevronRight size={16} className="mr-2 text-[#2b3f48]" />
-                        <a href="/samsung" className="hover:underline text-[#2b3f48] font-semibold text-sm md:text-lg">
-                          Samsung Repair
-                        </a>
-                      </li>
-                    </>
-                  )}
                 </ul>
 
                 {/* Read More Link */}

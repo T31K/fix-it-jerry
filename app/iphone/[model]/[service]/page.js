@@ -75,80 +75,78 @@ export default function IphoneServicePage({ params }) {
           </div>
         </section>
 
-        <section className="py-8">
+        <section className="py-10 md:py-14">
           <div className="container">
-            <div className="row g-4">
-              <div className="col-lg-9">
-                <div className="bg-white rounded-lg shadow-sm border p-6">
-                  <div className="flex flex-col items-start gap-6">
-                    <Image
-                      src={service.image}
-                      width={400}
-                      height={400}
-                      alt={`${model.name} ${service.name}`}
-                      className="rounded-lg max-w-xl object-cover"
-                    />
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                      {model.name} {service.name} in Kuala Lumpur
-                    </h2>
-                    <p className="text-gray-600 mb-4">
-                      {service.getMetaDescription(model)}
-                    </p>
+            <div className="row g-4 g-lg-5">
+              <div className="col-lg-8">
+                <div className="bg-white rounded-xl shadow-sm border p-5 md:p-8">
+                  <Image
+                    src={service.image}
+                    width={800}
+                    height={450}
+                    alt={`${model.name} ${service.name}`}
+                    className="rounded-xl w-full max-h-[350px] object-cover mb-6"
+                  />
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                    {model.name} {service.name} in Kuala Lumpur
+                  </h2>
+                  <p className="text-gray-500 text-base md:text-lg mb-8 leading-relaxed">
+                    {service.getMetaDescription(model)}
+                  </p>
 
-                    <div className="space-y-6 w-full">
-                      {sections.map((section, idx) => (
-                        <div
-                          key={idx}
-                          className="border-b border-gray-200 pb-4 last:border-b-0"
-                        >
-                          <h3 className="text-lg font-semibold mb-3 text-brand-700">
-                            {section.heading}
-                          </h3>
-                          {Array.isArray(section.content) ? (
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                              {section.content.map((item, i) => (
-                                <li key={i} className="leading-relaxed">
-                                  {item}
-                                </li>
-                              ))}
-                            </ul>
-                          ) : (
-                            <p className="text-gray-700 leading-relaxed">
-                              {section.content}
-                            </p>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="mt-4 w-full bg-light rounded-lg p-4">
-                      <h4 className="fw-semibold mb-2">Other {model.name} Repairs</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {iphoneServices
-                          .filter((s) => s.slug !== service.slug)
-                          .map((s) => (
-                            <a
-                              key={s.slug}
-                              href={`/iphone/${model.slug}/${s.slug}`}
-                              className="badge bg-white border text-dark text-decoration-none px-3 py-2"
-                            >
-                              {s.name}
-                            </a>
-                          ))}
+                  <div className="space-y-8">
+                    {sections.map((section, idx) => (
+                      <div
+                        key={idx}
+                        className="border-l-4 border-brand-600 pl-5 py-1"
+                      >
+                        <h3 className="text-lg md:text-xl font-semibold mb-3 text-brand-700">
+                          {section.heading}
+                        </h3>
+                        {Array.isArray(section.content) ? (
+                          <ul className="list-disc pl-5 space-y-2 text-gray-600 text-[15px] leading-relaxed">
+                            {section.content.map((item, i) => (
+                              <li key={i}>
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-gray-600 text-[15px] leading-relaxed">
+                            {section.content}
+                          </p>
+                        )}
                       </div>
-                    </div>
+                    ))}
+                  </div>
 
-                    <div className="mt-4 w-full flex justify-center">
-                      <BookingForm defaultColor={false} />
+                  <div className="mt-10 bg-gray-50 rounded-xl p-5">
+                    <h4 className="fw-semibold mb-3 text-gray-800">Other {model.name} Repairs</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {iphoneServices
+                        .filter((s) => s.slug !== service.slug)
+                        .map((s) => (
+                          <a
+                            key={s.slug}
+                            href={`/iphone/${model.slug}/${s.slug}`}
+                            className="inline-block rounded-full border border-gray-200 bg-white text-gray-700 text-sm px-4 py-2 hover:border-brand-600 hover:text-brand-700 transition-colors text-decoration-none"
+                          >
+                            {s.name}
+                          </a>
+                        ))}
                     </div>
+                  </div>
+
+                  <div className="mt-8 flex justify-center">
+                    <BookingForm defaultColor={false} />
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <div className="sticky-top" style={{ top: "100px" }}>
-                  <div className="bg-white border rounded-lg p-4">
-                    <h5 className="fw-bold mb-3">All iPhone Models</h5>
+                  <div className="bg-white border rounded-xl p-4 shadow-sm">
+                    <h5 className="fw-bold mb-3 text-gray-800 text-base">All iPhone Models</h5>
                     <ul className="list-unstyled mb-0">
                       {iphoneModels
                         .slice()
@@ -157,10 +155,10 @@ export default function IphoneServicePage({ params }) {
                           <li key={m.slug} className="mb-1">
                             <a
                               href={`/iphone/${m.slug}/${service.slug}`}
-                              className={`text-decoration-none small ${
+                              className={`text-decoration-none small d-block py-1 px-2 rounded ${
                                 m.slug === model.slug
-                                  ? "fw-bold text-brand-700"
-                                  : "text-muted"
+                                  ? "fw-bold text-brand-700 bg-gray-50"
+                                  : "text-gray-500 hover:text-brand-700"
                               }`}
                             >
                               {m.name}

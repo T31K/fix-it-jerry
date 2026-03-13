@@ -23,6 +23,7 @@ const devices = [
   { label: "iPhone", href: "/iphone" },
   { label: "iPad", href: "/ipad" },
   { label: "MacBook", href: "/macbook" },
+  { label: "Google Pixel", href: "/pixel" },
   { label: "Samsung", href: "/samsung" },
   { label: "Smartphone", href: "/devices/smartphone" },
   { label: "Tablet", href: "/devices/tablet" },
@@ -69,7 +70,7 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-50 w-full bg-[#2b3f48] transition-all duration-300",
+        "sticky top-0 z-50 w-full bg-[#4d6c77] transition-all duration-300",
         scrolled ? "shadow-md" : ""
       )}
     >
@@ -95,7 +96,7 @@ export default function Navbar() {
                         <NavigationMenuLink asChild>
                           <a
                             href={d.href}
-                            className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-[#C6E76C]/20 hover:text-[#2b3f48] transition-colors font-medium"
+                            className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-[#C6E76C]/20 hover:text-[#4d6c77] transition-colors font-medium"
                           >
                             {d.label}
                           </a>
@@ -151,7 +152,7 @@ export default function Navbar() {
 
           <a
             href="/book-a-repair"
-            className="inline-flex items-center justify-center rounded-md px-4 py-1.5 text-sm font-semibold text-[#2b3f48] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors"
+            className="inline-flex items-center justify-center rounded-md px-4 py-1.5 text-sm font-semibold text-[#4d6c77] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors"
           >
             Book a Repair
           </a>
@@ -177,7 +178,7 @@ export default function Navbar() {
                 <ul className="space-y-0.5">
                   {devices.map((d) => (
                     <li key={d.href}>
-                      <a href={d.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-[#C6E76C]/20 hover:text-[#2b3f48] transition-colors">
+                      <a href={d.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-[#C6E76C]/20 hover:text-[#4d6c77] transition-colors">
                         {d.label}
                       </a>
                     </li>
@@ -218,17 +219,17 @@ export default function Navbar() {
             </div>
 
             <div className="px-5 py-4 border-t space-y-3">
-              <a href="/book-a-repair" onClick={() => setMobileOpen(false)} className="flex items-center justify-center w-full rounded-md py-2.5 text-sm font-semibold text-[#2b3f48] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors">
+              <a href="/book-a-repair" onClick={() => setMobileOpen(false)} className="flex items-center justify-center w-full rounded-md py-2.5 text-sm font-semibold text-[#4d6c77] bg-[#C6E76C] hover:bg-[#b5d455] transition-colors">
                 Book a Repair
               </a>
               <div className="flex items-center justify-center gap-5 text-gray-400">
-                <a href="https://wa.me/+60183646909" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                <a href="https://wa.me/+60183646909" target="_blank" rel="noopener noreferrer" className="hover:text-[#4d6c77] transition-colors">
                   <i className="fa-brands fa-whatsapp text-lg" />
                 </a>
-                <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                <a href="https://facebook.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#4d6c77] transition-colors">
                   <i className="fa-brands fa-facebook text-lg" />
                 </a>
-                <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#2b3f48] transition-colors">
+                <a href="https://instagram.com/fixitjerry" target="_blank" rel="noopener noreferrer" className="hover:text-[#4d6c77] transition-colors">
                   <i className="fa-brands fa-instagram text-lg" />
                 </a>
               </div>

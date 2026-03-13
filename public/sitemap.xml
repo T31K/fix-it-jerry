@@ -1049,6 +1049,85 @@
   <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://fixitjerry.com/macbook/pro-16-m4-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 
+  <!-- Google Pixel hub -->
+  <url><loc>https://fixitjerry.com/pixel</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Google Pixel model pages -->
+  <url><loc>https://fixitjerry.com/pixel/6</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Google Pixel service pages -->
+  <url><loc>https://fixitjerry.com/pixel/6/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/6a/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/7a/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/8a/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold/screen-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold/battery-replacement</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold/charging-port-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold/water-damage-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fixitjerry.com/pixel/9-pro-fold/back-glass-repair</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+
   <!-- iPod slug pages -->
   <url>
     <loc>https://fixitjerry.com/devices/ipod/ipod-lcd-touchscreen</loc>
