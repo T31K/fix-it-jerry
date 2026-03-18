@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "Expert Samsung repair in KL — screen replacement, battery, back glass, charging port, camera & water damage. Galaxy S, A & Note series supported.",
   },
+  alternates: { canonical: '/samsung' },
 };
 
 const seriesOrder = ["S", "Note", "A"];

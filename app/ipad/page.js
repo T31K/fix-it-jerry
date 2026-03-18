@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "iPad repair in KL — screen replacement, battery, charging port, camera & water damage. All models from iPad 9th Gen to iPad Pro M4.",
   },
+  alternates: { canonical: '/ipad' },
 };
 
 export default function IpadHubPage() {

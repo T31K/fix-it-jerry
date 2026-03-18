@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "Google Pixel repair in KL. Screen, battery, charging port, water damage & back glass. Pixel 6 through Pixel 9 Pro Fold. Walk in or book online.",
   },
+  alternates: { canonical: '/pixel' },
 };
 
 export default function PixelHubPage() {

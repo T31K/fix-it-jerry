@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "Expert iPhone repair in KL — screen replacement, battery, back glass, charging port, camera & water damage. All models from iPhone 11 to iPhone 16 Pro Max.",
   },
+  alternates: { canonical: '/iphone' },
 };
 
 export default function IphoneHubPage() {

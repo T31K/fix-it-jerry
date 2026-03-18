@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "MacBook repair in KL. Screen, battery, keyboard, charging port & water damage. MacBook Air and MacBook Pro, all M-series models. Walk in or book online.",
   },
+  alternates: { canonical: '/macbook' },
 };
 
 export default function MacbookHubPage() {

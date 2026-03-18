@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
       title: `${model.name} Repair in KL | Fix It Jerry`,
       description: `${model.name} repair in Kuala Lumpur — screen replacement, battery, back glass, camera, charging port & more. Fast, affordable. Walk in or book online.`,
     },
+    alternates: { canonical: `/samsung/${params.model}` },
   };
 }
 

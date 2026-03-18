@@ -18,6 +18,7 @@ const manrope = Manrope({
 
 
 export const metadata = {
+  metadataBase: new URL('https://fixitjerry.com'),
   title: "Fix It Jerry – Phone, Laptop & Device Repair KL",
   description: "Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓",
   openGraph: {
@@ -49,7 +50,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.variable} antialiased`}>
         <JsonLd data={{
           "@context": "https://schema.org",
-          "@type": "LocalBusiness",
+          "@type": "RepairBusiness",
           "name": "Fix It Jerry",
           "url": "https://fixitjerry.com",
           "logo": "https://fixitjerry.com/images/logo.webp",
@@ -75,9 +76,15 @@ export default function RootLayout({ children }) {
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
               "opens": "10:00",
-              "closes": "20:00"
+              "closes": "18:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday","Sunday"],
+              "opens": "10:00",
+              "closes": "15:00"
             }
           ],
           "sameAs": [

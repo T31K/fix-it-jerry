@@ -3,6 +3,8 @@ export const guides = [
   {
     slug: "power-ic-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Power IC Repair Cost in Malaysia (2026)",
     metaTitle: "Power IC Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -65,6 +67,8 @@ export const guides = [
   {
     slug: "laptop-ic-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Laptop IC Repair Cost in Malaysia (2026)",
     metaTitle: "Laptop IC Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -123,6 +127,8 @@ export const guides = [
   {
     slug: "backlight-ic-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Backlight IC Repair Cost in Malaysia (2026)",
     metaTitle: "Backlight IC Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -173,6 +179,8 @@ export const guides = [
   {
     slug: "iphone-battery-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "iPhone Battery Replacement Cost in Malaysia (2026)",
     metaTitle: "iPhone Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -231,6 +239,8 @@ export const guides = [
   {
     slug: "samsung-screen-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Samsung Screen Replacement Cost in Malaysia (2026)",
     metaTitle: "Samsung Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -282,6 +292,8 @@ export const guides = [
   {
     slug: "apple-watch-battery-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Apple Watch Battery Replacement Cost in Malaysia (2026)",
     metaTitle: "Apple Watch Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -336,6 +348,8 @@ export const guides = [
   {
     slug: "nintendo-switch-battery-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Nintendo Switch Battery Replacement Cost in Malaysia (2026)",
     metaTitle: "Nintendo Switch Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -382,6 +396,8 @@ export const guides = [
   {
     slug: "ipad-screen-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "iPad Screen Repair Cost in Malaysia (2026)",
     metaTitle: "iPad Screen Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -429,6 +445,8 @@ export const guides = [
   {
     slug: "macbook-screen-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "MacBook Screen Repair Cost in Malaysia (2026)",
     metaTitle: "MacBook Screen Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -480,6 +498,8 @@ export const guides = [
   {
     slug: "airpods-battery-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "AirPods Battery Replacement Cost in Malaysia (2026)",
     metaTitle: "AirPods Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -526,6 +546,8 @@ export const guides = [
   {
     slug: "phone-data-recovery-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Phone Data Recovery Cost in Malaysia (2026)",
     metaTitle: "Phone Data Recovery Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -581,6 +603,8 @@ export const guides = [
   {
     slug: "water-damage-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Water Damage Repair Cost in Malaysia (2026)",
     metaTitle: "Water Damage Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -634,6 +658,8 @@ export const guides = [
   {
     slug: "charging-port-repair-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Charging Port Repair Cost in Malaysia (2026)",
     metaTitle: "Charging Port Repair Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -682,6 +708,8 @@ export const guides = [
   {
     slug: "laptop-thermal-paste-repaste-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Laptop Thermal Paste Repaste Cost in Malaysia (2026)",
     metaTitle: "Laptop Thermal Paste Repaste Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -729,6 +757,8 @@ export const guides = [
   {
     slug: "apple-watch-screen-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Apple Watch Screen Replacement Cost in Malaysia (2026)",
     metaTitle: "Apple Watch Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -777,6 +807,8 @@ export const guides = [
   {
     slug: "nintendo-switch-fan-replacement-cost-malaysia",
     category: "cost-guide",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Nintendo Switch Fan Replacement Cost in Malaysia (2026)",
     metaTitle: "Nintendo Switch Fan Replacement Cost Malaysia 2026 | Fix It Jerry KL",
     metaDescription:
@@ -825,6 +857,8 @@ export const guides = [
   {
     slug: "phone-wont-turn-on",
     category: "symptom",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Phone Won't Turn On? Here's What's Wrong",
     metaTitle: "Phone Won't Turn On — Causes & Fixes in KL | Fix It Jerry",
     metaDescription:
@@ -879,6 +913,8 @@ export const guides = [
   {
     slug: "phone-not-charging",
     category: "symptom",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Phone Not Charging? Here's How to Fix It",
     metaTitle: "Phone Not Charging — Causes & Fixes in KL | Fix It Jerry",
     metaDescription:
@@ -935,6 +971,8 @@ export const guides = [
   {
     slug: "screen-black-but-phone-is-on",
     category: "symptom",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Screen Black But Phone Is On? Here's the Cause",
     metaTitle: "Screen Black But Phone Is On — Fix in KL | Fix It Jerry",
     metaDescription:
@@ -985,6 +1023,8 @@ export const guides = [
   {
     slug: "laptop-not-turning-on",
     category: "symptom",
+    datePublished: "2026-03-09",
+    dateModified: "2026-03-13",
     title: "Laptop Not Turning On? Causes & Fixes in KL",
     metaTitle: "Laptop Won't Turn On — Diagnosis & Repair in KL | Fix It Jerry",
     metaDescription:

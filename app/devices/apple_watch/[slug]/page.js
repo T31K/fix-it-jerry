@@ -33,6 +33,7 @@ export async function generateMetadata({ params }) {
       description: service.meta_description,
       images: ['https://fixitjerry.com/og.png'],
     },
+    alternates: { canonical: `/devices/apple_watch/${params.slug}` },
   };
 }
 

@@ -11,6 +11,7 @@ export const metadata = {
     description:
       "Device repair guides for Kuala Lumpur — IC repair costs, symptom diagnosis, and honest advice on whether to repair or replace your device.",
   },
+  alternates: { canonical: '/guides' },
 };
 
 const categoryLabel = {

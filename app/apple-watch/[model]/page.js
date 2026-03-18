@@ -21,6 +21,7 @@ export async function generateMetadata({ params }) {
       description: `${model.name} repair in Kuala Lumpur. OEM parts, fast turnaround.`,
       images: [`https://fixitjerry.com/og_images/apple-watch-${params.model}.png`],
     },
+    alternates: { canonical: `/apple-watch/${params.model}` },
   };
 }
 

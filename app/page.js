@@ -8,11 +8,102 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reviews from "@/components/Reviews";
 import PromotionalModal from "@/components/PromotionalModal";
+import JsonLd from "@/components/JsonLd";
 import { IconCheck } from "@tabler/icons-react";
+
+export const metadata = {
+  alternates: { canonical: '/' },
+};
 
 const GadgetFixPage = () => {
   return (
     <div id="wrapper">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Fix It Jerry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fix It Jerry is a trusted device repair shop in Kuala Lumpur specialising in smartphones, laptops, tablets, and more. We offer fast turnaround times with transparent pricing from RM 80."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What devices do you repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We repair smartphones, tablets, laptops, desktop computers, Nintendo Switch, AirPods, and Apple Watches. Brands include iPhone, Samsung, MacBook, iPad, Google Pixel, and more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a repair take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Screen replacements and battery swaps are typically completed within an hour. More complex repairs such as motherboard or IC chip repairs may take 1–3 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you use original parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We use high-quality parts that match or exceed OEM standards. Both original and aftermarket options are available depending on your budget and preference. Every part is tested before installation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do repairs cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Repair costs depend on the device and issue. Prices start from RM 80 for basic repairs up to RM 1,200 for complex fixes. We offer transparent pricing with no hidden fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer data recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We specialise in data recovery for hard drives, SSDs, and mobile devices. Even if your device is not powering on, we may still be able to retrieve your data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I upgrade my laptop or PC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We offer RAM, SSD, and GPU upgrades. Upgrading to an SSD can significantly speed up an older laptop. Bring your device in and we will recommend the best options."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my personal data safe during repairs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We do not access or share personal files during repairs. We recommend backing up your data before bringing in your device as an added precaution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are your repair locations in KL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fix It Jerry has four branches in Kuala Lumpur and Selangor: Desa Parkcity, Subang Jaya, Bukit Jalil, and Puchong. Walk-ins are welcome at all locations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book via phone, WhatsApp, or the online booking form at fixitjerry.com/book-a-repair. Walk-ins are welcome, but booking an appointment ensures faster service."
+            }
+          }
+        ]
+      }} />
       <PromotionalModal />
       <Navbar />
       <div className="no-bottom no-top" id="content">

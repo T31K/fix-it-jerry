@@ -29,6 +29,7 @@ export async function generateMetadata({ params }) {
       description: service.getMetaDescription(model),
       images: [`https://fixitjerry.com/og_images/samsung-${params.model}-${params.service}.png`],
     },
+    alternates: { canonical: `/samsung/${params.model}/${params.service}` },
   };
 }
 

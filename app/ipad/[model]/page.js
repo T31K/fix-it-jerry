@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
       title: `${model.name} Repair in KL | Fix It Jerry`,
       description: `${model.name} repair in Kuala Lumpur — screen replacement, battery, charging port, camera & water damage. Fast, affordable. Walk in or book online.`,
     },
+    alternates: { canonical: `/ipad/${params.model}` },
   };
 }
 

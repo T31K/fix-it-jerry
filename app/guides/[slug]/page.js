@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
+import JsonLd from "@/components/JsonLd";
 import { guides } from "@/data/guides";
 
 export async function generateStaticParams() {
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }) {
       description: guide.metaDescription,
       images: [`https://fixitjerry.com/og_images/guide-${params.slug}.png`],
     },
+    alternates: { canonical: `/guides/${params.slug}` },
   };
 }
 
@@ -41,6 +43,43 @@ export default function GuidePage({ params }) {
 
   return (
     <div id="wrapper">
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": guide.metaTitle,
+        "description": guide.metaDescription,
+        "url": `https://fixitjerry.com/guides/${guide.slug}`,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://fixitjerry.com/guides/${guide.slug}`
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": `https://fixitjerry.com/og_images/guide-${guide.slug}.png`,
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": guide.datePublished,
+        "dateModified": guide.dateModified,
+        "author": {
+          "@type": "Organization",
+          "name": "Fix It Jerry",
+          "url": "https://fixitjerry.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fix It Jerry",
+          "url": "https://fixitjerry.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fixitjerry.com/images/logo.webp"
+          }
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".text-gray-600.text-lg", "h2"]
+        }
+      }} />
       <Navbar />
       <div id="content" className="no-top no-bottom">
         <div id="top"></div>
@@ -77,6 +116,9 @@ export default function GuidePage({ params }) {
                   <span className={`badge ${categoryColor[guide.category]} mb-3`}>
                     {categoryLabel[guide.category]}
                   </span>
+                  <p className="text-muted small mb-4">
+                    Last updated: <time dateTime={guide.dateModified}>{new Date(guide.dateModified).toLocaleDateString('en-MY', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                  </p>
 
                   <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                     {guide.intro}

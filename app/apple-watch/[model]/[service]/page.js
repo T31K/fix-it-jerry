@@ -28,6 +28,7 @@ export async function generateMetadata({ params }) {
       description: service.getMetaDescription(model),
       images: [`https://fixitjerry.com/og_images/apple-watch-${params.model}-${params.service}.png`],
     },
+    alternates: { canonical: `/apple-watch/${params.model}/${params.service}` },
   };
 }
 
