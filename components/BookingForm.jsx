@@ -159,7 +159,7 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
         <p className="!m-0 flex items-center gap-1 text-xs md:text-sm">
           {`We've fixed`}
           <span className="inline-block min-w-[4ch] text-right font-bold">
-            <CountUp end={3208} duration={1.5} separator="," />
+            <CountUp end={3371} duration={1.5} separator="," />
           </span>
           {` devices – let's make yours next!`}
         </p>
