@@ -72,15 +72,16 @@ const stores = [
   },
 ];
 
-function LinkButton({ href, Icon, title, variant = "dark", external = true }) {
+function LinkButton({ href, Icon, title, variant = "light", external = true }) {
   const base =
-    "flex items-center justify-center gap-2 w-full rounded-xl py-4 px-4 font-semibold text-center no-underline shadow-sm transition-transform active:scale-[0.98]";
-  const styles =
-    variant === "primary"
-      ? "bg-green-600 text-white hover:bg-green-700"
-      : variant === "outline"
-      ? "bg-white text-gray-900 border border-gray-200 hover:bg-gray-50"
-      : "bg-gray-900 text-white hover:bg-black";
+    "flex items-center justify-center gap-2 w-full rounded-2xl py-4 px-4 font-semibold text-center no-underline shadow-md transition-all active:scale-[0.98]";
+
+  const styles = {
+    primary: "bg-[#C6E76C] text-[#4d6c77] hover:bg-[#b5d455]",
+    light: "bg-white text-[#4d6c77] hover:bg-gray-50",
+    ghost:
+      "bg-white/10 text-white border border-white/25 hover:bg-white/20 backdrop-blur",
+  }[variant];
 
   return (
     <a
@@ -98,7 +99,7 @@ function LinkButton({ href, Icon, title, variant = "dark", external = true }) {
 
 function SectionLabel({ children }) {
   return (
-    <div className="my-4 text-center text-xs uppercase tracking-widest text-gray-400">
+    <div className="my-4 text-center text-[11px] uppercase tracking-[0.2em] font-semibold text-white/60">
       {children}
     </div>
   );
@@ -107,27 +108,36 @@ function SectionLabel({ children }) {
 export default function LinksPage() {
   return (
     <main
-      className="min-h-screen bg-gray-50 px-4 py-8 sm:py-12"
+      className="min-h-screen bg-[#4d6c77] font-manrope px-4 py-8 sm:py-12"
       style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 2rem)" }}
     >
       <div className="mx-auto w-full max-w-md">
-        <header className="text-center mb-4">
-          <h1 className="text-3xl font-bold mb-1">Fix It Jerry</h1>
-          <p className="text-sm text-gray-600 mb-3">
-            #1 Phone Repair in Kuala Lumpur
+        <header className="text-center mb-5">
+          <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white shadow-lg mb-3 ring-4 ring-white/30">
+            <img
+              src="/images/logo.webp"
+              alt="Fix It Jerry"
+              className="w-20 h-20 object-contain"
+            />
+          </div>
+          <h1 className="text-3xl font-extrabold text-white mb-1">
+            Fix It Jerry
+          </h1>
+          <p className="text-sm text-white/80 mb-3">
+            #1 Device Repair in Kuala Lumpur
           </p>
 
           <a
             href="https://www.google.com/search?q=fix+it+jerry+kl+reviews"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-gray-800 no-underline mb-2"
+            className="inline-flex items-center gap-2 text-sm text-white no-underline bg-white/10 backdrop-blur rounded-full px-3 py-1.5 border border-white/20"
           >
             <span className="flex">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                  className="w-4 h-4 text-[#C6E76C] fill-[#C6E76C]"
                 />
               ))}
             </span>
@@ -150,7 +160,7 @@ export default function LinksPage() {
           ))}
         </div>
 
-        <SectionLabel>Connect</SectionLabel>
+        <SectionLabel>Connect with us</SectionLabel>
 
         <div className="space-y-3">
           {contactLinks.map((link, i) => (
@@ -159,7 +169,7 @@ export default function LinksPage() {
               href={link.url}
               Icon={link.Icon}
               title={link.title}
-              variant="dark"
+              variant="light"
               external={link.external}
             />
           ))}
@@ -174,14 +184,14 @@ export default function LinksPage() {
               href={store.url}
               Icon={IconMapPin}
               title={store.title}
-              variant="outline"
+              variant="ghost"
               external={true}
             />
           ))}
         </div>
 
         <footer className="mt-8 text-center">
-          <p className="text-xs text-gray-400 m-0">
+          <p className="text-xs text-white/50 m-0">
             &copy; {new Date().getFullYear()} Fix It Jerry. All rights reserved.
           </p>
         </footer>
