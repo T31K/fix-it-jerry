@@ -1,146 +1,191 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { Star } from "lucide-react";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconBrandWhatsapp,
   IconPhone,
   IconMapPin,
-  IconBrandTiktok,
-  IconExternalLink
+  IconCalendarEvent,
 } from "@tabler/icons-react";
+import SocialProof from "./SocialProof";
 
 export const metadata = {
   title: "Fix It Jerry | Links",
-  description: "Connect with Fix It Jerry through our social media and contact channels.",
+  description:
+    "Book a repair, message us on WhatsApp, or visit our 4 stores across KL & Selangor.",
+  alternates: { canonical: "/links" },
 };
 
-function LinksPage() {
-  const links = [
-    {
-      title: "Book a Repair",
-      url: "/book-a-repair",
-      icon: <IconExternalLink size={24} />,
-      color: "bg-green-600",
-      important: true,
-      isExternal: false
-    },
-    {
-      title: "WhatsApp Us",
-      url: "https://wa.me/60183646909",
-      icon: <IconBrandWhatsapp size={24} />,
-      color: "bg-green-600",
-      important: true,
-      isExternal: true
-    },
-    {
-      title: "Call Us",
-      url: "tel:+60183646909",
-      icon: <IconPhone size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Facebook",
-      url: "https://facebook.com/fixitjerry",
-      icon: <IconBrandFacebook size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Instagram",
-      url: "https://instagram.com/fixitjerry",
-      icon: <IconBrandInstagram size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Visit Our Store (Bukit Jalil)",
-      url: "https://maps.google.com/maps?q=1-10,+Jalan+Bukit+Jalil+indah+4B,+Bukit+Jalil,+Taman+Ltat,+57000+Kuala+Lumpur",
-      icon: <IconMapPin size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Visit Our Store (Puchong)",
-      url: "https://maps.google.com/maps?q=23A,+Jalan+Sri+Manja+10,+Taman+Sri+Manja,+46000+Petaling+Jaya,+Selangor",
-      icon: <IconMapPin size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Visit Our Store (Desa Parkcity)",
-      url: "https://maps.google.com/maps?q=7,+Jalan+Residen+Utama,+Desa+Parkcity,+52200+Wilayah+Persekutuan,+Kuala+Lumpur",
-      icon: <IconMapPin size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    },
-    {
-      title: "Visit Our Store (Subang Jaya)",
-      url: "https://maps.google.com/maps?q=22-1,+Jalan+SS+15/8,+SS+15,+47500+Subang+Jaya,+Selangor",
-      icon: <IconMapPin size={24} />,
-      color: "bg-gray-600",
-      important: false,
-      isExternal: true
-    }
-  ];
+const primaryLinks = [
+  {
+    title: "Book a Repair",
+    url: "/book-a-repair",
+    Icon: IconCalendarEvent,
+    external: false,
+  },
+  {
+    title: "WhatsApp Us",
+    url: "https://api.whatsapp.com/send?phone=60183646909",
+    Icon: IconBrandWhatsapp,
+    external: true,
+  },
+];
+
+const contactLinks = [
+  {
+    title: "Call Us",
+    url: "tel:+60183646909",
+    Icon: IconPhone,
+    external: true,
+  },
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/fixitjerry/",
+    Icon: IconBrandFacebook,
+    external: true,
+  },
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/fixitjerry/",
+    Icon: IconBrandInstagram,
+    external: true,
+  },
+];
+
+const stores = [
+  {
+    title: "Bukit Jalil",
+    url: "https://maps.google.com/maps?q=1-10,+Jalan+Bukit+Jalil+indah+4B,+Bukit+Jalil,+Taman+Ltat,+57000+Kuala+Lumpur",
+  },
+  {
+    title: "Puchong",
+    url: "https://maps.google.com/maps?q=23A,+Jalan+Sri+Manja+10,+Taman+Sri+Manja,+46000+Petaling+Jaya,+Selangor",
+  },
+  {
+    title: "Desa Parkcity",
+    url: "https://maps.google.com/maps?q=7,+Jalan+Residen+Utama,+Desa+Parkcity,+52200+Wilayah+Persekutuan,+Kuala+Lumpur",
+  },
+  {
+    title: "Subang Jaya",
+    url: "https://maps.google.com/maps?q=22-1,+Jalan+SS+15/8,+SS+15,+47500+Subang+Jaya,+Selangor",
+  },
+];
+
+function LinkButton({ href, Icon, title, variant = "dark", external = true }) {
+  const base =
+    "flex items-center justify-center gap-2 w-full rounded-xl py-4 px-4 font-semibold text-center no-underline shadow-sm transition-transform active:scale-[0.98]";
+  const styles =
+    variant === "primary"
+      ? "bg-green-600 text-white hover:bg-green-700"
+      : variant === "outline"
+      ? "bg-white text-gray-900 border border-gray-200 hover:bg-gray-50"
+      : "bg-gray-900 text-white hover:bg-black";
 
   return (
-    <div id="wrapper">
-      <div className="scrollbar-v show-on-scroll"></div>
-      <Navbar />
-      <div className="no-bottom no-top" id="content">
-        <div id="top"></div>
+    <a
+      href={href}
+      target={external ? "_blank" : "_self"}
+      rel={external ? "noopener noreferrer" : undefined}
+      className={`${base} ${styles}`}
+      style={{ minHeight: 56 }}
+    >
+      <Icon size={22} />
+      <span>{title}</span>
+    </a>
+  );
+}
 
-        <section className="relative bg-gray-100 min-h-screen py-10 md:py-36">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-6 col-md-8 col-sm-10 col-12">
-                <div className="text-center mb-2 md:mb-5">
-
-                  <h1 className="mb-0 md:mb-2">Fix It Jerry</h1>
-                  <p className="mb-0 text-gray-600">
-                    #1 Phone Repair in Kuala Lumpur
-                  </p>
-                </div>
-
-                <div className="links-container">
-                  {links.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target={link.isExternal ? "_blank" : "_self"}
-                      rel={link.isExternal ? "noopener noreferrer" : ""}
-                      className={`d-block text-white ${link.important ? 'bg-green-600' : 'bg-gray-600'} rounded-1 p-3 mb-3 text-center transition-all hover-scale-1-02 shadow-sm`}
-                    >
-                      <div className="d-flex align-items-center justify-content-center">
-                        <span className="me-2">{link.icon}</span>
-                        <span className="fw-bold">{link.title}</span>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-
-                <div className="text-center mt-5">
-                  <p className="text-gray-500 mb-0 small">
-                    &copy; {new Date().getFullYear()} Fix It Jerry. All rights reserved.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <Footer />
+function SectionLabel({ children }) {
+  return (
+    <div className="my-4 text-center text-xs uppercase tracking-widest text-gray-400">
+      {children}
     </div>
   );
 }
 
-export default LinksPage;
+export default function LinksPage() {
+  return (
+    <main
+      className="min-h-screen bg-gray-50 px-4 py-8 sm:py-12"
+      style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 2rem)" }}
+    >
+      <div className="mx-auto w-full max-w-md">
+        <header className="text-center mb-4">
+          <h1 className="text-3xl font-bold mb-1">Fix It Jerry</h1>
+          <p className="text-sm text-gray-600 mb-3">
+            #1 Phone Repair in Kuala Lumpur
+          </p>
+
+          <a
+            href="https://www.google.com/search?q=fix+it+jerry+kl+reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-gray-800 no-underline mb-2"
+          >
+            <span className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                />
+              ))}
+            </span>
+            <span className="font-semibold">5.0 on Google</span>
+          </a>
+        </header>
+
+        <SocialProof />
+
+        <div className="space-y-3">
+          {primaryLinks.map((link, i) => (
+            <LinkButton
+              key={i}
+              href={link.url}
+              Icon={link.Icon}
+              title={link.title}
+              variant="primary"
+              external={link.external}
+            />
+          ))}
+        </div>
+
+        <SectionLabel>Connect</SectionLabel>
+
+        <div className="space-y-3">
+          {contactLinks.map((link, i) => (
+            <LinkButton
+              key={i}
+              href={link.url}
+              Icon={link.Icon}
+              title={link.title}
+              variant="dark"
+              external={link.external}
+            />
+          ))}
+        </div>
+
+        <SectionLabel>Visit a Store</SectionLabel>
+
+        <div className="space-y-3">
+          {stores.map((store, i) => (
+            <LinkButton
+              key={i}
+              href={store.url}
+              Icon={IconMapPin}
+              title={store.title}
+              variant="outline"
+              external={true}
+            />
+          ))}
+        </div>
+
+        <footer className="mt-8 text-center">
+          <p className="text-xs text-gray-400 m-0">
+            &copy; {new Date().getFullYear()} Fix It Jerry. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </main>
+  );
+}
