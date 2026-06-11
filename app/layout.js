@@ -106,7 +106,7 @@ export default function RootLayout({ children }) {
         ></Script>
         <Script src="/js/designesia.js" strategy="afterInteractive"></Script>
         <Script
-          src="https://umami.t31k.cloud/script.js"
+          src="https://stats.kaleidoscopical.com/script.js"
           data-website-id="54794c99-93ed-409e-88c8-f73cb2ce6be3"
           strategy="afterInteractive"
         />
