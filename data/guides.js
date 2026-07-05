@@ -1075,4 +1075,372 @@ export const guides = [
       { label: "Data Backup & Recovery", href: "/devices/laptop/data-recovery" },
     ],
   },
+  {
+    slug: "phone-battery-draining-fast",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "Phone Battery Draining Fast? Here's Why & How to Fix It",
+    metaTitle: "Phone Battery Draining Fast — Causes & Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "Phone battery dying too quickly? It's usually a worn battery, a rogue app, or a charging fault. Diagnose the real cause and fix it in Kuala Lumpur with Fix It Jerry.",
+    intro:
+      "A battery that drains in a few hours is one of the most common phone complaints — and the cause isn't always the battery itself. Here's how to tell the difference between a software issue you can fix yourself and hardware that needs replacing.",
+    sections: [
+      {
+        heading: "Step 1 — Rule Out Software First",
+        content: [
+          "Check which apps are draining power: Settings > Battery shows usage per app.",
+          "Force-close or uninstall any app using power in the background it shouldn't.",
+          "Turn off Background App Refresh and location for apps that don't need it.",
+          "Restart the phone — a stuck process can silently drain the battery for days.",
+          "Install pending OS updates; battery bugs are often fixed in point releases.",
+        ],
+      },
+      {
+        heading: "Step 2 — Check Your Battery Health",
+        content:
+          "On iPhone, go to Settings > Battery > Battery Health & Charging. Below 80% maximum capacity, the battery is worn and will drain noticeably faster. On Android, dial *#*#4636#*#* or use a battery-info app. If health is low, no amount of software tweaking will fix it — the cell itself has degraded.",
+      },
+      {
+        heading: "Signs the Battery Itself Is the Problem",
+        content: [
+          "Drains fast even when idle or on standby overnight.",
+          "Phone shuts off at 20–40% and needs a charge to restart.",
+          "Battery percentage jumps or drops suddenly (e.g. 50% to 15%).",
+          "Phone runs warm during light use or while charging.",
+          "Back panel feels raised or the screen is lifting — a swollen battery (stop using it immediately).",
+        ],
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Worn or swollen battery → Battery replacement (RM 180–600, 30–60 min)",
+          "Rogue app or software fault → OS reinstall & optimisation (RM 100–300, 1–2 hrs)",
+          "Charging IC fault causing overcharge cycles → Charging IC repair (RM 200–700, 1–2 days)",
+          "General wear / dust affecting cooling → General servicing (RM 80–200, same day)",
+        ],
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't keep using a swollen battery — it's a fire and puncture risk.",
+          "Don't rely on cheap 'battery saver' apps — most do nothing useful.",
+          "Don't fully drain to 0% repeatedly; it accelerates lithium-ion wear.",
+          "Don't fit an unbranded battery yourself — poor cells swell and can damage the board.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "Smartphone Battery Replacement", href: "/devices/smartphone/battery" },
+      { label: "Charging IC Repair", href: "/devices/smartphone/charging-ic" },
+      { label: "OS Installation & Reformat", href: "/devices/smartphone/os-installation" },
+      { label: "General Servicing", href: "/devices/smartphone/general-servicing" },
+    ],
+  },
+  {
+    slug: "phone-overheating",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "Phone Overheating? Here's What's Causing It",
+    metaTitle: "Phone Overheating — Causes & Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "Phone getting too hot to hold? Could be a failing battery, charging fault, or heavy app. Learn what's normal, what isn't, and how to fix overheating in Kuala Lumpur.",
+    intro:
+      "Some warmth during gaming, video calls, or fast charging is normal. A phone that gets hot during light use — or hot enough to show a temperature warning — is telling you something is wrong. Here's how to find the cause.",
+    sections: [
+      {
+        heading: "When Overheating Is Normal (and When It Isn't)",
+        content: [
+          "Normal: warm during gaming, GPS navigation, camera/video, or fast charging.",
+          "Normal: brief heat when restoring a backup or updating the OS.",
+          "Not normal: hot during calls, texting, or while idle in your pocket.",
+          "Not normal: heat concentrated near the charging port or rear camera.",
+          "Not normal: a temperature warning screen or sudden shutdown.",
+        ],
+      },
+      {
+        heading: "Step 1 — Quick Checks You Can Do",
+        content: [
+          "Remove the case and let the phone cool away from direct sunlight.",
+          "Check Settings > Battery for an app using heavy power in the background.",
+          "Update or uninstall the app that heats the phone up.",
+          "Try a different charger and cable — a faulty charger causes charging heat.",
+          "Restart the phone to clear a stuck background process.",
+        ],
+      },
+      {
+        heading: "Common Hardware Causes",
+        content:
+          "If it still overheats after those checks, the cause is usually physical. A degraded or swollen battery generates heat as it struggles to hold charge. A failing Power IC or Charging IC can dump excess current as heat, especially while plugged in. Dust and aged thermal material inside the phone also trap heat. These are board- and component-level issues that need proper diagnosis.",
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Worn / swollen battery → Battery replacement (RM 180–600, 30–60 min)",
+          "Power IC fault → Power IC repair (RM 200–600, 1–2 days)",
+          "Charging IC fault (heat while charging) → Charging IC repair (RM 200–700, 1–2 days)",
+          "Software / rogue app → OS reinstall & optimisation (RM 100–300, 1–2 hrs)",
+          "Dust & internal cleaning → General servicing (RM 80–200, same day)",
+        ],
+      },
+      {
+        heading: "Why It's Worth Fixing Quickly",
+        content:
+          "Sustained heat permanently degrades the battery and can damage the mainboard and screen over time. What starts as mild overheating can turn into a swollen battery or a dead device. If your phone runs hot regularly, get it diagnosed before the damage spreads — diagnostics at Fix It Jerry are free.",
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't put the phone in the fridge or freezer — condensation causes water damage.",
+          "Don't keep using or charging a phone that's swollen or shows a heat warning.",
+          "Don't charge under a pillow or on a bed — trapped heat makes it worse.",
+          "Don't ignore heat near the charging port; it often signals an IC fault.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "Smartphone Battery Replacement", href: "/devices/smartphone/battery" },
+      { label: "Power IC Repair", href: "/devices/smartphone/power-ic" },
+      { label: "Charging IC Repair", href: "/devices/smartphone/charging-ic" },
+      { label: "General Servicing", href: "/devices/smartphone/general-servicing" },
+    ],
+  },
+  {
+    slug: "phone-screen-flickering",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "Phone Screen Flickering or Showing Lines? Here's the Cause",
+    metaTitle: "Phone Screen Flickering or Lines — Causes & Fixes KL | Fix It Jerry",
+    metaDescription:
+      "Screen flickering, coloured lines, or ghost touches? This guide explains whether it's a software glitch or a display fault — and how to fix it in Kuala Lumpur.",
+    intro:
+      "Flickering, coloured lines, dark patches, or a screen that taps by itself usually points to the display or the chips that drive it. Here's how to tell what's wrong and what the repair involves.",
+    sections: [
+      {
+        heading: "Step 1 — Is It Software or Hardware?",
+        content: [
+          "Restart the phone — a one-off glitch often clears with a reboot.",
+          "Reduce brightness and turn off auto-brightness to test for backlight flicker.",
+          "Boot into safe mode (Android) or check if flickering happens on the lock screen too.",
+          "If it flickers even in the settings menu or on boot, it's almost certainly hardware.",
+        ],
+      },
+      {
+        heading: "Common Display Fault Types",
+        content: [
+          "Flickering / colour distortion → the LCD/OLED panel or its connector is failing.",
+          "Coloured vertical or horizontal lines → damaged display or display cable, often after a drop.",
+          "Screen dark but backlight on (faint image) → backlight or panel fault.",
+          "Ghost touches / unresponsive areas → Touch IC or digitiser fault.",
+          "Black screen but phone rings/vibrates → backlight IC or display failure.",
+        ],
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Cracked or failing display → LCD/touchscreen replacement (RM 300–1,200, 1–2 hrs)",
+          "Ghost touch / unresponsive touch → Touch IC repair (RM 200–700, 1–2 days)",
+          "Dark screen with faint image → Backlight IC repair (RM 200–600, 1–2 days)",
+          "Loose display connector after a drop → reseat & test (from RM 100, same day)",
+        ],
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't press hard on the screen to 'fix' the lines — it can worsen the damage.",
+          "Don't keep using a cracked screen; glass fragments can cut the display cable.",
+          "Don't factory reset first — if it's hardware, you'll lose data for nothing.",
+          "Don't fit a cheap aftermarket panel; colour, brightness, and touch will suffer.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "LCD Screen / Touchscreen Replacement", href: "/devices/smartphone/lcd-screen-touchscreen" },
+      { label: "Touch IC Repair", href: "/devices/smartphone/touch-ic" },
+      { label: "Backlight IC Repair", href: "/devices/smartphone/backlight-ic" },
+    ],
+  },
+  {
+    slug: "iphone-stuck-on-apple-logo",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "iPhone Stuck on the Apple Logo? Here's How to Fix It",
+    metaTitle: "iPhone Stuck on Apple Logo (Boot Loop) — Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "iPhone stuck on the Apple logo or looping on restart? Try these steps first, then learn the hardware causes and how to recover your data in Kuala Lumpur.",
+    intro:
+      "An iPhone frozen on the Apple logo — or restarting in a loop — usually means the software failed to load, but it can also point to storage or board damage. Work through these steps before assuming the worst, and don't erase anything until you've read the data section.",
+    sections: [
+      {
+        heading: "What a Boot Loop Actually Means",
+        content:
+          "The Apple logo appears when iOS begins loading. If it hangs there or keeps restarting, the system couldn't finish booting. Common triggers are a failed update, a corrupted iOS file, low-level storage errors, a swollen battery interrupting power, or liquid/impact damage to the board. The step-by-step below moves from the easiest software fixes to the hardware causes.",
+      },
+      {
+        heading: "Step 1 — Force Restart",
+        content: [
+          "iPhone 8 and newer: press Volume Up, then Volume Down, then hold the Side button until the logo re-appears.",
+          "iPhone 7: hold Volume Down + Side button together.",
+          "iPhone 6s and earlier: hold Home + Side button together.",
+          "Hold for up to 20 seconds — if it boots normally, it was a one-off crash.",
+        ],
+      },
+      {
+        heading: "Step 2 — Recovery or DFU Restore (Data-Safe First)",
+        content: [
+          "Connect to a computer with Finder (Mac) or the Apple Devices app (Windows).",
+          "Put the iPhone in Recovery mode and choose Update — NOT Erase — to reinstall iOS while keeping data.",
+          "If Update fails and you have no backup, stop here: a full restore erases everything. This is when to bring it in for data-safe recovery.",
+        ],
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Corrupted iOS / failed update → OS reinstall (RM 100–300, 1–2 hrs)",
+          "Storage / NAND fault → board-level repair with data recovery (RM 200–1,500, 1–3 days)",
+          "Water or impact damage to the board → Power IC / board repair (RM 200–800, 1–3 days)",
+          "Swollen battery cutting power mid-boot → Battery replacement (RM 180–600, 30–60 min)",
+        ],
+      },
+      {
+        heading: "Protecting Your Data",
+        content:
+          "If the photos and messages on the phone matter and you don't have a recent backup, do not choose Erase or a factory restore — it wipes everything. Component-level technicians can often recover data even from a phone that won't boot. At Fix It Jerry we always attempt a data-safe fix before anything destructive.",
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't tap Erase/Restore blindly — you'll lose data that could have been recovered.",
+          "Don't repeatedly force-restart for hours; if two attempts fail, it needs diagnosis.",
+          "Don't update over unstable Wi-Fi — an interrupted update can cause this in the first place.",
+          "Don't ignore it if the phone got wet or was dropped just before — that's a hardware clue.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "OS Installation & Reformat", href: "/devices/smartphone/os-installation" },
+      { label: "Data Backup & Recovery", href: "/devices/smartphone/data-recovery" },
+      { label: "Power IC Repair", href: "/devices/smartphone/power-ic" },
+      { label: "Water Damage Repair", href: "/devices/smartphone/water-damage" },
+    ],
+  },
+  {
+    slug: "phone-water-damage-what-to-do",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "Dropped Your Phone in Water? Do These 5 Things First",
+    metaTitle: "Phone Water Damage — What to Do First | Fix It Jerry KL",
+    metaDescription:
+      "Dropped your phone in water? The first hour matters most. Follow these 5 steps, avoid the rice myth, and learn how water damage is repaired in Kuala Lumpur.",
+    intro:
+      "Whether it went in the pool, the toilet, or got caught in the rain, the first hour after water exposure decides whether your phone survives. Corrosion starts almost immediately — here's exactly what to do, and what to avoid.",
+    sections: [
+      {
+        heading: "Do These 5 Things Immediately",
+        content: [
+          "1. Power it off now — do not check if it 'still works'. Running it while wet causes short circuits.",
+          "2. Do not plug it in to charge — this is the fastest way to fry the board.",
+          "3. Dry the outside, remove the case and SIM tray, and shake out water gently.",
+          "4. Keep it upright and cool — don't apply heat from a hairdryer or leave it in the sun.",
+          "5. Bring it in as soon as possible for professional cleaning before corrosion sets in.",
+        ],
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't put it in rice — it doesn't pull moisture from inside and wastes critical time.",
+          "Don't charge or turn it on to 'test' it — the single biggest cause of permanent damage.",
+          "Don't use a hairdryer or oven — heat warps components and pushes water deeper.",
+          "Don't shake it hard or blow into the ports — you spread water across the board.",
+        ],
+      },
+      {
+        heading: "Why Water Damage Gets Worse Over Time",
+        content:
+          "Even after a phone dries, minerals and impurities left behind corrode the circuit board and connectors. A phone that seems fine for a day can fail later as corrosion spreads. That's why professional ultrasonic cleaning within the first day or two makes the biggest difference — it removes the residue before it eats through the board.",
+      },
+      {
+        heading: "How Water Damage Is Repaired",
+        content:
+          "A proper water-damage repair isn't just 'drying it out'. The board is disassembled and ultrasonically cleaned to remove corrosion, then inspected under a microscope. Corroded chips — Power IC, Audio IC, Charging IC — are repaired or replaced at component level, and water-affected batteries or charging ports are swapped. Every function is tested before the phone goes back to you.",
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Corrosion / short circuit → Water damage repair (RM 200–800, 1–3 days)",
+          "Dead board chip → Power IC / Audio IC repair (RM 200–700, 1–2 days)",
+          "Water-affected battery or port → Battery / charging port replacement (RM 180–650)",
+          "Phone won't boot but data matters → Data recovery (RM 200–1,500, 1–3 days)",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "Water Damage Repair", href: "/devices/smartphone/water-damage" },
+      { label: "Power IC Repair", href: "/devices/smartphone/power-ic" },
+      { label: "Smartphone Battery Replacement", href: "/devices/smartphone/battery" },
+      { label: "Data Backup & Recovery", href: "/devices/smartphone/data-recovery" },
+    ],
+  },
+  {
+    slug: "phone-no-sound-speaker-not-working",
+    category: "symptom",
+    datePublished: "2026-07-05",
+    dateModified: "2026-07-05",
+    title: "Phone Has No Sound? Speaker & Mic Problems Explained",
+    metaTitle: "Phone No Sound / Speaker Not Working — Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "No sound on calls, muffled speaker, or mic not picking up? Learn how to tell software from hardware and fix speaker and mic faults in Kuala Lumpur.",
+    intro:
+      "Audio problems range from an easy settings fix to a failed speaker or audio chip. Before assuming the worst, run these quick checks to narrow down whether it's the loudspeaker, the earpiece, or the microphone.",
+    sections: [
+      {
+        heading: "Step 1 — Rule Out Simple Causes",
+        content: [
+          "Check the phone isn't on silent/Do Not Disturb and the volume is up.",
+          "Remove any case or screen protector blocking the speaker or mic holes.",
+          "Gently clean the speaker grille and mic ports — lint and dust muffle sound.",
+          "Disconnect Bluetooth — audio may be routing to a paired device.",
+          "Restart the phone to clear a stuck audio process.",
+        ],
+      },
+      {
+        heading: "Step 2 — Work Out Which Part Has Failed",
+        content: [
+          "No sound on speakerphone/media but calls are fine → loudspeaker fault.",
+          "Can't hear callers on the earpiece but speaker works → earpiece speaker fault.",
+          "Callers can't hear you → microphone fault (test with a voice memo).",
+          "No audio anywhere, including recordings and Siri → Audio IC fault on the board.",
+          "Crackling or cutting out → damaged speaker or a failing flex cable.",
+        ],
+      },
+      {
+        heading: "Possible Causes & Repairs",
+        content: [
+          "Faulty loudspeaker or earpiece → Speaker replacement (RM 150–500, 30 min–2 hrs)",
+          "Microphone not working → Mic replacement (RM 150–500, 30 min–2 hrs)",
+          "No audio at all / Audio IC failure → Audio IC repair (RM 200–700, 1–2 days)",
+          "Dust-clogged grille → General servicing & cleaning (RM 80–200, same day)",
+        ],
+      },
+      {
+        heading: "What NOT to Do",
+        content: [
+          "Don't poke metal pins into the speaker mesh — you'll damage the driver.",
+          "Don't blast compressed air directly into ports; it can push debris deeper.",
+          "Don't assume it's broken before testing with a voice memo and speakerphone.",
+          "Don't ignore audio loss after water exposure — it often signals Audio IC corrosion.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "Mic & Speaker Repair", href: "/devices/smartphone/mic-speaker" },
+      { label: "Audio IC Repair", href: "/devices/smartphone/audio-ic" },
+      { label: "General Servicing", href: "/devices/smartphone/general-servicing" },
+    ],
+  },
 ];
