@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookingForm from "@/components/BookingForm";
 import { macbookModels, macbookServices } from "@/data/macbook";
 
@@ -121,6 +122,11 @@ export default function MacbookModelPage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "MacBook", url: "/macbook" },
+        { name: model.name, url: `/macbook/${model.slug}` },
+      ]} />
       <Footer />
     </div>
   );

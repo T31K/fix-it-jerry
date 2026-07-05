@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import { samsungModels, samsungServices } from "@/data/samsung";
 
@@ -108,6 +109,10 @@ export default function SamsungHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Samsung", url: "/samsung" },
+      ]} />
       <Footer />
     </div>
   );

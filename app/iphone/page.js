@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import { iphoneModels, iphoneServices } from "@/data/iphone";
 
@@ -100,6 +101,10 @@ export default function IphoneHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "iPhone", url: "/iphone" },
+      ]} />
       <Footer />
     </div>
   );

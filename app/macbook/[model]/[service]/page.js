@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
 import { macbookModels, macbookServices } from "@/data/macbook";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export async function generateStaticParams() {
   const params = [];
@@ -174,10 +175,15 @@ export default function MacbookServicePage({ params }) {
           </div>
         </section>
       </div>
+      <ServiceJsonLd
+        model={model}
+        service={service}
+        url={`https://fixitjerry.com/macbook/${model.slug}/${service.slug}`}
+      />
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "MacBook Repair KL", url: "/macbook" },
+        { name: "MacBook", url: "/macbook" },
         { name: model.name, url: `/macbook/${model.slug}` },
         { name: service.name, url: `/macbook/${model.slug}/${service.slug}` },
       ]} />

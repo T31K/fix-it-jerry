@@ -132,7 +132,7 @@ export default function AppleWatchModelPage({ params }) {
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "Apple Watch Repair KL", url: "/apple-watch" },
+        { name: "Apple Watch", url: "/apple-watch" },
         { name: model.name, url: `/apple-watch/${model.slug}` },
       ]} />
     </div>

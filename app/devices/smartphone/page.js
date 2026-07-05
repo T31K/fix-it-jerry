@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import InnerSideBar from "@/components/InnerSideBar";
 import { repairItems } from "@/data";
 import { Card } from "@/components/ui/card";
@@ -130,6 +131,11 @@ export default function Page() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Devices", url: "/devices" },
+        { name: "Smartphone", url: "/devices/smartphone" },
+      ]} />
     </div>
   );
 }

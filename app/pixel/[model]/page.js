@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookingForm from "@/components/BookingForm";
 import { pixelModels, pixelServices } from "@/data/pixel";
 
@@ -121,6 +122,11 @@ export default function PixelModelPage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Google Pixel", url: "/pixel" },
+        { name: model.name, url: `/pixel/${model.slug}` },
+      ]} />
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookingForm from "@/components/BookingForm";
 import { ipadModels, ipadServices } from "@/data/ipad";
 
@@ -121,6 +122,11 @@ export default function IpadModelPage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "iPad", url: "/ipad" },
+        { name: model.name, url: `/ipad/${model.slug}` },
+      ]} />
       <Footer />
     </div>
   );

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import { ipadModels, ipadServices } from "@/data/ipad";
 
@@ -100,6 +101,10 @@ export default function IpadHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "iPad", url: "/ipad" },
+      ]} />
       <Footer />
     </div>
   );

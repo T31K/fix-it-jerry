@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
 import { appleWatchModels, appleWatchServices } from "@/data/applewatchModels";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export async function generateStaticParams() {
   const params = [];
@@ -168,10 +169,15 @@ export default function AppleWatchServicePage({ params }) {
           </div>
         </section>
       </div>
+      <ServiceJsonLd
+        model={model}
+        service={service}
+        url={`https://fixitjerry.com/apple-watch/${model.slug}/${service.slug}`}
+      />
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "Apple Watch Repair KL", url: "/apple-watch" },
+        { name: "Apple Watch", url: "/apple-watch" },
         { name: model.name, url: `/apple-watch/${model.slug}` },
         { name: service.name, url: `/apple-watch/${model.slug}/${service.slug}` },
       ]} />

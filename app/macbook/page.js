@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import { macbookModels, macbookServices } from "@/data/macbook";
 
@@ -100,6 +101,10 @@ export default function MacbookHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "MacBook", url: "/macbook" },
+      ]} />
       <Footer />
     </div>
   );

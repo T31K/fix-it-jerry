@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 import { pixelModels, pixelServices } from "@/data/pixel";
 
@@ -100,6 +101,10 @@ export default function PixelHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Google Pixel", url: "/pixel" },
+      ]} />
       <Footer />
     </div>
   );

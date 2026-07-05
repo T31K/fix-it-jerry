@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
 import { samsungModels, samsungServices } from "@/data/samsung";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export async function generateStaticParams() {
   const params = [];
@@ -174,10 +175,15 @@ export default function SamsungServicePage({ params }) {
           </div>
         </section>
       </div>
+      <ServiceJsonLd
+        model={model}
+        service={service}
+        url={`https://fixitjerry.com/samsung/${model.slug}/${service.slug}`}
+      />
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "Samsung Repair KL", url: "/samsung" },
+        { name: "Samsung", url: "/samsung" },
         { name: model.name, url: `/samsung/${model.slug}` },
         { name: service.name, url: `/samsung/${model.slug}/${service.slug}` },
       ]} />

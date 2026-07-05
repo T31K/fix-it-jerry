@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
 import { pixelModels, pixelServices } from "@/data/pixel";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export async function generateStaticParams() {
   const params = [];
@@ -174,10 +175,15 @@ export default function PixelServicePage({ params }) {
           </div>
         </section>
       </div>
+      <ServiceJsonLd
+        model={model}
+        service={service}
+        url={`https://fixitjerry.com/pixel/${model.slug}/${service.slug}`}
+      />
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "Google Pixel Repair KL", url: "/pixel" },
+        { name: "Google Pixel", url: "/pixel" },
         { name: model.name, url: `/pixel/${model.slug}` },
         { name: service.name, url: `/pixel/${model.slug}/${service.slug}` },
       ]} />

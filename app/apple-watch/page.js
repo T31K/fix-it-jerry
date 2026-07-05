@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { appleWatchModels, appleWatchServices } from "@/data/applewatchModels";
 
 export const metadata = {
@@ -96,6 +97,10 @@ export default function AppleWatchHubPage() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Apple Watch", url: "/apple-watch" },
+      ]} />
       <Footer />
     </div>
   );

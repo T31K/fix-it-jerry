@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookingForm from "@/components/BookingForm";
 import { samsungModels, samsungServices } from "@/data/samsung";
 
@@ -120,6 +121,11 @@ export default function SamsungModelPage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Samsung", url: "/samsung" },
+        { name: model.name, url: `/samsung/${model.slug}` },
+      ]} />
       <Footer />
     </div>
   );

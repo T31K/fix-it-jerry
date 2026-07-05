@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Services from "@/components/services";
 
 export default function Page() {
@@ -48,6 +49,10 @@ export default function Page() {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Devices", url: "/devices" },
+      ]} />
     </div>
   );
 }

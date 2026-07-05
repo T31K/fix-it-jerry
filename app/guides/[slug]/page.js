@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookingForm from "@/components/BookingForm";
 import JsonLd from "@/components/JsonLd";
 import { guides } from "@/data/guides";
@@ -227,6 +228,11 @@ export default function GuidePage({ params }) {
           </div>
         </section>
       </div>
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Guides", url: "/guides" },
+        { name: guide.title, url: `/guides/${guide.slug}` },
+      ]} />
       <Footer />
     </div>
   );

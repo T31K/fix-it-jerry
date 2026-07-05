@@ -27,20 +27,20 @@ export const metadata = {
       'Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓',
     url: 'https://fixitjerry.com',
     images: ['https://fixitjerry.com/og.png'],
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        noimageindex: false,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
     locale: 'en_US',
     type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

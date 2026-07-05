@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
 import { iphoneModels, iphoneServices } from "@/data/iphone";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ServiceJsonLd from "@/components/ServiceJsonLd";
 
 export async function generateStaticParams() {
   const params = [];
@@ -174,10 +175,15 @@ export default function IphoneServicePage({ params }) {
           </div>
         </section>
       </div>
+      <ServiceJsonLd
+        model={model}
+        service={service}
+        url={`https://fixitjerry.com/iphone/${model.slug}/${service.slug}`}
+      />
       <Footer />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
-        { name: "iPhone Repair KL", url: "/iphone" },
+        { name: "iPhone", url: "/iphone" },
         { name: model.name, url: `/iphone/${model.slug}` },
         { name: service.name, url: `/iphone/${model.slug}/${service.slug}` },
       ]} />
