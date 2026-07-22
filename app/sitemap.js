@@ -5,6 +5,7 @@ import { appleWatchModels, appleWatchServices } from "@/data/applewatchModels";
 import { samsungModels, samsungServices } from "@/data/samsung";
 import { pixelModels, pixelServices } from "@/data/pixel";
 import { guides } from "@/data/guides";
+import { locations } from "@/data/locations";
 import { repairItems } from "@/data";
 
 const BASE = "https://fixitjerry.com";
@@ -37,7 +38,7 @@ const STATIC_PAGES = [
   { path: "blog", changeFrequency: "monthly", priority: 0.5 },
   { path: "book-a-repair", changeFrequency: "monthly", priority: 0.7 },
   { path: "contact", changeFrequency: "monthly", priority: 0.6 },
-  { path: "links", changeFrequency: "monthly", priority: 0.4 },
+  { path: "phone-repair", changeFrequency: "monthly", priority: 0.8 },
   { path: "privacy-policy", changeFrequency: "yearly", priority: 0.2 },
   { path: "terms-and-conditions", changeFrequency: "yearly", priority: 0.2 },
 ];
@@ -78,6 +79,15 @@ export default function sitemap() {
         });
       }
     }
+  }
+
+  for (const loc of locations) {
+    entries.push({
+      url: `${BASE}/phone-repair/${loc.slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
   }
 
   for (const guide of guides) {
