@@ -7,16 +7,17 @@ import { locations, branches } from "@/data/locations";
 export const metadata = {
   title: "Phone & Laptop Repair Across Klang Valley | Fix It Jerry",
   description:
-    "On-site, courier pickup or walk-in device repair — covering 32 areas across KL, PJ and Selangor. Same-day screen, battery and water damage repairs. From RM 80.",
+    "On-site, courier pickup or walk-in device repair — covering 44 areas across KL, PJ and Selangor — including every condo in Desa ParkCity. Same-day screen, battery and water damage repairs. From RM 80.",
   openGraph: {
     title: "Phone & Laptop Repair Across Klang Valley | Fix It Jerry",
     description:
-      "On-site, courier pickup or walk-in device repair — covering 32 areas across KL, PJ and Selangor. Same-day screen, battery and water damage repairs.",
+      "On-site, courier pickup or walk-in device repair — covering 44 areas across KL, PJ and Selangor — including every condo in Desa ParkCity. Same-day screen, battery and water damage repairs.",
   },
   alternates: { canonical: "/phone-repair" },
 };
 
 const grouped = {
+  "Desa ParkCity": locations.filter((l) => l.region === "Desa ParkCity"),
   "Kuala Lumpur": locations.filter((l) => l.region === "Kuala Lumpur"),
   "Petaling Jaya": locations.filter((l) => l.region === "Petaling Jaya"),
   Selangor: locations.filter((l) => l.region === "Selangor"),
@@ -25,7 +26,7 @@ const grouped = {
 const faqs = [
   {
     q: "Which areas do you cover for phone repair?",
-    a: "We cover 32 areas across Kuala Lumpur, Petaling Jaya and Selangor from four branches — Desa Parkcity, Bukit Jalil, Sri Manja PJ, and SS15 Subang Jaya. If you're anywhere in the Klang Valley, one of them is usually under 20 minutes away.",
+    a: "We cover 44 areas across Kuala Lumpur, Petaling Jaya and Selangor — including condo-level coverage in Desa ParkCity from four branches — Desa Parkcity, Bukit Jalil, Sri Manja PJ, and SS15 Subang Jaya. If you're anywhere in the Klang Valley, one of them is usually under 20 minutes away.",
   },
   {
     q: "Do I have to come to a branch?",

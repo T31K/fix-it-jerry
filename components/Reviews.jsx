@@ -1,5 +1,5 @@
 
-import { Star } from 'lucide-react';
+import { Star, BadgeCheck } from 'lucide-react';
 import Marquee from 'react-fast-marquee';
 import { reviews } from '@/data';
 
@@ -32,7 +32,10 @@ export default function Reviews() {
         {/* Header */}
         <div className="flex items-start justify-between mb-2">
           <div className="flex items-center gap-3">
-            <div className={`w-10 h-10 rounded-full ${color} flex items-center justify-center shrink-0`}>
+            <div
+              className={`${color} flex items-center justify-center shrink-0`}
+              style={{ width: 40, height: 40, minWidth: 40, minHeight: 40, borderRadius: '50%' }}
+            >
               <span className="text-white font-medium text-lg">{initial}</span>
             </div>
             <div>
@@ -56,10 +59,23 @@ export default function Reviews() {
         </div>
 
         {/* Content */}
-        <div className="text-sm text-gray-700 flex-1 overflow-hidden">
-          <p className="line-clamp-4">{review.review}</p>
+        <div className="text-gray-700 flex-1 overflow-hidden">
+          <p className="line-clamp-5 !text-gray-700 !m-0 !text-[13px] !leading-[1.4]">{review.review}</p>
         </div>
-        <div className="text-xs text-gray-400 mt-2">Posted on Google</div>
+        <div className="mt-2 flex items-center gap-2">
+          <span className="inline-flex items-center gap-1 bg-gray-100 border border-gray-200 rounded-full px-2 py-0.5 text-xs text-gray-600">
+            <BadgeCheck className="w-3.5 h-3.5 text-[#4285F4]" />
+            Verified on Google
+          </span>
+          <a
+            href={review.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-[#4285F4] hover:underline"
+          >
+            View
+          </a>
+        </div>
       </div>
     );
   };

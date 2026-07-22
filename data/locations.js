@@ -384,6 +384,140 @@ export const locations = [
     blurb:
       "Kajang stretches from Metro Point and the satay strip down to Country Heights and Bandar Baru Bangi. Bukit Jalil is the closest of our four branches; courier pickup is the only sensible route — about 25 minutes off-peak.",
   },
+
+  // ── Desa ParkCity condos — our home turf, walking distance to the branch ──
+  {
+    slug: "westside-1",
+    name: "The Westside I",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 3,
+    landmarks: ["The Waterfront", "Central Park", "West Park"],
+    blurb:
+      "The Westside I sits on the quieter western edge of Desa ParkCity, right beside West Park. Our branch is inside the township, so residents usually just walk or drive over in a few minutes — screen and battery jobs are typically done while you grab a coffee at The Waterfront.",
+  },
+  {
+    slug: "westside-2",
+    name: "The Westside II",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 3,
+    landmarks: ["West Park", "The Waterfront", "The International School @ ParkCity"],
+    blurb:
+      "The Westside II residents are some of our most regular walk-ins — the branch is barely three minutes away inside the township. We also do lobby pickups for the towers, so you don't even need to leave the building for a battery swap.",
+  },
+  {
+    slug: "westside-3",
+    name: "Westside III",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 3,
+    landmarks: ["West Park", "The Waterfront", "ParkCity Medical Centre"],
+    blurb:
+      "Westside III is the newest of the Westside towers, and being in the same township means same-hour turnaround is realistic — drop your phone on the way to lunch at The Waterfront and collect it after.",
+  },
+  {
+    slug: "the-breezeway",
+    name: "The Breezeway",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Central Park", "The Waterfront", "Plaza Arkadia"],
+    blurb:
+      "The Breezeway's mix of condos and park homes sits right by Central Park, a short hop from our branch. Plenty of Breezeway families use us for the kids' cracked iPads as much as their own phones — lobby pickup available.",
+  },
+  {
+    slug: "northshore-gardens",
+    name: "The Northshore Gardens",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Plaza Arkadia", "Central Park", "The Waterfront"],
+    blurb:
+      "Northshore Gardens sits between Plaza Arkadia and the lake, about four minutes from our branch. Many residents drop devices off on their morning Central Park loop and collect them on the way back.",
+  },
+  {
+    slug: "nadia-parkfront",
+    name: "Nadia Parkfront",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 3,
+    landmarks: ["Central Park", "The Waterfront", "ParkCity Medical Centre"],
+    blurb:
+      "Nadia Parkfront faces Central Park and is one of the closest towers to our branch. Walk-ins are the norm here — most screen replacements are ready within the hour.",
+  },
+  {
+    slug: "south-brooks",
+    name: "South Brooks",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["The Waterfront", "Central Park", "The International School @ ParkCity"],
+    blurb:
+      "South Brooks residents are a quick four-minute drive from our branch inside the township. We regularly handle MacBook and iPad jobs for work-from-home folks here — courier pickup from the lobby if you can't step out.",
+  },
+  {
+    slug: "one-central-park",
+    name: "One Central Park",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 3,
+    landmarks: ["Central Park", "The Waterfront", "Plaza Arkadia"],
+    blurb:
+      "One Central Park overlooks the lake and is a few minutes' walk from our branch. It's common for residents to drop a device during an evening park walk and pick it up the same night before we close.",
+  },
+  {
+    slug: "sofiya-residensi",
+    name: "Sofiya Residensi",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Plaza Arkadia", "ParkCity Medical Centre", "Central Park"],
+    blurb:
+      "Sofiya Residensi is on the Arkadia side of the township, four minutes from our branch. Same-day turnaround is standard, and we offer lobby pickup for bigger items like laptops and desktops.",
+  },
+  {
+    slug: "park-place",
+    name: "Park Place",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Plaza Arkadia", "Central Park", "The Waterfront"],
+    blurb:
+      "Park Place sits near Plaza Arkadia, an easy four-minute drive to our branch. Residents often combine a drop-off with errands at Arkadia — most repairs are done before the errands are.",
+  },
+  {
+    slug: "park-regent",
+    name: "Park Regent",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Central Park", "The Waterfront", "Plaza Arkadia"],
+    blurb:
+      "Park Regent's lakefront towers are minutes from our branch inside Desa ParkCity. We handle everything from cracked iPhone screens to MacBook batteries for residents here, with lobby pickup if you'd rather not drive.",
+  },
+  {
+    slug: "noora",
+    name: "Noora",
+    region: "Desa ParkCity",
+    postcode: "52200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 4,
+    landmarks: ["Plaza Arkadia", "Central Park", "ParkCity Medical Centre"],
+    blurb:
+      "Noora is one of the newest addresses in Desa ParkCity, and like the rest of the township it's only minutes from our branch. Drop in on the way to Plaza Arkadia or book a lobby pickup — same-day service either way.",
+  },
 ];
 
 // Service catalogue used on every location page (shared with main service taxonomy).

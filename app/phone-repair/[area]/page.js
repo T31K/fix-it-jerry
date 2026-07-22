@@ -134,10 +134,10 @@ export default function LocationPage({ params }) {
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
                 <div className="subtitle">Fix It Jerry — {loc.region}</div>
-                <h1 className="!text-[28px] md:!text-[48px]">
+                <h1 className="!text-[28px] md:!text-[48px] text-balance">
                   Phone & Laptop Repair in {loc.name}
                 </h1>
-                <p className="text-gray-200 max-w-2xl mx-auto !text-[16px] md:!text-[20px] text-center mt-3">
+                <p className="text-gray-200 max-w-2xl mx-auto !text-[16px] md:!text-[20px] text-center mt-3 text-balance">
                   On-site, courier pickup, or walk-in at our {branch.name} branch — about {loc.drivingMinutes} minutes from {loc.name}.
                 </p>
               </div>
@@ -258,7 +258,9 @@ export default function LocationPage({ params }) {
                   <h2>Book a Repair from {loc.name}</h2>
                   <p className="text-muted">Tell us your device and the issue — we'll quote within an hour.</p>
                 </div>
-                <BookingForm />
+                <div className="flex justify-center">
+                  <BookingForm />
+                </div>
               </div>
             </div>
           </div>
