@@ -1,10 +1,111 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import JsonLd from "@/components/JsonLd"
 import { IconPhone, IconMail, IconMapPin, IconBrandFacebook, IconBrandTwitter, IconArrowDown, IconBrandInstagram } from "@tabler/icons-react"
+
+export const metadata = {
+  alternates: { canonical: '/contact' },
+}
+
+const openingHours = [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "10:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "15:00"
+  }
+]
+
+const parentOrg = {
+  "@type": "Organization",
+  "name": "Fix It Jerry",
+  "url": "https://fixitjerry.com"
+}
 
 function page() {
   return (
     <div id="wrapper">
+      <JsonLd data={[
+        {
+          "@context": "https://schema.org",
+          "@type": "RepairBusiness",
+          "name": "Fix It Jerry — Desa Parkcity",
+          "url": "https://fixitjerry.com/contact",
+          "telephone": "+60183646909",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7, Jalan Residen Utama",
+            "addressLocality": "Desa Parkcity",
+            "addressRegion": "Kuala Lumpur",
+            "postalCode": "52200",
+            "addressCountry": "MY"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 3.1853,
+            "longitude": 101.6268
+          },
+          "openingHoursSpecification": openingHours,
+          "parentOrganization": parentOrg
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "RepairBusiness",
+          "name": "Fix It Jerry — Subang Jaya",
+          "url": "https://fixitjerry.com/contact",
+          "telephone": "+60183267909",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "22-1, Jalan SS 15/8, SS 15",
+            "addressLocality": "Subang Jaya",
+            "addressRegion": "Selangor",
+            "postalCode": "47500",
+            "addressCountry": "MY"
+          },
+          "openingHoursSpecification": openingHours,
+          "parentOrganization": parentOrg
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "RepairBusiness",
+          "name": "Fix It Jerry — Bukit Jalil",
+          "url": "https://fixitjerry.com/contact",
+          "telephone": "+60183101909",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1-10, Jalan Bukit Jalil Indah 4B, Taman Ltat",
+            "addressLocality": "Bukit Jalil",
+            "addressRegion": "Kuala Lumpur",
+            "postalCode": "57000",
+            "addressCountry": "MY"
+          },
+          "openingHoursSpecification": openingHours,
+          "parentOrganization": parentOrg
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "RepairBusiness",
+          "name": "Fix It Jerry — Puchong",
+          "url": "https://fixitjerry.com/contact",
+          "telephone": "+60187673909",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "23A, Jalan Sri Manja 10, Taman Sri Manja",
+            "addressLocality": "Petaling Jaya",
+            "addressRegion": "Selangor",
+            "postalCode": "46000",
+            "addressCountry": "MY"
+          },
+          "openingHoursSpecification": openingHours,
+          "parentOrganization": parentOrg
+        }
+      ]} />
       <div className="float-text show-on-scroll">
         <span>
           <a href="#">Scroll to top</a>
