@@ -853,6 +853,657 @@ export const guides = [
     ],
   },
 
+  {
+    slug: "iphone-screen-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "iPhone Screen Replacement Cost in Malaysia (2026)",
+    metaTitle: "iPhone Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "iPhone screen replacement in Malaysia costs RM 250–950 depending on model. Full price list for iPhone 11 to 16, OLED vs aftermarket, and what to avoid.",
+    intro:
+      "A cracked iPhone screen is the most common repair we see, and also the one with the widest price spread. The same crack can cost RM 250 or RM 900 depending on your model and the screen quality you pick. Here is the full price list, plus the OLED question everyone asks about.",
+    sections: [
+      {
+        heading: "iPhone Screen Replacement Cost by Model",
+        content: [
+          "iPhone 11 / 11 Pro / 11 Pro Max: RM 250 – RM 420",
+          "iPhone 12 / 12 Pro / 12 Pro Max: RM 280 – RM 480",
+          "iPhone 13 / 13 Mini / 13 Pro / 13 Pro Max: RM 300 – RM 550",
+          "iPhone 14 / 14 Plus / 14 Pro / 14 Pro Max: RM 350 – RM 650",
+          "iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max: RM 450 – RM 800",
+          "iPhone 16 / 16 Pro / 16 Pro Max: RM 550 – RM 950",
+        ],
+      },
+      {
+        heading: "Why the range is so wide",
+        content:
+          "Screen quality. The low end of each range is a good aftermarket LCD or hard OLED. The high end is a soft OLED or original-grade panel that matches Apple's colours, brightness, and touch response. On a Pro model the difference is visible the moment you unlock the phone, so we usually recommend spending up on Pros and saving on base models. We will show you both side by side before you decide.",
+      },
+      {
+        heading: "Aftermarket LCD vs OLED, in plain terms",
+        content: [
+          "Aftermarket LCD: cheapest option. Colours look slightly washed out and blacks look grey. Fine as a stopgap or for resale.",
+          "Hard OLED: real OLED panel, thicker glass. Good colours, slightly less durable against drops.",
+          "Soft OLED: closest to original. Flexible panel like Apple uses, best colour and brightness.",
+          "Original-grade: pulled or refurbished original panels. Costs the most, looks and feels stock.",
+        ],
+      },
+      {
+        heading: "What about True Tone and the warning message?",
+        content:
+          "iPhones show an 'Unable to verify this iPhone has a genuine Apple display' message after any third-party screen change. It is cosmetic and disappears from the lock screen after a few days. We transfer the original sensor data where possible so True Tone keeps working. Face ID is not affected by a screen replacement done properly.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "30 to 45 minutes for most models. Cracked glass with a working display is a straight swap. If the crack has killed the touch layer or there are lines across the screen, the panel underneath is damaged, and the price is the same. It is one assembly.",
+      },
+      {
+        heading: "Apple Store vs us",
+        content:
+          "Apple charges RM 900 to RM 1,800+ for out-of-warranty screen service depending on model, and you may wait days for an appointment. We are 40 to 60% cheaper and you get the phone back the same day. If your phone is still under AppleCare+, use it. That is what you paid for.",
+      },
+    ],
+    relatedServices: [
+      { label: "iPhone 15 Pro Screen Replacement", href: "/iphone/15-pro/screen-replacement" },
+      { label: "iPhone 14 Screen Replacement", href: "/iphone/14/screen-replacement" },
+      { label: "iPhone 13 Screen Replacement", href: "/iphone/13/screen-replacement" },
+      { label: "All iPhone Repairs", href: "/iphone" },
+    ],
+  },
+  {
+    slug: "samsung-battery-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Samsung Battery Replacement Cost in Malaysia (2026)",
+    metaTitle: "Samsung Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Samsung battery replacement in Malaysia costs RM 150–400 depending on model. Price list for Galaxy S, A, Note and Z series, plus signs your battery is done.",
+    intro:
+      "Samsung batteries usually give you three to four good years before the complaints start: dying by mid-afternoon, sudden shutdowns at 20%, a back cover that no longer sits flat. Replacement is cheap compared to a new phone. Here is what it costs by series.",
+    sections: [
+      {
+        heading: "Samsung Battery Replacement Cost by Series",
+        content: [
+          "Galaxy A14 / A15 / A34 / A35: RM 150 – RM 220",
+          "Galaxy A54 / A55: RM 170 – RM 250",
+          "Galaxy S21 / S22 / S23 series: RM 180 – RM 280",
+          "Galaxy S24 / S25 series: RM 220 – RM 320",
+          "Galaxy Note 20 / Note 20 Ultra: RM 200 – RM 300",
+          "Galaxy Z Flip series: RM 250 – RM 380 (dual battery)",
+          "Galaxy Z Fold series: RM 280 – RM 400 (dual battery)",
+        ],
+      },
+      {
+        heading: "Signs your Samsung battery is done",
+        content: [
+          "Phone dies before evening on light use.",
+          "Battery percentage jumps or drops suddenly.",
+          "Phone shuts down at 15 to 30% remaining.",
+          "Back cover is lifting or the phone looks slightly swollen. Stop using it and get it looked at.",
+          "Phone only feels reliable when it is on the charger.",
+          "Charging takes much longer than it used to.",
+        ],
+      },
+      {
+        heading: "Why foldables cost more",
+        content:
+          "Z Flip and Z Fold phones carry two batteries, one on each side of the hinge, and both should be replaced together so they age evenly. Opening a foldable also takes more care because of the flexible display cables routed through the hinge. More parts, more time, higher price. Still far cheaper than replacing a RM 6,000 phone.",
+      },
+      {
+        heading: "A swollen battery is not a wait-and-see problem",
+        content:
+          "Lithium batteries swell when the cells break down and produce gas. A swollen battery pushes the screen or back cover out and can rupture if punctured. If your phone is bulging, do not charge it overnight and do not press on it. Bring it in. Removing a swollen battery safely is routine for us and the replacement cost is the same.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "About 45 minutes for most Galaxy models. Samsung glues the back glass down, so we heat it, lift it, swap the battery, and reseal it with fresh adhesive. Water resistance depends on that adhesive, so a proper reseal matters. Foldables take one to two hours.",
+      },
+    ],
+    relatedServices: [
+      { label: "Galaxy S23 Battery Replacement", href: "/samsung/s23/battery-replacement" },
+      { label: "Galaxy S24 Battery Replacement", href: "/samsung/s24/battery-replacement" },
+      { label: "Galaxy A54 Battery Replacement", href: "/samsung/a54/battery-replacement" },
+      { label: "All Samsung Repairs", href: "/samsung" },
+    ],
+  },
+  {
+    slug: "macbook-battery-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "MacBook Battery Replacement Cost in Malaysia (2026)",
+    metaTitle: "MacBook Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "MacBook battery replacement in Malaysia costs RM 350–900 depending on model. Price list for MacBook Air and Pro, M1 to M4, plus how to check battery health.",
+    intro:
+      "MacBook batteries are rated for about 1,000 charge cycles. Past that, you get shrinking battery life, random shutdowns, and eventually the dreaded Service Recommended warning. Apple wants RM 1,000+ to sort it. Here is what it actually costs.",
+    sections: [
+      {
+        heading: "MacBook Battery Replacement Cost by Model",
+        content: [
+          "MacBook Air M1 (13-inch): RM 350 – RM 500",
+          "MacBook Air M2 / M3 (13-inch and 15-inch): RM 400 – RM 600",
+          "MacBook Pro 13-inch (M1 / M2): RM 400 – RM 600",
+          "MacBook Pro 14-inch (M1 to M4 series): RM 500 – RM 750",
+          "MacBook Pro 16-inch (M1 to M4 series): RM 600 – RM 900",
+        ],
+      },
+      {
+        heading: "Check your battery health first",
+        content:
+          "Hold Option and click the battery icon in the menu bar, or go to System Settings, then Battery, then Battery Health. Normal means you are fine. Service Recommended means the battery has degraded past 80% of its original capacity. You can also check cycle count under System Information, Power. Over 1,000 cycles and battery life complaints usually go together.",
+      },
+      {
+        heading: "Signs it is time",
+        content: [
+          "Battery drains from full to empty in two or three hours of light work.",
+          "MacBook shuts down before the percentage reaches zero.",
+          "Trackpad feels stiff or clicks poorly. A swelling battery sits right under it.",
+          "The bottom case bulges or the MacBook rocks on a flat table.",
+          "macOS shows Service Recommended.",
+        ],
+      },
+      {
+        heading: "The swollen battery warning, again",
+        content:
+          "This one matters more on MacBooks than phones. The battery sits directly beneath the trackpad and keyboard deck. When it swells it pushes them upward, and left long enough it can warp the top case or crack the trackpad. If your trackpad suddenly feels wrong or the case will not sit flat, stop charging it and bring it in.",
+      },
+      {
+        heading: "Why Apple charges double",
+        content:
+          "On many models Apple replaces the whole top case assembly (battery, keyboard, and trackpad as one unit), which is why their quote lands north of RM 1,000. We replace just the battery cells with quality matched packs, calibrate, and hand it back, usually same-day or next-day. Same result, roughly half the price.",
+      },
+    ],
+    relatedServices: [
+      { label: "MacBook Air M1 Battery Replacement", href: "/macbook/air-m1/battery-replacement" },
+      { label: "MacBook Air M2 Battery Replacement", href: "/macbook/air-m2/battery-replacement" },
+      { label: "MacBook Pro 14 Battery Replacement", href: "/macbook/pro-14-m1-pro/battery-replacement" },
+      { label: "All MacBook Repairs", href: "/macbook" },
+    ],
+  },
+  {
+    slug: "ipad-battery-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "iPad Battery Replacement Cost in Malaysia (2026)",
+    metaTitle: "iPad Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "iPad battery replacement in Malaysia costs RM 250–650 depending on model. Full price list for iPad, Mini, Air and Pro, plus why iPads are harder than iPhones.",
+    intro:
+      "iPads last so long that the battery is usually the first thing to give up, often years before the rest of the tablet feels slow. Apple would rather sell you a whole-unit swap. A battery replacement is much cheaper. Here are the numbers.",
+    sections: [
+      {
+        heading: "iPad Battery Replacement Cost by Model",
+        content: [
+          "iPad 9th / 10th Gen: RM 250 – RM 380",
+          "iPad Mini 6: RM 280 – RM 420",
+          "iPad Air M1 / M2: RM 300 – RM 480",
+          "iPad Pro 11-inch (M1 / M2 / M4): RM 350 – RM 550",
+          "iPad Pro 12.9-inch and 13-inch: RM 400 – RM 650",
+        ],
+      },
+      {
+        heading: "Signs your iPad battery is worn out",
+        content: [
+          "Drops from 100% to 70% within an hour of video or browsing.",
+          "Dies overnight while sitting idle.",
+          "Shuts down in the cold or under load even with charge remaining.",
+          "Takes four hours or more to fully charge.",
+          "Screen edge is lifting. That can be a swelling battery pushing from inside.",
+        ],
+      },
+      {
+        heading: "Why iPad battery replacement costs more than iPhone",
+        content:
+          "The screen has to come off first, and it is glued down over the battery, which is itself glued to the frame with strong adhesive and no pull tabs on most models. It is slow, careful work with heat and patience. Rushing it cracks screens and bends frames, which is why some shops refuse iPad batteries entirely. We do them every week.",
+      },
+      {
+        heading: "Is it worth it on an older iPad?",
+        content:
+          "Usually yes. An iPad 9 with a fresh battery is still a perfectly good Netflix and note-taking machine, and RM 300 beats RM 1,500+ for a new one. The honest exception is an iPad with a cracked screen and a dead battery and years of heavy use. At that point we will tell you straight whether the maths still works.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "Same day in most cases, sometimes next-day if the adhesive fight is ugly or parts need ordering for an unusual model. We test charge cycles and seal the screen back with fresh adhesive before returning it.",
+      },
+    ],
+    relatedServices: [
+      { label: "iPad 9th Gen Battery Replacement", href: "/ipad/9th-gen/battery-replacement" },
+      { label: "iPad Air M1 Battery Replacement", href: "/ipad/air-m1/battery-replacement" },
+      { label: "iPad Pro 11 Battery Replacement", href: "/ipad/pro-11-m1/battery-replacement" },
+      { label: "All iPad Repairs", href: "/ipad" },
+    ],
+  },
+  {
+    slug: "nintendo-switch-joycon-drift-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Joy-Con Drift Repair Cost in Malaysia (2026)",
+    metaTitle: "Joy-Con Drift Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Joy-Con drift repair in Malaysia costs RM 60–250. Standard stick replacement vs Hall effect upgrade, Switch Lite stick repair, and which fix actually lasts.",
+    intro:
+      "Your character walks by itself. The camera creeps left in the menu. That is drift, and it is the most common Nintendo Switch problem there is. The fix is cheap. The interesting question is whether you want the standard fix or the permanent one.",
+    sections: [
+      {
+        heading: "Joy-Con Drift Repair Cost",
+        content: [
+          "Single Joy-Con stick replacement: RM 60 – RM 120",
+          "Both Joy-Cons: RM 100 – RM 180",
+          "Hall effect stick upgrade (single): RM 90 – RM 150",
+          "Hall effect upgrade (pair): RM 150 – RM 250",
+          "Switch Lite stick replacement: RM 80 – RM 150 (built into the console body)",
+          "Switch Pro Controller stick repair: RM 100 – RM 180",
+        ],
+      },
+      {
+        heading: "Why Joy-Cons drift in the first place",
+        content:
+          "The standard sticks use a potentiometer design: a wiper physically scrapes across a carbon film to read the stick position. That film wears down with use, and once it does, the stick reports movement that is not happening. It is a design problem, not something you did wrong. Every standard replacement stick carries the same flaw and will eventually drift again, usually after one to two years of regular play.",
+      },
+      {
+        heading: "The Hall effect option",
+        content:
+          "Hall effect sticks read position with magnets instead of a scraping contact. No contact, no wear, no drift. They cost a bit more and the feel is very slightly different (most people cannot tell), but it is a one-time fix. If you play daily or you are on your second round of drift already, this is the one we recommend.",
+      },
+      {
+        heading: "Can calibration or cleaning fix drift?",
+        content:
+          "Worth trying once. Recalibrate the stick in System Settings, Controllers and Sensors. A blast of contact cleaner under the stick skirt sometimes buys a few weeks if the problem is dust rather than wear. But real drift comes from a worn film, and no amount of software fixes worn hardware.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "Around 30 to 45 minutes per Joy-Con. Switch Lite takes about an hour because the whole console has to come apart to reach the sticks. We calibrate and test in-game before handing anything back.",
+      },
+    ],
+    relatedServices: [
+      { label: "Switch Joy-Con Repair", href: "/devices/nintendo_switch/switch-joycon-parts" },
+      { label: "Switch Button Repair", href: "/devices/nintendo_switch/switch-buttons" },
+      { label: "Switch Battery Replacement", href: "/devices/nintendo_switch/switch-battery" },
+    ],
+  },
+  {
+    slug: "laptop-keyboard-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Laptop Keyboard Replacement Cost in Malaysia (2026)",
+    metaTitle: "Laptop Keyboard Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Laptop keyboard replacement in Malaysia costs RM 150–900. Prices for Windows laptops and MacBooks, spill damage, and when single keys can be fixed.",
+    intro:
+      "Dead keys, a stuck spacebar, or a whole row that stopped working after a teh tarik incident. Keyboard problems make a laptop miserable to use, and the fix ranges from a quick swap to a full top-case job depending on what you own.",
+    sections: [
+      {
+        heading: "Laptop Keyboard Replacement Cost",
+        content: [
+          "Windows laptop keyboard (Dell, HP, Lenovo, Asus, Acer): RM 150 – RM 350",
+          "Gaming laptop keyboard with RGB: RM 250 – RM 450",
+          "MacBook keyboard (top case replacement): RM 450 – RM 900",
+          "Single key or hinge clip repair: RM 30 – RM 80 where the mechanism allows it",
+          "Keyboard cleaning after a spill: RM 80 – RM 150, if caught early",
+        ],
+      },
+      {
+        heading: "Why MacBooks cost three times more",
+        content:
+          "On most Windows laptops the keyboard is a separate part that unclips or unscrews. On MacBooks the keyboard is riveted into the top case, so replacing it means replacing the whole aluminium deck, and the battery often comes along for the ride. That is Apple's design choice, not ours. The price reflects the part, not extra labour padding.",
+      },
+      {
+        heading: "Spilled something on it? Move fast",
+        content:
+          "Power it off now, unplug it, and turn it upside down like a tent. Do not put it in rice and do not turn it on to check if it still works. Sugar and milk drinks are the worst: they dry sticky and conductive, and corrosion starts within days. A laptop opened and cleaned within 24 hours of a spill usually survives with just a keyboard swap. One that sat for a week often needs board repair too.",
+      },
+      {
+        heading: "When you do not need a full replacement",
+        content: [
+          "One loose keycap: the cap or its scissor clip can often be replaced alone.",
+          "Keys repeating or sticking: sometimes cleaning under the caps is enough.",
+          "Backlight dead but keys fine: on some models the backlight sheet is separate.",
+          "Whole rows or random letters dead: that is the membrane or ribbon, and it means replacement.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "Windows laptops: usually same-day if we have the part, one to three days if it needs ordering, since keyboards are model-specific down to the layout. MacBook top-case jobs take one to two days. Every replacement gets tested key by key before it leaves.",
+      },
+    ],
+    relatedServices: [
+      { label: "Laptop Keyboard & Trackpad Repair", href: "/devices/laptop/keyboard-trackpad" },
+      { label: "Laptop Water Damage Repair", href: "/devices/laptop/water-damage" },
+      { label: "MacBook Keyboard Replacement", href: "/macbook/air-m2/keyboard-replacement" },
+    ],
+  },
+  {
+    slug: "laptop-battery-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Laptop Battery Replacement Cost in Malaysia (2026)",
+    metaTitle: "Laptop Battery Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Laptop battery replacement in Malaysia costs RM 180–550. Prices for Dell, HP, Lenovo, Asus and gaming laptops, plus how to read your battery's real health.",
+    intro:
+      "A laptop that dies the moment you unplug it is not broken. It is just running on a dead battery, and the fix costs a fraction of a new machine. Here is what battery replacement costs for Windows laptops in Malaysia, and how to check whether yours is actually worn out.",
+    sections: [
+      {
+        heading: "Laptop Battery Replacement Cost",
+        content: [
+          "Standard ultrabook or office laptop (Dell, HP, Lenovo, Asus, Acer): RM 180 – RM 350",
+          "Thin-and-light with internal battery: RM 220 – RM 400",
+          "Gaming laptop (ROG, Legion, MSI, Predator): RM 250 – RM 550",
+          "Older laptop with removable battery: RM 150 – RM 250",
+        ],
+      },
+      {
+        heading: "Check the real battery health in one command",
+        content:
+          "On Windows, open Command Prompt and run powercfg /batteryreport. Open the saved HTML file and compare Design Capacity with Full Charge Capacity. If your battery was designed for 56,000 mWh and now holds 30,000, you are working with half a battery. Below 60 to 70% of design capacity is where most people start feeling the pain.",
+      },
+      {
+        heading: "Signs it is time",
+        content: [
+          "Laptop shuts off instantly when the charger is pulled.",
+          "Battery percentage freezes, jumps, or lies to you.",
+          "Two hours of runtime on a laptop that used to do six.",
+          "Windows shows the 'consider replacing your battery' warning.",
+          "The chassis or trackpad area is bulging. That is swelling. Stop charging it.",
+        ],
+      },
+      {
+        heading: "Original vs OEM-grade batteries",
+        content:
+          "Genuine manufacturer batteries are often discontinued a few years after a model ships, so for older laptops an OEM-grade cell pack is the only realistic option. Quality varies wildly between suppliers. We use graded cells that match the original capacity spec and we load-test every battery before installing it. Cheap marketplace batteries that report 100% health but die in an hour are half our battery jobs, honestly.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "If the part is in stock, under an hour. Internal batteries mean opening the bottom cover, which is routine. Batteries for less common models take one to three days to source. We calibrate after installation so the percentage readout is trustworthy from day one.",
+      },
+    ],
+    relatedServices: [
+      { label: "Laptop Battery Replacement", href: "/devices/laptop/battery" },
+      { label: "Laptop General Servicing", href: "/devices/laptop/general-servicing" },
+      { label: "Laptop Power IC Repair", href: "/devices/laptop/power-ic" },
+    ],
+  },
+  {
+    slug: "phone-back-glass-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Phone Back Glass Replacement Cost in Malaysia (2026)",
+    metaTitle: "Back Glass Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Phone back glass replacement in Malaysia costs RM 120–450. iPhone laser removal vs Samsung, model price list, and why the wireless charging coil matters.",
+    intro:
+      "A shattered back glass is mostly a cosmetic problem, right up until a shard works loose, the crack spreads to the camera ring, or water finds its way in. It is also the repair with the biggest gap between doing it properly and doing it fast. Here is what it costs and what proper looks like.",
+    sections: [
+      {
+        heading: "Back Glass Replacement Cost by Phone",
+        content: [
+          "iPhone 11 / 12 series: RM 180 – RM 280",
+          "iPhone 13 / 14 series: RM 220 – RM 350",
+          "iPhone 15 / 16 series: RM 280 – RM 450",
+          "Samsung Galaxy A series: RM 120 – RM 200",
+          "Samsung Galaxy S series: RM 150 – RM 280",
+          "Samsung Galaxy Z Flip / Fold outer glass: RM 200 – RM 350",
+        ],
+      },
+      {
+        heading: "Why iPhone back glass is a different job",
+        content:
+          "Apple fuses the back glass directly to the frame. There is no peeling it off with heat like a Samsung. The clean method is a laser machine that burns off the adhesive grid under the glass so the fragments lift free, then a new panel is bonded on. Shops without a laser either chip it off by hand for hours or quote you a whole housing swap at double the price. Ask which method a shop uses. It is a fair question.",
+      },
+      {
+        heading: "Samsung is simpler, but the seal matters",
+        content:
+          "Samsung back covers come off with controlled heat and come back on with fresh adhesive. The catch is water resistance: your phone's IP rating lives in that adhesive seal. A sloppy reseal looks fine and leaks in the first rainstorm. We replace the full adhesive gasket every time rather than reusing what survived.",
+      },
+      {
+        heading: "The wireless charging coil sits right there",
+        content:
+          "The charging coil and sometimes the flash or antenna lines sit directly under the back glass. A deep shatter can slice into them, and clumsy glass removal definitely can. If your wireless charging stopped working after the drop, that is why. We test the coil before and after every back glass job, and replacing a damaged coil adds roughly RM 80 to RM 150.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "Samsung: about an hour. iPhone with laser removal: two to three hours depending on how badly shattered the glass is. Same-day either way.",
+      },
+    ],
+    relatedServices: [
+      { label: "iPhone 14 Back Glass Repair", href: "/iphone/14/back-glass-repair" },
+      { label: "iPhone 15 Back Glass Repair", href: "/iphone/15/back-glass-repair" },
+      { label: "Samsung S23 Back Glass Repair", href: "/samsung/s23/back-glass-repair" },
+    ],
+  },
+  {
+    slug: "face-id-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Face ID Repair Cost in Malaysia (2026)",
+    metaTitle: "Face ID Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Face ID repair in Malaysia costs RM 250–600. Why 'Face ID is not available' appears, what can and cannot be fixed, and why Apple says replace the phone.",
+    intro:
+      "'Face ID is not available. Try setting up Face ID later.' If your iPhone is showing that message, Apple's answer is usually a whole-unit replacement at four figures. Most Face ID failures are repairable at component level for a lot less. This is one of the few repairs where going to a board-level shop genuinely changes the outcome.",
+    sections: [
+      {
+        heading: "Face ID Repair Cost",
+        content: [
+          "Face ID diagnostic: free. We tell you which component failed before quoting.",
+          "Flood illuminator or proximity sensor repair: RM 250 – RM 400",
+          "Dot projector repair: RM 350 – RM 550",
+          "Front camera module issues affecting Face ID: RM 280 – RM 450",
+          "Water damage to the TrueDepth system: RM 300 – RM 600 depending on spread",
+        ],
+      },
+      {
+        heading: "Why Face ID breaks",
+        content: [
+          "A drop. The dot projector is fragile and sits at the top of the phone where corners hit.",
+          "Water. Even a small amount reaching the TrueDepth housing kills the infrared parts first.",
+          "A screen replacement done carelessly. The Face ID flex cables tear easily during opening.",
+          "Heat damage from resting the phone on hot surfaces or aggressive drying after a swim.",
+        ],
+      },
+      {
+        heading: "Why Apple cannot fix it but we can",
+        content:
+          "The TrueDepth components are paired to your iPhone's logic board for security, so Apple's official process does not include repairing the module. Their fix is a replacement phone. Component-level repair works differently: we repair or transplant the failed part while keeping your original paired components intact, so the security pairing never breaks. Your data stays, your phone stays, Face ID comes back.",
+      },
+      {
+        heading: "What cannot be fixed",
+        content:
+          "Honesty section. If the dot projector's internal laser array itself is shattered rather than its cable or driver, options narrow, and a small percentage of water-damaged systems are too far gone. That is maybe one case in ten. The free diagnostic tells you which side you are on before any money changes hands, and if it is unfixable, Face ID's loss does not affect the rest of the phone. You can keep using it with a passcode.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "One to two days for most Face ID repairs, since this is microscope work on small flex cables and components. Rush jobs are sometimes possible. Ask.",
+      },
+    ],
+    relatedServices: [
+      { label: "Face ID / Touch ID Repair", href: "/devices/smartphone/face-id-touch-id" },
+      { label: "iPhone Water Damage Repair", href: "/iphone/14-pro/water-damage-repair" },
+      { label: "iPhone Camera Repair", href: "/iphone/14/camera-repair" },
+    ],
+  },
+  {
+    slug: "phone-camera-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Phone Camera Repair Cost in Malaysia (2026)",
+    metaTitle: "Phone Camera Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Phone camera repair in Malaysia costs RM 80–550. Lens glass vs camera module prices for iPhone and Samsung, blurry photo causes, and shaking camera fixes.",
+    intro:
+      "Camera problems come in two very different price brackets. Cracked lens glass with a working camera underneath is a cheap fix. A dead or shaking camera module is a bigger one. Knowing which problem you have saves you from paying for the wrong repair, so here is how to tell.",
+    sections: [
+      {
+        heading: "Phone Camera Repair Cost",
+        content: [
+          "Camera lens glass only (camera works, glass cracked): RM 80 – RM 200",
+          "Front camera replacement: RM 120 – RM 300",
+          "Rear camera module, mid-range phones: RM 180 – RM 350",
+          "Rear camera module, flagships (iPhone Pro, S Ultra): RM 300 – RM 550",
+          "Camera flex cable or connector repair: RM 150 – RM 300",
+        ],
+      },
+      {
+        heading: "Cracked glass or dead module? A quick test",
+        content:
+          "Open the camera app and look at the image, not the crack. If the photo is sharp apart from haze or flare around the cracked area, the sensor underneath is fine and you only need the outer glass replaced. If the image is black, covered in spots, permanently blurry, or the app crashes when you switch to a specific lens, the module itself is damaged. Cracked outer glass left unfixed lets dust and moisture in, so the cheap problem eventually becomes the expensive one.",
+      },
+      {
+        heading: "The shaking or buzzing camera",
+        content:
+          "A camera that vibrates, buzzes audibly, or cannot hold focus has a damaged optical image stabilisation system. OIS suspends the lens on tiny springs and magnets, and a hard drop knocks it out of alignment. No setting fixes this. The module gets replaced, and photos go back to sharp. This is the most common camera failure we see after drops on iPhone Pro models.",
+      },
+      {
+        heading: "Blurry photos without any drop",
+        content: [
+          "Check the obvious first: a dirty lens or a case or third-party lens protector sitting badly.",
+          "Focus hunting in low light is normal behaviour, not damage.",
+          "Blur on one specific lens only (0.5x fine, 3x blurry) points to that module.",
+          "Blur after a beach day or a swim is early moisture damage. It gets worse, not better.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "Lens glass: under an hour. Camera module: one to two hours for most phones. We test every lens, OIS, and video mode before returning the phone.",
+      },
+    ],
+    relatedServices: [
+      { label: "iPhone Camera Repair", href: "/iphone/15-pro/camera-repair" },
+      { label: "Samsung Camera Repair", href: "/samsung/s24-ultra/camera-repair" },
+      { label: "Smartphone Camera Repair", href: "/devices/smartphone/camera" },
+    ],
+  },
+  {
+    slug: "motherboard-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Motherboard Repair Cost in Malaysia (2026)",
+    metaTitle: "Motherboard Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Motherboard repair in Malaysia costs RM 250–1,200. Phone, laptop and MacBook logic board repair prices, common failures, and repair vs replace maths.",
+    intro:
+      "'Motherboard problem' is what most shops say right before quoting you a replacement board or a new device. Usually it is one failed component on that board: a chip, a fuse, a corroded trace. Board-level repair fixes the component instead of throwing away the board, and the price difference is large.",
+    sections: [
+      {
+        heading: "Motherboard Repair Cost by Device",
+        content: [
+          "Smartphone board repair: RM 250 – RM 700",
+          "Tablet / iPad board repair: RM 280 – RM 750",
+          "Windows laptop board repair: RM 300 – RM 900",
+          "MacBook logic board repair: RM 400 – RM 1,200",
+          "For comparison, board replacement typically runs RM 1,200 – RM 4,000",
+        ],
+      },
+      {
+        heading: "What actually fails on a motherboard",
+        content: [
+          "Power management ICs, the usual suspect when a device is fully dead.",
+          "Charging circuits after cheap chargers, power surges, or lightning storms.",
+          "Corroded traces and connectors after water exposure.",
+          "Failed capacitors or shorted components that drain the battery in hours.",
+          "NAND or memory faults causing boot loops.",
+          "Broken solder joints from drops, common under big chips like the GPU.",
+        ],
+      },
+      {
+        heading: "How board-level repair works",
+        content:
+          "First, diagnosis under a microscope with a thermal camera and a bench power supply, because the visible symptom rarely names the guilty component. A device drawing wrong current on the bench tells us which rail is shorted, and heat tells us which chip. Then the failed part is replaced with micro-soldering. The board you own stays the board you own, which also means your data stays where it is.",
+      },
+      {
+        heading: "Repair or replace? The honest maths",
+        content:
+          "Board repair makes sense when the repair costs less than half the device's replacement value, and it usually does. A RM 500 logic board repair on a RM 4,000 MacBook is easy maths. A RM 400 repair on a RM 700 phone is not, and we will say so. Water-damaged boards get a caveat: corrosion can resurface months later, so we grade them honestly after cleaning rather than promising eternal life.",
+      },
+      {
+        heading: "Your data survives this",
+        content:
+          "This is the part people worry about most. Component-level repair does not touch your storage. On phones the storage chip stays on your board; on most laptops the SSD is separate entirely. Even on boards too damaged to save, we can usually transplant storage or recover data as a separate job. Tell us upfront if the data matters more than the device, because it changes the approach.",
+      },
+    ],
+    relatedServices: [
+      { label: "Smartphone Power IC Repair", href: "/devices/smartphone/power-ic" },
+      { label: "Laptop Power IC Repair", href: "/devices/laptop/power-ic" },
+      { label: "Data Recovery", href: "/devices/laptop/data-recovery" },
+      { label: "Water Damage Repair", href: "/devices/smartphone/water-damage" },
+    ],
+  },
+  {
+    slug: "laptop-ssd-upgrade-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    title: "Laptop SSD Upgrade Cost in Malaysia (2026)",
+    metaTitle: "Laptop SSD Upgrade Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Laptop SSD upgrade in Malaysia costs RM 250–700 including installation and data transfer. HDD to SSD prices by capacity, and why it beats buying a new laptop.",
+    intro:
+      "If your laptop takes three minutes to boot and hangs when you open Chrome, the problem is almost never the processor. It is the old hard disk. An SSD upgrade is the single best value repair in computing: a five-year-old laptop genuinely feels new afterward. Here is what it costs with everything included.",
+    sections: [
+      {
+        heading: "SSD Upgrade Cost (installed, with data transfer)",
+        content: [
+          "500GB SATA or NVMe SSD: RM 250 – RM 380",
+          "1TB SSD: RM 350 – RM 500",
+          "2TB SSD: RM 500 – RM 700",
+          "Install only, if you bring your own SSD: RM 80 – RM 150",
+          "Extra RAM at the same time: add RM 100 – RM 300 depending on capacity",
+        ],
+      },
+      {
+        heading: "What you actually feel after the upgrade",
+        content: [
+          "Boot time drops from minutes to around 15 seconds.",
+          "Apps open immediately instead of after a thinking pause.",
+          "No more hard disk grinding noise. SSDs have no moving parts.",
+          "Battery lasts a bit longer, since spinning a disk costs power.",
+          "File copies and updates finish in a fraction of the time.",
+        ],
+      },
+      {
+        heading: "Your files come along",
+        content:
+          "We clone the old drive onto the new SSD: Windows, your programs, your files, your wallpaper, everything exactly where you left it. You get the laptop back faster and log in like nothing happened. If the old Windows install is itself a mess of bloat and leftover toolbars, a fresh install plus copying your files over is the better route, and we will suggest it when it is.",
+      },
+      {
+        heading: "Which laptops are worth upgrading",
+        content:
+          "Any laptop from roughly 2015 onward with a decent i5, i7, or Ryzen processor is a great candidate. The processor was never the bottleneck; the disk was. The honest exceptions: laptops with soldered storage (most MacBooks after 2016 cannot be upgraded), and very old machines where RM 400 is better saved toward a replacement. A two-minute check tells us which category yours is in.",
+      },
+      {
+        heading: "How long it takes",
+        content:
+          "The swap itself is quick. The clone depends on how much data the old disk holds and how slow it is, so the honest answer is two to five hours total. Usually same-day, drop off in the morning and collect in the afternoon.",
+      },
+    ],
+    relatedServices: [
+      { label: "Laptop Storage Upgrade", href: "/devices/laptop/storage-upgrade" },
+      { label: "Laptop RAM Upgrade", href: "/devices/laptop/ram-upgrade" },
+      { label: "Laptop General Servicing", href: "/devices/laptop/general-servicing" },
+    ],
+  },
+
   // ─── SYMPTOM GUIDES ────────────────────────────────────────────────────────
   {
     slug: "phone-wont-turn-on",
