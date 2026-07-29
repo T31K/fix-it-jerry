@@ -1,3 +1,5 @@
+import { existsSync } from "fs";
+import path from "path";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -36,10 +38,17 @@ const categoryColor = {
   symptom: "bg-blue-100 text-blue-800",
 };
 
+const guideImg = (slug, slot) => {
+  const rel = `/guides/${slug}-${slot}.jpg`;
+  return existsSync(path.join(process.cwd(), "public", rel)) ? rel : null;
+};
+
 export default function GuidePage({ params }) {
   const guide = guides.find((g) => g.slug === params.slug);
   if (!guide) notFound();
 
+  const heroImg = guideImg(guide.slug, "hero");
+  const sectionImgs = { 0: guideImg(guide.slug, "1"), 2: guideImg(guide.slug, "2") };
   const otherGuides = guides.filter((g) => g.slug !== guide.slug).slice(0, 4);
 
   return (
@@ -125,6 +134,16 @@ export default function GuidePage({ params }) {
                     {guide.intro}
                   </p>
 
+                  {heroImg && (
+                    <img
+                      src={heroImg}
+                      alt={guide.title}
+                      width={1200}
+                      height={800}
+                      className="w-full rounded-lg border mb-6"
+                    />
+                  )}
+
                   <div className="space-y-6">
                     {guide.sections.map((section, idx) => (
                       <div
@@ -142,6 +161,16 @@ export default function GuidePage({ params }) {
                           </ul>
                         ) : (
                           <p className="text-gray-700 leading-relaxed">{section.content}</p>
+                        )}
+                        {sectionImgs[idx] && (
+                          <img
+                            src={sectionImgs[idx]}
+                            alt={`${guide.title} — ${section.heading}`}
+                            width={1200}
+                            height={800}
+                            loading="lazy"
+                            className="w-full rounded-lg border mt-4"
+                          />
                         )}
                       </div>
                     ))}
