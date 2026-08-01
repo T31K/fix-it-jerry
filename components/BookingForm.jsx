@@ -16,6 +16,13 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Wrench } from "lucide-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
+import {
+  pinnedCountries,
+  otherCountries,
+  allCountries,
+  flagEmoji,
+  phoneLengthFor,
+} from "@/data/countryCodes";
 
 const deviceBrands = {
   phone: [
@@ -103,7 +110,23 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
     issue: "",
   });
 
+  const [countryIso, setCountryIso] = useState("MY");
+  const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const country = allCountries.find((c) => c.iso === countryIso);
+
+  // National number with the trunk "0" dropped (e.g. 0123456789 -> 123456789)
+  const nationalNumber = formData.phone.replace(/^0+/, "");
+
+  const validatePhone = () => {
+    const { min, max } = phoneLengthFor(country);
+    if (nationalNumber.length < min || nationalNumber.length > max) {
+      const range = min === max ? `${min}` : `${min}–${max}`;
+      return `${country.name} numbers should have ${range} digits (you entered ${nationalNumber.length}).`;
+    }
+    return "";
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -111,12 +134,19 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
     // Prevent double submission
     if (isSubmitting) return;
 
+    const error = validatePhone();
+    if (error) {
+      setPhoneError(error);
+      return;
+    }
+    setPhoneError("");
+
     setIsSubmitting(true);
 
     try {
       const res = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/fij/booking`,
-        formData,
+        { ...formData, phone: `+${country.dial}${nationalNumber}` },
         {
           headers: {
             "Content-Type": "application/json",
@@ -207,20 +237,51 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
           <Label className={`font-bold ${defaultColor ? "text-white" : "!text-slate-700"}`}>
             Phone Number
           </Label>
-          <Input
-            id="phone"
-            type="tel"
-            placeholder="Enter your phone number"
-            className="bg-white !mt-0 text-slate-700 text-sm md:text-md"
-            value={formData.phone}
-            autoComplete="off"
-            autoCapitalize="off"
-            autoCorrect="off"
-            onChange={(e) =>
-              setFormData({ ...formData, phone: e.target.value })
-            }
-            required
-          />
+          <div className="flex gap-2 !mt-0">
+            <Select value={countryIso} onValueChange={setCountryIso}>
+              <SelectTrigger className="bg-white text-slate-700 w-[110px] shrink-0">
+                <SelectValue>
+                  {country ? `${flagEmoji(country.iso)} +${country.dial}` : ""}
+                </SelectValue>
+              </SelectTrigger>
+              <SelectContent className="bg-white z-[9999] text-slate-700 max-h-[280px]">
+                {pinnedCountries.map((c) => (
+                  <SelectItem key={c.iso} value={c.iso}>
+                    {flagEmoji(c.iso)} {c.name} +{c.dial}
+                  </SelectItem>
+                ))}
+                {otherCountries.map((c) => (
+                  <SelectItem key={c.iso} value={c.iso}>
+                    {flagEmoji(c.iso)} {c.name} +{c.dial}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Input
+              id="phone"
+              type="tel"
+              inputMode="numeric"
+              placeholder={countryIso === "MY" ? "0123456789" : "Phone number"}
+              className="bg-white !mt-0 text-slate-700 text-sm md:text-md flex-1"
+              value={formData.phone}
+              autoComplete="off"
+              autoCapitalize="off"
+              autoCorrect="off"
+              onChange={(e) => {
+                setFormData({
+                  ...formData,
+                  phone: e.target.value.replace(/\D/g, ""),
+                });
+                if (phoneError) setPhoneError("");
+              }}
+              required
+            />
+          </div>
+          {phoneError && (
+            <p className={`text-xs !m-0 ${defaultColor ? "text-[#ffd5d5]" : "text-red-600"}`}>
+              {phoneError}
+            </p>
+          )}
         </div>
 
         <div className="space-y-2">
