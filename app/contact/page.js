@@ -22,11 +22,7 @@ const openingHours = [
   }
 ]
 
-const parentOrg = {
-  "@type": "Organization",
-  "name": "Fix It Jerry",
-  "url": "https://fixitjerry.com"
-}
+const parentOrg = { "@id": "https://www.fixitjerry.com/#business" }
 
 function page() {
   return (
@@ -35,8 +31,9 @@ function page() {
         {
           "@context": "https://schema.org",
           "@type": "RepairBusiness",
+          "@id": "https://www.fixitjerry.com/contact#branch-desa-parkcity",
           "name": "Fix It Jerry — Desa Parkcity",
-          "url": "https://fixitjerry.com/contact",
+          "url": "https://www.fixitjerry.com/contact",
           "telephone": "+60183646909",
           "address": {
             "@type": "PostalAddress",
@@ -57,8 +54,9 @@ function page() {
         {
           "@context": "https://schema.org",
           "@type": "RepairBusiness",
-          "name": "Fix It Jerry — Subang Jaya",
-          "url": "https://fixitjerry.com/contact",
+          "@id": "https://www.fixitjerry.com/contact#branch-subang-jaya",
+          "name": "Fix It Jerry — Subang Jaya SS15",
+          "url": "https://www.fixitjerry.com/contact",
           "telephone": "+60183267909",
           "address": {
             "@type": "PostalAddress",
@@ -68,14 +66,16 @@ function page() {
             "postalCode": "47500",
             "addressCountry": "MY"
           },
+          "geo": { "@type": "GeoCoordinates", "latitude": 3.0772, "longitude": 101.5912 },
           "openingHoursSpecification": openingHours,
           "parentOrganization": parentOrg
         },
         {
           "@context": "https://schema.org",
           "@type": "RepairBusiness",
+          "@id": "https://www.fixitjerry.com/contact#branch-bukit-jalil",
           "name": "Fix It Jerry — Bukit Jalil",
-          "url": "https://fixitjerry.com/contact",
+          "url": "https://www.fixitjerry.com/contact",
           "telephone": "+60183101909",
           "address": {
             "@type": "PostalAddress",
@@ -85,14 +85,16 @@ function page() {
             "postalCode": "57000",
             "addressCountry": "MY"
           },
+          "geo": { "@type": "GeoCoordinates", "latitude": 3.066, "longitude": 101.69 },
           "openingHoursSpecification": openingHours,
           "parentOrganization": parentOrg
         },
         {
           "@context": "https://schema.org",
           "@type": "RepairBusiness",
-          "name": "Fix It Jerry — Puchong",
-          "url": "https://fixitjerry.com/contact",
+          "@id": "https://www.fixitjerry.com/contact#branch-sri-manja",
+          "name": "Fix It Jerry — Sri Manja, Petaling Jaya",
+          "url": "https://www.fixitjerry.com/contact",
           "telephone": "+60187673909",
           "address": {
             "@type": "PostalAddress",
@@ -102,6 +104,7 @@ function page() {
             "postalCode": "46000",
             "addressCountry": "MY"
           },
+          "geo": { "@type": "GeoCoordinates", "latitude": 3.0921, "longitude": 101.6262 },
           "openingHoursSpecification": openingHours,
           "parentOrganization": parentOrg
         }

@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { existsSync } from "fs";
+import path from "path";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
@@ -16,7 +18,7 @@ export async function generateMetadata({ params }) {
   if (!loc) return { title: "Not Found | Fix It Jerry" };
 
   const title = `Phone & Laptop Repair in ${loc.name} | Fix It Jerry`;
-  const description = `Same-day phone, tablet & laptop repair in ${loc.name}. On-site visits, Lalamove/Grab pickup, or drop-in at our nearest branch. Screens from RM 120, batteries from RM 80.`;
+  const description = `Same-day phone, tablet & laptop repair in ${loc.name} — pickup around ${loc.landmarks.slice(0, 2).join(", ")} and nearby. On-site, Lalamove/Grab, or walk-in. Screens from RM 120, batteries from RM 80.`;
 
   return {
     title,
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      images: [`https://fixitjerry.com/og_images/phone-repair-${loc.slug}.png`],
+      images: [`https://www.fixitjerry.com/og_images/phone-repair-${loc.slug}.png`],
     },
     alternates: { canonical: `/phone-repair/${loc.slug}` },
   };
@@ -35,12 +37,23 @@ export default function LocationPage({ params }) {
   if (!loc) notFound();
 
   const branch = branches[loc.nearestBranch];
-  const url = `https://fixitjerry.com/phone-repair/${loc.slug}`;
+  const url = `https://www.fixitjerry.com/phone-repair/${loc.slug}`;
+  const areaImg = existsSync(path.join(process.cwd(), "public", "phone-repair", `${loc.slug}.jpg`))
+    ? `/phone-repair/${loc.slug}.jpg`
+    : null;
+
+  const nearby = locations
+    .filter((l) => l.nearestBranch === loc.nearestBranch && l.slug !== loc.slug)
+    .slice(0, 6);
 
   const faqs = [
     {
       q: `How long does pickup from ${loc.name} take?`,
       a: `Most Lalamove or Grab pickups from ${loc.name} reach our ${branch.name} branch in around ${loc.drivingMinutes} minutes off-peak. Screen and battery jobs typically finish the same day.`,
+    },
+    {
+      q: `Can you collect my device from ${loc.landmarks[0]}?`,
+      a: `Yes — ${loc.landmarks.slice(0, -1).join(", ")} and ${loc.landmarks[loc.landmarks.length - 1]} are all regular pickup points for us in ${loc.name}. Share your exact location when booking and we'll arrange the courier to meet you there.`,
     },
     {
       q: `Do you visit ${loc.name} for on-site repairs?`,
@@ -70,10 +83,11 @@ export default function LocationPage({ params }) {
         data={[
           {
             "@context": "https://schema.org",
-            "@type": "RepairBusiness",
-            name: `Fix It Jerry — ${loc.name}`,
+            "@type": "Service",
+            name: `Phone & Laptop Repair in ${loc.name}`,
+            serviceType: "Mobile Phone Repair",
             url,
-            telephone: branch.phone,
+            ...(areaImg && { image: `https://www.fixitjerry.com${areaImg}` }),
             description: `Mobile phone, tablet and laptop repair serving ${loc.name}. On-site, courier pickup, or drop-in at our ${branch.name} branch.`,
             areaServed: {
               "@type": "Place",
@@ -86,25 +100,21 @@ export default function LocationPage({ params }) {
                 addressCountry: "MY",
               },
             },
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: branch.address,
-              addressRegion: loc.region,
-              addressCountry: "MY",
+            provider: { "@id": "https://www.fixitjerry.com/#business" },
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "MYR",
+              lowPrice: 80,
+              highPrice: 500,
+              availability: "https://schema.org/InStock",
             },
-            geo: { "@type": "GeoCoordinates", latitude: branch.geo.lat, longitude: branch.geo.lng },
-            openingHoursSpecification: [
-              { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "10:00", closes: "18:00" },
-              { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday", "Sunday"], opens: "10:00", closes: "15:00" },
-            ],
-            parentOrganization: { "@type": "Organization", name: "Fix It Jerry", url: "https://fixitjerry.com" },
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://fixitjerry.com/" },
-              { "@type": "ListItem", position: 2, name: "Repair Areas", item: "https://fixitjerry.com/phone-repair" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.fixitjerry.com/" },
+              { "@type": "ListItem", position: 2, name: "Repair Areas", item: "https://www.fixitjerry.com/phone-repair" },
               { "@type": "ListItem", position: 3, name: loc.name, item: url },
             ],
           },
@@ -197,6 +207,16 @@ export default function LocationPage({ params }) {
               <div className="col-lg-9">
                 <div className="subtitle s2 mb-2">About Our Service in {loc.name}</div>
                 <h2 className="mb-4">Why Customers in {loc.name} Choose Fix It Jerry</h2>
+                {areaImg && (
+                  <img
+                    src={areaImg}
+                    alt={`${loc.landmarks[0]}, ${loc.name}`}
+                    width={1200}
+                    height={675}
+                    loading="lazy"
+                    className="w-full rounded-lg border mb-4 object-cover"
+                  />
+                )}
                 <p className="mb-4">{loc.blurb}</p>
                 <div className="row g-3 mt-4">
                   <div className="col-md-6">
@@ -265,6 +285,37 @@ export default function LocationPage({ params }) {
             </div>
           </div>
         </section>
+
+        {/* Nearby areas served by the same branch — unique cross-links per page */}
+        {nearby.length > 0 && (
+          <section className="py-10">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-9">
+                  <div className="text-center mb-6">
+                    <div className="subtitle s2 mb-2">Also Nearby</div>
+                    <h2>Other Areas Served by Our {branch.name} Branch</h2>
+                  </div>
+                  <div className="row g-3 justify-content-center">
+                    {nearby.map((n) => (
+                      <div key={n.slug} className="col-6 col-md-4">
+                        <Link
+                          href={`/phone-repair/${n.slug}`}
+                          className="d-block text-decoration-none"
+                        >
+                          <div className="bg-white border rounded-lg p-3 text-center hover:shadow-md transition-shadow">
+                            <div className="text-brand-700 fw-bold">{n.name}</div>
+                            <div className="text-muted small">~{n.drivingMinutes} min away</div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Reviews */}
         <Reviews />

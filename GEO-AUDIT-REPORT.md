@@ -1,373 +1,93 @@
 # GEO Audit Report — fixitjerry.com
-**Date:** March 2026
+**Date:** July 2026 (re-audit; prior baseline March 2026: 40/100)
 **Business:** Fix It Jerry — Device Repair Shop, Kuala Lumpur, Malaysia
-**Locations:** Desa Parkcity · Subang Jaya · Bukit Jalil · Puchong
+**Locations:** Desa Parkcity · Subang Jaya SS15 · Bukit Jalil · Sri Manja PJ
 **Audited by:** GEO Audit Tool (5 parallel subagents)
 
 ---
 
-## Overall GEO Score: 40 / 100 — Poor
+## Overall GEO Score: 56 / 100 — Fair (▲ +16 since March)
 
-> Fix It Jerry has a technically sound foundation (SSG, HTTPS, SSR, 800+ programmatic pages) but is nearly invisible to AI search engines. The core problems are zero external brand presence, broken content pages, missing canonical tags, and schema errors — all fixable.
+> Technical foundations, schema coverage, and content citability have all improved materially since March. The site is fully crawlable by every AI engine, server-renders all content and schema, and its cost guides are genuinely citation-ready (88/100). The score is now dominated by a single problem: **near-zero off-site brand presence (12/100)** — AI engines answering "best phone repair KL" find no independent corroboration that Fix It Jerry exists. Second-biggest drag: hundreds of model×service pages sharing one implausible price range.
 
 ---
 
 ## Score Breakdown
 
-| Category | Weight | Score | Weighted | Status |
-|---|---|---|---|---|
-| AI Citability & Visibility | 25% | 34/100 | 8.5 | Poor |
-| Brand Authority Signals | 20% | 18/100 | 3.6 | Critical |
-| Content Quality & E-E-A-T | 20% | 54/100 | 10.8 | Fair |
-| Technical Foundations | 15% | 61/100 | 9.15 | Fair |
-| Structured Data | 10% | 32/100 | 3.2 | Poor |
-| Platform Optimization | 10% | 44/100 | 4.4 | Poor |
-| **COMPOSITE GEO SCORE** | 100% | **40/100** | **39.65** | **Poor** |
+| Category | Weight | Mar 2026 | Jul 2026 | Weighted | Status |
+|---|---|---|---|---|---|
+| AI Citability & Visibility | 25% | 34 | 70 | 17.5 | Good ▲ |
+| Brand Authority Signals | 20% | 18 | 12 | 2.4 | Critical ▼ |
+| Content Quality & E-E-A-T | 20% | 54 | 50 | 10.0 | Fair |
+| Technical Foundations | 15% | 61 | 83 | 12.5 | Good ▲ |
+| Structured Data | 10% | 32 | 72 | 7.2 | Good ▲ |
+| Platform Optimization | 10% | 44 | 60 | 6.0 | Fair ▲ |
+| **COMPOSITE** | 100% | **40** | **56** | **55.6** | **Fair** |
 
----
+*AI Citability & Visibility = citability 66 (page avg), crawler access 100, llms.txt 70. Brand authority scored strictly this round (verified searches on Reddit, Lowyat, review platforms, listicles — all absent); the March 18 was generous.*
 
 ## Platform Readiness
 
-| Platform | Score | Status |
-|---|---|---|
-| Google AI Overviews | 52/100 | Fair |
-| Google Gemini | 48/100 | Fair |
-| Bing Copilot | 38/100 | Poor |
-| Perplexity AI | 36/100 | Poor |
-| ChatGPT Web Search | 33/100 | Poor |
-| **Average** | **44/100** | **Poor** |
+| Platform | Mar | Jul | Notes |
+|---|---|---|---|
+| Google AI Overviews | 52 | 74 | Best platform. SSG FAQ/LocalBusiness schema + question-form H2s. Gap: prices in styled divs, not `<table>` |
+| Google Gemini | 48 | 66 | Good clustering + NAP; no GBP in sameAs, no ratings schema |
+| ChatGPT Web Search | 33 | 58 | Full crawler access, quotable MYR figures; thin entity corroboration |
+| Perplexity AI | 36 | 56 | Stale freshness (dateModified March); no community validation |
+| Bing Copilot | 38 | 48 | No Bing Webmaster verification, no IndexNow, host-split hurts Bing most |
+| **Average** | **44** | **60** | |
 
 ---
 
-## What's Working
+## Key Findings (consolidated, by severity)
 
-- **SSR/SSG architecture** — Next.js static generation means every AI crawler reads full page content immediately. This is the best possible technical foundation.
-- **625+ programmatic pages** — Deep topical coverage across device/brand/model/service combinations.
-- **AI crawlers fully allowed** — All major AI bots (GPTBot, ClaudeBot, PerplexityBot) have unrestricted access.
-- **Unique OG images** — Per-page OG images for every pSEO page is an excellent implementation.
-- **Proprietary pricing data** — The repair cost tables with MYR pricing are genuinely citable content that doesn't exist elsewhere.
-- **4 physical locations with named contacts** — Strong local authority foundation.
-- **LocalBusiness schema present** — JSON-LD is in place and server-rendered.
+### Critical
+1. **Brand authority 12/100.** Only confirmed third-party surface is the Facebook page. No Reddit, no Lowyat.net, no review platforms, no third-party listicles. Competitors (e.g. sprtech.com.my) own the "best phone repair KL" citations. This is 20% of the score at near-zero and cannot be fixed on-site.
+2. **Model×service pages are thin (HIGH thin-content risk).** Hundreds of pages (largest surface on the site) differ only by model name + one spec sentence, all showing "RM 300 – RM 1,200". An AI asked "iPhone 13 screen price KL" learns nothing from the iPhone 13 page. The battery cost guide proves the per-model data exists.
 
----
+### High
+3. **Host split (www vs apex).** Site serves on www; every canonical, og:url, schema URL and all 814 sitemap URLs point to apex (which 308s to www). Splits signals; Bing penalizes most. Fix `metadataBase` + align everything to one host.
+4. **No entity `@id` / fragmented schema.** Sitewide RepairBusiness repeats unlinked on every page; location pages add a second RepairBusiness modeling a service area as a fake branch. Should be one `@id`'d business + `Service` entities with `areaServed`.
+5. **No author identity anywhere.** No byline, no Person schema, "Our Experts" names nobody. Cheapest E-E-A-T fix: one lead-technician bio page + bylines on guides.
+6. **Homepage anti-trust signals.** "Verified Reviews" heading renders zero reviews; service cards say "2–3 days" while FAQ says "under an hour" (self-contradiction that AI engines misquote).
 
-## Critical Issues (Fix These First)
+### Medium
+7. **No AggregateRating/Review schema** (defensible first-party markup is possible since reviews render on-page — never import Google star counts).
+8. **Hub pages (/iphone etc.) are citation-unlikely boilerplate** — no pricing, turnaround, warranty, or FAQ.
+9. **Cost-guide prices in styled divs, not `<table>`** — blocks AI Overviews price extraction.
+10. **Bing basics absent** — no Webmaster Tools verification, no IndexNow.
+11. **Contact-page branch schema defects** — shared url, missing geo on 3 branches, Puchong/PJ locality mismatch.
+12. **Freshness** — dateModified stuck at March; sitemap lastmod is one uniform build timestamp.
 
-### 1. Guide Pages Are Returning 404
-**Impact: Kills the highest-citability content on the site**
-
-Multiple guide pages linked from the `/guides` index return 404:
-- `/guides/iphone-battery-replacement`
-- `/guides/samsung-screen-replacement`
-- `/guides/water-damage-repair`
-- `/guides/charging-port-repair`
-
-Only `/guides/phone-wont-turn-on` resolved. The guides section is the most AI-citable content on the site — the water damage and battery guides scored 74-78/100 for citability when they work. If the guides exist at different URL slugs, the index page links are broken and neither users nor crawlers can reach the content.
-
-**Fix:** Audit every guide URL in `/data/guides.js` and match slugs to the actual routes in `app/guides/[slug]/page.js`.
-
----
-
-### 2. About Page is 404
-**Impact: Destroys E-E-A-T across all 4 dimensions**
-
-The `/about` page returns 404. There is no company story, no founders, no technician bios, and no "who we are" content anywhere on the site. This is the single largest content gap for E-E-A-T — it simultaneously fails Experience, Expertise, Authoritativeness, and Trustworthiness.
-
-**Fix:** Create `/about` with: founding story, named owners/founders, technician team (photos + bios), years in business, total repairs completed, any certifications or training.
+### Positive confirmations
+- robots.txt allows all AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Bingbot, CCBot): 100/100
+- Full SSR — all content + 4–8 JSON-LD blocks per page in raw HTML
+- Location pages passed differentiation review: "written per-location, not string-swapped" (LOW-MODERATE risk)
+- llms.txt valid and well-formed (update with /phone-repair + new guides is committed locally, unpushed at audit time)
+- Cost guides are the citability template: dated, tabled, stat-backed (88/100)
+- /links removed cleanly (true 404, absent from sitemap)
 
 ---
 
-### 3. No Canonical Tags Anywhere
-**Impact: Duplicate content risk across 625+ pages, www/non-www split unresolved**
+## Prioritized Action Plan
 
-Not a single page on the site has a `<link rel="canonical">` tag. With 625 programmatic pages and a www vs non-www redirect inconsistency (server sends `www` but sitemap, robots.txt, og:url, and JSON-LD all reference non-www), there is an unresolved duplicate URL signal across every page.
+### Quick wins (hours)
+1. Unify host to `https://www.fixitjerry.com`: set `metadataBase`, regenerate sitemap URLs, update all JSON-LD URLs.
+2. Fix homepage: render the actual reviews under "Verified Reviews"; reconcile turnaround claims ("screens/batteries under 1 hour; board-level 1–3 days").
+3. Convert cost-guide pricing divs to semantic `<table>`.
+4. Add `@id` to the master RepairBusiness; convert location-page second business to `Service` + `areaServed` + `provider @id`.
+5. Register Bing Webmaster Tools + IndexNow; fix contact-page branch schema (geo, unique @id, Puchong locality).
+6. Push the already-committed llms.txt update.
 
-**Fix in Next.js App Router:**
-```js
-// app/iphone/[model]/[service]/page.js
-export async function generateMetadata({ params }) {
-  return {
-    alternates: {
-      canonical: `https://fixitjerry.com/iphone/${params.model}/${params.service}`,
-    },
-  }
-}
-```
-Apply to all page types: homepage, device pages, guide pages, brand pages.
+### Medium-term (days)
+7. **Per-model pricing on model×service pages** — add price field per model×service to /data files, render + AggregateOffer schema. Converts the site's largest surface from thin to citable.
+8. Author identity: "Jerry" bio page with Person schema, byline + visible updated-date on every guide; refresh dateModified quarterly.
+9. Hub pages: add answer block (from-price, turnaround, warranty) + short FAQ to /iphone, /samsung, /macbook, /ipad, /pixel, /apple-watch.
+10. First-party AggregateRating/Review markup matching on-page reviews; add GBP/WhatsApp/TikTok to sameAs.
 
----
-
-### 4. Opening Hours in Schema Are Wrong
-**Impact: Factual conflict — schema says 10:00–20:00, site shows 10:00–18:00**
-
-In `app/layout.js`, the `openingHoursSpecification` says 10:00–20:00 every day. The contact page displays Mon–Fri 10:00–18:00 and Sat–Sun 10:00–15:00. This conflict will be flagged by Google's Rich Results Test and misleads AI models that ingest structured data.
-
-**Fix in `app/layout.js`:**
-```json
-"openingHoursSpecification": [
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "10:00",
-    "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Saturday","Sunday"],
-    "opens": "10:00",
-    "closes": "15:00"
-  }
-]
-```
+### Strategic (weeks–months) — the score-mover
+11. **Off-site presence program.** In order of AI-citation impact for Malaysia: Google Business Profile reviews (all 4 branches), Lowyat.net forum presence, r/malaysia + r/kualalumpur genuine participation, Malaysian directory listings, outreach for inclusion in third-party "best repair KL" listicles, a few YouTube repair shorts. Even 3–4 independent mentions would multiply inclusion in AI answers. Target: brand authority 12 → 50+, which alone moves the composite to ~64.
 
 ---
 
-### 5. No llms.txt
-**Impact: AI crawlers must guess which of 625+ pages to prioritize — they default to homepage only**
-
-There is no `llms.txt` at the domain root. For a site with 625+ programmatic pages, this is a major missed opportunity. AI crawlers use this file to understand site structure and prioritize content.
-
-**Fix:** Create `/public/llms.txt`:
-
-```
-# Fix It Jerry
-
-> Fix It Jerry is a device repair shop in Kuala Lumpur, Malaysia with four branches
-> (Desa Parkcity, Subang Jaya, Bukit Jalil, Puchong). We repair smartphones, tablets,
-> laptops, Nintendo Switch, AirPods, and Apple Watches with transparent MYR pricing.
-
-## Core Pages
-- [Homepage](https://fixitjerry.com/): Overview, pricing range RM 80–1,200, locations.
-- [Contact & Locations](https://fixitjerry.com/contact): Full addresses, per-branch contacts, hours.
-- [Book a Repair](https://fixitjerry.com/book-a-repair): Online booking form.
-
-## Repair Guides
-- [Phone Won't Turn On](https://fixitjerry.com/guides/phone-wont-turn-on): Diagnostic steps and costs.
-- [iPhone Battery Replacement](https://fixitjerry.com/guides/iphone-battery-replacement): Malaysia pricing guide.
-- [Samsung Screen Replacement](https://fixitjerry.com/guides/samsung-screen-replacement): AMOLED pricing.
-- [Water Damage Repair](https://fixitjerry.com/guides/water-damage-repair): Immediate action + costs.
-- [MacBook Screen Repair](https://fixitjerry.com/guides/macbook-screen-repair): Retina display guide.
-
-## Device Services
-- [iPhone Repairs](https://fixitjerry.com/iphone): All iPhone models and service types.
-- [Samsung Repairs](https://fixitjerry.com/samsung): All Samsung Galaxy models.
-- [MacBook Repairs](https://fixitjerry.com/macbook): Screen, battery, board-level repairs.
-- [Nintendo Switch Repairs](https://fixitjerry.com/devices/nintendo-switch): Battery, fan, screen repairs.
-
-## Optional
-- [Sitemap](https://fixitjerry.com/sitemap.xml): Full index of all device/brand/model/service pages.
-```
-
----
-
-### 6. Zero Brand Presence Outside the Domain
-**Impact: AI models cannot confidently cite a business they've only seen on one domain**
-
-| Platform | Status |
-|---|---|
-| Wikipedia | No article or Wikidata entity |
-| Reddit | Zero mentions on r/malaysia, r/kualalumpur |
-| YouTube | No channel found |
-| LinkedIn | No company page |
-| Lowyat.net | Not present |
-| SoyaCincau | Not featured |
-| Google Business Profile | Implied but not verified via sameAs |
-
-This is the most impactful long-term gap. AI models (ChatGPT, Perplexity, Claude) need to find a business name on multiple independent sources before they'll confidently cite it.
-
----
-
-## High Priority Actions
-
-### 7. Add Service Schema to All 625 pSEO Pages
-800+ service pages describe specific repairs but emit zero machine-readable service identity. This is the largest schema gap.
-
-**Add to `app/iphone/[model]/[service]/page.js`** (and equivalent pages):
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "iPhone 16 Screen Replacement",
-  "provider": {
-    "@type": "RepairBusiness",
-    "name": "Fix It Jerry",
-    "url": "https://fixitjerry.com"
-  },
-  "areaServed": { "@type": "City", "name": "Kuala Lumpur" },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "MYR",
-    "price": "450",
-    "availability": "https://schema.org/InStock"
-  }
-}
-```
-
----
-
-### 8. Add Article Schema + Dates to All Guide Pages
-All 20 guides have no `Article` schema, no `datePublished`, no `dateModified`, no author. They are invisible to AI content indexing.
-
-**Add to `app/guides/[slug]/page.js`:**
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "iPhone Battery Replacement Cost in Malaysia (2026)",
-  "datePublished": "2025-01-15",
-  "dateModified": "2026-03-01",
-  "author": {
-    "@type": "Organization",
-    "name": "Fix It Jerry",
-    "url": "https://fixitjerry.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Fix It Jerry",
-    "logo": { "@type": "ImageObject", "url": "https://fixitjerry.com/images/logo.webp" }
-  },
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".text-gray-600.text-lg", "h2"]
-  }
-}
-```
-Also add `datePublished` and `dateModified` fields to `/data/guides.js`.
-
----
-
-### 9. Add Multi-Location Schema (3 Missing Branches)
-Only Desa Parkcity is in the schema. Subang Jaya, Bukit Jalil, and Puchong are invisible to structured data consumers.
-
-Add individual `RepairBusiness` schema blocks to `app/contact/page.js` for each of the 4 branches with their full address, phone number, geo coordinates, and `parentOrganization` linking back to the main entity.
-
----
-
-### 10. Fix www vs Non-www Inconsistency
-The server redirects to `www.fixitjerry.com` but **every** internal signal (sitemap, robots.txt, og:url, JSON-LD) references `fixitjerry.com` (non-www). Pick one and align everything.
-
-**Recommended:** Standardize on `https://fixitjerry.com` (non-www) and remove the 308 redirect. Then update canonical tags, OG tags, sitemap, robots.txt, and JSON-LD to match.
-
----
-
-### 11. Add FAQPage Schema to Homepage and Guides
-The homepage has 10 written FAQ pairs. Guide pages have question-based sections. Neither has FAQPage schema.
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long does a screen replacement take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most screen replacements are completed in 1–2 hours. Walk-ins welcome."
-      }
-    }
-  ]
-}
-```
-
----
-
-### 12. Add Visible Publication Dates to All Guides
-Repair cost guides in MYR are time-sensitive pricing content. No page shows when it was written or updated. Add "Last updated: March 2026" above every guide H1 — both as visible HTML and as `<time datetime="2026-03-01">` for machine-readable freshness.
-
----
-
-### 13. Activate or Fix the Blog Section
-The `/blog` endpoint redirects to the booking form. No blog content was accessible. The blog is linked in primary navigation but appears non-functional. Either fix the routing or replace the nav link with content that exists.
-
----
-
-### 14. Verify Site in Bing Webmaster Tools
-No `msvalidate.01` meta tag detected. Verify the site in Bing Webmaster Tools (free, 5 minutes), submit the sitemap, and enable IndexNow. This is the single fastest win for Bing Copilot and ChatGPT-via-Bing visibility.
-
----
-
-## Medium Priority Actions
-
-| # | Action | Platforms Impacted |
-|---|---|---|
-| 15 | Upgrade `@type` from `LocalBusiness` → `RepairBusiness` in `app/layout.js` | All |
-| 16 | Expand `sameAs` array: add Google Business Profile URLs, LinkedIn, YouTube | ChatGPT, Gemini, Bing |
-| 17 | Add author bylines to all guide pages ("Written by the Fix It Jerry repair team") | Google AIO, ChatGPT, Perplexity |
-| 18 | Fix `BreadcrumbJsonLd.jsx` — add `"@type": "ListItem"` to each item in map | Google, Bing |
-| 19 | Add `BreadcrumbJsonLd` to guide pages (visual breadcrumb exists, schema doesn't) | Google, Bing |
-| 20 | Expand thin device pages (Laptop page: ~200 words) to 600–800 words minimum | Google AIO, Gemini |
-| 21 | Fix underscore URLs: `/devices/nintendo_switch` → `/devices/nintendo-switch` | All search engines |
-| 22 | Remove `/analytics` and `/links` from sitemap, add `noindex` meta to both | All crawlers |
-| 23 | Add `<lastmod>` dates to all sitemap entries | Google, Bing |
-| 24 | Add security headers via `next.config.js`: X-Content-Type-Options, X-Frame-Options, Referrer-Policy, CSP | Trust signals |
-| 25 | Audit `plugins.js` loaded as `beforeInteractive` — may be blocking LCP | Core Web Vitals |
-
----
-
-## Long-Term / Strategic Actions
-
-| # | Action | Platforms Impacted |
-|---|---|---|
-| 26 | Create a Reddit presence on r/malaysia and r/kualalumpur with genuine repair content | Perplexity, ChatGPT |
-| 27 | Get listed/featured on Lowyat.net and SoyaCincau | Perplexity, ChatGPT, Gemini |
-| 28 | Create a LinkedIn company page | Bing Copilot, ChatGPT |
-| 29 | Launch YouTube channel with repair diagnostic videos | Google Gemini, ChatGPT |
-| 30 | Create a Wikidata entity (Q-item) for Fix It Jerry | All AI models |
-| 31 | Build location-specific landing pages ("Laptop Repair in Subang Jaya") | Google AIO, Gemini |
-| 32 | Expand guides from ~650 words to 1,200–1,500 words with Sources & Methodology section | All AI platforms |
-| 33 | Add repair photography to guide pages (ultrasonic cleaner, before/after) | E-E-A-T signals |
-| 34 | Add "No Fix, No Charge" guarantee as a dedicated policy page | Trust/E-E-A-T |
-
----
-
-## Scoring Summary
-
-```
-Overall GEO Score: 40/100
-
-AI Citability & Visibility  ████░░░░░░  34/100
-Brand Authority Signals     ██░░░░░░░░  18/100
-Content Quality / E-E-A-T   █████░░░░░  54/100
-Technical Foundations       ██████░░░░  61/100
-Structured Data             ███░░░░░░░  32/100
-Platform Optimization       ████░░░░░░  44/100
-```
-
----
-
-## 30-Day Quick Win Roadmap
-
-**Week 1 (Dev work):**
-- Fix guide page 404s
-- Fix opening hours in schema
-- Add canonical tags sitewide (Next.js `alternates.canonical`)
-- Fix www/non-www consistency
-- Create `llms.txt`
-- Fix BreadcrumbJsonLd `@type` bug
-
-**Week 2 (Dev work):**
-- Upgrade to `RepairBusiness` schema type
-- Add Article schema + dates to all guide pages
-- Add Service schema to pSEO pages
-- Add multi-location schema on contact page
-- Add FAQPage schema to homepage and guides
-
-**Week 3 (Content):**
-- Create About page
-- Add publication dates to all guides
-- Fix or remove blog nav link
-- Add author attribution to guides
-- Verify Bing Webmaster Tools
-
-**Week 4 (Off-site):**
-- Create LinkedIn company page
-- Post on r/malaysia with transparent attribution
-- Reach out to Lowyat.net
-- Submit for SoyaCincau feature
-
-**Projected score after 30 days:** 58–65/100
-
----
-
-*Report generated by GEO Audit Tool · fixitjerry.com · March 2026*
+*Full agent transcripts and fetched-page evidence preserved in session scratchpad. Prior audit (March 2026, 40/100) superseded by this report.*

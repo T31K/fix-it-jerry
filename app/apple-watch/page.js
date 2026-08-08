@@ -11,7 +11,7 @@ export const metadata = {
     title: "Apple Watch Repair in KL | Fix It Jerry",
     description:
       "Expert Apple Watch repair in Kuala Lumpur. Screen replacement, battery replacement, Digital Crown repair & more. Fast turnaround, OEM parts.",
-    images: ["https://fixitjerry.com/og_images/apple-watch.png"],
+    images: ["https://www.fixitjerry.com/og_images/apple-watch.png"],
   },
   alternates: { canonical: '/apple-watch' },
 };

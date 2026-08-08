@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${model.name} Repair in KL | Fix It Jerry`,
       description: `${model.name} repair in Kuala Lumpur — screen replacement, battery, charging port, camera & water damage. Fast, affordable. Walk in or book online.`,
-      images: [`https://fixitjerry.com/og_images/ipad-${params.model}.png`],
+      images: [`https://www.fixitjerry.com/og_images/ipad-${params.model}.png`],
     },
     alternates: { canonical: `/ipad/${params.model}` },
   };

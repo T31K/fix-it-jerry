@@ -4,4 +4,4 @@ Disallow: /order/
 Disallow: /order/*
 Allow: /
 
-Sitemap: https://fixitjerry.com/sitemap.xml
+Sitemap: https://www.fixitjerry.com/sitemap.xml

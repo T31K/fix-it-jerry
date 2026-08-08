@@ -2094,4 +2094,95 @@ export const guides = [
       { label: "General Servicing", href: "/devices/smartphone/general-servicing" },
     ],
   },
+
+  // ─── LISTICLES ─────────────────────────────────────────────────────────────
+  {
+    slug: "best-phone-repair-shops-kuala-lumpur",
+    category: "listicle",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    title: "10 Best Phone Repair Shops in Kuala Lumpur (2026)",
+    metaTitle: "10 Best Phone Repair Shops in KL 2026 | Honest Local Guide",
+    metaDescription:
+      "Looking for the best phone repair shop in Kuala Lumpur? An honest 2026 guide to 10 real options — from Low Yat Plaza workshops to Apple-authorised providers — with what each is best at.",
+    intro:
+      "Full disclosure up front: this list is published by Fix It Jerry, and yes, we're on it. But a list that pretends the competition doesn't exist isn't useful to anyone — KL has genuinely good repair shops, and the right one depends on your device, your budget, and where you are. Here are 10 real options and what each does best.",
+    sections: [
+      {
+        heading: "How We Picked",
+        content: [
+          "Real, verifiable shops — every entry here has a physical location or established online presence you can check.",
+          "Specialty noted — a Mac-only workshop and a Low Yat screen counter serve different needs.",
+          "No fake rankings — beyond our own entry, shops aren't ranked against each other. Check current Google reviews before you commit; ratings change.",
+        ],
+      },
+      {
+        heading: "1. Fix It Jerry — Best for Same-Day Repair with Pickup (KL & PJ)",
+        content:
+          "That's us, so judge this entry by our Google reviews rather than our own words. What we'll claim factually: four branches (Desa ParkCity, Bukit Jalil, Sri Manja PJ, SS15 Subang Jaya), Lalamove/Grab pickup from 44 areas across the Klang Valley, fixed quotes before work starts, and a 90-day workmanship warranty on screens and batteries. Most screen and battery jobs are done the same day. Batteries from RM 80, screens from RM 120.",
+      },
+      {
+        heading: "2. GizmoFix — Best Apple-Authorised Option (PJ)",
+        content:
+          "GizmoFix is an Apple Independent Repair Provider with over 15 years in the business, serving Petaling Jaya and surrounds. Being part of Apple's IRP programme means access to genuine Apple parts for iPhone screen and battery work — the safest route if keeping everything fully original matters more to you than price.",
+      },
+      {
+        heading: "3. KissMyMac — Best for MacBook & iMac (Taman Desa KL, PJ)",
+        content:
+          "KissMyMac does one thing: Macs. MacBook, MacBook Pro, MacBook Air, iMac and Mac Pro repair with a no-fix-no-fee policy, free diagnosis, and a track record of over 30,000 completed repairs across KL, PJ and Seremban. If your problem is Mac-specific — logic board, flexgate, liquid damage — a specialist like this is a strong choice.",
+      },
+      {
+        heading: "4. Takumiko Smartphone Services — Consistently Top-Rated (KL)",
+        content:
+          "Takumiko regularly appears at the top of KL smartphone repair listings and review aggregators. A solid general smartphone workshop worth getting a quote from, especially for Android repairs.",
+      },
+      {
+        heading: "5. Regen Mobile — Best in Low Yat Plaza for Screens",
+        content:
+          "Located on the first floor of Plaza Low Yat (Lot 1-TC023-023A), Regen runs an LCD-focused workshop. Low Yat's concentration of shops means competitive screen pricing — Regen is one of the established names there rather than a pop-up counter.",
+      },
+      {
+        heading: "6. Phone Care by MiiFix — Low Yat Plaza (UG Floor)",
+        content:
+          "Another established Low Yat option, at UG-28A. Handy if you're comparing quotes in the same building — walking two floors to cross-check a screen price is the main advantage of repairing at Low Yat.",
+      },
+      {
+        heading: "7. iPhone Repair Specialist — Low Yat Plaza (Level 1)",
+        content:
+          "An iPhone-focused counter at Lot 1-K035, Plaza Low Yat. iPhone-only counters tend to keep common panels and batteries in stock, which means faster turnaround for the most popular models.",
+      },
+      {
+        heading: "8. Cell Care — Best for Quick Battery Jobs (Medan Idaman, KL)",
+        content:
+          "Cell Care at Medan Idaman Business Centre handles iPhone and iPad repairs with simple battery replacements done in under an hour. A good option if you're in the Gombak/Setapak corridor rather than the city centre.",
+      },
+      {
+        heading: "9. Terminal Tech — General Device Repair (KL)",
+        content:
+          "Terminal Tech appears among KL's top-listed repair shops on review platforms, covering general phone repair. Worth a quote if it's convenient to you — as always, confirm current pricing and warranty terms directly.",
+      },
+      {
+        heading: "10. Samsung Authorised Service Centre — Best for In-Warranty Samsung",
+        content:
+          "If your Samsung device is under warranty or covered by Samsung Care+, go official — an authorised service centre is the only route that preserves warranty coverage. Out of warranty, independent shops (including several on this list) will usually quote significantly less for the same repair.",
+      },
+      {
+        heading: "How to Choose Between Them",
+        content: [
+          "Under warranty? Always use the official service centre first — third-party repair voids it.",
+          "Need it back today? Ask about parts stock before you travel; shops that stock your model's panel finish same-day.",
+          "MacBook or board-level problem? Use a specialist (KissMyMac for Macs, or a shop that does micro-soldering) — not a screen counter.",
+          "Want genuine Apple parts? Ask specifically for an Apple IRP shop like GizmoFix, and expect to pay more.",
+          "Can't travel? Choose a shop with courier pickup — that's the gap we built Fix It Jerry's Lalamove/Grab service around.",
+          "Whatever you choose: get a written quote before work starts, and ask about Face ID/True Tone survival on iPhone screen jobs.",
+        ],
+      },
+    ],
+    relatedServices: [
+      { label: "Phone Repair Areas We Cover", href: "/phone-repair" },
+      { label: "iPhone Repair KL", href: "/iphone" },
+      { label: "Samsung Repair KL", href: "/samsung" },
+      { label: "MacBook Repair KL", href: "/macbook" },
+    ],
+  },
 ];

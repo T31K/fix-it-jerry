@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: service.getTitle(model),
       description: service.getMetaDescription(model),
-      images: [`https://fixitjerry.com/og_images/samsung-${params.model}-${params.service}.png`],
+      images: [`https://www.fixitjerry.com/og_images/samsung-${params.model}-${params.service}.png`],
     },
     alternates: { canonical: `/samsung/${params.model}/${params.service}` },
   };
@@ -178,7 +178,7 @@ export default function SamsungServicePage({ params }) {
       <ServiceJsonLd
         model={model}
         service={service}
-        url={`https://fixitjerry.com/samsung/${model.slug}/${service.slug}`}
+        url={`https://www.fixitjerry.com/samsung/${model.slug}/${service.slug}`}
       />
       <Footer />
       <BreadcrumbJsonLd items={[

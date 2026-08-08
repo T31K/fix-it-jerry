@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: guide.metaTitle,
       description: guide.metaDescription,
-      images: [`https://fixitjerry.com/og_images/guide-${params.slug}.png`],
+      images: [`https://www.fixitjerry.com/og_images/guide-${params.slug}.png`],
     },
     alternates: { canonical: `/guides/${params.slug}` },
   };
@@ -31,11 +31,13 @@ export async function generateMetadata({ params }) {
 const categoryLabel = {
   "cost-guide": "Cost Guide",
   symptom: "Symptom Diagnosis",
+  listicle: "Best Of",
 };
 
 const categoryColor = {
   "cost-guide": "bg-green-100 text-green-800",
   symptom: "bg-blue-100 text-blue-800",
+  listicle: "bg-amber-100 text-amber-800",
 };
 
 const guideImg = (slug, slot) => {
@@ -51,21 +53,45 @@ export default function GuidePage({ params }) {
   const sectionImgs = { 0: guideImg(guide.slug, "1"), 2: guideImg(guide.slug, "2") };
   const otherGuides = guides.filter((g) => g.slug !== guide.slug).slice(0, 4);
 
+  // Ranked entries ("1. Shop Name — tagline") drive ItemList schema on listicles
+  const listItems =
+    guide.category === "listicle"
+      ? guide.sections
+          .filter((s) => /^\d+\.\s/.test(s.heading))
+          .map((s, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: s.heading.replace(/^\d+\.\s*/, ""),
+          }))
+      : [];
+
   return (
     <div id="wrapper">
+      {listItems.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: guide.title,
+            itemListOrder: "https://schema.org/ItemListOrderAscending",
+            numberOfItems: listItems.length,
+            itemListElement: listItems,
+          }}
+        />
+      )}
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": guide.metaTitle,
         "description": guide.metaDescription,
-        "url": `https://fixitjerry.com/guides/${guide.slug}`,
+        "url": `https://www.fixitjerry.com/guides/${guide.slug}`,
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": `https://fixitjerry.com/guides/${guide.slug}`
+          "@id": `https://www.fixitjerry.com/guides/${guide.slug}`
         },
         "image": {
           "@type": "ImageObject",
-          "url": `https://fixitjerry.com/og_images/guide-${guide.slug}.png`,
+          "url": `https://www.fixitjerry.com/og_images/guide-${guide.slug}.png`,
           "width": 1200,
           "height": 630
         },
@@ -74,15 +100,15 @@ export default function GuidePage({ params }) {
         "author": {
           "@type": "Organization",
           "name": "Fix It Jerry",
-          "url": "https://fixitjerry.com"
+          "url": "https://www.fixitjerry.com"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Fix It Jerry",
-          "url": "https://fixitjerry.com",
+          "url": "https://www.fixitjerry.com",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://fixitjerry.com/images/logo.webp"
+            "url": "https://www.fixitjerry.com/images/logo.webp"
           }
         },
         "speakable": {
@@ -154,11 +180,37 @@ export default function GuidePage({ params }) {
                           {section.heading}
                         </h2>
                         {Array.isArray(section.content) ? (
-                          <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                            {section.content.map((item, i) => (
-                              <li key={i} className="leading-relaxed">{item}</li>
-                            ))}
-                          </ul>
+                          // Price lists ("Label: RM x – RM y") render as a real table so AI
+                          // engines and rich results can extract the pricing directly.
+                          section.content.every((item) => /:\s*RM\s?\d/.test(item)) ? (
+                            <div className="overflow-x-auto">
+                              <table className="w-full text-left text-gray-700 border border-gray-200 rounded-lg">
+                                <thead>
+                                  <tr className="bg-light">
+                                    <th className="p-3 font-semibold">Repair</th>
+                                    <th className="p-3 font-semibold">Price (MYR)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {section.content.map((item, i) => {
+                                    const sep = item.indexOf(":");
+                                    return (
+                                      <tr key={i} className="border-t border-gray-200">
+                                        <td className="p-3">{item.slice(0, sep)}</td>
+                                        <td className="p-3 whitespace-nowrap">{item.slice(sep + 1).trim()}</td>
+                                      </tr>
+                                    );
+                                  })}
+                                </tbody>
+                              </table>
+                            </div>
+                          ) : (
+                            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                              {section.content.map((item, i) => (
+                                <li key={i} className="leading-relaxed">{item}</li>
+                              ))}
+                            </ul>
+                          )
                         ) : (
                           <p className="text-gray-700 leading-relaxed">{section.content}</p>
                         )}

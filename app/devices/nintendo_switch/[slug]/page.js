@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: service.title,
       description: service.meta_description,
-      images: ['https://fixitjerry.com/og.png'],
+      images: ['https://www.fixitjerry.com/og.png'],
     },
     alternates: { canonical: `/devices/nintendo_switch/${params.slug}` },
   };

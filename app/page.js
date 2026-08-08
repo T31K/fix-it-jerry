@@ -126,19 +126,19 @@ const GadgetFixPage = () => {
               {[
                 {
                   title: "Repair",
-                  desc: "Replacing the display screen of an electronic device, such as a smartphone, tablet, laptop, or television.",
+                  desc: "Cracked screens, faulty charging ports, broken cameras and buttons — most common repairs are done while you wait.",
                   img: "macbook_repair.webp",
-                  estimated_days: "2 - 3 days",
+                  estimated_days: "Under 1 hour",
                 },
                 {
                   title: "Replacement",
                   desc: "Over time, batteries can degrade, leading to decreased performance, reduced battery life, even complete failure.",
                   img: "charging_port_replacement.webp",
-                  estimated_days: "1 - 2 days",
+                  estimated_days: "Same day",
                 },
                 {
                   title: "Upgrade",
-                  desc: "It can be particularly detrimental to electronic components, corrosion, short circuits, and other issues.",
+                  desc: "RAM, SSD and storage upgrades that give a slow laptop or desktop a second life at a fraction of replacement cost.",
                   img: "ram_upgrade.webp",
                   estimated_days: "1 - 2 days",
                 },

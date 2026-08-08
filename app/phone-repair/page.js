@@ -55,8 +55,8 @@ export default function RepairHubPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://fixitjerry.com/" },
-              { "@type": "ListItem", position: 2, name: "Repair Areas", item: "https://fixitjerry.com/phone-repair" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.fixitjerry.com/" },
+              { "@type": "ListItem", position: 2, name: "Repair Areas", item: "https://www.fixitjerry.com/phone-repair" },
             ],
           },
           {

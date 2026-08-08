@@ -8,7 +8,7 @@ import { guides } from "@/data/guides";
 import { locations } from "@/data/locations";
 import { repairItems } from "@/data";
 
-const BASE = "https://fixitjerry.com";
+const BASE = "https://www.fixitjerry.com";
 
 // Brand → device-catalog route segment. Keys must match repairItems[i].title.
 const DEVICE_SEGMENTS = {

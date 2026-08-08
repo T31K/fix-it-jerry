@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${model.name} Repair in KL | Fix It Jerry`,
       description: `${model.name} repair in Kuala Lumpur. OEM parts, fast turnaround.`,
-      images: [`https://fixitjerry.com/og_images/apple-watch-${params.model}.png`],
+      images: [`https://www.fixitjerry.com/og_images/apple-watch-${params.model}.png`],
     },
     alternates: { canonical: `/apple-watch/${params.model}` },
   };

@@ -7,9 +7,9 @@
 const PROVIDER = {
   "@type": "RepairBusiness",
   name: "Fix It Jerry",
-  url: "https://fixitjerry.com",
+  url: "https://www.fixitjerry.com",
   telephone: "+60183646909",
-  image: "https://fixitjerry.com/og.png",
+  image: "https://www.fixitjerry.com/og.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "7, Jalan Residen Utama",

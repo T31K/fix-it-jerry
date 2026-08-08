@@ -6,7 +6,7 @@ export default function BreadcrumbJsonLd({ items }) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://fixitjerry.com${item.url}`,
+      "item": `https://www.fixitjerry.com${item.url}`,
     })),
   };
   return (

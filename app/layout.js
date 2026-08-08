@@ -18,15 +18,15 @@ const manrope = Manrope({
 
 
 export const metadata = {
-  metadataBase: new URL('https://fixitjerry.com'),
+  metadataBase: new URL('https://www.fixitjerry.com'),
   title: "Fix It Jerry – Phone, Laptop & Device Repair KL",
   description: "Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓",
   openGraph: {
     title: 'Fix It Jerry – Phone, Laptop & Device Repair KL',
     description:
       'Cracked screen? Dead battery? Water damage? Fix It Jerry repairs phones, tablets, laptops & more in KL. Fast turnaround, affordable prices. Book now ✓',
-    url: 'https://fixitjerry.com',
-    images: ['https://fixitjerry.com/og.png'],
+    url: 'https://www.fixitjerry.com',
+    images: ['https://www.fixitjerry.com/og.png'],
     locale: 'en_US',
     type: 'website',
   },
@@ -51,10 +51,11 @@ export default function RootLayout({ children }) {
         <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "RepairBusiness",
+          "@id": "https://www.fixitjerry.com/#business",
           "name": "Fix It Jerry",
-          "url": "https://fixitjerry.com",
-          "logo": "https://fixitjerry.com/images/logo.webp",
-          "image": "https://fixitjerry.com/og.png",
+          "url": "https://www.fixitjerry.com",
+          "logo": "https://www.fixitjerry.com/images/logo.webp",
+          "image": "https://www.fixitjerry.com/og.png",
           "description": "Fix It Jerry is a device repair shop in Kuala Lumpur specialising in smartphones, tablets, laptops, Nintendo Switch, AirPods, Apple Watch and more.",
           "priceRange": "RM 80 - RM 1200",
           "currenciesAccepted": "MYR",
