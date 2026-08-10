@@ -4,6 +4,7 @@ import { macbookModels, macbookServices } from "@/data/macbook";
 import { appleWatchModels, appleWatchServices } from "@/data/applewatchModels";
 import { samsungModels, samsungServices } from "@/data/samsung";
 import { pixelModels, pixelServices } from "@/data/pixel";
+import { xiaomiModels, xiaomiServices } from "@/data/xiaomi";
 import { guides } from "@/data/guides";
 import { locations } from "@/data/locations";
 import { repairItems } from "@/data";
@@ -29,6 +30,7 @@ const BRANDS = [
   { path: "apple-watch", models: appleWatchModels, services: appleWatchServices },
   { path: "samsung", models: samsungModels, services: samsungServices },
   { path: "pixel", models: pixelModels, services: pixelServices },
+  { path: "xiaomi", models: xiaomiModels, services: xiaomiServices },
 ];
 
 const STATIC_PAGES = [

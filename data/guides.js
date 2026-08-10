@@ -2185,4 +2185,422 @@ export const guides = [
       { label: "MacBook Repair KL", href: "/macbook" },
     ],
   },
+
+  {
+    slug: "tablet-screen-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Tablet Screen Replacement Cost in Malaysia (2026)",
+    metaTitle: "Tablet Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Tablet screen replacement in Malaysia costs RM 200–1,200 depending on brand and size. Full price breakdown for Samsung Tab, iPad, Huawei & Lenovo in KL.",
+    intro:
+      "Tablet screen replacement in Malaysia costs between RM 200 and RM 1,200, depending on brand, screen size, and whether the display is laminated. A budget Android tablet sits at the low end; a large Samsung Tab S or iPad Pro sits at the top. Here's the full breakdown.",
+    sections: [
+      {
+        heading: "How Much Does Tablet Screen Replacement Cost in Malaysia?",
+        content: [
+          "Budget Android tablet (Lenovo Tab, Huawei MatePad Lite): RM 200 – RM 400",
+          "Mid-range tablet (Samsung Tab A / Tab S FE, Xiaomi Pad): RM 300 – RM 550",
+          "Samsung Galaxy Tab S series (S8 / S9 / S10): RM 500 – RM 900",
+          "iPad / iPad 9th–10th Gen: RM 300 – RM 500",
+          "iPad Air (M1 / M2): RM 400 – RM 700",
+          "iPad Pro 11-inch / 12.9-inch: RM 600 – RM 1,200",
+        ],
+      },
+      {
+        heading: "What Affects the Cost?",
+        content: [
+          "Screen size — a 12.9-inch panel uses far more material than an 8-inch one.",
+          "Laminated vs non-laminated — laminated displays fuse glass, touch, and LCD into one unit, so you replace all three even if only the glass cracked.",
+          "AMOLED vs LCD — Samsung Tab S and iPad Pro use premium panels that cost more than a basic LCD.",
+          "Brand and part availability — iPad and Samsung parts are easy to source; obscure China-brand tablets can be harder and pricier.",
+          "S Pen / stylus digitizer — tablets with active pen support have an extra layer that adds to the part cost.",
+        ],
+      },
+      {
+        heading: "Can You Replace Just the Glass?",
+        content:
+          "On older non-laminated tablets, yes — the outer glass is a separate layer and glass-only repair is cheaper. But almost every modern tablet (iPad Air/Pro, Samsung Tab S) uses a fully laminated display, so a cracked front means the whole assembly is replaced. Some shops offer glass-only refurbishing with UV glue, but we've seen too many come back with touch dead zones, so we replace the full assembly on laminated units.",
+      },
+      {
+        heading: "Signs You Need a Screen Replacement",
+        content: [
+          "Visible cracks or shattered glass across the display.",
+          "Touch not responding in parts of the screen, or ghost touches.",
+          "Black spots, coloured lines, or bleeding under the glass.",
+          "Backlight visible but no image, or flickering after a drop.",
+          "Cracked corner letting dust or moisture creep under the display.",
+        ],
+      },
+      {
+        heading: "Repair vs Replace — Is It Worth It?",
+        content:
+          "A new mid-range tablet costs RM 1,200–2,500 and a Tab S or iPad Pro runs RM 3,000–7,000. Against that, a RM 200–1,200 screen fix is almost always worth it if the rest of the tablet is healthy. The exception is a very old budget tablet where the repair approaches half the price of a new one — we'll tell you honestly when that's the case. At Fix It Jerry in Kuala Lumpur, we quote the exact price for your model before any work starts.",
+      },
+      {
+        heading: "Turnaround Time",
+        content:
+          "1–3 hours for most tablets. Laminated iPad Pro and large Tab S panels take longer because the adhesive is thick and the digitizer alignment is fussy. We test touch across the full screen, brightness, and stylus support before handing it back.",
+      },
+    ],
+    relatedServices: [
+      { label: "Tablet Screen & Touchscreen Repair", href: "/devices/tablet/lcd-screen-touchscreen" },
+      { label: "iPad Screen Repair", href: "/ipad" },
+      { label: "Tablet Battery Replacement", href: "/devices/tablet/battery" },
+      { label: "Tablet Water Damage Repair", href: "/devices/tablet/water-damage" },
+    ],
+  },
+  {
+    slug: "game-console-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Game Console Repair Cost in Malaysia (2026)",
+    metaTitle: "Game Console Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Game console repair in Malaysia costs RM 120–600. HDMI port, overheating, Joy-Con drift & disc drive fixes for PS5, Xbox & Switch in KL.",
+    intro:
+      "Game console repair in Malaysia costs between RM 120 and RM 600, depending on the fault. An HDMI port replacement on a PS5 or Xbox runs RM 250–450, Joy-Con drift is RM 120–200, and a deep clean and repaste for overheating is RM 150–300. Here's the full breakdown.",
+    sections: [
+      {
+        heading: "How Much Does Game Console Repair Cost in Malaysia?",
+        content: [
+          "HDMI port replacement (PS5 / PS4 / Xbox): RM 250 – RM 450",
+          "Overheating clean + thermal repaste (PS5 / Xbox / PS4): RM 150 – RM 300",
+          "Disc drive repair / replacement: RM 180 – RM 400",
+          "Nintendo Switch Joy-Con drift repair: RM 120 – RM 200",
+          "Nintendo Switch HDMI / video output IC: RM 200 – RM 400",
+          "Nintendo Switch charging port (USB-C): RM 180 – RM 300",
+          "Console power supply / won't turn on: RM 200 – RM 500",
+          "Board-level / liquid damage repair: RM 300 – RM 600",
+        ],
+      },
+      {
+        heading: "What Affects the Cost?",
+        content: [
+          "Console model — PS5 and Series X board-level work costs more than a PS4 or Switch.",
+          "Fault type — a port reflow is cheaper than a full port replacement, which needs micro-soldering.",
+          "Parts availability — genuine disc drives and HDMI ports for newer consoles cost more to source.",
+          "Extent of damage — a bent HDMI port is quick; a port that damaged the retimer IC is a bigger job.",
+          "Cleaning vs replacing — overheating from dust is a cheap clean; a dead fan needs a new part.",
+        ],
+      },
+      {
+        heading: "Common Console Symptoms & Likely Fix",
+        content: [
+          "No picture / 'no signal' on TV → HDMI port or HDMI IC (RM 250–450).",
+          "Console shuts down mid-game or fans roar → dust clog + old paste, needs clean & repaste (RM 150–300).",
+          "Disc won't read or won't eject → disc drive repair (RM 180–400).",
+          "Character moves on its own → Joy-Con / controller stick drift (RM 120–200).",
+          "Won't power on at all → power supply or board-level fault (RM 200–500).",
+        ],
+      },
+      {
+        heading: "PS5 & Xbox HDMI Port — Why It's So Common",
+        content:
+          "The HDMI port is the most-broken part on a home console. A cable yanked at an angle, or the console knocked while plugged in, snaps or bends the port pins. If the port alone is damaged, it's a clean replacement. If the impact also fried the HDMI retimer IC on the board, that's a second repair on top — which is why we diagnose first and quote the real number before touching anything.",
+      },
+      {
+        heading: "Repair vs Replace — Is It Worth It?",
+        content:
+          "A PS5 or Xbox Series X costs RM 2,000–3,000 new, and a Switch OLED is around RM 1,200–1,500. Against that, most console repairs at RM 120–600 are clearly worth it. The one time we'll steer you away is severe liquid damage that has corroded multiple chips on an older console — we'll give you an honest call before you spend. Fix It Jerry repairs PS5, PS4, Xbox, and Nintendo Switch in Kuala Lumpur.",
+      },
+      {
+        heading: "Turnaround Time",
+        content:
+          "A clean and repaste or Joy-Con fix is often same-day. HDMI port replacement and board-level work usually take 1–3 days because they need micro-soldering and post-repair stress testing. We run a demanding game for 15–20 minutes to confirm temps and output are stable before returning it.",
+      },
+    ],
+    relatedServices: [
+      { label: "Nintendo Switch Charging Port Repair", href: "/devices/nintendo_switch/switch-housing" },
+      { label: "Nintendo Switch Joy-Con Repair", href: "/devices/nintendo_switch/switch-joycon-parts" },
+      { label: "Nintendo Switch Fan Replacement", href: "/devices/nintendo_switch/switch-fan" },
+      { label: "All Repairs We Cover", href: "/phone-repair" },
+    ],
+  },
+  {
+    slug: "phone-screen-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Phone Screen Repair Cost in Malaysia (2026)",
+    metaTitle: "Phone Screen Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Phone screen repair in Malaysia costs RM 120–950 by tier. Budget, mid-range & flagship price breakdown for iPhone, Samsung & Android in KL.",
+    intro:
+      "Phone screen repair in Malaysia costs between RM 120 and RM 950, depending on the tier of phone. A budget Android screen is RM 120–250, a mid-range phone is RM 250–500, and a flagship iPhone or Samsung runs RM 450–950. Here's how the pricing breaks down and what drives it.",
+    sections: [
+      {
+        heading: "How Much Does Phone Screen Repair Cost in Malaysia?",
+        content: [
+          "Budget phone (entry Android, LCD, e.g. Redmi/Realme/Galaxy A0x): RM 120 – RM 250",
+          "Mid-range phone (Galaxy A3x–A5x, mid Xiaomi/Oppo/Vivo): RM 250 – RM 500",
+          "Flagship Android (Galaxy S / Note / Pixel Pro): RM 450 – RM 950",
+          "iPhone 11–13 series: RM 250 – RM 550",
+          "iPhone 14–16 series: RM 350 – RM 950",
+          "Foldable inner screen (Z Flip / Z Fold): RM 500 – RM 1,200",
+        ],
+      },
+      {
+        heading: "What Affects the Cost?",
+        content: [
+          "Panel type — cheap LCD sits at the bottom, AMOLED and soft OLED at the top.",
+          "Phone tier — flagships use premium displays with higher brightness, curved edges, or 120Hz.",
+          "Screen quality you choose — aftermarket LCD, hard OLED, soft OLED, and original-grade all price differently.",
+          "Under-display fingerprint sensor — flagships with in-screen sensors need careful calibration.",
+          "Foldables — Ultra Thin Glass and dual-layer displays are a whole different price tier.",
+        ],
+      },
+      {
+        heading: "Budget vs Mid-Range vs Flagship — What's the Difference?",
+        content: [
+          "Budget: usually a standard LCD. Cheap to source, quick swap, RM 120–250.",
+          "Mid-range: often AMOLED now, so parts cost more than the phone's age suggests, RM 250–500.",
+          "Flagship: curved AMOLED, high brightness, in-screen fingerprint, sometimes S Pen support — the panel alone can cost more than a whole budget phone.",
+        ],
+      },
+      {
+        heading: "Aftermarket vs Original-Grade Screens",
+        content:
+          "For most phones you can choose a good aftermarket panel or an original-grade one. Aftermarket LCDs look slightly washed out with greyer blacks — fine as a stopgap or on a budget phone. Original-grade and soft OLED panels match the factory colours, brightness, and touch response, and are worth spending up on for a flagship you'll keep for years. We'll show you both options and prices before you decide.",
+      },
+      {
+        heading: "Repair vs Replace — Is It Worth It?",
+        content:
+          "On a budget phone where the screen repair approaches half the cost of a new handset, replacing the phone can make sense — we'll say so. On a mid-range or flagship phone, a RM 250–950 screen fix is far cheaper than a RM 2,000–6,000 replacement, so repair almost always wins. A cracked screen also spreads and lets in dust and moisture, so fixing it sooner avoids a bigger bill later. Fix It Jerry does most screen swaps same-day in Kuala Lumpur.",
+      },
+      {
+        heading: "Turnaround Time",
+        content:
+          "30 minutes to 2 hours for most phones. Cracked glass with a working display is a straight assembly swap. Flagships with under-display sensors or curved edges take a little longer for calibration. We test touch, brightness, and the fingerprint sensor before you leave.",
+      },
+    ],
+    relatedServices: [
+      { label: "Smartphone Screen & Touchscreen Repair", href: "/devices/smartphone/lcd-screen-touchscreen" },
+      { label: "iPhone Screen Replacement", href: "/iphone" },
+      { label: "Samsung Screen Replacement", href: "/samsung" },
+      { label: "Phone Repair Areas We Cover", href: "/phone-repair" },
+    ],
+  },
+  {
+    slug: "laptop-hinge-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Laptop Hinge Repair Cost in Malaysia (2026)",
+    metaTitle: "Laptop Hinge Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Laptop hinge repair in Malaysia costs RM 150–600. Loose, stiff, or cracked hinge? Full cost breakdown for Windows laptops & MacBook in KL.",
+    intro:
+      "Laptop hinge repair in Malaysia costs between RM 150 and RM 600, depending on whether it's a hinge tightening, a hinge replacement, or a cracked lid/housing repair. Catching it early keeps it cheap — a hinge left loose eventually cracks the case and can tear the screen cable. Here's the breakdown.",
+    sections: [
+      {
+        heading: "How Much Does Laptop Hinge Repair Cost in Malaysia?",
+        content: [
+          "Hinge tightening / re-seating (loose but intact): RM 150 – RM 280",
+          "Single hinge replacement: RM 200 – RM 400",
+          "Both hinges replaced: RM 300 – RM 500",
+          "Hinge + cracked lid / housing repair: RM 350 – RM 600",
+          "MacBook hinge / clutch mechanism: RM 400 – RM 700",
+          "Hinge damage that tore the display cable: add RM 150 – RM 400 for cable/screen work",
+        ],
+      },
+      {
+        heading: "What Affects the Cost?",
+        content: [
+          "Severity — tightening a loose hinge is cheap; a snapped hinge that cracked the case is a bigger job.",
+          "One hinge or both — damage often starts on one side then spreads to the other.",
+          "Brand and model — parts for Dell, HP, Asus, Lenovo are easy to source; some ultrabooks and MacBooks use bonded assemblies.",
+          "Collateral damage — a failing hinge can crack the palmrest, break lid mounting posts, or pinch the screen cable.",
+          "MacBook clutch — Apple integrates the hinge into the display assembly, which raises the cost.",
+        ],
+      },
+      {
+        heading: "Signs Your Laptop Hinge Is Failing",
+        content: [
+          "The screen won't stay at the angle you set — it flops open or closed.",
+          "Creaking, grinding, or stiffness when opening the lid.",
+          "A gap opening up between the screen bezel and the lid near the hinge.",
+          "The plastic around the hinge is cracked or lifting.",
+          "Screen flickers or goes black when you adjust the lid angle (cable being pinched).",
+        ],
+      },
+      {
+        heading: "Why You Shouldn't Ignore a Loose Hinge",
+        content:
+          "A loose hinge puts uneven stress on the lid every time you open the laptop. Left alone, it cracks the plastic mounting posts the hinge screws into, then the crack spreads across the case, and eventually the hinge can rip the thin display cable or crack the panel itself. A RM 150–280 tightening today is far cheaper than a RM 500+ housing-and-cable repair in a few months.",
+      },
+      {
+        heading: "Repair vs Replace — Is It Worth It?",
+        content:
+          "A new laptop costs RM 1,500–5,000+, so a RM 150–600 hinge fix is almost always worth it while the rest of the machine is healthy. The only time we'd advise against it is a very old laptop where the whole case is brittle and other parts are failing too. At Fix It Jerry in Kuala Lumpur, we diagnose the exact cause and quote a firm price before any work begins.",
+      },
+      {
+        heading: "Turnaround Time",
+        content:
+          "A hinge tightening is often same-day. A hinge or housing replacement usually takes 1–3 days because the laptop is fully dismantled to reach the hinge mounts, and we may need to order the exact hinge or bezel for your model. We check the lid opens and holds every angle before returning it.",
+      },
+    ],
+    relatedServices: [
+      { label: "Laptop Screen Repair", href: "/devices/laptop/lcd-screen" },
+      { label: "Laptop General Servicing", href: "/devices/laptop/general-servicing" },
+      { label: "Laptop Water Damage Repair", href: "/devices/laptop/water-damage" },
+      { label: "MacBook Repair KL", href: "/macbook" },
+    ],
+  },
+  {
+    slug: "laptop-screen-flickering",
+    category: "symptom",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Laptop Screen Flickering? Here's What's Wrong",
+    metaTitle: "Laptop Screen Flickering — Causes & Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "Laptop screen flickering? Could be a loose display cable, driver issue, refresh rate, or failing panel. Diagnosis guide + repair costs in Kuala Lumpur.",
+    intro:
+      "A flickering laptop screen is usually one of four things: a software/driver glitch, a wrong refresh-rate setting, a loose or pinched display cable, or a failing screen panel. Software causes are free to fix yourself; hardware causes need a repair. Here's how to tell which one you have.",
+    sections: [
+      {
+        heading: "Quick Answer — Software or Hardware?",
+        content: [
+          "Flicker only in certain apps or after an update → software/driver (free to fix).",
+          "Flicker changes when you move or flex the lid → loose or pinched display cable (hardware).",
+          "Flicker with lines, colour bands, or dead areas → failing panel (hardware).",
+          "Flicker on an external monitor too → graphics/GPU issue, not the panel.",
+        ],
+      },
+      {
+        heading: "Common Causes",
+        content: [
+          "Display driver bug — very common after a Windows or macOS update.",
+          "Refresh rate mismatch — screen set to the wrong Hz.",
+          "Loose or worn display cable (LVDS/eDP) — often near the hinge, worsens with lid movement.",
+          "Failing backlight or panel — flicker plus dimming, lines, or colour shifts.",
+          "GPU fault — flicker or artifacts that also show on an external monitor.",
+          "Power/battery issue — flicker that tracks with charging or heavy load.",
+        ],
+      },
+      {
+        heading: "What You Can Try Yourself",
+        content: [
+          "Restart the laptop — clears temporary driver glitches.",
+          "Update or roll back the graphics driver (Device Manager on Windows).",
+          "Set the refresh rate to the recommended value in Display settings.",
+          "Plug in an external monitor — if it flickers too, it's the GPU, not the panel.",
+          "Open Task Manager (Ctrl+Shift+Esc) — if the Task Manager window itself flickers, it's likely hardware/driver; if only apps flicker, it's software.",
+          "Gently move the lid through its angles — if flicker changes, suspect the cable (stop flexing it and get it looked at).",
+        ],
+      },
+      {
+        heading: "When to See a Technician",
+        content: [
+          "Flicker changes with lid angle or when you press the bezel — cable issue.",
+          "Lines, coloured bands, or dead patches appear — panel failing.",
+          "The screen dims and flickers together — backlight or backlight IC.",
+          "Software steps (driver, refresh rate, external monitor test) didn't help.",
+          "Flicker started after a drop, knock, or liquid spill.",
+        ],
+      },
+      {
+        heading: "Typical Repair Cost in Malaysia",
+        content: [
+          "Display cable replacement: RM 150 – RM 350",
+          "Backlight IC repair: RM 180 – RM 600",
+          "Screen / panel replacement: RM 350 – RM 1,500 (depends on model, MacBooks higher)",
+          "GPU repair / reballing: RM 300 – RM 900",
+          "Software / driver fix + diagnostic: often resolved at no or low cost during diagnosis",
+        ],
+      },
+      {
+        heading: "How We Diagnose It",
+        content:
+          "At Fix It Jerry in Kuala Lumpur we start with a free diagnostic to separate software from hardware — driver checks, an external-monitor test, and a cable inspection near the hinge. That tells us whether you need a RM 150 cable, a backlight IC fix, or a full panel, so you're not paying for the wrong repair. We quote a firm price before any work begins.",
+      },
+    ],
+    relatedServices: [
+      { label: "Laptop Screen Repair", href: "/devices/laptop/lcd-screen" },
+      { label: "Laptop Backlight IC Repair", href: "/devices/laptop/backlight-ic" },
+      { label: "Laptop GPU Repair", href: "/devices/laptop/gpu-repair" },
+      { label: "MacBook Repair KL", href: "/macbook" },
+    ],
+  },
+  {
+    slug: "phone-charging-slowly",
+    category: "symptom",
+    datePublished: "2026-08-10",
+    dateModified: "2026-08-10",
+    title: "Phone Charging Slowly? Here's How to Fix It",
+    metaTitle: "Phone Charging Slowly — Causes & Fixes in KL | Fix It Jerry",
+    metaDescription:
+      "Phone charging slowly? Could be a worn cable, dirty port, weak adapter, or degraded battery. Diagnosis guide + repair costs in Kuala Lumpur.",
+    intro:
+      "A slow-charging phone is most often caused by something simple: a worn cable, a lint-clogged port, or a weak adapter. Less often it's a degraded battery or a failing Charging IC. Start with the free fixes below before spending on a repair — here's how to work through it.",
+    sections: [
+      {
+        heading: "Quick Answer — Start With the Cheap Fixes",
+        content: [
+          "Swap the cable first — worn cables are the #1 cause of slow charging.",
+          "Clean the charging port — compacted lint blocks proper contact.",
+          "Use a higher-wattage adapter that matches your phone's fast-charge spec.",
+          "Charge from a wall socket, not a laptop USB or car port.",
+          "If none of that helps, the battery or Charging IC may be the issue.",
+        ],
+      },
+      {
+        heading: "Common Causes",
+        content: [
+          "Worn or non-original cable — frayed or low-quality cables can't carry full current.",
+          "Lint or debris in the charging port — the most common port problem.",
+          "Weak or wrong adapter — a 5W brick won't fast-charge a phone that supports 25W+.",
+          "Degraded battery — old batteries charge slower and drain faster.",
+          "Charging IC fault — the chip that manages charge rate is failing.",
+          "Background apps or heat — the phone slows charging to protect itself when hot.",
+        ],
+      },
+      {
+        heading: "What You Can Try Yourself",
+        content: [
+          "Test with a different original cable and adapter.",
+          "Gently clean the port with a wooden toothpick — remove compacted lint (never metal).",
+          "Charge from a proper wall socket rated for your phone's fast-charge wattage.",
+          "Turn on aeroplane mode or power off while charging to see if speed improves.",
+          "Let the phone cool down — charging is throttled when it's hot.",
+          "Check battery health (iPhone: Settings → Battery → Battery Health; many Androids show it in Settings or a diagnostics app).",
+        ],
+      },
+      {
+        heading: "When to See a Technician",
+        content: [
+          "Clean cable and adapter still charge slowly → likely the port or Charging IC.",
+          "Cable only works at a certain angle, or the port feels loose → port damage.",
+          "Phone gets hot at the back (not just the port) while charging → Charging IC.",
+          "Battery health is below 80%, or the phone also drains fast → battery.",
+          "Charging percentage jumps around or stops at a set level.",
+        ],
+      },
+      {
+        heading: "Typical Repair Cost in Malaysia",
+        content: [
+          "Charging port cleaning: often free as part of a diagnostic visit",
+          "Charging port replacement: RM 150 – RM 400",
+          "Battery replacement: RM 180 – RM 450",
+          "Charging IC repair: RM 200 – RM 700",
+          "Water damage repair (if liquid caused it): RM 200 – RM 800",
+        ],
+      },
+      {
+        heading: "How We Diagnose It",
+        content:
+          "At Fix It Jerry in Kuala Lumpur we check the free stuff first — we clean and inspect the port and test charge current with a known-good cable and adapter. Nine times out of ten it's lint, a bad cable, or a tired battery, not the expensive Charging IC. We only quote a board-level repair once we've ruled out the simple causes, so you never pay for the wrong fix.",
+      },
+    ],
+    relatedServices: [
+      { label: "Charging Port Replacement", href: "/devices/smartphone/charging-port" },
+      { label: "Charging IC Repair", href: "/devices/smartphone/charging-ic" },
+      { label: "Battery Replacement", href: "/devices/smartphone/battery" },
+      { label: "Water Damage Repair", href: "/devices/smartphone/water-damage" },
+    ],
+  },
 ];

@@ -518,6 +518,211 @@ export const locations = [
     blurb:
       "Noora is one of the newest addresses in Desa ParkCity, and like the rest of the township it's only minutes from our branch. Drop in on the way to Plaza Arkadia or book a lobby pickup — same-day service either way.",
   },
+
+  // ── South & West KL corridor ─────────────────────────────────
+  {
+    slug: "old-klang-road",
+    name: "Old Klang Road",
+    region: "Kuala Lumpur",
+    postcode: "58000",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 6,
+    landmarks: ["Pearl Point Mall", "The Scott Garden", "Faber Towers", "Jalan Klang Lama", "Mid Valley Megamall"],
+    blurb:
+      "Old Klang Road (Jalan Klang Lama) is a long commercial spine of car showrooms, shoplots and older condos like Faber Towers and the Scott Garden lofts. Our Sri Manja branch sits right off this stretch — pickups from Pearl Point or the surrounding apartments are usually at our door in well under ten minutes. Same-day screen and battery jobs are routine here.",
+  },
+  {
+    slug: "taman-desa",
+    name: "Taman Desa",
+    region: "Kuala Lumpur",
+    postcode: "58100",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 8,
+    landmarks: ["Faber Towers", "Danau Desa", "Plaza Danau", "Taman Desa Business Park", "Vista Komanwel"],
+    blurb:
+      "Taman Desa is a quiet residential pocket of low-rise condos and mamak-lined shoplots tucked between Old Klang Road and Mid Valley. We handle plenty of repairs from Danau Desa and the Plaza Danau blocks — our Sri Manja branch is roughly eight minutes away, so Lalamove pickup and same-day return is the norm.",
+  },
+  {
+    slug: "oug",
+    name: "OUG",
+    region: "Kuala Lumpur",
+    postcode: "58200",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 10,
+    landmarks: ["OUG Plaza", "Pearl Shopping Gallery", "Taman OUG", "The Scott Garden", "Jalan Klang Lama"],
+    blurb:
+      "OUG (Overseas Union Garden) blends the old Taman OUG terraces with newer developments around OUG Plaza and Pearl Shopping Gallery. Our Bukit Jalil branch is about ten minutes down the road, and we pick up from the OUG shoplots and condos most days. Screens, batteries and charging ports are usually same-day.",
+  },
+  {
+    slug: "sri-petaling",
+    name: "Sri Petaling",
+    region: "Kuala Lumpur",
+    postcode: "57000",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 6,
+    landmarks: ["Endah Parade", "Sri Petaling LRT", "The Trillium", "Bukit Jalil Golf & Country Resort", "Jalan Radin Anum"],
+    blurb:
+      "Sri Petaling is a busy food-and-nightlife enclave right next to Bukit Jalil, anchored by Endah Parade and the row of restaurants along Jalan Radin. Our Bukit Jalil branch is barely six minutes away — walk-ins are easy, and most screen or battery jobs are done while you eat nearby.",
+  },
+  {
+    slug: "seri-kembangan",
+    name: "Seri Kembangan",
+    region: "Selangor",
+    postcode: "43300",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 12,
+    landmarks: ["The Mines", "South City Plaza", "Mines Wellness City", "Serdang Raya", "UPM"],
+    blurb:
+      "Seri Kembangan runs from The Mines and South City Plaza across to Serdang Raya and the UPM campus. Our Bukit Jalil branch is the closest of the four — about twelve minutes off-peak — so courier pickup is the easy route for the condos and student rentals around here.",
+  },
+  {
+    slug: "bandar-kinrara",
+    name: "Bandar Kinrara",
+    region: "Selangor",
+    postcode: "47180",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 12,
+    landmarks: ["IOI Mall Puchong", "Bandar Kinrara Golf Club", "Giant Bandar Kinrara", "BK5 shoplots", "Puteri Mart"],
+    blurb:
+      "Bandar Kinrara (BK) sits between Puchong and Bukit Jalil, a settled township of terraces and shoplots around BK5 and the golf club. Our Bukit Jalil branch is about twelve minutes away via the LDP; we run regular pickups from the Kinrara commercial rows and the IOI Mall side.",
+  },
+
+  // ── North & Central KL ───────────────────────────────────────
+  {
+    slug: "segambut",
+    name: "Segambut",
+    region: "Kuala Lumpur",
+    postcode: "51200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 10,
+    landmarks: ["Solaris Dutamas", "Publika", "Segambut KTM", "Menjalara", "Jalan Segambut"],
+    blurb:
+      "Segambut stretches from the industrial lots along Jalan Segambut up to the newer condos near Menjalara and Solaris Dutamas. Our Desa Parkcity branch is around ten minutes away, so pickups from Publika or the Segambut residential blocks are quick and same-day is standard.",
+  },
+  {
+    slug: "jalan-ipoh",
+    name: "Jalan Ipoh",
+    region: "Kuala Lumpur",
+    postcode: "51200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 12,
+    landmarks: ["Sunway Putra Mall", "PWTC", "Jalan Kuching", "Sentul", "Kompleks Kenanga"],
+    blurb:
+      "Jalan Ipoh is an older, densely built corridor of shoplots, wet markets and mid-range condos running north out of the city centre. Our Desa Parkcity branch is roughly twelve minutes away via Jalan Kuching — most customers here send devices by Grab or Lalamove rather than fight the parking.",
+  },
+  {
+    slug: "titiwangsa",
+    name: "Titiwangsa",
+    region: "Kuala Lumpur",
+    postcode: "53200",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 16,
+    landmarks: ["Titiwangsa Lake Gardens", "AEON Titiwangsa", "Titiwangsa MRT", "Istana Budaya", "National Art Gallery"],
+    blurb:
+      "Titiwangsa wraps around the Lake Gardens, Istana Budaya and the transit interchange, with a mix of government quarters and older residential blocks. Our Desa Parkcity branch handles most jobs here — about sixteen minutes via the DUKE — and Lalamove pickup keeps it hassle-free.",
+  },
+
+  // ── PJ & Outer Selangor ──────────────────────────────────────
+  {
+    slug: "damansara-perdana",
+    name: "Damansara Perdana",
+    region: "Petaling Jaya",
+    postcode: "47820",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 14,
+    landmarks: ["Empire Damansara", "Emporis", "Metropolitan Square", "Perdana Business Centre", "Mutiara Damansara"],
+    blurb:
+      "Damansara Perdana is a hilly cluster of high-rise condos and SOHO towers around Empire Damansara and Metropolitan Square, just off the LDP. Our Sri Manja branch is about fourteen minutes down the highway; we pick up from the Perdana and Emporis blocks regularly, with same-day turnaround for most repairs.",
+  },
+  {
+    slug: "setia-alam",
+    name: "Setia Alam",
+    region: "Selangor",
+    postcode: "40170",
+    nearestBranch: "ss15",
+    drivingMinutes: 25,
+    landmarks: ["Setia City Mall", "Setia City Convention Centre", "Setia Alam Welcome Arch", "Eco Ardence", "Tesco Setia Alam"],
+    blurb:
+      "Setia Alam is a large, well-planned township in the northern reaches of Shah Alam, centred on Setia City Mall and the convention centre. Our SS15 branch is the closest of the four — around twenty-five minutes via the guthrie corridor — so Lalamove pickup is the standard route, usually done same-day if booked before noon.",
+  },
+  {
+    slug: "kota-kemuning",
+    name: "Kota Kemuning",
+    region: "Selangor",
+    postcode: "40460",
+    nearestBranch: "ss15",
+    drivingMinutes: 20,
+    landmarks: ["Gamuda Walk", "Bukit Rimau", "Kota Kemuning Central", "Anggun Suites", "GreenTech"],
+    blurb:
+      "Kota Kemuning spans the leafy Bukit Rimau bungalows and the newer commercial rows around Gamuda Walk and Kota Kemuning Central. Our SS15 branch is roughly twenty minutes away; courier pickup is the easy option for residents here, with same-day return on most screen and battery jobs.",
+  },
+  // ── Petaling Jaya (deeper coverage) ──────────────────────────
+  {
+    slug: "pj-old-town",
+    name: "PJ Old Town",
+    region: "Petaling Jaya",
+    postcode: "46000",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 9,
+    landmarks: ["Amcorp Mall", "Jalan Othman wet market", "Menara MBPJ", "PJ Old Town hawker centre", "Templer Park LRT"],
+    blurb:
+      "PJ Old Town is the original heart of Petaling Jaya — the low-rise shophouse grid around Jalan Othman, Amcorp Mall and the Section 1 to 8 residential streets. Our Sri Manja branch is the closest of the four, under ten minutes down Jalan Templer, so walk-in and same-day pickup both work well for residents and the small businesses along Jalan Yong Shook Lin.",
+  },
+  {
+    slug: "section-14",
+    name: "Section 14, PJ",
+    region: "Petaling Jaya",
+    postcode: "46100",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 12,
+    landmarks: ["Jaya Shopping Centre", "Digital Mall", "Universiti LRT", "Menara MBPJ", "Section 14 food court"],
+    blurb:
+      "Section 14 is PJ's tech-shopping magnet thanks to Digital Mall and the office crowd around Jaya Shopping Centre and Menara MBPJ. We get a steady run of repairs from the Digital Mall vendors and the offices nearby. Our Sri Manja branch is about twelve minutes away, and Lalamove from the Universiti LRT area reaches us quickly off-peak.",
+  },
+  {
+    slug: "taman-paramount",
+    name: "Taman Paramount",
+    region: "Petaling Jaya",
+    postcode: "46050",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 10,
+    landmarks: ["Paramount LRT", "Jaya Grocer Paramount", "Taman Paramount market", "SS2 border", "Uptown Damansara nearby"],
+    blurb:
+      "Taman Paramount sits right on the Kelana Jaya LRT line, a settled residential pocket between SS2 and PJ Old Town. Our Sri Manja branch is a ten-minute drive, so most residents either drop in on the way past or send a courier from the Paramount LRT station. Screen and battery jobs are usually ready the same day.",
+  },
+  {
+    slug: "damansara-jaya",
+    name: "Damansara Jaya",
+    region: "Petaling Jaya",
+    postcode: "47400",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 12,
+    landmarks: ["Atria Shopping Gallery", "SS22 commercial centre", "Damansara Jaya LRT", "The Sphere Bandar Utama", "SMK Damansara Jaya"],
+    blurb:
+      "Damansara Jaya is the mature township around Atria Shopping Gallery and the SS22 commercial rows, popular with families near the Damansara Jaya LRT. Our Desa Parkcity branch is roughly twelve minutes via the LDP, which makes courier pickup straightforward — most jobs booked before noon come back the same day.",
+  },
+  {
+    slug: "section-17",
+    name: "Section 17, PJ",
+    region: "Petaling Jaya",
+    postcode: "46400",
+    nearestBranch: "sri-manja",
+    drivingMinutes: 12,
+    landmarks: ["Jaya One", "Section 17 food court", "The School Jaya One", "Menara Sunway REIT", "Section 17 wet market"],
+    blurb:
+      "Section 17 pairs old PJ terraces with the offices and cafés of Jaya One, so we see a mix of student and working-professional repairs here. Our Sri Manja branch is about twelve minutes away; Lalamove from the Jaya One area is the usual route, with same-day turnaround on screens, batteries and charging ports.",
+  },
+  {
+    slug: "tropicana",
+    name: "Tropicana",
+    region: "Petaling Jaya",
+    postcode: "47410",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 14,
+    landmarks: ["Tropicana Gardens Mall", "Surian MRT", "Tropicana Golf & Country Resort", "Tropicana Avenue", "W Cheras nearby"],
+    blurb:
+      "Tropicana is the gated-township belt around Tropicana Gardens Mall and the golf resort, connected by the Surian MRT station. Our Desa Parkcity branch is around fourteen minutes via Persiaran Surian, so pickup by Grab or Lalamove is the easy option for residents in the high-rises above the mall.",
+  },
 ];
 
 // Service catalogue used on every location page (shared with main service taxonomy).
