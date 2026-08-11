@@ -81,7 +81,7 @@ export default function IpadServicePage({ params }) {
           <div className="container">
             <div className="row g-4 g-lg-5">
               <div className="col-lg-8">
-                <div className="bg-white rounded-xl shadow-sm border p-5 md:p-8">
+                <div className="bg-white rounded-xl shadow-sm border p-4 md:p-8">
                   <Image
                     src={service.image}
                     width={800}
