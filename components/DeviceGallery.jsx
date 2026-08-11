@@ -20,14 +20,15 @@ export default function DeviceGallery({ brand, slug, name, heading }) {
         {images.map((src, i) => (
           <div
             key={i}
-            className="relative aspect-square overflow-hidden rounded-lg border bg-gray-50"
+            className="overflow-hidden rounded-lg border bg-gray-50"
           >
             <Image
               src={src}
               alt={`${name} — reference photo ${i + 1}`}
-              fill
+              width={400}
+              height={400}
               sizes="(max-width: 768px) 45vw, 22vw"
-              className="object-cover"
+              className="aspect-square w-full object-cover"
             />
           </div>
         ))}
