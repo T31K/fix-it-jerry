@@ -6,6 +6,9 @@ import BookingForm from "@/components/BookingForm";
 import { ipadModels, ipadServices } from "@/data/ipad";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import DeviceGallery from "@/components/DeviceGallery";
+import FaqSection from "@/components/FaqSection";
+import { buildServiceFaqs } from "@/data/faqs";
 
 export async function generateStaticParams() {
   const params = [];
@@ -40,6 +43,7 @@ export default function IpadServicePage({ params }) {
   if (!model || !service) notFound();
 
   const sections = service.getSections(model);
+  const faqs = buildServiceFaqs(model, service);
 
   return (
     <div id="wrapper">
@@ -139,6 +143,8 @@ export default function IpadServicePage({ params }) {
                     </div>
                   </div>
 
+                  <DeviceGallery brand="ipad" slug={model.slug} name={model.name} />
+                  <FaqSection faqs={faqs} />
                   <div className="mt-8 flex justify-center">
                     <BookingForm defaultColor={false} />
                   </div>

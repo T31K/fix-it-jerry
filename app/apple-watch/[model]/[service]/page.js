@@ -5,6 +5,9 @@ import BookingForm from "@/components/BookingForm";
 import { appleWatchModels, appleWatchServices } from "@/data/applewatchModels";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ServiceJsonLd from "@/components/ServiceJsonLd";
+import DeviceGallery from "@/components/DeviceGallery";
+import FaqSection from "@/components/FaqSection";
+import { buildServiceFaqs } from "@/data/faqs";
 
 export async function generateStaticParams() {
   const params = [];
@@ -39,6 +42,7 @@ export default function AppleWatchServicePage({ params }) {
   if (!model || !service) notFound();
 
   const sections = service.getSections(model);
+  const faqs = buildServiceFaqs(model, service);
 
   return (
     <div id="wrapper">
@@ -132,6 +136,8 @@ export default function AppleWatchServicePage({ params }) {
                       </div>
                     </div>
 
+                    <DeviceGallery brand="apple-watch" slug={model.slug} name={model.name} />
+                    <FaqSection faqs={faqs} />
                     <div className="mt-4 w-full flex justify-center">
                       <BookingForm defaultColor={false} />
                     </div>

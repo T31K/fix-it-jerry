@@ -2603,4 +2603,103 @@ export const guides = [
       { label: "Water Damage Repair", href: "/devices/smartphone/water-damage" },
     ],
   },
+  {
+    slug: "xiaomi-screen-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-11",
+    dateModified: "2026-08-11",
+    title: "Xiaomi Screen Replacement Cost in Malaysia (2026)",
+    metaTitle: "Xiaomi Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Xiaomi, Redmi & Poco screen replacement in Malaysia costs RM 120–850 depending on model. Full price breakdown for Redmi, Poco & Xiaomi flagships in KL.",
+    intro:
+      "Xiaomi, Redmi, and Poco cover a huge price range, so the screens do too. A budget Redmi panel is cheap, but a Xiaomi 15 flagship AMOLED is another story. Here's what a screen replacement actually costs in Malaysia, broken down by tier.",
+    sections: [
+      {
+        heading: "Xiaomi Screen Replacement Cost by Model",
+        content: [
+          "Budget Redmi (Redmi 12 / 13 / 13C / A-series): RM 120 – RM 250",
+          "Redmi Note series (Note 12 / 13 / 14): RM 200 – RM 350",
+          "Redmi Note Pro / Poco X series (Note 13 Pro, Poco X6 Pro): RM 250 – RM 400",
+          "Poco F series (Poco F6): RM 300 – RM 450",
+          "Xiaomi 13T / 14T Pro: RM 350 – RM 600",
+          "Xiaomi 14: RM 450 – RM 700",
+          "Xiaomi 14 Ultra / 15: RM 550 – RM 850",
+        ],
+      },
+      {
+        heading: "AMOLED vs IPS LCD — it changes the price",
+        content: [
+          "Most Xiaomi and Redmi phones now use AMOLED, which costs more to source than plain LCD.",
+          "A few budget models still ship IPS LCD — the Redmi 13C is the common one — so those panels are cheaper to replace.",
+          "AMOLED panels are also more fragile during install, so labour is a touch higher.",
+          "On flagships (Xiaomi 14 / 15) the glass, AMOLED, and touch layer are bonded into one assembly — you can't just swap the glass.",
+        ],
+      },
+      {
+        heading: "Can you replace just the glass?",
+        content:
+          "On budget Redmi models sometimes yes, but on the Note Pro, Poco, and Xiaomi flagship tiers the glass and AMOLED are fused. 'Glass-only' repairs using LOCA glue and UV curing look cheaper up front, but we've seen too many come back with dead touch zones or discolouration. We fit the full display assembly so the touch, brightness, and fingerprint sensor all behave.",
+      },
+      {
+        heading: "How long does it take?",
+        content:
+          "1-2 hours for most models. We test touch response, brightness, and the under-display fingerprint sensor before you leave. Booking ahead means we'll have the correct panel ready for your exact Redmi, Poco, or Xiaomi model — budget parts move fast but flagship AMOLEDs can need ordering in.",
+      },
+    ],
+    relatedServices: [
+      { label: "Xiaomi 15 Screen Replacement", href: "/xiaomi/xiaomi-15/screen-replacement" },
+      { label: "Redmi Note 14 Screen Replacement", href: "/xiaomi/redmi-note-14/screen-replacement" },
+      { label: "Poco F6 Screen Replacement", href: "/xiaomi/poco-f6/screen-replacement" },
+    ],
+  },
+  {
+    slug: "iphone-charging-port-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-08-11",
+    dateModified: "2026-08-11",
+    title: "iPhone Charging Port Repair Cost in Malaysia (2026)",
+    metaTitle: "iPhone Charging Port Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "iPhone charging port repair in Malaysia costs RM 150–350. Lightning & USB-C. Won't charge or loose cable? Full cost breakdown & cheaper fixes for KL.",
+    intro:
+      "If your iPhone stopped charging or the cable only works at a weird angle, the port is the usual suspect — but not always. Sometimes it's just lint. Here's how to tell, and what a real port repair costs in Malaysia.",
+    sections: [
+      {
+        heading: "iPhone Charging Port Repair Cost by Model",
+        content: [
+          "iPhone 11 / 12 / 13 (Lightning): RM 150 – RM 280",
+          "iPhone 14 (Lightning): RM 180 – RM 300",
+          "iPhone 15 / 15 Pro (USB-C): RM 200 – RM 350",
+          "iPhone 16 / 16 Pro (USB-C): RM 220 – RM 350",
+          "Charging flex / Lightning-to-board flex replacement: RM 180 – RM 320",
+          "Charging IC (board-level, if the port itself is fine): RM 250 – RM 450",
+        ],
+      },
+      {
+        heading: "Lightning vs USB-C — does it matter?",
+        content: [
+          "iPhone 14 and earlier use a Lightning port; iPhone 15 and newer switched to USB-C.",
+          "USB-C ports are slightly more expensive to source right now, which is why the newer models cost a bit more.",
+          "On most iPhones the port isn't a plug-in module — it's soldered onto the charging flex cable that also carries the mic and antenna.",
+          "Because it's soldered/bonded, a proper repair means replacing the whole charging flex assembly, not just the metal connector.",
+        ],
+      },
+      {
+        heading: "Wait — it might just be lint",
+        content:
+          "Before we quote a repair, we check the free stuff. Pocket lint packs down at the bottom of the port over months and stops the cable clicking in. A careful clean fixes a huge share of 'not charging' iPhones for nothing. We also test with a known-good cable and adapter, because a frayed cable or tired battery can look exactly like a dead port.",
+      },
+      {
+        heading: "How long does it take?",
+        content:
+          "30 minutes to 2 hours. A lint clean is done while you wait. A charging flex replacement takes longer because the port is soldered into the assembly and we test charging speed and data transfer before you leave. Book ahead and we'll have the right Lightning or USB-C flex ready for your model.",
+      },
+    ],
+    relatedServices: [
+      { label: "iPhone 15 Charging Port Repair", href: "/iphone/15/charging-port-repair" },
+      { label: "iPhone 14 Charging Port Repair", href: "/iphone/14/charging-port-repair" },
+      { label: "iPhone 13 Charging Port Repair", href: "/iphone/13/charging-port-repair" },
+    ],
+  },
 ];
