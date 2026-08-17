@@ -49,6 +49,12 @@ const services = [
     icon: "/images/services/ipod.webp",
     link: "/devices/ipod",
   },
+  {
+    name: "ebook",
+    title: "Ebook",
+    icon: "/images/services/ebook.webp",
+    link: "/devices/ebook",
+  },
 ];
 
 function InnerSideBar({ activeLink }) {

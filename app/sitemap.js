@@ -21,6 +21,7 @@ const DEVICE_SEGMENTS = {
   "Apple Watch": "apple_watch",
   iPod: "ipod",
   "Nintendo Switch": "nintendo_switch",
+  Ebook: "ebook",
 };
 
 const BRANDS = [

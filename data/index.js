@@ -6,6 +6,7 @@ import { laptopItems } from "./laptop";
 import { desktopItems } from "./desktop";
 import { nintendoswitchItems } from "./nintendoswitch";
 import { tabletItems } from "./tablet";
+import { ebookItems } from "./ebook";
 
 const reviews = [
   {
@@ -190,6 +191,7 @@ const repairItems = [
   desktopItems,
   nintendoswitchItems,
   tabletItems,
+  ebookItems,
 ];
 
 export { reviews, features, randomUsp, repairItems };
