@@ -55,6 +55,12 @@ const services = [
     icon: "/images/services/ebook.webp",
     link: "/devices/ebook",
   },
+  {
+    name: "ps5",
+    title: "PS5",
+    icon: "/images/services/ps5.webp",
+    link: "/devices/ps5",
+  },
 ];
 
 function InnerSideBar({ activeLink }) {

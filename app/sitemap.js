@@ -22,6 +22,7 @@ const DEVICE_SEGMENTS = {
   iPod: "ipod",
   "Nintendo Switch": "nintendo_switch",
   Ebook: "ebook",
+  PS5: "ps5",
 };
 
 const BRANDS = [

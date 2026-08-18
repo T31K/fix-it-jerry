@@ -7,6 +7,7 @@ import { desktopItems } from "./desktop";
 import { nintendoswitchItems } from "./nintendoswitch";
 import { tabletItems } from "./tablet";
 import { ebookItems } from "./ebook";
+import { ps5Items } from "./ps5";
 
 const reviews = [
   {
@@ -192,6 +193,7 @@ const repairItems = [
   nintendoswitchItems,
   tabletItems,
   ebookItems,
+  ps5Items,
 ];
 
 export { reviews, features, randomUsp, repairItems };
