@@ -85,7 +85,7 @@ export default function NintendoSwitchServicePage({ params }) {
             <div className="row g-4">
               <InnerSideBar activeLink="nintendo_switch" />
               <div className="col-lg-9">
-                <div className="bg-white rounded-lg shadow-sm border p-6">
+                <div className="bg-white rounded-lg shadow-sm border p-3 md:p-6">
                   <div className="flex flex-col items-start gap-6">
                     <Image
                       src={service.image}

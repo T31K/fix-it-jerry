@@ -23,6 +23,8 @@ const DEVICE_SEGMENTS = {
   "Nintendo Switch": "nintendo_switch",
   Ebook: "ebook",
   PS5: "ps5",
+  Camera: "camera",
+  Headphone: "headphone",
 };
 
 const BRANDS = [

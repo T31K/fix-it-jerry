@@ -7,16 +7,16 @@ import { repairItems } from "@/data";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export async function generateStaticParams() {
-  const ebookItem = repairItems.find((item) => item.title === "Ebook");
+  const cameraItem = repairItems.find((item) => item.title === "Camera");
 
-  return ebookItem?.services.map((service) => ({
+  return cameraItem?.services.map((service) => ({
     slug: service.hash,
   })) || [];
 }
 
 export async function generateMetadata({ params }) {
-  const ebookItem = repairItems.find((item) => item.title === "Ebook");
-  const service = ebookItem?.services.find((s) => s.hash === params.slug);
+  const cameraItem = repairItems.find((item) => item.title === "Camera");
+  const service = cameraItem?.services.find((s) => s.hash === params.slug);
 
   if (!service) {
     return {
@@ -33,13 +33,13 @@ export async function generateMetadata({ params }) {
       description: service.meta_description,
       images: ['https://www.fixitjerry.com/og.png'],
     },
-    alternates: { canonical: `/devices/ebook/${params.slug}` },
+    alternates: { canonical: `/devices/camera/${params.slug}` },
   };
 }
 
-export default function EbookServicePage({ params }) {
-  const ebookItem = repairItems.find((item) => item.title === "Ebook");
-  const service = ebookItem?.services.find((s) => s.hash === params.slug);
+export default function CameraServicePage({ params }) {
+  const cameraItem = repairItems.find((item) => item.title === "Camera");
+  const service = cameraItem?.services.find((s) => s.hash === params.slug);
 
   if (!service) {
     notFound();
@@ -65,7 +65,7 @@ export default function EbookServicePage({ params }) {
                   {service.service}
                 </h1>
                 <p className="text-gray-200 max-w-3xl !text-[16px] md:!text-[20px] text-center mt-3">
-                  Professional ebook reader {service.service.toLowerCase()} service
+                  Professional camera {service.service.toLowerCase()} service
                 </p>
               </div>
             </div>
@@ -74,8 +74,8 @@ export default function EbookServicePage({ params }) {
             <ul className="crumb">
               <li><a href="/">Home</a></li>
               <li><a href="/devices">Devices</a></li>
-              <li><a href="/devices/ebook">Ebook</a></li>
-              <li><a href={`/devices/ebook/${service.hash}`}>{service.service}</a></li>
+              <li><a href="/devices/camera">Camera</a></li>
+              <li><a href={`/devices/camera/${service.hash}`}>{service.service}</a></li>
             </ul>
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function EbookServicePage({ params }) {
         <section className="py-8">
           <div className="container">
             <div className="row g-4">
-              <InnerSideBar activeLink="ebook" />
+              <InnerSideBar activeLink="camera" />
               <div className="col-lg-9">
                 <div className="bg-white rounded-lg shadow-sm border p-3 md:p-6">
                   <div className="flex flex-col items-start gap-6">
@@ -138,8 +138,8 @@ export default function EbookServicePage({ params }) {
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
         { name: "Devices", url: "/devices" },
-        { name: "Ebook", url: "/devices/ebook" },
-        { name: service.service, url: `/devices/ebook/${service.hash}` },
+        { name: "Camera", url: "/devices/camera" },
+        { name: service.service, url: `/devices/camera/${service.hash}` },
       ]} />
     </div>
   );

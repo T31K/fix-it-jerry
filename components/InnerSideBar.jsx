@@ -61,6 +61,18 @@ const services = [
     icon: "/images/services/ps5.webp",
     link: "/devices/ps5",
   },
+  {
+    name: "camera",
+    title: "Camera",
+    icon: "/images/services/camera.webp",
+    link: "/devices/camera",
+  },
+  {
+    name: "headphone",
+    title: "Headphone",
+    icon: "/images/services/headphone.webp",
+    link: "/devices/headphone",
+  },
 ];
 
 function InnerSideBar({ activeLink }) {

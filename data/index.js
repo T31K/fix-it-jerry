@@ -8,6 +8,8 @@ import { nintendoswitchItems } from "./nintendoswitch";
 import { tabletItems } from "./tablet";
 import { ebookItems } from "./ebook";
 import { ps5Items } from "./ps5";
+import { cameraItems } from "./camera";
+import { headphoneItems } from "./headphone";
 
 const reviews = [
   {
@@ -194,6 +196,8 @@ const repairItems = [
   tabletItems,
   ebookItems,
   ps5Items,
+  cameraItems,
+  headphoneItems,
 ];
 
 export { reviews, features, randomUsp, repairItems };
