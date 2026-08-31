@@ -96,7 +96,7 @@ export default function Services() {
                         )}
                         <a
                           href={srv.slug || `/devices/${item.title.toLowerCase().replace(/\s/g, '_')}/${srv.hash}`}
-                          className="hover:underline text-gray-700 text-sm md:text-lg truncate sm:overflow-visible sm:whitespace-normal sm:text-clip"
+                          className="block hover:underline text-gray-700 text-sm md:text-lg truncate max-w-[120px] sm:max-w-none sm:overflow-visible sm:whitespace-normal sm:text-clip"
                           title={srv.service}
                         >
                           {srv.service.split(/&|\//)[0]}

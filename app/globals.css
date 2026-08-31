@@ -76,3 +76,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* The legacy template adds `#content { margin-top: 50px }` under
+   @media (max-width: 992px). Pages that opt out of top spacing with the
+   `.no-top` class (e.g. /devices/* detail pages) should not inherit it. */
+@media (max-width: 992px) {
+  #content.no-top {
+    margin-top: 0;
+  }
+}
