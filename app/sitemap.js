@@ -25,6 +25,7 @@ const DEVICE_SEGMENTS = {
   PS5: "ps5",
   Camera: "camera",
   Headphone: "headphone",
+  Speaker: "speaker",
 };
 
 const BRANDS = [

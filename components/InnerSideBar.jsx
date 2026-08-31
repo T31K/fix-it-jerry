@@ -73,6 +73,12 @@ const services = [
     icon: "/images/services/headphone.webp",
     link: "/devices/headphone",
   },
+  {
+    name: "speaker",
+    title: "Speaker",
+    icon: "/images/services/speaker.webp",
+    link: "/devices/speaker",
+  },
 ];
 
 function InnerSideBar({ activeLink }) {

@@ -10,6 +10,7 @@ import { ebookItems } from "./ebook";
 import { ps5Items } from "./ps5";
 import { cameraItems } from "./camera";
 import { headphoneItems } from "./headphone";
+import { speakerItems } from "./speaker";
 
 const reviews = [
   {
@@ -126,6 +127,30 @@ const reviews = [
     name: 'Andrew Lee',
     rating: 5,
   },
+  {
+    review: "My eribong got fixed here, at first he said cannot fix but then he tried again and thank god, the lightstick lights up again! I'm so thankful for the help given! It took about a month to finally fix it❣️",
+    link: 'https://maps.app.goo.gl/kNkFzNzsnL3MtcG29',
+    name: 'Nurul Syarafina Binti Khalil',
+    rating: 5,
+  },
+  {
+    review: 'Overall good experience and service :) Had an issue with my Switch V1, it was unable to display on the TV when docked. Managed to determine it was a port issue and got it replaced. Appreciate the fix!',
+    link: 'https://maps.app.goo.gl/r2UeUFaWdMhJwrtaA',
+    name: 'Sarkunan Vijayan',
+    rating: 5,
+  },
+  {
+    review: "Excellent service! I came in to replace my phone battery. The process was quick and professional. Pricing was affordable and the customer service was friendly. Highly recommended if you're looking for a reliable place to repair your phone.",
+    link: 'https://maps.app.goo.gl/2rGhML691rubjfJUA',
+    name: 'Irfan Zamri',
+    rating: 5,
+  },
+  {
+    review: "Fantastic experience! I needed my Nintendo Switch Lite's broken LCD screen repaired, and the service was top-notch. The technician was extremely friendly, prompt, and arrived exactly on time. My Switch screen looks and works like brand new again. I'll definitely be coming back for any future repairs!",
+    link: 'https://maps.app.goo.gl/NQX3WfnwXE94inKF7',
+    name: 'Mohd Iskandar Dahlan',
+    rating: 5,
+  },
 ]
 const r = [
 
@@ -198,6 +223,7 @@ const repairItems = [
   ps5Items,
   cameraItems,
   headphoneItems,
+  speakerItems,
 ];
 
 export { reviews, features, randomUsp, repairItems };

@@ -70,7 +70,10 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-50 w-full bg-[#4d6c77] transition-all duration-300",
+        // h-16 (class selector) overrides the legacy template's global
+        // `nav { height: 0 }` rule that fires under @media (max-width: 992px)
+        // and was collapsing the whole mobile navbar.
+        "sticky top-0 z-50 w-full h-16 bg-[#4d6c77] transition-all duration-300",
         scrolled ? "shadow-md" : ""
       )}
     >
