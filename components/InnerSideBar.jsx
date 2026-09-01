@@ -1,88 +1,104 @@
 import ReviewBlock from "@/components/ReviewBlock";
+import {
+  Smartphone,
+  Tablet,
+  Laptop,
+  Monitor,
+  Gamepad,
+  Gamepad2,
+  Ear,
+  Watch,
+  Music,
+  BookOpen,
+  Camera,
+  Headphones,
+  Speaker,
+  Luggage,
+} from "lucide-react";
 
 const services = [
   {
     name: "smartphone",
     title: "Smartphone",
-    icon: "/images/services/phone.webp",
+    Icon: Smartphone,
     link: "/devices/smartphone",
   },
   {
     name: "tablet",
     title: "Tablet",
-    icon: "/images/services/ipad.webp",
+    Icon: Tablet,
     link: "/devices/tablet",
   },
   {
     name: "laptop",
     title: "Laptop",
-    icon: "/images/services/macbook.webp",
+    Icon: Laptop,
     link: "/devices/laptop",
   },
-    {
+  {
     name: "desktop",
     title: "Desktop",
-    icon: "/images/services/desktop.webp",
+    Icon: Monitor,
     link: "/devices/desktop",
   },
   {
     name: "switch",
     title: "Nintendo Switch",
-    icon: "/images/services/nintendo_switch.webp",
+    Icon: Gamepad,
     link: "/devices/nintendo_switch",
   },
   {
     name: "airpods",
     title: "Airpods",
-    icon: "/images/services/airpods.webp",
+    Icon: Ear,
     link: "/devices/airpods",
   },
   {
     name: "apple_watch",
     title: "Apple Watch",
-    icon: "/images/services/apple_watch.webp",
+    Icon: Watch,
     link: "/devices/apple_watch",
   },
   {
     name: "ipod",
     title: "iPod",
-    icon: "/images/services/ipod.webp",
+    Icon: Music,
     link: "/devices/ipod",
   },
   {
     name: "ebook",
     title: "Ebook",
-    icon: "/images/services/ebook.webp",
+    Icon: BookOpen,
     link: "/devices/ebook",
   },
   {
     name: "ps5",
     title: "PS5",
-    icon: "/images/services/ps5.webp",
+    Icon: Gamepad2,
     link: "/devices/ps5",
   },
   {
     name: "camera",
     title: "Camera",
-    icon: "/images/services/camera.webp",
+    Icon: Camera,
     link: "/devices/camera",
   },
   {
     name: "headphone",
     title: "Headphone",
-    icon: "/images/services/headphone.webp",
+    Icon: Headphones,
     link: "/devices/headphone",
   },
   {
     name: "speaker",
     title: "Speaker",
-    icon: "/images/services/speaker.webp",
+    Icon: Speaker,
     link: "/devices/speaker",
   },
   {
     name: "luggage",
     title: "Luggage",
-    icon: "/images/services/luggage.webp",
+    Icon: Luggage,
     link: "/devices/luggage",
   },
 ];
@@ -100,7 +116,12 @@ function InnerSideBar({ activeLink }) {
               service.name === activeLink ? "bg-[#C6E76C]" : "bg-gray-200"
             } d-block p-3 py-4 rounded-2 mb-3 d-flex align-items-center`}
           >
-            <img src={service.icon} className="w-[40px] me-3" alt="" />
+            <service.Icon
+              className={`w-[28px] h-[28px] me-3 shrink-0 ${
+                service.name === activeLink ? "text-[#4d6c77]" : "text-gray-700"
+              }`}
+              strokeWidth={1.5}
+            />
             <h4 className="mb-0 flex-grow-1">{service.title}</h4>
             <i
               className={`icofont-long-arrow-right ${
