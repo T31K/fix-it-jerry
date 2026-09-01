@@ -26,6 +26,7 @@ const DEVICE_SEGMENTS = {
   Camera: "camera",
   Headphone: "headphone",
   Speaker: "speaker",
+  Luggage: "luggage",
 };
 
 const BRANDS = [

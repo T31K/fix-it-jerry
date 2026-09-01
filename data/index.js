@@ -11,6 +11,7 @@ import { ps5Items } from "./ps5";
 import { cameraItems } from "./camera";
 import { headphoneItems } from "./headphone";
 import { speakerItems } from "./speaker";
+import { luggageItems } from "./luggage";
 
 const reviews = [
   {
@@ -224,6 +225,7 @@ const repairItems = [
   cameraItems,
   headphoneItems,
   speakerItems,
+  luggageItems,
 ];
 
 export { reviews, features, randomUsp, repairItems };

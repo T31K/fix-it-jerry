@@ -79,6 +79,12 @@ const services = [
     icon: "/images/services/speaker.webp",
     link: "/devices/speaker",
   },
+  {
+    name: "luggage",
+    title: "Luggage",
+    icon: "/images/services/luggage.webp",
+    link: "/devices/luggage",
+  },
 ];
 
 function InnerSideBar({ activeLink }) {
