@@ -53,6 +53,12 @@ const mockRepairData = {
   }
 };
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.keys(mockRepairData).map((id) => ({ id }));
+}
+
 export async function generateMetadata({ params }) {
   const repairData = mockRepairData[params.id];
 

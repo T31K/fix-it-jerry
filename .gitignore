@@ -36,6 +36,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# cloudflare
+.wrangler
+
 # installed agent skills (npx skills add)
 /.agents
 skills-lock.json
