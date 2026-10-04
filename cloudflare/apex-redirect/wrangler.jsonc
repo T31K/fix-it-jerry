@@ -1,0 +1,9 @@
+{
+  // Deploy manually: `npx wrangler deploy` from this folder.
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "fij-apex-redirect",
+  "main": "index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "fixitjerry.com/*", "zone_name": "fixitjerry.com" }]
+}

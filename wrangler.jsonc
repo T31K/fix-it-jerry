@@ -4,6 +4,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "fij",
   "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "www.fixitjerry.com/*", "zone_name": "fixitjerry.com" }],
   "assets": {
     "directory": "./out",
     "html_handling": "auto-trailing-slash",
