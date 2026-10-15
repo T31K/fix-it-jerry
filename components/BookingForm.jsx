@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import { getLeadSource, trackLead } from "@/lib/leadSource";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -146,7 +147,7 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
     try {
       const res = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/fij/booking`,
-        { ...formData, phone: `+${country.dial}${nationalNumber}` },
+        { ...formData, phone: `+${country.dial}${nationalNumber}`, attribution: getLeadSource() },
         {
           headers: {
             "Content-Type": "application/json",
@@ -155,6 +156,7 @@ export default function BookingForm({showTitle = true, defaultColor = true}) {
       );
 
       if (res.status === 200) {
+        trackLead("booking_submitted", { device: formData.deviceType });
         alert("Booking submitted!");
         setFormData({
           name: "",

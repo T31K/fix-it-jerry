@@ -7,6 +7,7 @@ import "@/assets/styles/coloring.css";
 import "@/assets/styles/style.css";
 import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
+import LeadTracker from "@/components/LeadTracker";
 
 import { Manrope } from "next/font/google";
 
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
           ]
         }} />
         {children}
+        <LeadTracker />
         <Script src="/js/plugins.js" strategy="beforeInteractive"></Script>
 
         <Script src="/js/swiper.js" strategy="afterInteractive"></Script>
