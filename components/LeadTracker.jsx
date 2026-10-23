@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { getLeadSource, recordFirstTouch, trackLead } from "@/lib/leadSource";
+import { getLeadSource, recordFirstTouch, saveClickLead, trackLead } from "@/lib/leadSource";
 
 const WHATSAPP_RE = /wa\.me\/\+?60183646909/;
 
@@ -24,8 +24,10 @@ export default function LeadTracker() {
         // message carries the page + source.
         link.setAttribute("href", `https://wa.me/60183646909?text=${encodeURIComponent(text)}`);
         trackLead("whatsapp_click");
+        saveClickLead("whatsapp");
       } else if (href.startsWith("tel:")) {
         trackLead("call_click");
+        saveClickLead("call");
       }
     };
 

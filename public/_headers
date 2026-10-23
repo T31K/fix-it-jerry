@@ -1,0 +1,6 @@
+# Cloudflare Workers static-assets headers. The admin lead table is never
+# indexed (backs up the robots meta in app/admin/layout.js).
+/admin
+  X-Robots-Tag: noindex, nofollow
+/admin/*
+  X-Robots-Tag: noindex, nofollow
