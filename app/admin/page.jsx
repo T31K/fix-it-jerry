@@ -51,6 +51,22 @@ const waLink = (phone) => {
   return `https://wa.me/${digits}`;
 };
 
+// Long text stays two lines tall so rows line up; click to read the rest.
+function Clamp({ text, className = "" }) {
+  const [open, setOpen] = useState(false);
+  if (!text) return <span className="text-slate-300">-</span>;
+  const long = text.length > 70;
+  return (
+    <div
+      onClick={long ? () => setOpen((o) => !o) : undefined}
+      title={long && !open ? "Click to expand" : undefined}
+      className={`whitespace-pre-line ${long ? "cursor-pointer" : ""} ${open ? "" : "line-clamp-2"} ${className}`}
+    >
+      {text}
+    </div>
+  );
+}
+
 function Login({ onLogin, error, loading }) {
   const [pw, setPw] = useState("");
   return (
@@ -210,9 +226,9 @@ export default function AdminPage() {
         </div>
         {error && <p className="!mt-4 !mb-0 text-sm text-red-600">{error}</p>}
 
-        <div className="mt-5 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
-          <table className="w-full min-w-[1200px] border-collapse text-left text-sm">
-            <thead className="bg-slate-50 text-[11px] uppercase tracking-wider text-slate-500">
+        <div className="mt-5 max-h-[calc(100vh-240px)] overflow-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <table className="w-full min-w-[1280px] border-collapse text-left text-sm">
+            <thead className="sticky top-0 z-10 bg-slate-50 text-[11px] uppercase tracking-wider text-slate-500 shadow-[0_1px_0_#e2e8f0]">
               <tr>
                 {["When", "Type", "Name", "Contact", "Device", "Issue", "Source", "Landed on", "Lead on"].map((h) => (
                   <th key={h} className="whitespace-nowrap px-4 py-3 font-semibold">
@@ -233,14 +249,14 @@ export default function AdminPage() {
                 const k = KINDS[lead.kind] || { label: lead.kind, className: "bg-slate-100" };
                 const device = [lead.device_type, lead.device_brand].filter(Boolean).join(" · ");
                 return (
-                  <tr key={lead.id} className="border-t border-slate-100 align-top hover:bg-slate-50">
+                  <tr key={lead.id} className="border-t border-slate-100 align-top even:bg-slate-50/50 hover:bg-[#C6E76C]/10">
                     <td className="whitespace-nowrap px-4 py-3 text-slate-500">{formatDate(lead.created_at)}</td>
                     <td className="px-4 py-3">
                       <span className={`inline-block whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold ${k.className}`}>
                         {k.label}
                       </span>
                     </td>
-                    <td className="px-4 py-3 font-semibold text-slate-800">{lead.name || "-"}</td>
+                    <td className="min-w-[130px] px-4 py-3 font-semibold text-slate-800">{lead.name || "-"}</td>
                     <td className="whitespace-nowrap px-4 py-3">
                       {lead.phone ? (
                         <a href={waLink(lead.phone)} target="_blank" rel="noopener noreferrer" className="block text-[#128C4B] hover:underline">
@@ -255,8 +271,10 @@ export default function AdminPage() {
                         </a>
                       )}
                     </td>
-                    <td className="px-4 py-3">{device || "-"}</td>
-                    <td className="max-w-[280px] px-4 py-3 text-slate-500">{lead.issue || "-"}</td>
+                    <td className="min-w-[150px] px-4 py-3">{device || "-"}</td>
+                    <td className="min-w-[320px] max-w-[420px] px-4 py-3 text-slate-600">
+                      <Clamp text={lead.issue} />
+                    </td>
                     <td className="whitespace-nowrap px-4 py-3">
                       {sourceOf(lead)}
                       {(lead.medium || lead.campaign) && (
@@ -264,8 +282,12 @@ export default function AdminPage() {
                       )}
                       {lead.first_seen && <span className="block text-xs text-slate-400">first visit {lead.first_seen}</span>}
                     </td>
-                    <td className="max-w-[220px] break-words px-4 py-3 text-slate-500">{lead.landing_page || "-"}</td>
-                    <td className="max-w-[220px] break-words px-4 py-3 text-slate-500">{lead.page || "-"}</td>
+                    <td className="w-[200px] max-w-[200px] px-4 py-3 text-slate-500">
+                      <div className="truncate" title={lead.landing_page || ""}>{lead.landing_page || "-"}</div>
+                    </td>
+                    <td className="w-[200px] max-w-[200px] px-4 py-3 text-slate-500">
+                      <div className="truncate" title={lead.page || ""}>{lead.page || "-"}</div>
+                    </td>
                   </tr>
                 );
               })}
