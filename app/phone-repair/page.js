@@ -21,6 +21,7 @@ const grouped = {
   "Kuala Lumpur": locations.filter((l) => l.region === "Kuala Lumpur"),
   "Petaling Jaya": locations.filter((l) => l.region === "Petaling Jaya"),
   Selangor: locations.filter((l) => l.region === "Selangor"),
+  "Perak, Melaka & Johor": locations.filter((l) => ["Perak", "Melaka", "Johor"].includes(l.region)),
 };
 
 const faqs = [

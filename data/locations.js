@@ -723,6 +723,40 @@ export const locations = [
     blurb:
       "Tropicana is the gated-township belt around Tropicana Gardens Mall and the golf resort, connected by the Surian MRT station. Our Desa Parkcity branch is around fourteen minutes via Persiaran Surian, so pickup by Grab or Lalamove is the easy option for residents in the high-rises above the mall.",
   },
+  // ── Outside the Klang Valley ─────────────────────────────────
+  {
+    slug: "ipoh",
+    name: "Ipoh",
+    region: "Perak",
+    postcode: "30000",
+    nearestBranch: "desa-parkcity",
+    drivingMinutes: 150,
+    landmarks: ["Ipoh Parade", "AEON Mall Kinta City", "Ipoh Old Town", "Greentown", "Ipoh Railway Station"],
+    blurb:
+      "Ipoh customers usually send devices down the North–South Expressway to our Desa Parkcity branch, about two and a half hours away. We get regular jobs from around Ipoh Parade, Kinta City and Greentown, and many people combine the drop-off with a KL trip. Screens, batteries and charging ports are usually done the same day the device reaches us.",
+  },
+  {
+    slug: "melaka",
+    name: "Melaka",
+    region: "Melaka",
+    postcode: "75000",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 120,
+    landmarks: ["Dataran Pahlawan Melaka Megamall", "Mahkota Parade", "Jonker Street", "AEON Bandaraya Melaka", "Ayer Keroh"],
+    blurb:
+      "Melaka (Malacca) is about two hours south of our Bukit Jalil branch via the North–South Expressway. We regularly repair phones, iPads and MacBooks for customers around Dataran Pahlawan, Mahkota Parade and Ayer Keroh, whether they courier the device up or drop it off on a KL visit. Most screen and battery jobs are finished the same day we receive them.",
+  },
+  {
+    slug: "johor-bahru",
+    name: "Johor Bahru",
+    region: "Johor",
+    postcode: "80000",
+    nearestBranch: "bukit-jalil",
+    drivingMinutes: 240,
+    landmarks: ["Mid Valley Southkey", "Komtar JBCC", "City Square JB", "Paradigm Mall JB", "Bukit Indah"],
+    blurb:
+      "Johor Bahru customers send devices up the North–South Expressway to our Bukit Jalil branch, roughly four hours away. We see repairs from around Mid Valley Southkey, Komtar JBCC, Paradigm Mall and Bukit Indah, often for genuine-part iPhone and MacBook work. Once the device arrives, screen and battery jobs are typically completed the same day.",
+  },
 ];
 
 // Service catalogue used on every location page (shared with main service taxonomy).
