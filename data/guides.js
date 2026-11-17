@@ -125,6 +125,87 @@ export const guides = [
     ],
   },
   {
+    slug: "baseband-ic-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-17",
+    dateModified: "2026-11-17",
+    title: "Baseband IC Repair Cost in Malaysia (2026)",
+    metaTitle: "Baseband IC Repair Cost Malaysia 2026: No Signal Fix | Fix It Jerry KL",
+    metaDescription:
+      "What is a baseband IC and how much does it cost to fix in Malaysia? RM 250–700 for phones, RM 300–800 for laptops. Symptoms, checks and repair options from Fix It Jerry KL.",
+    intro:
+      "If your phone shows \"No Service\" with a working SIM, can't make calls, or has a blank IMEI, the baseband IC is a likely suspect. Here's what the chip does, how to tell if it has failed, and what baseband IC repair costs in Malaysia.",
+    sections: [
+      {
+        heading: "What Is a Baseband IC?",
+        content:
+          "The baseband IC (also called the baseband chip or modem) is the processor on your phone's motherboard that handles everything cellular: finding a network, registering your SIM, voice calls, SMS and mobile data. It sits between the main processor and the antennas, turning radio signals into data your phone can use. In laptops and tablets, the equivalent chip handles Wi-Fi, Bluetooth and, on LTE models, the SIM connection.",
+      },
+      {
+        heading: "Baseband IC Repair Cost in Malaysia",
+        content: [
+          "Smartphone baseband IC repair: RM 250 – RM 700",
+          "iPhone baseband IC repair: RM 300 – RM 700 (flagship and newer models sit at the top of the range)",
+          "Tablet / iPad (cellular) baseband repair: RM 300 – RM 750",
+          "Laptop baseband / Wi-Fi IC repair: RM 300 – RM 800",
+          "Diagnosis: free at Fix It Jerry, with a fixed quote before any work starts",
+        ],
+      },
+      {
+        heading: "Symptoms of Baseband IC Failure",
+        content: [
+          "\"No Service\" or \"Searching…\" all the time, even with a SIM that works in another phone.",
+          "SIM card not detected, or detected and then dropped every few minutes.",
+          "Calls fail, drop instantly, or the other person can't hear you.",
+          "Mobile data (4G/5G) never connects while Wi-Fi works fine.",
+          "IMEI shows as blank or \"Unknown\" when you dial *#06#.",
+          "On iPhone: Settings > General > About shows a blank \"Modem Firmware\" field.",
+          "On laptops: no Wi-Fi networks found, or Bluetooth missing from settings.",
+        ],
+      },
+      {
+        heading: "Quick Checks Before You Pay for a Repair",
+        content: [
+          "Test your SIM in another phone, and another SIM in your phone. If a different SIM works, the problem is the SIM or your plan.",
+          "Toggle Airplane Mode, then restart the phone.",
+          "Update the phone's software. A few signal bugs are fixed by carrier or OS updates.",
+          "Reset network settings (this clears saved Wi-Fi passwords).",
+          "Dial *#06#. If an IMEI number appears, the baseband is at least partly alive and the fault may be the antenna or SIM tray instead.",
+        ],
+      },
+      {
+        heading: "What Causes Baseband IC Failure?",
+        content: [
+          "Drops: a hard knock can crack the tiny solder balls under the chip, breaking its connection to the board.",
+          "Water damage: corrosion around the baseband area is one of the most common causes we see.",
+          "Heat: long gaming or charging sessions in a hot car stress the solder joints over time.",
+          "Previous repairs: a rushed motherboard or screen repair can disturb nearby components.",
+          "Known model weaknesses: some models are prone to \"No Service\" faults as they age, the iPhone 7 and 7 Plus being the best-known example.",
+        ],
+      },
+      {
+        heading: "How Baseband IC Repair Works",
+        content:
+          "This is board-level work done under a microscope. We first confirm the baseband is the problem by checking the antenna lines, SIM reader and power rails around it. If the chip has only lost contact with the board, we can often reball it (remove it, renew the solder and refit it), which is the cheaper option. If the chip itself has failed, we replace it with a compatible donor IC. On iPhones the baseband is paired to the board, so we work on the original logic board to keep your IMEI and network working.",
+      },
+      {
+        heading: "Is Baseband IC Repair Worth It?",
+        content:
+          "For a phone that's otherwise in good shape, usually yes. RM 250–700 is far less than a replacement flagship, and your data, apps and photos stay where they are. If the board also has heavy water damage or the phone is several generations old, we'll tell you plainly whether the repair makes sense before you spend anything.",
+      },
+      {
+        heading: "How Long Does It Take?",
+        content:
+          "Most smartphone baseband IC repairs take 1–2 working days, and laptop repairs take 2–5 days. Reball jobs are faster; full chip replacement takes longer if we need to source a donor IC for your exact model.",
+      },
+    ],
+    relatedServices: [
+      { label: "Smartphone Baseband IC Repair", href: "/devices/smartphone/baseband-ic" },
+      { label: "Laptop Baseband IC Repair", href: "/devices/laptop/baseband-ic" },
+      { label: "Power IC Repair Cost Guide", href: "/guides/power-ic-repair-cost-malaysia" },
+    ],
+  },
+  {
     slug: "backlight-ic-repair-cost-malaysia",
     category: "cost-guide",
     datePublished: "2026-03-09",
