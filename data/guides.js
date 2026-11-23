@@ -622,6 +622,74 @@ export const guides = [
       { label: "AirPods Repair Services", href: "/devices/airpods" },
       { label: "AirPods Cleaning Service", href: "/devices/airpods/airpods-cleaning" },
       { label: "Apple Watch Battery Replacement", href: "/apple-watch/series-9/battery-replacement" },
+      { label: "Headphone Repair Cost Guide", href: "/guides/headphone-repair-cost-malaysia" },
+    ],
+  },
+  {
+    slug: "headphone-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-23",
+    dateModified: "2026-11-23",
+    title: "Headphone Repair Cost in Malaysia (2026)",
+    metaTitle: "Headphone Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Headphone repair in Malaysia: battery replacement RM 100–250, ear pads RM 60–180. Prices, common faults and quick checks from Fix It Jerry KL.",
+    intro:
+      "Good wireless headphones cost hundreds of ringgit, and most of them fail in the same few ways: the battery wears out, the ear pads flake apart, or one side goes quiet. Most of these faults can be repaired. Here's what headphone repair costs in Malaysia and how to tell which fix you need.",
+    sections: [
+      {
+        heading: "Headphone Repair Cost in Malaysia",
+        content: [
+          "Over-ear / on-ear headphone battery replacement: RM 100 – RM 250",
+          "Ear pad / cushion replacement: RM 60 – RM 180",
+          "AirPods and earbuds battery (per earbud): RM 100 – RM 200",
+          "AirPods Max battery replacement: RM 250 – RM 350",
+          "Charging port, buttons, cable or one side silent: quoted after a free diagnosis",
+        ],
+      },
+      {
+        heading: "Can You Replace a Headphone Battery?",
+        content:
+          "Yes. Most Bluetooth over-ear headphones have a small lithium battery inside one ear cup, and it can be swapped. Batteries wear out with charge cycles, so after two or three years of daily use, playback time drops a lot. We open the ear cup, fit a matched replacement cell, and test charging and playback before you collect. The price depends on the model and how the battery is fitted: some are plug-in, others are soldered.",
+      },
+      {
+        heading: "Common Headphone Problems",
+        content: [
+          "Battery lasts an hour or less, or the headphones die soon after a full charge.",
+          "Headphones only work while plugged into the charging cable.",
+          "Ear cup is bulging or pushed apart, a sign of a swollen battery. Stop charging it.",
+          "Ear pads are peeling, flat or hard, and bass and noise cancelling feel weaker.",
+          "Sound comes from one side only, or crackles when you move the cable or headband.",
+          "Headphones won't charge, or the cable has to sit at an angle to charge.",
+          "Buttons don't respond, or Bluetooth keeps dropping.",
+        ],
+      },
+      {
+        heading: "Quick Checks Before You Pay for a Repair",
+        content: [
+          "Try a different cable and charger. A worn cable looks a lot like a dead charging port.",
+          "Clean the charging port gently with a dry wooden toothpick to clear lint.",
+          "Reset the headphones using the button combination in the maker's manual, then pair them again.",
+          "Remove the headphones from your phone's Bluetooth list, then pair them fresh.",
+          "Check the audio balance setting on your phone if one side sounds quieter.",
+          "Test with a second phone or laptop to rule out the source device.",
+        ],
+      },
+      {
+        heading: "Is Headphone Repair Worth It?",
+        content:
+          "For mid-range and premium headphones, it usually is. A battery or ear pad replacement costs a fraction of a new pair, and you keep headphones you already like. For very cheap headphones, a repair can cost close to the price of a new set, so we'll tell you that up front before any work starts.",
+      },
+      {
+        heading: "How Long Does It Take?",
+        content:
+          "Ear pad replacements take 1–2 days, mostly to get the right pad size and mount for your model. Battery replacements take 1–3 days. AirPods and earbud batteries are faster, usually 1–2 hours per earbud. Other faults depend on what the diagnosis finds.",
+      },
+    ],
+    relatedServices: [
+      { label: "Headphone Battery Replacement", href: "/devices/headphone/headphone-battery" },
+      { label: "Headphone Ear Pad Replacement", href: "/devices/headphone/headphone-ear-pads" },
+      { label: "AirPods Battery Replacement Cost", href: "/guides/airpods-battery-replacement-cost-malaysia" },
     ],
   },
   {
