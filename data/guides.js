@@ -623,6 +623,81 @@ export const guides = [
       { label: "AirPods Cleaning Service", href: "/devices/airpods/airpods-cleaning" },
       { label: "Apple Watch Battery Replacement", href: "/apple-watch/series-9/battery-replacement" },
       { label: "Headphone Repair Cost Guide", href: "/guides/headphone-repair-cost-malaysia" },
+      { label: "AirPods Repair Cost Guide", href: "/guides/airpods-repair-cost-malaysia" },
+    ],
+  },
+  {
+    slug: "airpods-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-24",
+    dateModified: "2026-11-24",
+    title: "AirPods Repair Cost in Malaysia (2026)",
+    metaTitle: "AirPods Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "AirPods repair in Malaysia: cleaning RM 60–120, charging case RM 100–300, battery RM 100–200 per bud. Prices and quick checks from Fix It Jerry KL.",
+    intro:
+      "AirPods fail in a handful of predictable ways: the sound goes muffled, the case stops charging, one bud goes silent, or callers can't hear you. Apple usually swaps the whole unit for a fee. Most of these faults can be cleaned or repaired for less. Here's what AirPods repair costs in Malaysia and how to tell which fix you need.",
+    sections: [
+      {
+        heading: "AirPods Repair Cost in Malaysia",
+        content: [
+          "Deep cleaning (speaker mesh, mics, case contacts): RM 60 – RM 120",
+          "Charging case repair (port, hinge, LED, case battery): RM 100 – RM 300",
+          "Battery replacement (per earbud, AirPods / AirPods Pro): RM 100 – RM 200",
+          "Microphone repair: RM 100 – RM 280",
+          "Audio and Bluetooth connectivity repair: RM 120 – RM 350",
+          "AirPods Max battery replacement: RM 250 – RM 350",
+        ],
+      },
+      {
+        heading: "AirPods Cleaning Service",
+        content:
+          "Cleaning is the cheapest fix and often the right one. Earwax and skin oil build up on the speaker mesh and make the sound soft or one-sided. Dirt on the case pins stops a bud from charging. We clean the speaker and microphone grills with anti-static brushes and an alcohol solution, disinfect the case and its charging contacts, and then test audio and pairing. It takes 30 minutes to an hour, so you can usually wait for it.",
+      },
+      {
+        heading: "Common AirPods Problems",
+        content: [
+          "Sound is quiet or muffled on one or both sides.",
+          "One AirPod won't charge in the case, or the case LED doesn't light up.",
+          "The case won't charge, or the Lightning / USB-C port is loose.",
+          "Broken hinge or a lid that no longer snaps shut.",
+          "Each bud lasts under 2 hours on a full charge.",
+          "Callers say you sound muffled, or Siri doesn't hear you.",
+          "Audio cuts out, crackles, or Bluetooth keeps disconnecting.",
+        ],
+      },
+      {
+        heading: "Quick Checks Before You Pay for a Repair",
+        content: [
+          "Look at the speaker mesh under a light. A layer of wax there causes most low-volume complaints.",
+          "Wipe the metal tips of each bud and the contacts inside the case with a dry cotton bud.",
+          "Try a different cable and charger to rule them out before blaming the case.",
+          "Reset the AirPods: hold the case button for 15 seconds until the light flashes amber, then pair again.",
+          "Check Settings > Accessibility > Audio & Visual for the left / right balance slider.",
+          "Test with a second phone to rule out the source device.",
+        ],
+      },
+      {
+        heading: "How AirPods Repair Works",
+        content:
+          "AirPods are glued shut, so most repairs need careful opening and micro-soldering. We start with a free diagnosis to find the real fault, then quote before any work begins. If cleaning solves it, you only pay for cleaning. After the repair we test sound, microphone, charging and pairing on both buds and the case.",
+      },
+      {
+        heading: "Is AirPods Repair Worth It?",
+        content:
+          "For AirPods Pro, AirPods Max and newer AirPods, repair usually costs well under the price of a new pair. Cleaning and case fixes are almost always worth doing. For older AirPods where both buds and the case all need batteries, the total can come close to a replacement set, and we'll tell you that up front.",
+      },
+      {
+        heading: "How Long Does It Take?",
+        content:
+          "Cleaning takes 30 minutes to an hour. Battery replacement takes 1–2 hours per earbud. Charging case, microphone and connectivity repairs take 1–2 days, depending on parts.",
+      },
+    ],
+    relatedServices: [
+      { label: "AirPods Cleaning Service", href: "/devices/airpods/airpods-cleaning" },
+      { label: "AirPods Charging Case Repair", href: "/devices/airpods/airpods-case-repair" },
+      { label: "AirPods Battery Replacement Cost", href: "/guides/airpods-battery-replacement-cost-malaysia" },
+      { label: "Headphone Repair Cost Guide", href: "/guides/headphone-repair-cost-malaysia" },
     ],
   },
   {
@@ -690,6 +765,7 @@ export const guides = [
       { label: "Headphone Battery Replacement", href: "/devices/headphone/headphone-battery" },
       { label: "Headphone Ear Pad Replacement", href: "/devices/headphone/headphone-ear-pads" },
       { label: "AirPods Battery Replacement Cost", href: "/guides/airpods-battery-replacement-cost-malaysia" },
+      { label: "AirPods Repair Cost Guide", href: "/guides/airpods-repair-cost-malaysia" },
     ],
   },
   {
