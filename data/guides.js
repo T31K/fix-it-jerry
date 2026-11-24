@@ -424,6 +424,86 @@ export const guides = [
       { label: "Apple Watch Series 9 Battery Replacement", href: "/apple-watch/series-9/battery-replacement" },
       { label: "Apple Watch Ultra 2 Battery Replacement", href: "/apple-watch/ultra-2/battery-replacement" },
       { label: "Apple Watch Screen Replacement", href: "/apple-watch/series-8/screen-replacement" },
+      { label: "Apple Watch Repair Cost Guide", href: "/guides/apple-watch-repair-cost-malaysia" },
+    ],
+  },
+  {
+    slug: "apple-watch-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-25",
+    dateModified: "2026-11-25",
+    title: "Apple Watch Repair Cost in Malaysia (2026)",
+    metaTitle: "Apple Watch Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Apple Watch repair in Malaysia: water damage RM 180–600, crown RM 150–400, charging RM 120–380, battery from RM 180. Prices from Fix It Jerry KL.",
+    intro:
+      "An Apple Watch that got wet, stopped charging or has a stuck crown can often be repaired. The price depends on which part failed and how much of the watch has to be opened. Here's what each Apple Watch repair costs in Malaysia, plus the checks to try at home first.",
+    sections: [
+      {
+        heading: "Apple Watch Repair Cost in Malaysia",
+        content: [
+          "Water damage repair: RM 180 – RM 600, depending on severity",
+          "Digital Crown and side button repair: RM 150 – RM 400",
+          "Charging repair: RM 120 – RM 380",
+          "Sensor repair (heart rate, SpO2, haptics, GPS): RM 200 – RM 500",
+          "Screen replacement: RM 250 – RM 600 for most models",
+          "Battery replacement: RM 180 – RM 400 for most models",
+        ],
+      },
+      {
+        heading: "Which Repair Does Your Apple Watch Need?",
+        content: [
+          "Muffled speaker, phantom touches or no power after a swim or shower: water damage.",
+          "Crown won't scroll, feels gritty, or the side button doesn't click: crown and button repair.",
+          "No charging icon on a charger that works with another watch: charging repair.",
+          "Heart rate or blood oxygen readings fail, or the watch no longer vibrates: sensor repair.",
+          "Cracked glass, black display or touch in the wrong place: screen replacement.",
+          "Watch dies within hours, or the display is lifting from the case: battery replacement.",
+        ],
+      },
+      {
+        heading: "Apple Watch Water Damage: What to Do First",
+        content: [
+          "Take the watch off its charger and leave it off the charger until it has been checked.",
+          "If it's still on, turn it off.",
+          "Rinse off seawater, pool water or soap with a little fresh water, then dry it with a lint-free cloth. Skip the rinse if the glass is cracked or the display is lifting.",
+          "Keep it away from hair dryers and heat, which can soften the seal further.",
+          "If the watch works normally and only the speaker is muffled, turn on Water Lock in Control Center, then hold the Digital Crown to eject the water. On older watchOS versions, turn the crown.",
+          "Bring it in soon. Corrosion keeps spreading after the outside feels dry.",
+        ],
+      },
+      {
+        heading: "Quick Checks Before You Pay for a Repair",
+        content: [
+          "Try another charger and power adapter, and wipe the back of the watch clean.",
+          "Force restart: hold the side button and Digital Crown together for at least 10 seconds until the Apple logo appears.",
+          "For a sticky crown, remove the case or bumper, turn the watch off, and run lukewarm fresh water over the crown for 10 to 15 seconds while turning it. Skip this if the glass is cracked.",
+          "Check battery health in Settings > Battery > Battery Health. Below 80% points to the battery.",
+          "Tighten the band and clean the back crystal before blaming the heart rate sensor.",
+          "Install the latest watchOS update and check whether the fault comes back.",
+        ],
+      },
+      {
+        heading: "How Apple Watch Repair Works",
+        content:
+          "We diagnose the watch and quote before any work begins. Most internal repairs mean heating the seal and lifting the display to reach the parts underneath. For water damage, we clean the corroded parts ultrasonically and replace the ones that can't be saved. We then reseal the watch and test the display, touch, crown, sensors and charging.",
+      },
+      {
+        heading: "Is Apple Watch Repair Worth It?",
+        content:
+          "A single fault such as a battery, crown or charging problem is usually worth repairing on a newer Series model or an Ultra. On an SE or an older Series, compare the quote with the price of a used replacement first. Heavy water damage combined with a cracked screen is where replacing often makes more sense.",
+      },
+      {
+        heading: "How Long Does It Take?",
+        content:
+          "Battery replacement takes 1–2 hours. Screen replacement and crown repair usually take 1–2 days. Charging and sensor repairs take up to 3 days, and water damage takes 2–5 days because the watch has to be cleaned, dried and tested.",
+      },
+    ],
+    relatedServices: [
+      { label: "Apple Watch Water Damage Repair", href: "/devices/apple_watch/applewatch-water-damage" },
+      { label: "Apple Watch Crown & Button Repair", href: "/devices/apple_watch/applewatch-crown-button" },
+      { label: "Apple Watch Screen Replacement Cost", href: "/guides/apple-watch-screen-replacement-cost-malaysia" },
+      { label: "Apple Watch Battery Replacement Cost", href: "/guides/apple-watch-battery-replacement-cost-malaysia" },
     ],
   },
   {
@@ -1027,6 +1107,7 @@ export const guides = [
       { label: "Apple Watch Series 9 Screen Replacement", href: "/apple-watch/series-9/screen-replacement" },
       { label: "Apple Watch Ultra Screen Replacement", href: "/apple-watch/ultra/screen-replacement" },
       { label: "Apple Watch Battery Replacement", href: "/apple-watch/series-8/battery-replacement" },
+      { label: "Apple Watch Repair Cost Guide", href: "/guides/apple-watch-repair-cost-malaysia" },
     ],
   },
   {
