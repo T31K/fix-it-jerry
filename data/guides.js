@@ -552,6 +552,93 @@ export const guides = [
       { label: "Nintendo Switch Battery Replacement", href: "/devices/nintendo_switch/switch-battery" },
       { label: "Nintendo Switch Fan Replacement", href: "/devices/nintendo_switch/switch-fan" },
       { label: "Nintendo Switch Housing Replacement", href: "/devices/nintendo_switch/switch-housing" },
+      { label: "Nintendo Switch Repair Cost", href: "/guides/nintendo-switch-repair-cost-malaysia" },
+    ],
+  },
+  {
+    slug: "nintendo-switch-repair-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-26",
+    dateModified: "2026-11-26",
+    title: "Nintendo Switch Repair Cost in Malaysia (2026)",
+    metaTitle: "Nintendo Switch Repair Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Nintendo Switch repair in Malaysia: screen RM 280–650, water damage RM 200–700, charging port RM 180–550, battery from RM 150. Fix It Jerry KL prices.",
+    intro:
+      "A Nintendo Switch with a cracked screen, a dead charging port or water inside can often be repaired. The price depends on the part that failed and whether the main board is affected. Here's what each Switch repair costs in Malaysia, plus the checks to try at home first.",
+    sections: [
+      {
+        heading: "Nintendo Switch Repair Cost in Malaysia",
+        content: [
+          "Screen or touchscreen replacement: RM 280 – RM 650",
+          "Water damage repair: RM 200 – RM 700, depending on severity",
+          "Charging port (USB-C) repair: RM 180 – RM 550",
+          "Power IC or power circuit repair: RM 200 – RM 600",
+          "Cartridge slot repair: RM 180 – RM 450",
+          "Battery replacement: RM 150 – RM 300",
+          "Fan replacement: RM 120 – RM 250",
+          "Joy-Con drift repair: RM 60 – RM 250, depending on stick type and whether you fix one or both",
+          "Button replacement: RM 150 – RM 400",
+          "Speaker or mic replacement: RM 180 – RM 450",
+          "Housing replacement: RM 250 – RM 600",
+          "General servicing and cleaning: RM 100 – RM 250",
+        ],
+      },
+      {
+        heading: "Which Repair Does Your Switch Need?",
+        content: [
+          "Cracked glass, lines, a black display with sound still playing, or touch in the wrong place: screen or touchscreen.",
+          "Charges only when the cable is held at an angle, or the port feels loose: charging port.",
+          "No sign of life after a long charge on a known good adapter: battery, charging port or power circuit.",
+          "Stops working after a spill: water damage.",
+          "Game cards aren't detected, even after trying several games: cartridge slot.",
+          "Grinding noise, heat warnings or shutdowns during games: fan or cooling.",
+          "Character or camera moves by itself: Joy-Con drift.",
+        ],
+      },
+      {
+        heading: "Nintendo Switch Water Damage: What to Do First",
+        content: [
+          "Unplug the charger or take the console out of the dock, if it's safe to touch.",
+          "Hold the power button, choose Power Options, then Turn Off. Sleep mode leaves the console powered.",
+          "Remove the Joy-Cons, game card and microSD card, then wipe the outside dry.",
+          "Don't charge it or switch it on to test it. Power running through wet parts can cause more damage.",
+          "Skip the hair dryer and the rice. Neither removes the residue left on the board.",
+          "Bring it in soon and tell us what was spilled. Sugary drinks leave a sticky residue that needs cleaning.",
+        ],
+      },
+      {
+        heading: "Quick Checks Before You Pay for a Repair",
+        content: [
+          "For a dry console that won't turn on, hold the power button for at least 20 seconds, release it, then press it once.",
+          "Charge directly from a Nintendo adapter for a few hours, with the dock out of the chain.",
+          "Look into the USB-C port with a light. Lint or a bent centre tab can stop charging.",
+          "If only the TV picture is missing, test another HDMI cable and TV port before blaming the console.",
+          "For game card errors, try another game and wipe the card contacts with a dry, lint-free cloth.",
+          "For drift, recalibrate the stick under System Settings > Controllers and Sensors.",
+        ],
+      },
+      {
+        heading: "How Nintendo Switch Repair Works",
+        content:
+          "We diagnose the console and quote before any work begins. Screens, batteries, fans and cartridge slots are replaceable parts. The charging port is soldered to the main board, so replacing it needs desoldering and a check of the surrounding traces. For water damage, we open the console, clean the board ultrasonically and replace the parts that can't be saved. Every repair ends with tests for charging, display, touch, buttons and game cards.",
+      },
+      {
+        heading: "Is It Worth Repairing a Nintendo Switch?",
+        content:
+          "A single fault such as a battery, fan, screen or charging port is usually worth repairing, especially on an OLED model. On a Switch Lite or an older original Switch, compare the quote with the price of a used console first. Saves are another reason to repair. They live in the console's internal memory, so a replacement console won't have them unless they were backed up to Nintendo's cloud service or moved across. Heavy water damage combined with a broken screen is where replacing often makes more sense.",
+      },
+      {
+        heading: "How Long Does It Take?",
+        content:
+          "Battery, fan, button and speaker replacement usually takes 1–2 hours. Screen, charging port and cartridge slot repairs take 1–2 days. Power circuit repairs take 1–3 days, and water damage takes 2–5 days because the console has to be cleaned, dried and tested.",
+      },
+    ],
+    relatedServices: [
+      { label: "Nintendo Switch Water Damage Repair", href: "/devices/nintendo_switch/switch-water-damage" },
+      { label: "Nintendo Switch Screen Replacement", href: "/devices/nintendo_switch/switch-lcd-touchscreen" },
+      { label: "Nintendo Switch Battery Replacement Cost", href: "/guides/nintendo-switch-battery-replacement-cost-malaysia" },
+      { label: "Joy-Con Drift Repair Cost", href: "/guides/nintendo-switch-joycon-drift-repair-cost-malaysia" },
     ],
   },
   {
@@ -2623,6 +2710,7 @@ export const guides = [
       { label: "Nintendo Switch Charging Port Repair", href: "/devices/nintendo_switch/switch-housing" },
       { label: "Nintendo Switch Joy-Con Repair", href: "/devices/nintendo_switch/switch-joycon-parts" },
       { label: "Nintendo Switch Fan Replacement", href: "/devices/nintendo_switch/switch-fan" },
+      { label: "Nintendo Switch Repair Cost", href: "/guides/nintendo-switch-repair-cost-malaysia" },
       { label: "All Repairs We Cover", href: "/phone-repair" },
     ],
   },
