@@ -371,6 +371,76 @@ export const guides = [
     ],
   },
   {
+    slug: "google-pixel-screen-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-27",
+    dateModified: "2026-11-27",
+    title: "Google Pixel Screen Replacement Cost in Malaysia (2026)",
+    metaTitle: "Google Pixel Screen Replacement Cost Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Google Pixel screen replacement in Malaysia costs RM 300–900, or up to RM 2,000 for the Fold. Price by model for Pixel 6 to Pixel 9 in KL.",
+    intro:
+      "Google doesn't run an official Pixel service centre in Malaysia, so a cracked Pixel screen usually means an independent repair shop. The price depends on which Pixel you have: the a-series is the cheapest to fix, the Pro models cost more, and the Pixel 9 Pro Fold is in its own tier. Here's what each model costs in KL and what the repair involves.",
+    sections: [
+      {
+        heading: "Google Pixel Screen Replacement Cost by Model",
+        content: [
+          "Pixel 6a / 7a / 8a: RM 300 – RM 500",
+          "Pixel 6 / 7 / 8 / 9: RM 400 – RM 700",
+          "Pixel 6 Pro / 7 Pro / 8 Pro / 9 Pro: RM 500 – RM 900",
+          "Pixel 9 Pro Fold cover display: RM 400 – RM 700",
+          "Pixel 9 Pro Fold inner display: RM 1,200 – RM 2,000",
+        ],
+      },
+      {
+        heading: "Signs your Pixel screen needs replacing",
+        content: [
+          "Cracked glass, even if the phone still works. Cracks spread and let moisture and dust in.",
+          "Green or pink lines, black spots or patches of dead pixels.",
+          "Touch that misses taps, ghost-touches on its own or stops working in one area.",
+          "The under-display fingerprint sensor stopped reading after a drop.",
+          "A Pro model stuck at 60Hz, or a flickering screen at low brightness. This can point to a damaged display or display connector.",
+        ],
+      },
+      {
+        heading: "Why Pro models cost more",
+        content: [
+          "Every Pixel from the 6 onwards uses an OLED panel, which costs more to source than an LCD.",
+          "Pro models use LTPO panels that change their refresh rate up to 120Hz. These panels are larger and pricier.",
+          "The 6 Pro and 7 Pro have curved edges, which makes the part more expensive and the install more delicate.",
+          "The a-series uses smaller, simpler panels, so they are the cheapest Pixels to repair.",
+          "The 9 Pro Fold has two screens. The inner foldable panel uses ultra-thin glass and is the most expensive part on any Pixel.",
+        ],
+      },
+      {
+        heading: "Can you replace just the glass?",
+        content:
+          "On Pixels the glass, OLED panel and touch layer are bonded into one piece. A glass-only repair separates them and glues new glass on with LOCA and UV light. It costs less up front, but it often leaves dead touch zones, bubbles or a fingerprint sensor that won't read. We replace the full display assembly.",
+      },
+      {
+        heading: "The fingerprint sensor after a screen swap",
+        content:
+          "The fingerprint sensor sits under the display on every Pixel from the 6 onwards. After a new screen goes in, the sensor needs to be recalibrated and your fingerprints enrolled again. We run the calibration and test unlock before handover. Face unlock on the Pixel 7 and newer is not affected by the screen repair.",
+      },
+      {
+        heading: "Is it worth repairing?",
+        content:
+          "For a Pixel 7 or newer, usually yes. These models still get Android updates, and a RM 400–700 screen costs far less than a replacement phone. For an older Pixel 6 or 6a with a worn battery, ask us to check the battery at the same time, since doing both in one visit saves a second opening of the phone.",
+      },
+      {
+        heading: "How long does it take?",
+        content:
+          "1-2 hours for most models once the part is in. Pixel parts are not stocked as widely as Samsung or iPhone parts in Malaysia, so some panels need to be ordered in. Book ahead or WhatsApp us your exact model, and we'll confirm the part is ready before you come in.",
+      },
+    ],
+    relatedServices: [
+      { label: "Pixel 8 Pro Screen Replacement", href: "/pixel/8-pro/screen-replacement" },
+      { label: "Pixel 9 Screen Replacement", href: "/pixel/9/screen-replacement" },
+      { label: "Pixel 7 Screen Replacement", href: "/pixel/7/screen-replacement" },
+      { label: "Phone Screen Repair Cost Guide", href: "/guides/phone-screen-repair-cost-malaysia" },
+    ],
+  },
+  {
     slug: "apple-watch-battery-replacement-cost-malaysia",
     category: "cost-guide",
     datePublished: "2026-03-09",
@@ -2775,6 +2845,7 @@ export const guides = [
       { label: "Smartphone Screen & Touchscreen Repair", href: "/devices/smartphone/lcd-screen-touchscreen" },
       { label: "iPhone Screen Replacement", href: "/iphone" },
       { label: "Samsung Screen Replacement", href: "/samsung" },
+      { label: "Google Pixel Screen Replacement Cost", href: "/guides/google-pixel-screen-replacement-cost-malaysia" },
       { label: "Phone Repair Areas We Cover", href: "/phone-repair" },
     ],
   },
