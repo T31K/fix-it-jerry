@@ -368,6 +368,80 @@ export const guides = [
       { label: "Samsung S24 Ultra Screen Replacement", href: "/samsung/s24-ultra/screen-replacement" },
       { label: "Samsung A55 Screen Replacement", href: "/samsung/a55/screen-replacement" },
       { label: "Samsung S23 Screen Replacement", href: "/samsung/s23/screen-replacement" },
+      { label: "S23 Ultra Screen Replacement Cost Guide", href: "/guides/samsung-s23-ultra-screen-replacement-cost-malaysia" },
+    ],
+  },
+  {
+    slug: "samsung-s23-ultra-screen-replacement-cost-malaysia",
+    category: "cost-guide",
+    datePublished: "2026-11-28",
+    dateModified: "2026-11-28",
+    title: "Samsung S23 Ultra Screen Replacement Cost in Malaysia (2026)",
+    metaTitle: "Samsung S23 Ultra Screen Replacement Price Malaysia 2026 | Fix It Jerry KL",
+    metaDescription:
+      "Samsung S23 Ultra screen replacement in Malaysia costs RM 600–1,000. S23 and S23+ cost RM 400–700. What affects the price and how long it takes in KL.",
+    intro:
+      "The Galaxy S23 Ultra is now out of warranty for most owners, and its 6.8-inch AMOLED screen is the most expensive part on the phone. Here's what an S23 Ultra screen replacement costs in Kuala Lumpur, how it compares to the S23 and S23+, and what to check before you pay for one.",
+    sections: [
+      {
+        heading: "Samsung S23 Series Screen Replacement Cost",
+        content: [
+          "Galaxy S23 Ultra: RM 600 – RM 1,000",
+          "Galaxy S23+: RM 400 – RM 700",
+          "Galaxy S23: RM 400 – RM 700",
+          "The range depends on the part grade you choose and whether the frame is bent. We quote the exact price after a free check.",
+        ],
+      },
+      {
+        heading: "Signs your S23 Ultra screen needs replacing",
+        content: [
+          "Cracked glass, even if touch still works. Cracks spread and let dust and moisture into the display.",
+          "Green or pink vertical lines, often after a drop on a corner.",
+          "Black patches or ink-like spots that grow over a few days.",
+          "Touch that misses taps, ghost-touches, or an S Pen that stops registering on part of the screen.",
+          "The fingerprint sensor stopped reading after the phone was dropped.",
+          "The screen stays black while the phone still rings or vibrates.",
+        ],
+      },
+      {
+        heading: "Why the S23 Ultra costs more than the S23",
+        content: [
+          "It has a bigger 6.8-inch Dynamic AMOLED 2X panel with a higher resolution than the S23 and S23+.",
+          "The screen carries an extra digitizer layer for the S Pen, which adds to the part cost.",
+          "The edges curve slightly, so the panel is more delicate to remove and fit.",
+          "The S23 and S23+ use flat panels and no S Pen layer, so they cost less to fix.",
+        ],
+      },
+      {
+        heading: "Can you replace just the glass?",
+        content:
+          "On the S23 series the glass, AMOLED panel and touch layer are bonded into one piece. A glass-only repair separates them and glues new glass on with LOCA and UV light. It costs less up front, but it often leaves dead touch zones, bubbles, or an S Pen and fingerprint sensor that stop working properly. We replace the full display assembly.",
+      },
+      {
+        heading: "How the repair works",
+        content: [
+          "We check the phone first: touch, S Pen, cameras, charging and the frame. A bent frame changes the quote, so we tell you before we start.",
+          "We heat the back glass, open the phone from the rear, and disconnect the battery.",
+          "The old screen comes off the front, the new display goes in, and we fit fresh adhesive so the phone seals properly again.",
+          "We re-enrol your fingerprint, then test touch, S Pen, brightness, 120Hz refresh and the front camera before handover.",
+        ],
+      },
+      {
+        heading: "Is it worth repairing an S23 Ultra?",
+        content:
+          "Usually yes. The S23 Ultra is still a fast phone with a strong camera, and Samsung is still sending it software updates. A RM 600–1,000 screen costs far less than a new flagship. If the battery also drains fast, ask us to replace it in the same visit (RM 180–280 for the S23 series), since the phone is already open.",
+      },
+      {
+        heading: "How long does it take?",
+        content:
+          "1-2 hours once the part is in. WhatsApp us your exact model and the part grade you want, and we'll confirm the screen is ready before you come in. Walk-ins are fine.",
+      },
+    ],
+    relatedServices: [
+      { label: "Samsung S23 Ultra Screen Replacement", href: "/samsung/s23-ultra/screen-replacement" },
+      { label: "Samsung S23 Screen Replacement", href: "/samsung/s23/screen-replacement" },
+      { label: "Samsung Screen Replacement Cost Guide", href: "/guides/samsung-screen-replacement-cost-malaysia" },
+      { label: "Samsung Battery Replacement Cost Guide", href: "/guides/samsung-battery-replacement-cost-malaysia" },
     ],
   },
   {
